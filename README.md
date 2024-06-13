@@ -1,10 +1,10 @@
 # Odyssey
 
 <div align="center">
-    <a href="https://github.com/sastpg/voyager-llama/tree/main">
+    <a href="https://github.com/zju-vipa/Odyssey/tree/master">
         <img src="https://img.shields.io/badge/python-3.9-blue" alt="Python Version"/>
     </a>
-    <a href="https://github.com/sastpg/voyager-llama/blob/main/LICENSE">
+    <a href="https://github.com/zju-vipa/Odyssey/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT"/>
     </a>
 </div>
