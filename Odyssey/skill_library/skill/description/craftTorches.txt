@@ -1,0 +1,1 @@
+This function ensures the bot has coal and sticks in its inventory, mining coal ores or crafting sticks if necessary, then crafts a single torch.

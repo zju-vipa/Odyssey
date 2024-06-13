@@ -1,0 +1,1 @@
+This function crafts iron bars by smelting raw iron, mining and smelting iron ores if needed, crafting a crafting table if not already in the inventory, and then crafting the iron bars using the crafting table.

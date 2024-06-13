@@ -1,0 +1,1 @@
+This function checks if the bot has at least 2 wheat items in its inventory, equips one of them, and then feeds two wheat to a cow for breeding purposes.

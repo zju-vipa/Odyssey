@@ -1,0 +1,1 @@
+This function kills a slime by equipping a sword, finding the nearest slime, killing it with the sword, and then collecting the dropped items.

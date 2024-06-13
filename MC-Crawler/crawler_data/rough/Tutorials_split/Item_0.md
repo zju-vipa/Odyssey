@@ -1,0 +1,285 @@
+# Item
+An item is an object that exists only within the player's inventory and hands, or displayed in item frames, glow item frames, or armor stands.
+
+## Contents
+- 1 Behavior
+	- 1.1 Stacking
+- 2 List of items
+	- 2.1 Items that create blocks, fluids or entities
+	- 2.2 Items with use in the world
+	- 2.3 Items with indirect use in the world
+	- 2.4 Spawn eggs
+	- 2.5 Education Edition exclusives
+- 3 Unimplemented items
+- 4 Removed items
+- 5 Joke items
+- 6 Video
+- 7 History
+	- 7.1 Item additions and removals
+	- 7.2 Other changes
+	- 7.3 April Fools items
+- 8 Issues
+- 9 See also
+- 10 References
+
+## Behavior
+Some items, when used, place a block (ItemBlock) or entity (minecart, spawn eggs, etc.) version of themselves into the game world. Put simply, they are an item when in the inventory, and a block when placed. For example, boats turn into an entity when placed, and beds turn into a group of blocks when placed. When selected in the hotbar, items briefly display their names above the HUD.
+
+The only method by which an item can be properly displayed within the game environment is to place it into an item frame.
+
+If an item that does not become a block is dropped, it becomes an entity represented by a sprite that floats above the ground for 5 minutes in a loaded chunk before despawning, unless the player walks over it to pick it up before it despawns, it is picked up by a mob, hopper or minecart with hopper, or it is destroyed by fire, lava, cactus, or explosions.
+
+A submerged object ascends toward the water’s edge. When the surface current is in motion, the object is propelled along with it.
+
+Hoppers draw in any items that are placed above them.
+
+### Stacking
+Items can either stack up to 64 or 16, or not stack at all:
+
+- Most items can stack to 64. This includes allblocks, and most items.
+- Some other items, such assnowballs, emptybuckets,eggs,signsandender pearls, can stack up to a maximum of 16.
+- Some items do not stack at all, such anything with adurability(weapons,armor, andtools), filledbuckets, andpotions.
+- All items can technically be forced to stack up to 127 usingcommands.
+
+## List of items
+### 
+- Acacia Boat
+- Acacia Boat with Chest
+- Armor Stand
+- Bamboo Raft
+- Bamboo Raft with Chest
+- Beetroot Seeds
+- Birch Boat
+- Birch Boat with Chest
+- Bottle o' Enchanting
+- Bow
+- Bucket
+- Bucket of Axolotl
+- Bucket of Cod
+- Bucket of Pufferfish
+- Bucket of Salmon
+- Bucket of Tadpole
+- Bucket of Tropical Fish
+- Carrot
+- Cherry Boat
+- Cherry Boat with Chest
+- Cocoa Beans
+- Crossbow
+- Dark Oak Boat
+- Dark Oak Boat with Chest
+- Egg
+- End Crystal
+- Ender Pearl
+- Eye of Ender
+- Fire Charge
+- Firework Rocket
+- Fishing Rod
+- Flint and Steel
+- Glow Berries
+- Glow Item Frame
+- Item Frame
+- Jungle Boat
+- Jungle Boat with Chest
+- Kelp
+- Lava Bucket
+- Lead
+- Lingering Potion
+- Mangrove Boat
+- Mangrove Boat with Chest
+- Melon Seeds
+- Minecart
+- Minecart with Chest
+- Minecart with Command Block
+- Minecart with Furnace‌[JE  only]
+- Minecart with Hopper
+- Minecart with TNT
+- Nether Wart
+- Oak Boat
+- Oak Boat with Chest
+- Painting
+- Pitcher Pod
+- Potato
+- Powder Snow Bucket
+- Pumpkin Seeds
+- Redstone Dust
+- Snowball
+- Splash Potion
+- Spruce Boat
+- Spruce Boat with Chest
+- String
+- Sweet Berries
+- Torchflower Seeds
+- Trident
+- Water Bucket
+- Wheat Seeds
+
+### Items with use in the world
+These items, when highlighted in a player's hotbar (a.k.a "held"), in the off hand, or equipped in an armor slot, can be used by either attack or use, or can serve a specific purpose (for example, offer the player advantage or disadvantage). Some can be used any time, others only when aiming at specific blocks or entities. 
+
+- Amethyst Shard(to duplicate allays)
+- Apple
+- Arrow
+- Baked Potato
+- Beetroot
+- Beetroot Soup
+- Black Dye
+- Blue Dye
+- Bone
+- Bone Meal
+- Book(to interact with chiseled bookshelves)
+- Book and Quill
+- Bowl
+- Bread
+- Brown Dye
+- Brush
+- Bundle
+- Carrot on a Stick
+- Chainmail Boots
+- Chainmail Chestplate
+- Chainmail Helmet
+- Chainmail Leggings
+- Chorus Fruit
+- Compass
+- Cooked Chicken
+- Cooked Cod
+- Cooked Mutton
+- Cooked Porkchop
+- Cooked Rabbit
+- Cooked Salmon
+- Cookie
+- Cyan Dye
+- Debug Stick‌[JE  only]
+- Diamond Axe
+- Diamond Boots
+- Diamond Chestplate
+- Diamond Helmet
+- Diamond Hoe
+- Diamond Horse Armor
+- Diamond Leggings
+- Diamond Pickaxe
+- Diamond Shovel
+- Diamond Sword
+- Dried Kelp
+- Elytra
+- Empty Map
+- Enchanted Book(to interact with chiseled bookshelves)
+- Enchanted Golden Apple
+- Goat Horn
+- Glass Bottle
+- Glow Ink Sac
+- Gold Ingot
+- Golden Apple
+- Golden Axe
+- Golden Boots
+- Golden Carrot
+- Golden Chestplate
+- Golden Helmet
+- Golden Hoe
+- Golden Horse Armor
+- Golden Leggings
+- Golden Pickaxe
+- Golden Shovel
+- Golden Sword
+- Gray Dye
+- Green Dye
+- Honeycomb
+- Honey Bottle
+- Ink Sac
+- Iron Axe
+- Iron Boots
+- Iron Chestplate
+- Iron Helmet
+- Iron Hoe
+- Iron Horse Armor
+- Iron Ingot(to heal iron golems)
+- Iron Leggings
+- Iron Pickaxe
+- Iron Shovel
+- Iron Sword
+- Knowledge Book‌[JE  only]
+- Lapis Lazuli(as a dye)‌[BE  only]
+- Leather Boots
+- Leather Cap
+- Leather Horse Armor
+- Leather Pants
+- Leather Tunic
+- Light Blue Dye
+- Light Gray Dye
+- Lime Dye
+- Magenta Dye
+- MaporExplorer Map
+- Melon Slice
+- Milk Bucket
+- Mushroom Stew
+- Music Disc(5)
+- Music Disc(11)
+- Music Disc(13)
+- Music Disc(Blocks)
+- Music Disc(Cat)
+- Music Disc(Chirp)
+- Music Disc(Far)
+- Music Disc(Mall)
+- Music Disc(Mellohi)
+- Music Disc(Otherside)
+- Music Disc(Pigstep)
+- Music Disc(Relic)
+- Music Disc(Stal)
+- Music Disc(Strad)
+- Music Disc(Wait)
+- Music Disc(Ward)
+- Name Tag
+- Netherite Axe
+- Netherite Boots
+- Netherite Chestplate
+- Netherite Helmet
+- Netherite Hoe
+- Netherite Leggings
+- Netherite Pickaxe
+- Netherite Shovel
+- Netherite Sword
+- Orange Dye
+- Pink Dye
+- Poisonous Potato
+- Potions
+- Pufferfish
+- Pumpkin Pie
+- Purple Dye
+- Rabbit Stew
+- Raw Beef
+- Raw Chicken
+- Raw Cod
+- Raw Mutton
+- Raw Porkchop
+- Raw Rabbit
+- Raw Salmon
+- Red Dye
+- Rotten Flesh
+- Saddle
+- Shears
+- Shield
+- Spectral Arrow‌[JE  only]
+- Spider Eye
+- Spyglass
+- Steak
+- Stone Axe
+- Stone Hoe
+- Stone Pickaxe
+- Stone Shovel
+- Stone Sword
+- Sugar
+- Suspicious Stew
+- Tipped Arrow
+- Totem of Undying
+- Tropical Fish
+- Turtle Shell
+- Warped Fungus on a Stick
+- Wheat
+- White Dye
+- Wooden Axe
+- Wooden Hoe
+- Wooden Pickaxe
+- Wooden Shovel
+- Wooden Sword
+- Written Book
+- Yellow Dye
+

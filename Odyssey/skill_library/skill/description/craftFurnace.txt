@@ -1,0 +1,1 @@
+This function ensures the bot has enough cobblestones by mining more if necessary, crafts a crafting table if it doesn't have one, places the crafting table near the bot, and then uses it to craft a furnace.

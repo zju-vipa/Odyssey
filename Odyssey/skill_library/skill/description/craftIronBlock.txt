@@ -1,0 +1,1 @@
+This function automates the process of crafting an iron block by first smelting raw iron, then mining and smelting more iron ore if necessary, crafting a crafting table if not already available, placing the crafting table, and finally crafting the iron block.

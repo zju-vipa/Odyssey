@@ -1,0 +1,1 @@
+This function crafts a lantern by checking if the bot has enough torches and iron nuggets, collecting the required items if necessary, crafting a crafting table if it's not already in the inventory, placing the crafting table near the bot, and then crafting the lantern using the crafting table.

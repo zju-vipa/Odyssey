@@ -1,0 +1,1 @@
+This function automates the process of crafting an iron sword by first smelting raw iron, then collecting necessary items like sticks and iron ingots, crafting a crafting table if needed, placing it near the bot, and finally using it to craft the iron sword.

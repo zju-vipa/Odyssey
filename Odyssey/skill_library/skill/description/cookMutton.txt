@@ -1,0 +1,1 @@
+This function ensures the necessary items are available to cook mutton, crafting a furnace and mining coal if needed, and killing a sheep if no mutton is found, before proceeding to cook the mutton.

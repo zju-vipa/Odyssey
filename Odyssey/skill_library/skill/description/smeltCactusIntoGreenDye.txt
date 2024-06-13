@@ -1,0 +1,1 @@
+This function ensures the bot has a furnace, sufficient cactus and coal, then places the furnace and uses it to smelt five cactus into green dye.

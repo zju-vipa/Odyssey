@@ -1,0 +1,233 @@
+### Items with indirect use in the world
+The player cannot interact with or directly use these items; however, they are used for trading, brewing, enchanting, or crafting ingredients for other items that do have direct uses. The exception is clocks, which are not used in any recipes but serve an informative function.
+
+- Angler Pottery Sherd
+- Archer Pottery Sherd
+- Arms Up Pottery Sherd
+- Banner Pattern(Creeper Charge)
+- Banner Pattern(Flower Charge)
+- Banner Pattern(Globe)
+- Banner Pattern(Skull Charge)
+- Banner Pattern(Snout)
+- Banner Pattern(Thing)
+- Blade Pottery Sherd
+- Blaze Powder
+- Blaze Rod
+- Brewer Pottery Sherd
+- Brick
+- Burn Pottery Sherd
+- Charcoal
+- Clay Ball
+- Clock
+- Coal
+- Coast Armor Trim
+- Copper Ingot
+- Danger Pottery Sherd
+- Diamond
+- Disc Fragment
+- Dragon's Breath
+- Dune Armor Trim
+- Echo Shard
+- Emerald
+- Explorer Pottery Sherd
+- Eye Armor Trim
+- Feather
+- Fermented Spider Eye
+- Firework Star
+- Flint
+- Friend Pottery Sherd
+- Ghast Tear
+- Glistering Melon Slice
+- Glowstone Dust
+- Gold Nugget
+- Gunpowder
+- Heart of the Sea
+- Heart Pottery Sherd
+- Heartbreak Pottery Sherd
+- Host Armor Trim
+- Howl Pottery Sherd
+- Ink Sac
+- Iron Ingot
+- Iron Nugget
+- Lapis Lazuli
+- Leather
+- Magma Cream
+- Miner Pottery Sherd
+- Mourner Pottery Sherd
+- Nautilus Shell
+- Nether Brick
+- Nether Quartz
+- Nether Star
+- Netherite Ingot
+- Netherite Scrap
+- Netherite Upgrade
+- Paper
+- Phantom Membrane
+- Plenty Pottery Sherd
+- Popped Chorus Fruit
+- Prismarine Crystals
+- Prismarine Shard
+- Prize Pottery Sherd
+- Rabbit Hide
+- Rabbit's Foot
+- Raiser Armor Trim
+- Raw Copper
+- Raw Gold
+- Raw Iron
+- Recovery Compass
+- Rib Armor Trim
+- Scute
+- Sentry Armor Trim
+- Shaper Armor Trim
+- Sheaf Pottery Sherd
+- Shelter Pottery Sherd
+- Shulker Shell
+- Silence Armor Trim
+- Skull Pottery Sherd
+- Slimeball
+- Snort Pottery Sherd
+- Spire Armor Trim
+- Stick
+- Tide Armor Trim
+- Vex Armor Trim
+- Ward Armor Trim
+- Wayfinder Armor Trim
+- Wild Armor Trim
+
+### Spawn eggs
+
+Spawn eggs spawn the entity inside them. They cannot be obtained in Survival mode.
+- Allay Spawn Egg
+- Axolotl Spawn Egg
+- Bat Spawn Egg
+- Bee Spawn Egg
+- Blaze Spawn Egg
+- Camel Spawn Egg
+- Cat Spawn Egg
+- Cave Spider Spawn Egg
+- Chicken Spawn Egg
+- Cod Spawn Egg
+- Cow Spawn Egg
+- Creeper Spawn Egg
+- Dolphin Spawn Egg
+- Donkey Spawn Egg
+- Drowned Spawn Egg
+- Elder Guardian Spawn Egg
+- Ender Dragon Spawn Egg
+- Enderman Spawn Egg
+- Endermite Spawn Egg
+- Evoker Spawn Egg
+- Fox Spawn Egg
+- Frog Spawn Egg
+- Ghast Spawn Egg
+- Glow Squid Spawn Egg
+- Goat Spawn Egg
+- Guardian Spawn Egg
+- Hoglin Spawn Egg
+- Horse Spawn Egg
+- Husk Spawn Egg
+- Iron Golem Spawn Egg
+- Llama Spawn Egg
+- Magma Cube Spawn Egg
+- Mooshroom Spawn Egg
+- Mule Spawn Egg
+- Spawn NPC‌[Bedrock Edition  only]
+- Ocelot Spawn Egg
+- Panda Spawn Egg
+- Parrot Spawn Egg
+- Phantom Spawn Egg
+- Pig Spawn Egg
+- Piglin Spawn Egg
+- Piglin Brute Spawn Egg
+- Pillager Spawn Egg
+- Polar Bear Spawn Egg
+- Pufferfish Spawn Egg
+- Rabbit Spawn Egg
+- Ravager Spawn Egg
+- Salmon Spawn Egg
+- Sheep Spawn Egg
+- Shulker Spawn Egg
+- Silverfish Spawn Egg
+- Skeleton Horse Spawn Egg
+- Skeleton Spawn Egg
+- Slime Spawn Egg
+- Sniffer Spawn Egg
+- Snow Golem Spawn Egg
+- Spider Spawn Egg
+- Squid Spawn Egg
+- Stray Spawn Egg
+- Strider Spawn Egg
+- Tadpole Spawn Egg
+- Trader Llama Spawn Egg
+- Tropical Fish Spawn Egg
+- Turtle Spawn Egg
+- Vex Spawn Egg
+- Villager Spawn Egg
+- Vindicator Spawn Egg
+- Wandering Trader Spawn Egg
+- Warden Spawn Egg
+- Witch Spawn Egg
+- Wither Skeleton Spawn Egg
+- Wither Spawn Egg
+- Wolf Spawn Egg
+- Zoglin Spawn Egg
+- Zombie Horse Spawn Egg
+- Zombie Spawn Egg
+- Zombie Villager Spawn Egg
+- Zombified Piglin Spawn Egg
+
+### Education Edition exclusives
+These items can be accessed only in Minecraft Education. The spawn agent, portfolio, and camera are obtainable through Creative mode and the /give command. The Garbage item is obtainable only through unknown Lab Table recipes or via inventory editing.
+
+- Agent Spawn Egg
+- Antidote
+- Black Balloon
+- Bleach
+- Blue Balloon
+- Blue Glow Stick
+- Blue Sparkler
+- Board
+- Brown Balloon
+- Brown Glow Stick
+- Camera
+- Compounds
+- Cyan Balloon
+- Cyan Glow Stick
+- Elixir
+- Eye Drops
+- Gray Balloon
+- Gray Glow Stick
+- Green Balloon
+- Green Glow Stick
+- Green Sparkler
+- Ice Bomb
+- Light Blue Balloon
+- Light Blue Glow Stick
+- Lime Balloon
+- Lime Glow Stick
+- Magenta Balloon
+- Magenta Glow Stick
+- Orange Balloon
+- Orange Glow Stick
+- Orange Sparkler
+- Photo
+- Pink Balloon
+- Pink Glow Stick
+- Portfolio
+- Poster
+- Purple Balloon
+- Purple Glow Stick
+- Purple Sparkler
+- Red Balloon
+- Red Glow Stick
+- Red Sparkler
+- Silver Balloon
+- Slate
+- Spawn NPC
+- Super Fertilizer
+- Tonic
+- White Balloon
+- White Glow Stick
+- Yellow Balloon
+- Yellow Glow Stick
+

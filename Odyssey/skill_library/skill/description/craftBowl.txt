@@ -1,0 +1,1 @@
+This function crafts a bowl by first checking if the bot has enough planks, collecting more if necessary, then checking if it has a crafting table, crafting one if needed, placing it near the bot, and finally crafting the bowl using the table.

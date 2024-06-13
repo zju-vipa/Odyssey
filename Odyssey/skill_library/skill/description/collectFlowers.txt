@@ -1,0 +1,1 @@
+This function collects arbitrary types of flowers by exploring a designated area, digging each found flower and collect flowers.

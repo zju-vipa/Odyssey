@@ -1,0 +1,1 @@
+This function crafts iron nuggets by smelting all raw iron, then checks if there are enough iron ingots in the inventory; if not, it mines iron ores, smelts them, and then crafts the iron nuggets.

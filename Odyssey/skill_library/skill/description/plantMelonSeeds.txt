@@ -1,0 +1,1 @@
+This function ensures the bot has melon seeds in its inventory, collecting them if needed, and then plants them.

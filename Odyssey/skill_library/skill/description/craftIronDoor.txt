@@ -1,0 +1,1 @@
+This function crafts an iron door by smelting raw iron into iron ingots, crafting a crafting table if needed, and then crafting the iron door using the crafting table.

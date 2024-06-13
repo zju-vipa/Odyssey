@@ -1,0 +1,1 @@
+This function searches for carrots within a 32-block radius, navigates to the first found carrot, and then digs it up, stopping if no carrots are found.

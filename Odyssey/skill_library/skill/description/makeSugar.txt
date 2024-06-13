@@ -1,0 +1,1 @@
+This function checks if the bot has sugar cane in its inventory, and if so, crafts one sugar item, otherwise it terminates early.

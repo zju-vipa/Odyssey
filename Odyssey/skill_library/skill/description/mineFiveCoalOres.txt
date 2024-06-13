@@ -1,0 +1,1 @@
+This function equips a pickaxe, searches for and finds five coal ore blocks within a 32-block radius, and then mines those blocks.

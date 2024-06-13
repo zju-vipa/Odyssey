@@ -1,0 +1,1 @@
+This function searches for a melon slice in the inventory, and if found, crafts one melon seed.

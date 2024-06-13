@@ -1,0 +1,50 @@
+## Other capes
+### Skin pack capes
+See also: Skin pack
+
+Some capes are missing including all from LittleBigPlanet™ Mash-Up Pack, Marvel Avengers Skin Pack and other from Legacy Console Editions or other editions.
+
+| Name                         | Cape | Texture | Notes                                                                                                                                     |
+|------------------------------|------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Ender dragon wings cape      |      |         | This cape was made for the ender dragon skin included in the1st Birthday Skin Packand could only be shown with the skin equipped.         |
+| Devil's cape                 |      |         | This cape was made for the Devil skin included in theHalloween Mash-Upand could only be shown with the skin equipped.                     |
+| Dracula's cape               |      |         | This cape was made for the Dracula skin included in theHalloween Mash-Upand could only be shown with the skin equipped.                   |
+| Evil Wizard's cape           |      |         | This cape was made for the Evil Wizard skin included in theHalloween Mash-Upand could only be shown with the skin equipped.               |
+| Bride of Frankenstein's cape |      |         | This cape was made for the Bride of Frankenstein skin included in theHalloween Mash-Upand could only be shown with the skin equipped.     |
+| The grim reaper's cape       |      |         | This cape was made for The Grim Reaper skin included in theHalloween Mash-Upand could only be shown with the skin equipped.               |
+| Wicked witch's cape          |      |         | This cape was made for the Wicked Witch skin included in theHalloween Mash-Upand could only be shown with the skin equipped.              |
+| Maman Brigitte's cape        |      |         | This cape was made for the Maman Brigitte skin included in theHalloween Mash-Upand could only be shown with the skin equipped.            |
+| Male spartan's cape          |      |         | This cape was made for the Male Spartan skin included inBattles & Beasts Skin Packand can only be shown with the skin equipped.           |
+| Female spartan's cape        |      |         | This cape was made for the Female Spartan skin included inBattles & Beasts Skin Packand can only be shown with the skin equipped.         |
+| Padmé Amidala's cape         |      |         | This cape was made for the Senator Padmé Amidala skin included inStar Wars Prequel Skin Packand can only be shown with the skin equipped. |
+| Palpatine's cape             |      |         | This cape was made for the Senator Palpatine skin included inStar Wars Prequel Skin Packand can only be shown with the skin equipped.     |
+| Count Dooku's cape           |      |         | This cape was made for the Count Dooku skin included inStar Wars Prequel Skin Packand can only be shown with the skin equipped.           |
+| General Grievous's cape      |      |         | This cape was made for the General Grievous skin included inStar Wars Prequel Skin Packand can only be shown with the skin equipped.      |
+| Boss Nass's cape             |      |         | This cape was made for the Boss Nass skin included inStar Wars Prequel Skin Packand can only be shown with the skin equipped.             |
+| Mas Amedda's cape            |      |         | This cape was made for the Mas Amedda skin included inStar Wars Prequel Skin Packand can only be shown with the skin equipped.            |
+| Poggle the Lesser's cape     |      |         | This cape was made for the Poggle the Lesser skin included inStar Wars Prequel Skin Packand can only be shown with the skin equipped.     |
+| Lando Calrissian's cape      |      |         | This cape was made for the Lando Calrissian skin included inStar Wars Classic Skin Packand can only be shown with the skin equipped.      |
+| Skyrim Nazir's cape          |      |         | This cape was made for the Skyrim Nazir skin included in theSkyrim Mash-Upand could only be shown with the skin equipped.                 |
+| Skyrim Vampire Lord's cape   |      |         | This cape was made for the Skyrim Vampire Lord skin included in theSkyrim Mash-Upand could only be shown with the skin equipped.          |
+| Huntress Wizard's cape       |      |         | This cape was made for the Huntress Wizard skin included in theAdventure Time Mash-Upand could only be shown with the skin equipped.      |
+| Maori's cape                 |      |         | This cape was made for the Maori skin included in theBattle & Beasts 2 Skin Packand could only be shown with the skin equipped.           |
+| Arabian's cape               |      |         | This cape was made for the Arabian skin included in theBattle & Beasts 2 Skin Packand could only be shown with the skin equipped.         |
+| Halo Drone's cape            |      |         | This cape was made for the Halo Drone skin included in theHalo Mash-Upand could only be shown with the skin equipped.                     |
+| Jens's cape                  |      |         | This cape was made forJensincluded in the3rd Birthday Skin Packand could only be shown with the skin equipped.                            |
+
+### MINECON skin pack capes
+| Name      | Cape | Texture | Notes                                                                                                                                                                                                                                                                                                                                |
+|-----------|------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cape 2011 |      |         | These capes from previous years'MINECONevents were included in theMinecon 2015 Skin Pack. The skin pack was made available to everyBedrock Editionplayer in 2015 regardless of whether they attended any of the events. These capes arenotto be confused with the ones given toMINECONattendees inJava Editionin the previous years. |
+| Cape 2012 |      |         |                                                                                                                                                                                                                                                                                                                                      |
+| Cape 2013 |      |         |                                                                                                                                                                                                                                                                                                                                      |
+| Cape 2015 |      |         |                                                                                                                                                                                                                                                                                                                                      |
+
+| Name      | Cape | Texture | Notes                                                                                                                                                                                                                                                                                                                                |
+|-----------|------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cape 2011 |      |         | These capes from previous years'MINECONevents were included in theMinecon 2016 Skin Pack. The skin pack was made available to everyBedrock Editionplayer in 2016 regardless of whether they attended any of the events. These capes arenotto be confused with the ones given toMINECONattendees inJava Editionin the previous years. |
+| Cape 2012 |      |         |                                                                                                                                                                                                                                                                                                                                      |
+| Cape 2013 |      |         |                                                                                                                                                                                                                                                                                                                                      |
+| Cape 2015 |      |         |                                                                                                                                                                                                                                                                                                                                      |
+| Cape 2016 |      |         |                                                                                                                                                                                                                                                                                                                                      |
+

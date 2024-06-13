@@ -1,0 +1,1 @@
+This function automates the process of crafting an iron pickaxe by first smelting raw iron, collecting required items if necessary, crafting a crafting table if not already in inventory, placing the crafting table, and then using it to craft the iron pickaxe.

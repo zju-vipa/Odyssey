@@ -1,0 +1,1 @@
+This function crafts a gold block by first ensuring the bot has enough raw gold, then crafting a crafting table if necessary, placing the table, and finally crafting the gold block using the table.

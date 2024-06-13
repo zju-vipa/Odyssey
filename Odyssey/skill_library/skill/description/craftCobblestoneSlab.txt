@@ -1,0 +1,1 @@
+This function crafts cobblestone slabs by checking for cobblestones and crafting table in the inventory, collecting more cobblestones if needed, crafting a table if necessary, placing it near the bot, and then crafting the slabs using the table.

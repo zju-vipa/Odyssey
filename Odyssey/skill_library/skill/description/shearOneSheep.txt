@@ -1,0 +1,1 @@
+This function equips shears, finds the nearest sheep, moves towards it, uses the shears on the sheep, and then collects the dropped items.

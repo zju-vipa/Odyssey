@@ -1,0 +1,1 @@
+Equips an iron pickaxe if available, otherwise equips a stone pickaxe or crafts one if neither is available, then explores until an amethyst cluster ore is found within a 32-block radius and mines it.

@@ -1,0 +1,1 @@
+This function ensures the bot has enough amethyst shards by mining more if necessary, then crafts a crafting table if it doesn't have one, places it nearby, and finally uses it to craft an amethyst block.

@@ -1,0 +1,323 @@
+### Minecraft: Story Mode
+See also: Minecraft Story Mode:Characters
+
+- Aiden
+- Announcer
+- Anthony
+- Archie(parrot)
+- Axel
+- Batsy(bat)
+- Benedict(chicken)
+- Big Hank(prison golem)
+- Binta
+- Blocco(wolf)
+- File:BobFace.pngBob
+- File:BrickFace.pngBrick
+- Calvin
+- File:CamFace.pngCam
+- Capital T
+- Captain Sparklez
+- File:CarmineFace.pngCarmine
+- Cassie Rose
+- Clutch
+- Death Bowl Announcer
+- Dewey(ocelot)
+- Deejay
+- Disco Mickey
+- Ellegaard
+- Emily
+- Esteban(pig)
+- Facemeat
+- Fanboy
+- File:FangirlFace.pngFangirl
+- Farmer Gloria
+- File:FredFace.pngFred
+- Gabriel
+- Geoff(mooshroom)
+- Giant Enderman
+- Gill
+- Hadrian
+- Harper
+- Harry
+- Henchman
+- File:HerzogFace.pngHerzog
+- File:HildaFace.pngHilda
+- Isa
+- Ivor
+- Ivy
+- Jack
+- Jens
+- Jesse
+- File:KentFace.pngKent
+- Large Henry(prison golem)
+- File:LawrenceFace.pngLawrence
+- LDShadowLady
+- Lluna(llama)
+- Lord von Thunderpork VI(pig)
+- Lukas
+- Lydia
+- Mabel
+- Magnus
+- Maya
+- Mevia
+- Milo
+- Narrator
+- Nell
+- Nohr
+- Nurm(villager)
+- Old Farmer Man
+- Olivia
+- Otis
+- Otto
+- Owen
+- Oxblood
+- PAMA(computer)
+- Petra
+- Phillipe
+- File:PorkChopFace.pngPorkChop (Character)
+- File:RadarFace.pngRadar
+- File:ReginaldFace.pngReginald
+- Reuben (Human)
+- Reuben(pig)
+- File:RobFace.pngRob
+- File:RodrigoFace.pngRodrigo
+- File:RomeoFace.pngRomeo
+- File:SammyFace.pngSammy
+- Sandy
+- Schoolboy
+- Sebastian
+- Sigge
+- Slab
+- Smushy Cutecheeks(pig)
+- Soren
+- File:SoupFace.pngSoup
+- File:StacyPlaysFace.pngStacy Plays
+- Stampy Cat
+- Stella
+- File:TerryFace.pngTerry
+- TheDiamondMinecart
+- The Warden
+- TNT Dustin
+- TorqueDawg
+- File:ValFace.pngVal
+- File:VosFace.pngVos
+- Waffles(chicken)
+- File:WandaFace.pngWanda
+- White Pumpkin
+- File:WillyFace.pngWilly
+- Wink(wolf)
+- Winslow(cat)
+- File:XaraFace.pngXara
+
+### Minecraft Dungeons
+See also: Minecraft Dungeons:Characters
+
+- Abominable Weaver(Animal)
+- Abyssal Eye(Aquatic)
+- Hedwig(Hero)
+- Alex(Hero)
+- Ancient Guardian(Aquatic)
+- Ancient Terror(Undead)
+- Annika(Hero)
+- Archie(Illager)
+- Archeologist(Hero)
+- Baako(Hero)
+- Barbarian(Hero)
+- Barrage(Undead)
+- Bediako(Hero)
+	- Ebo(Arcade)
+- Binding Eye(Ender)
+- Black Ocelot(Animal)
+- Blacksmith(Hero)
+- Black Wolf(Animal)
+- Blight Eye(Ender)
+- Christina(Hero)
+- Cloudwatcher(Hero)
+- Corrupted Cauldron(Golem)
+- Corrupted Defender(Hero)
+- Cursed Presence(Undead)
+- Dani(Hero)
+- Darian(Hero)
+- DungeonsEntitySprite distinguished-general.png: Sprite image for distinguished-general in Minecraft linking to MCD:Distinguished GeneralDistinguished General(Illager)
+- Elaine(Hero)
+- Emerald(Hero)
+- End Rogue(Unusedhero)
+- Enderling(Hero)
+- Eponymous Squid(Animal)
+- Eshe(Hero)
+- Esperanza(Hero)
+- Explorer(Hero)
+- First Enchanter(Illager)
+- Frisk(Heroinarcade)
+- Frostwarden(Illager)
+- Frosty(Hero)
+- Fuego(Hero)
+- Greta(Hero)
+- Grim Guardian(Undead)
+- Hal(Hero)
+- Haunted Caller(Undead)
+- Heart of Ender(Ender)
+- Hex(Hero)
+- High-Flyer(Hero)
+- Imperfect Heart of Ender(Ender)
+- Jade(Hero)
+	- Ivy(Arcade)
+- Jailor(Illager)
+- Jungle Abomination(Natural)
+- Karl(Hero)
+- Keeper(Hero)
+- Kelptomaniac(Hero)
+- Knight(Hero)
+- Llama(Hero)
+- Loge(Hero)
+- Mayeso(Hero)
+- DungeonsEntitySprite miner.png: Sprite image for miner in Minecraft linking to MCD:MinerMiner
+- Mobbo(Hero)
+- Monumental(Hero)
+- Mooshroom Monstrosity(Golem)
+- Morris(Hero)
+- Nameless One(Undead)
+- Neo(Hero)
+	- Meadow(Arcade)
+- Nether Warrior(Unusedhero)
+- Nuru(Hero)
+- Orb of Dominance(Ender)
+- Pake(Hero pass)
+- Pestilent Conjurer
+- Pride(Hero)
+- Qamar(Hero)
+- Rampart Captain(Illager)
+- Ravenous Eye(Ender)
+- Reaping Eye(Ender)
+- Redstone Monstrosity(Golem)
+- Salah(Villager)
+- Sam(Hero)
+- Savage Eye(Ender)
+- Scuttling Torment(Animal)
+- Sergey(Hero)
+- Shikoba(Hero)
+	- Elan(Arcade)
+- Skelly(Hero)
+- Solemn Giant(Illager)
+- Spiked Eye(Ender)
+- Steve(Hero)
+- Strider Warrior(Hero)
+- Sven(Hero)
+- Tempest Golem(Golem)
+- The Seeking Flame
+- The Swarm(Enderling)
+- The Tower(Undead)
+- The Unending(Golem)
+- Thord(Illager)
+- Thundering Growth(Natural)
+- Tim(Hero)
+- Tower Avatar
+- Unbreakable One(Golem)
+- Unstoppable Tusk(Animal)
+- Valorie(Hero)
+- Vengeful Heart of Ender(Ender)
+- Vengeful Mariner(Undead)
+- Vigilant Scoundrel(Illager)
+- Violet(Hero)
+- Void Voyager(Hero)
+- Walda(Illager)
+- Wargen(Hero pass)
+- Warrior
+- Watcher of The End(Enderling)
+- Warden(Illager)
+- Windbeard(Animal)
+- Winter Warrior(Hero)
+- Wretched Wraith(Undead)
+- Yumi(Villager)
+- Zola(Hero)
+
+### Minecraft Earth
+- Merl
+- Peanut Butter(Animal)
+
+### Minecraft Legends
+See also: Minecraft Legends:Character
+
+- Action(Host)
+- Ancient Hoglin(Piglin)
+- LegendsEntitySprite the-crucible.png: Sprite image for the-crucible in Minecraft linking to MCL:The CrucibleThe Crucible(Hero)
+- LegendsEntitySprite farnum.png: Sprite image for farnum in Minecraft linking to MCL:FarnumFarnum(Hero)
+- Fireforged Hero(Hero)
+- Foresight(Host)
+- Forest Adventurer(Hero)
+- Forest Champion(Hero)
+- Forest Guardian(Hero)
+- Forest Magus(Hero)
+- Forest Ranger(Hero)
+- LegendsEntitySprite great-bungus.png: Sprite image for great-bungus in Minecraft linking to MCL:Great BungusGreat Bungus(Piglin)
+- LegendsEntitySprite great-grungert.png: Sprite image for great-grungert in Minecraft linking to MCL:Great GrungertGreat Grungert(Piglin)
+- LegendsEntitySprite great-kritten.png: Sprite image for great-kritten in Minecraft linking to MCL:Great KrittenGreat Kritten(Piglin)
+- LegendsEntitySprite great-uggub.png: Sprite image for great-uggub in Minecraft linking to MCL:Great UggubGreat Uggub(Piglin)
+- LegendsEntitySprite grinchard.png: Sprite image for grinchard in Minecraft linking to MCL:GrinchardGrinchard(Hero)
+- Haute Desert Guardian(Hero)
+- Knowledge(Host)
+- Lava Warrior(Hero)
+- Meadow Guardian(Hero)
+- LegendsEntitySprite messenger-piglin.png: Sprite image for messenger-piglin in Minecraft linking to MCL:Messenger PiglinMessenger Piglin(Piglin)
+- LegendsEntitySprite mycra.png: Sprite image for mycra in Minecraft linking to MCL:MycraMycra(Hero)
+- Phantom Ranger(Hero)
+- LegendsEntitySprite piglin-pursuer.png: Sprite image for piglin-pursuer in Minecraft linking to MCL:Piglin PursuerPiglin Pursuer(Hero)
+- Portal Buster(Hero)
+- LegendsEntitySprite reynard.png: Sprite image for reynard in Minecraft linking to MCL:ReynardReynard(Animal)
+- RGB Ranger(Hero)
+- Steampunk Magus(Hero)
+- Strikingly Sneaky Ranger(Hero)
+- The Beast(Piglin)
+- The Devourer(Piglin)
+- The Great Hog(Piglin)
+- LegendsEntitySprite the-seer.png: Sprite image for the-seer in Minecraft linking to MCL:The SeerThe Seer(Piglin)
+- The Unbreakable(Piglin)
+- LegendsEntitySprite unidentified-injured-piglin.png: Sprite image for unidentified-injured-piglin in Minecraft linking to MCL:Unidentified injured piglinUnidentified injured piglin(Piglin)
+
+## Book characters
+### Minecraft: Mobestiary
+- Naturalist
+
+### Minecraft Books by Max Brooks
+- Guy(Minecraft: The Island,Minecraft: The Mountain,andMinecraft: The Village)
+- Summer(Minecraft: The MountainandMinecraft: The Village)
+- Moo(Minecraft: The Island)
+- Flint(Minecraft: The Island)
+- Cloud(Minecraft: The Island)
+- Rainy(Minecraft: The Island)
+
+### Minecraft: The Crash
+- Anton
+- Bianca
+- Esme
+- Lonnie
+
+### Minecraft: The Lost Journals
+- Alison
+- Alison's dad
+- Bunny Biter(wolf)
+- Dia
+- Freya
+- Leocadia Stiefel
+- Max
+- Max's mom
+- Mr. Hatch
+- Nicholas
+- Robert
+
+### 
+#### 
+- Aiden (Dark Horse Comics)
+- Candace
+- Cleo
+- Ethan
+- Evan
+- Evan’s mother
+- Grace
+- Ms. Collins
+- Pips
+- Rus
+- Stef
+- Tobi
+- Tyler
+

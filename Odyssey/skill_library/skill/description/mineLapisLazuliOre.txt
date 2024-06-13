@@ -1,0 +1,1 @@
+Equips an iron or stone pickaxe, then explores the surroundings to find a lapis lazuli ore block within a 32-block radius, and finally mines the found ore block.

@@ -1,0 +1,1 @@
+This function searches for a shield in the bot's inventory, and if found, equips it in the off-hand slot, otherwise it doesn't perform any action.

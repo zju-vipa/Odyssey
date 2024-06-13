@@ -1,0 +1,1 @@
+This function crafts cut sandstone by collecting sandstone from the player's inventory if necessary, then crafting the item, and finally updating the player's inventory.

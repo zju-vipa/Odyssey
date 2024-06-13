@@ -1,0 +1,1 @@
+This function ensures the necessary items are available to cook beef, crafting a furnace and mining coal if needed, and then killing a cow to obtain beef if it's not already in the inventory, before finally cooking the beef.

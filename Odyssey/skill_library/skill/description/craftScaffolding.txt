@@ -1,0 +1,1 @@
+This function crafts scaffolding by collecting bamboos and strings, crafting a crafting table if necessary, and then crafting the scaffolding itself, placing it at a suitable position.

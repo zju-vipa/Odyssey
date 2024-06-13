@@ -1,0 +1,1 @@
+This function equips an axe, searches for melon blocks within a 32-block radius, and if found, mines one of them.

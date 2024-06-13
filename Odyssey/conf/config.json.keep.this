@@ -1,0 +1,6 @@
+{
+    "api_key": "sk-xxx",
+    "server_host": "ip",
+    "server_port": "port",
+    "NODE_SERVER_PORT": 3000
+}

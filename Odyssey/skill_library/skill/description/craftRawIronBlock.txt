@@ -1,0 +1,1 @@
+This function crafts a raw iron block by ensuring the bot has enough raw iron, crafting a crafting table if necessary, placing the table, and then crafting the block using the table.

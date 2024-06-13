@@ -1,0 +1,1 @@
+This function checks for a furnace and coal in the inventory, crafts a furnace if needed, places it near the bot, and then uses the available coal to smelt all raw iron in the inventory.

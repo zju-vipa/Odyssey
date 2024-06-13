@@ -1,0 +1,1 @@
+This function crafts a compass by smelting iron ingots, mining redstone ore if necessary, crafting a crafting table if it's not in the inventory, and then crafting the compass itself using the crafting table.

@@ -1,0 +1,1 @@
+This function crafts a spyglass by first smelting all raw copper, then mining and smelting copper ores until it has enough copper ingots, mining an amethyst cluster if necessary, crafting a crafting table if it's not already in the inventory, placing the crafting table near the bot, and finally crafting the spyglass using the crafting table.

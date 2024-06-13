@@ -1,0 +1,1 @@
+This function searches for ripe wheat within a 32-block radius, navigates to the found wheat, and then digs it up.

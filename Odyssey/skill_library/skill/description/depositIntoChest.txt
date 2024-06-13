@@ -1,0 +1,1 @@
+This function deposits non-iron and non-diamond items from the bot's inventory into a chest at a specified position, using a placed chest as a deposit location.

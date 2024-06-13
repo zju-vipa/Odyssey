@@ -1,0 +1,1 @@
+This function crafts cobblestone stairs by collecting cobblestones if necessary, crafting a crafting table if needed, placing the table near the bot, and then crafting the stairs using the table.

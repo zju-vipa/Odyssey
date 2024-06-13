@@ -1,0 +1,1 @@
+This function searches for grass blocks within a 32-block radius, mines 10 of them, and repeats the process until it collects new wheat seeds, which are then counted and stored in the inventory.

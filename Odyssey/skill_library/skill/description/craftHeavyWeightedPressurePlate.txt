@@ -1,0 +1,1 @@
+This function crafts a heavy weighted pressure plate by smelting all raw iron, mining and smelting iron ores if necessary, and then crafting the plate.

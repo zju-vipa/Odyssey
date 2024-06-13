@@ -1,0 +1,1 @@
+This function checks for a furnace and coal in the inventory, crafts or mines them if necessary, places the furnace, and then uses the available coal to smelt all raw gold in the inventory.

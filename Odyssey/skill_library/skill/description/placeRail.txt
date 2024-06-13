@@ -1,0 +1,1 @@
+This function searches for rails in the inventory, and if found, places one at the current entity position.

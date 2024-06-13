@@ -1,0 +1,9 @@
+{
+    "CUDA_VISIBLE_DEVICES": "0,1,2,3,4,5",
+    "models":{
+        "llama3_8b_v3": "/home/jovyan/notebook/39newllama/Minema-3-8b-v3",
+        "llama3_8b": "/home/jovyan/notebook/LLAMA-3-8B",
+        "llama3_70b_v1": "/home/jovyan/notebook/39newllama/Minema-3-70b"
+    },
+    "port": 9999
+}

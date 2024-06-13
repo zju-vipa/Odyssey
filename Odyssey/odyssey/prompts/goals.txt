@@ -1,0 +1,26 @@
+You are required to evaluate if I have met the goal requirements in Minecraft. Exceeding the goal requirements is also considered a success.
+        
+I'll give you:
+
+My completed task: ...
+My failed task: ...
+My ultimate goal: ...
+
+You should only respond in JSON format as described below:
+{
+    "reasoning": "reasoning",
+    "success": boolean
+}
+Ensure the response can be parsed by Python `json.loads`, e.g.: no trailing commas, no single quotes, etc.
+
+Here are some examples:
+INPUT:
+My completed task: grow wheat, get cow, collect milk
+My failed task: None
+My ultimate goal: Collect milk.
+
+RESPONSE:
+{
+    "reasoning": "Your goal is to collect milk, this has in your completed task.",
+    "success": true
+}

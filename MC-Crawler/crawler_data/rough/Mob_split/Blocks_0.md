@@ -1,0 +1,948 @@
+# Block
+Blocks are the basic units of structure in Minecraft that make up the game's world. Many blocks can be collected and placed anywhere in the game's world, as well as be used as helpful resources.
+
+## Contents
+- 1 Behavior
+- 2 Block height
+- 3 Textures
+- 4 List of blocks
+	- 4.1 Technical blocks
+	- 4.2 Education Edition Exclusive
+		- 4.2.1 Outright removed blocks
+		- 4.2.2 Removed through substitution
+		- 4.2.3 Extreme metadata variants
+	- 4.3 Joke blocks
+- 5 Videos
+- 6 History
+	- 6.1 Block additions and removals
+	- 6.2 Other changes
+	- 6.3 April Fools blocks
+- 7 Issues
+- 8 Trivia
+- 9 Gallery
+	- 9.1 Screenshots
+- 10 See also
+- 11 References
+
+## Behavior
+A variety of different blocks occurring in an underwater coral reef; sand can be seen lining the ground, cut sandstone in underwater ruin structures and various forms of coral.
+Blocks are arranged in a 3-dimensional grid of 1-cubic-meter cells, although some blocks appear to occupy a partial cell; these include slabs, snow layers, ladders, vines, stairs, turtle eggs, sea pickles and others.
+
+Together, blocks and fluids build up the in-game environment, and most can be harvested and utilized in various fashions. Some blocks, such as dirt and sandstone, are opaque and occupy their entire cubic meter, while other blocks, such as glass and flowers, are transparent or non-solid. Explosions destroy some blocks more easily than they destroy others. Some blocks are completely immune to explosions.
+
+Air is a special block. It is an unbreakable transparent block, as a substitute for the absence of blocks. It has two variants: cave air and void air‌[Java Edition  only].
+
+Some blocks, such as sea lantern and glowstone, emit light. The amount of light they emit varies widely; see this table of light values for further information. Opaque blocks completely block light, while transparent blocks can have no effect on light, block the light, or merely weaken it.
+
+Almost all blocks ignore gravity, except for sand, red sand, gravel, anvils of all damage levels, dragon eggs, all colors of concrete powder, scaffolding, snow layers‌[BE  only], pointed dripstone, suspicious sand, and suspicious gravel. These turn into entities when their support is removed.
+
+When broken, blocks emit sounds and particles associated with themselves, except in the following cases:
+
+- When the block is removed by apiston.[1]
+- If the block is affected by gravity and falls into an invalid space (If the block is gravity based and drops from a torch, for example).[2]
+- Anvilsthat are destroyed by running out of durability or falling. Only particles are missing.[3]
+- If the block can be washed away and is washed away by a flowing fluid.[4]
+- If the block can be replaced by other blocks and is replaced.[5]
+- If the block is one of a few blocks such as rails or redstone wire, supported by another block and its supporting block is removed.[6]
+- If the block isleavesand decays.[7]
+
+## Block height
+Main article: Solid block § Height
+Most solid blocks are 1 meter high (3.28084... feet or 1250⁄381 feet), but several blocks have non-standard block heights, such as slabs.
+
+A player can automatically step up from a lower to a higher height if the difference is at most 0.6 (3⁄5) of a block or 1.9685... feet (250⁄127 feet).
+
+## Textures
+The textures on the faces of blocks are 16×16 pixels. Most blocks are proportionately one cubic meter by default, but their shape can be changed using models.
+
+Most blocks have static textures, but these blocks are animated: water, lava, nether portal, end portal, end gateway, prismarine (slab; stairs; wall), sea lantern, magma block, seagrass, kelp, fire, lantern, lit campfire and their soul variants, lit blast furnace, heat block‌[BE & edu  only], stems, hyphae, lit smoker, stonecutter, sculk, sculk shrieker, sculk sensor, calibrated sculk sensor, sculk vein, and command block.
+
+Players can change their textures by changing their files ingame. The following explains how. In the menu, go to "Options", then select the "Resource Pack" option. Two panels appear: "Available" and "Selected" (the Default resource pack should be under "Selected").
+
+- If there is any resource pack under "Available", drag it into "Selected", then click "Done". The resource pack should be active in a few moments.
+- If there is none, click "Open File". This redirects you to the game directory. If you have a file or folder containing the resource pack, move it here. Go back to the game, exit the menu, and then enter to the "Resource Pack" option again. Your file should now be there. Drag it as described in the first point above.
+
+Using resource packs, the player can change the textures and resolution of blocks, including whether their texture is animated. They can also change the shapes of blocks using models and the size of blocks to any size with equal width and height, though sizes that are a power of two tend to work better
+
+## List of blocks
+- Acacia Button
+- Acacia Door
+- Acacia Fence
+- Acacia Fence Gate
+- Acacia Hanging Sign
+- Acacia Leaves
+- Acacia Log
+- Acacia Planks
+- Acacia Pressure Plate
+- Acacia Sapling
+- Acacia Sign
+- Acacia Slab
+- Acacia Stairs
+- Acacia Trapdoor
+- Acacia Wood
+- Activator Rail
+- Allium
+- Amethyst Cluster
+- Ancient Debris
+- Andesite
+- Andesite Slab
+- Andesite Stairs
+- Andesite Wall
+- Anvil
+- Azalea
+- Azalea Leaves
+- Azure Bluet
+- Bamboo
+- Bamboo Button
+- Bamboo Door
+- Bamboo Fence
+- Bamboo Fence Gate
+- Bamboo Hanging Sign
+- Bamboo Mosaic
+- Bamboo Mosaic Slab
+- Bamboo Mosaic Stairs
+- Bamboo Planks
+- Bamboo Pressure Plate
+- Bamboo Shoot
+- Bamboo Sign
+- Bamboo Slab
+- Bamboo Stairs
+- Bamboo Trapdoor
+- Barrel
+- Barrier
+- Basalt
+- Beacon
+- Bedrock
+- Bee Nest
+- Beehive
+- Beetroots
+- Bell
+- Big Dripleaf
+- Birch Button
+- Birch Door
+- Birch Fence
+- Birch Fence Gate
+- Birch Hanging Sign
+- Birch Leaves
+- Birch Log
+- Birch Planks
+- Birch Pressure Plate
+- Birch Sapling
+- Birch Sign
+- Birch Slab
+- Birch Stairs
+- Birch Trapdoor
+- Birch Wood
+- Black Banner
+- Black Bed
+- Black Candle
+- Black Carpet
+- Black Concrete
+- Black Concrete Powder
+- Black Glazed Terracotta
+- Black Shulker Box
+- Black Stained Glass
+- Black Stained Glass Pane
+- Black Terracotta
+- Black Wool
+- Blackstone
+- Blackstone Slab
+- Blackstone Stairs
+- Blackstone Wall
+- Blast Furnace
+- Block of Amethyst
+- Block of Bamboo
+- Block of Coal
+- Block of Copper
+- Block of Diamond
+- Block of Emerald
+- Block of Gold
+- Block of Iron
+- Block of Lapis Lazuli
+- Block of Netherite
+- Block of Quartz
+- Block of Raw Copper
+- Block of Raw Gold
+- Block of Raw Iron
+- Block of Redstone
+- Block of Stripped Bamboo
+- Blue Banner
+- Blue Bed
+- Blue Candle
+- Blue Carpet
+- Blue Concrete
+- Blue Concrete Powder
+- Blue Glazed Terracotta
+- Blue Ice
+- Blue Orchid
+- Blue Shulker Box
+- Blue Stained Glass
+- Blue Stained Glass Pane
+- Blue Terracotta
+- Blue Wool
+- Bone Block
+- Bookshelf
+- Brain Coral
+- Brain Coral Block
+- Brain Coral Fan
+- Brewing Stand
+- Brick Slab
+- Brick Stairs
+- Brick Wall
+- Bricks
+- Brown Banner
+- Brown Bed
+- Brown Candle
+- Brown Carpet
+- Brown Concrete
+- Brown Concrete Powder
+- Brown Glazed Terracotta
+- Brown Mushroom
+- Brown Mushroom Block
+- Brown Shulker Box
+- Brown Stained Glass
+- Brown Stained Glass Pane
+- Brown Terracotta
+- Brown Wool
+- Bubble Coral
+- Bubble Coral Block
+- Bubble Coral Fan
+- Budding Amethyst
+- Cactus
+- Cake
+- Calcite
+- Calibrated Sculk Sensor
+- Campfire
+- Candle
+- Carrots
+- Cartography Table
+- Carved Pumpkin
+- Cauldron
+- Cave Vines
+- Chain
+- Chain Command Block
+- Chest
+- Cherry Button
+- Cherry Door
+- Cherry Fence
+- Cherry Fence Gate
+- Cherry Hanging Sign
+- Cherry Leaves
+- Cherry Log
+- Cherry Planks
+- Cherry Pressure Plate
+- Cherry Sapling
+- Cherry Sign
+- Cherry Slab
+- Cherry Stairs
+- Cherry Trapdoor
+- Cherry Wood
+- Chipped Anvil
+- Chiseled Bookshelf
+- Chiseled Deepslate
+- Chiseled Nether Bricks
+- Chiseled Polished Blackstone
+- Chiseled Quartz Block
+- Chiseled Red Sandstone
+- Chiseled Sandstone
+- Chiseled Stone Bricks
+- Chorus Flower
+- Chorus Plant (block)
+- Clay
+- Coal Ore
+- Coarse Dirt
+- Cobbled Deepslate
+- Cobbled Deepslate Slab
+- Cobbled Deepslate Stairs
+- Cobbled Deepslate Wall
+- Cobblestone
+- Cobblestone Slab
+- Cobblestone Stairs
+- Cobblestone Wall
+- Cobweb
+- Cocoa
+- Command Block
+- Composter
+- Conduit
+- Copper Ore
+- Cornflower
+- Cracked Deepslate Bricks
+- Cracked Deepslate Tiles
+- Cracked Nether Bricks
+- Cracked Polished Blackstone Bricks
+- Cracked Stone Bricks
+- Crafter‌[upcoming: JE 1.21 & BE 1.21.0]
+- Crafting Table
+- Creeper Head
+- Crimson Button
+- Crimson Door
+- Crimson Fence
+- Crimson Fence Gate
+- Crimson Fungus
+- Crimson Hanging Sign
+- Crimson Hyphae
+- Crimson Nylium
+- Crimson Planks
+- Crimson Pressure Plate
+- Crimson Roots
+- Crimson Sign
+- Crimson Slab
+- Crimson Stairs
+- Crimson Stem
+- Crimson Trapdoor
+- Crying Obsidian
+- Cut Copper
+- Cut Copper Slab
+- Cut Copper Stairs
+- Cut Red Sandstone
+- Cut Red Sandstone Slab
+- Cut Sandstone
+- Cut Sandstone Slab
+- Cyan Banner
+- Cyan Bed
+- Cyan Candle
+- Cyan Carpet
+- Cyan Concrete
+- Cyan Concrete Powder
+- Cyan Glazed Terracotta
+- Cyan Shulker Box
+- Cyan Stained Glass
+- Cyan Stained Glass Pane
+- Cyan Terracotta
+- Cyan Wool
+- Damaged Anvil
+- Dandelion
+- Dark Oak Button
+- Dark Oak Door
+- Dark Oak Fence
+- Dark Oak Fence Gate
+- Dark Oak Hanging Sign
+- Dark Oak Leaves
+- Dark Oak Log
+- Dark Oak Planks
+- Dark Oak Pressure Plate
+- Dark Oak Sapling
+- Dark Oak Sign
+- Dark Oak Slab
+- Dark Oak Stairs
+- Dark Oak Trapdoor
+- Dark Oak Wood
+- Dark Prismarine
+- Dark Prismarine Slab
+- Dark Prismarine Stairs
+- Daylight Detector
+- Dead Brain Coral
+- Dead Brain Coral Block
+- Dead Brain Coral Fan
+- Dead Bubble Coral
+- Dead Bubble Coral Block
+- Dead Bubble Coral Fan
+- Dead Bush
+- Dead Fire Coral
+- Dead Fire Coral Block
+- Dead Fire Coral Fan
+- Dead Horn Coral
+- Dead Horn Coral Block
+- Dead Horn Coral Fan
+- Dead Tube Coral
+- Dead Tube Coral Block
+- Dead Tube Coral Fan
+- Decorated Pot
+- Deepslate
+- Deepslate Bricks
+- Deepslate Brick Slab
+- Deepslate Brick Stairs
+- Deepslate Brick Wall
+- Deepslate Coal Ore
+- Deepslate Copper Ore
+- Deepslate Diamond Ore
+- Deepslate Emerald Ore
+- Deepslate Gold Ore
+- Deepslate Iron Ore
+- Deepslate Lapis Lazuli Ore
+- Deepslate Redstone Ore
+- Deepslate Tiles
+- Deepslate Tile Slab
+- Deepslate Tile Stairs
+- Deepslate Tile Wall
+- Detector Rail
+- Diamond Ore
+- Diorite
+- Diorite Slab
+- Diorite Stairs
+- Diorite Wall
+- Dirt
+- Dirt Path
+- Dispenser
+- Dragon Egg
+- Dragon Head
+- Dried Kelp Block
+- Dripstone Block
+- Dropper
+- Emerald Ore
+- Enchanting Table
+- End Portal Frame
+- End Rod
+- End Stone
+- End Stone Brick Slab
+- End Stone Brick Stairs
+- End Stone Brick Wall
+- End Stone Bricks
+- Ender Chest
+- Exposed Copper
+- Exposed Cut Copper
+- Exposed Cut Copper Slab
+- Exposed Cut Copper Stairs
+- Farmland
+- Fern
+- Fire
+- Fire Coral
+- Fire Coral Block
+- Fire Coral Fan
+- Fletching Table
+- Flower Pot
+- Flowering Azalea
+- Flowering Azalea Leaves
+- Frogspawn
+- Furnace
+- Gilded Blackstone
+- Glass
+- Glass Pane
+- Glow Item Frame(As a block)‌[BE  only]
+- Glow Lichen
+- Glowstone
+- Gold Ore
+- Granite
+- Granite Slab
+- Granite Stairs
+- Granite Wall
+- Grass Block
+- Gravel
+- Gray Banner
+- Gray Bed
+- Gray Candle
+- Gray Carpet
+- Gray Concrete
+- Gray Concrete Powder
+- Gray Glazed Terracotta
+- Gray Shulker Box
+- Gray Stained Glass
+- Gray Stained Glass Pane
+- Gray Terracotta
+- Gray Wool
+- Green Banner
+- Green Bed
+- Green Candle
+- Green Carpet
+- Green Concrete
+- Green Concrete Powder
+- Green Glazed Terracotta
+- Green Shulker Box
+- Green Stained Glass
+- Green Stained Glass Pane
+- Green Terracotta
+- Green Wool
+- Grindstone
+- Hanging Roots
+- Hay Bale
+- Heavy Weighted Pressure Plate
+- Honey Block
+- Honeycomb Block
+- Hopper
+- Horn Coral
+- Horn Coral Block
+- Horn Coral Fan
+- Ice
+- Infested Chiseled Stone Bricks
+- Infested Cobblestone
+- Infested Cracked Stone Bricks
+- Infested Deepslate
+- Infested Mossy Stone Bricks
+- Infested Stone
+- Infested Stone Bricks
+- Iron Bars
+- Iron Door
+- Iron Ore
+- Iron Trapdoor
+- Item Frame(as a block)‌[BE  only]
+- Jack o'Lantern
+- Jigsaw Block
+- Jukebox
+- Jungle Button
+- Jungle Door
+- Jungle Fence
+- Jungle Fence Gate
+- Jungle Hanging Sign
+- Jungle Leaves
+- Jungle Log
+- Jungle Planks
+- Jungle Pressure Plate
+- Jungle Sapling
+- Jungle Sign
+- Jungle Slab
+- Jungle Stairs
+- Jungle Trapdoor
+- Jungle Wood
+- Kelp
+- Ladder
+- Lantern
+- Lapis Lazuli Ore
+- Large Amethyst Bud
+- Large Fern
+- Lava
+- Lectern
+- Lever
+- Light Block
+- Light Blue Banner
+- Light Blue Bed
+- Light Blue Candle
+- Light Blue Carpet
+- Light Blue Concrete
+- Light Blue Concrete Powder
+- Light Blue Glazed Terracotta
+- Light Blue Shulker Box
+- Light Blue Stained Glass
+- Light Blue Stained Glass Pane
+- Light Blue Terracotta
+- Light Blue Wool
+- Light Gray Banner
+- Light Gray Bed
+- Light Gray Candle
+- Light Gray Carpet
+- Light Gray Concrete
+- Light Gray Concrete Powder
+- Light Gray Glazed Terracotta
+- Light Gray Shulker Box
+- Light Gray Stained Glass
+- Light Gray Stained Glass Pane
+- Light Gray Terracotta
+- Light Gray Wool
+- Light Weighted Pressure Plate
+- Lightning Rod
+- Lilac
+- Lily of the Valley
+- Lily Pad
+- Lime Banner
+- Lime Bed
+- Lime Candle
+- Lime Carpet
+- Lime Concrete
+- Lime Concrete Powder
+- Lime Glazed Terracotta
+- Lime Shulker Box
+- Lime Stained Glass
+- Lime Stained Glass Pane
+- Lime Terracotta
+- Lime Wool
+- Lodestone
+- Loom
+- Magenta Banner
+- Magenta Bed
+- Magenta Candle
+- Magenta Carpet
+- Magenta Concrete
+- Magenta Concrete Powder
+- Magenta Glazed Terracotta
+- Magenta Shulker Box
+- Magenta Stained Glass
+- Magenta Stained Glass Pane
+- Magenta Terracotta
+- Magenta Wool
+- Magma Block
+- Mangrove Button
+- Mangrove Door
+- Mangrove Fence
+- Mangrove Fence Gate
+- Mangrove Hanging Sign
+- Mangrove Leaves
+- Mangrove Log
+- Mangrove Pressure Plate
+- Mangrove Propagule
+- Mangrove Planks
+- Mangrove Roots
+- Mangrove Sign
+- Mangrove Slab
+- Mangrove Stairs
+- Mangrove Trapdoor
+- Mangrove Wood
+- Medium Amethyst Bud
+- Melon
+- Melon Stem
+- Monster Spawner
+- Moss Block
+- Moss Carpet
+- Mossy Cobblestone
+- Mossy Cobblestone Slab
+- Mossy Cobblestone Stairs
+- Mossy Cobblestone Wall
+- Mossy Stone Brick Slab
+- Mossy Stone Brick Stairs
+- Mossy Stone Brick Wall
+- Mossy Stone Bricks
+- Mud
+- Mud Brick Slab
+- Mud Brick Stairs
+- Mud Brick Wall
+- Mud Bricks
+- Muddy Mangrove Roots
+- Mushroom Stem
+- Mycelium
+- Nether Brick Fence
+- Nether Brick Slab
+- Nether Brick Stairs
+- Nether Brick Wall
+- Nether Bricks
+- Nether Gold Ore
+- Nether Quartz Ore
+- Nether Sprouts
+- Nether Wart
+- Nether Wart Block
+- Netherrack
+- Note Block
+- Oak Button
+- Oak Door
+- Oak Fence
+- Oak Fence Gate
+- Oak Hanging Sign
+- Oak Leaves
+- Oak Log
+- Oak Planks
+- Oak Pressure Plate
+- Oak Sapling
+- Oak Sign
+- Oak Slab
+- Oak Stairs
+- Oak Trapdoor
+- Oak Wood
+- Observer
+- Obsidian
+- Ochre Froglight
+- Ominous Banner
+- Orange Banner
+- Orange Bed
+- Orange Candle
+- Orange Carpet
+- Orange Concrete
+- Orange Concrete Powder
+- Orange Glazed Terracotta
+- Orange Shulker Box
+- Orange Stained Glass
+- Orange Stained Glass Pane
+- Orange Terracotta
+- Orange Tulip
+- Orange Wool
+- Oxeye Daisy
+- Oxidized Copper
+- Oxidized Cut Copper
+- Oxidized Cut Copper Slab
+- Oxidized Cut Copper Stairs
+- Packed Ice
+- Packed Mud
+- Pearlescent Froglight
+- Peony
+- Petrified Oak Slab
+- Piglin Head
+- Pink Banner
+- Pink Bed
+- Pink Candle
+- Pink Carpet
+- Pink Concrete
+- Pink Concrete Powder
+- Pink Petals
+- Pink Glazed Terracotta
+- Pink Shulker Box
+- Pink Stained Glass
+- Pink Stained Glass Pane
+- Pink Terracotta
+- Pink Tulip
+- Pink Wool
+- Pitcher Crop
+- Pitcher Plant
+- Piston
+- Player Head
+- Podzol
+- Pointed Dripstone
+- Polished Andesite
+- Polished Andesite Slab
+- Polished Andesite Stairs
+- Polished Basalt
+- Polished Blackstone
+- Polished Blackstone Brick Slab
+- Polished Blackstone Brick Stairs
+- Polished Blackstone Brick Wall
+- Polished Blackstone Bricks
+- Polished Blackstone Button
+- Polished Blackstone Pressure Plate
+- Polished Blackstone Slab
+- Polished Blackstone Stairs
+- Polished Blackstone Wall
+- Polished Diorite
+- Polished Diorite Slab
+- Polished Diorite Stairs
+- Polished Granite
+- Polished Granite Slab
+- Polished Granite Stairs
+- Polished Deepslate
+- Polished Deepslate Slab
+- Polished Deepslate Stairs
+- Polished Deepslate Wall
+- Poppy
+- Potatoes
+- Powder Snow
+- Powered Rail
+- Prismarine
+- Prismarine Brick Slab
+- Prismarine Brick Stairs
+- Prismarine Bricks
+- Prismarine Slab
+- Prismarine Stairs
+- Prismarine Wall
+- Pumpkin
+- Pumpkin Stem
+- Purple Banner
+- Purple Bed
+- Purple Candle
+- Purple Carpet
+- Purple Concrete
+- Purple Concrete Powder
+- Purple Glazed Terracotta
+- Purple Shulker Box
+- Purple Stained Glass
+- Purple Stained Glass Pane
+- Purple Terracotta
+- Purple Wool
+- Purpur Block
+- Purpur Pillar
+- Purpur Slab
+- Purpur Stairs
+- Quartz Bricks
+- Quartz Pillar
+- Quartz Slab
+- Quartz Stairs
+- Rail
+- Red Banner
+- Red Bed
+- Red Candle
+- Red Carpet
+- Red Concrete
+- Red Concrete Powder
+- Red Glazed Terracotta
+- Red Mushroom
+- Red Mushroom Block
+- Red Nether Brick Slab
+- Red Nether Brick Stairs
+- Red Nether Brick Wall
+- Red Nether Bricks
+- Red Sand
+- Red Sandstone
+- Red Sandstone Slab
+- Red Sandstone Stairs
+- Red Sandstone Wall
+- Red Shulker Box
+- Red Stained Glass
+- Red Stained Glass Pane
+- Red Terracotta
+- Red Tulip
+- Red Wool
+- Redstone Comparator
+- Redstone Lamp
+- Redstone Ore
+- Redstone Repeater
+- Redstone Torch
+- Redstone Wire
+- Reinforced Deepslate
+- Repeating Command Block
+- Respawn Anchor
+- Rooted Dirt
+- Rose Bush
+- Sand
+- Sandstone
+- Sandstone Slab
+- Sandstone Stairs
+- Sandstone Wall
+- Scaffolding
+- Sculk
+- Sculk Catalyst
+- Sculk Sensor
+- Sculk Shrieker
+- Sculk Vein
+- Sea Lantern
+- Sea Pickle
+- Seagrass
+- Short Grass
+- Shroomlight
+- Shulker Box
+- Skeleton Skull
+- Slime Block
+- Small Amethyst Bud
+- Small Dripleaf
+- Smithing Table
+- Smoker
+- Smooth Basalt
+- Smooth Quartz Block
+- Smooth Quartz Slab
+- Smooth Quartz Stairs
+- Smooth Red Sandstone
+- Smooth Red Sandstone Slab
+- Smooth Red Sandstone Stairs
+- Smooth Sandstone
+- Smooth Sandstone Slab
+- Smooth Sandstone Stairs
+- Smooth Stone
+- Smooth Stone Slab
+- Sniffer Egg
+- Snow
+- Snow Block
+- Soul Campfire
+- Soul Fire
+- Soul Lantern
+- Soul Sand
+- Soul Soil
+- Soul Torch
+- Sponge
+- Spore Blossom
+- Spruce Button
+- Spruce Door
+- Spruce Fence
+- Spruce Fence Gate
+- Spruce Hanging Sign
+- Spruce Leaves
+- Spruce Log
+- Spruce Planks
+- Spruce Pressure Plate
+- Spruce Sapling
+- Spruce Sign
+- Spruce Slab
+- Spruce Stairs
+- Spruce Trapdoor
+- Spruce Wood
+- Sticky Piston
+- Stone
+- Stone Brick Slab
+- Stone Brick Stairs
+- Stone Brick Wall
+- Stone Bricks
+- Stone Button
+- Stone Pressure Plate
+- Stone Slab
+- Stone Stairs
+- Stonecutter
+- Stripped Acacia Log
+- Stripped Acacia Wood
+- Stripped Birch Log
+- Stripped Birch Wood
+- Stripped Cherry Log
+- Stripped Cherry Wood
+- Stripped Crimson Hyphae
+- Stripped Crimson Stem
+- Stripped Dark Oak Log
+- Stripped Dark Oak Wood
+- Stripped Jungle Log
+- Stripped Jungle Wood
+- Stripped Mangrove Log
+- Stripped Mangrove Wood
+- Stripped Oak Log
+- Stripped Oak Wood
+- Stripped Spruce Log
+- Stripped Spruce Wood
+- Stripped Warped Hyphae
+- Stripped Warped Stem
+- Structure Block
+- Structure Void
+- Sugar Cane
+- Sunflower
+- Suspicious Gravel
+- Suspicious Sand
+- Sweet Berry Bush
+- Tall Grass
+- Tall Seagrass
+- Target
+- Terracotta
+- Tinted Glass
+- TNT
+- Torch
+- Torchflower
+- Torchflower Crop
+- Trapped Chest
+- Tripwire
+- Tripwire Hook
+- Tube Coral
+- Tube Coral Block
+- Tube Coral Fan
+- Tuff
+- Turtle Egg
+- Twisting Vines
+- Verdant Froglight
+- Vines
+- Warped Button
+- Warped Door
+- Warped Fence
+- Warped Fence Gate
+- Warped Fungus
+- Warped Hanging Sign
+- Warped Hyphae
+- Warped Nylium
+- Warped Planks
+- Warped Pressure Plate
+- Warped Roots
+- Warped Sign
+- Warped Slab
+- Warped Stairs
+- Warped Stem
+- Warped Trapdoor
+- Warped Wart Block
+- Water
+- Waxed Block of Copper
+- Waxed Cut Copper
+- Waxed Cut Copper Slab
+- Waxed Cut Copper Stairs
+- Waxed Exposed Copper
+- Waxed Exposed Cut Copper
+- Waxed Exposed Cut Copper Slab
+- Waxed Exposed Cut Copper Stairs
+- Waxed Oxidized Copper
+- Waxed Oxidized Cut Copper
+- Waxed Oxidized Cut Copper Slab
+- Waxed Oxidized Cut Copper Stairs
+- Waxed Weathered Copper
+- Waxed Weathered Cut Copper
+- Waxed Weathered Cut Copper Slab
+- Waxed Weathered Cut Copper Stairs
+- Weathered Copper
+- Weathered Cut Copper
+- Weathered Cut Copper Slab
+- Weathered Cut Copper Stairs
+- Weeping Vines
+- Wet Sponge
+- Wheat Crops
+- White Banner
+- White Bed
+- White Candle
+- White Carpet
+- White Concrete
+- White Concrete Powder
+- White Glazed Terracotta
+- White Shulker Box
+- White Stained Glass
+- White Stained Glass Pane
+- White Terracotta
+- White Tulip
+- White Wool
+- Wither Rose
+- Wither Skeleton Skull
+- Yellow Banner
+- Yellow Bed
+- Yellow Candle
+- Yellow Carpet
+- Yellow Concrete
+- Yellow Concrete Powder
+- Yellow Glazed Terracotta
+- Yellow Shulker Box
+- Yellow Stained Glass
+- Yellow Stained Glass Pane
+- Yellow Terracotta
+- Yellow Wool
+- Zombie Head
+
+Blocks with italicized name cannot be obtained in the inventory, although some of them are represented by different items. Flint and steel, as well as fire charges, are used to place fire. Water and lava can be placed with their respective buckets, and blocks such as wheat crops, sweet berry bushes and cocoa have separate inventory items.
+

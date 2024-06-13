@@ -1,0 +1,1 @@
+This function searches for the best available sword in the inventory, prioritizing diamond, iron, stone, and wooden swords, equips the found sword, and if none are available, crafts a wooden sword and equips it.

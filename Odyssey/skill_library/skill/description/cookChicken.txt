@@ -1,0 +1,1 @@
+This function ensures the necessary items are available to cook chicken, crafting a furnace and mining coal if needed, and then killing a chicken if none is available, before proceeding to cook the chicken.

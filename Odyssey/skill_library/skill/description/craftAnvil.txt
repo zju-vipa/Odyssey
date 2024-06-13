@@ -1,0 +1,1 @@
+This function crafts an anvil by smelting iron ores into iron ingots, crafting iron blocks and crafting an anvil using a crafting table, ensuring sufficient iron and crafting table inventory.

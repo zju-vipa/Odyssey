@@ -1,0 +1,1 @@
+This function crafts an iron trapdoor by first smelting all raw iron, then mining and smelting additional iron ores if necessary to have enough iron ingots, and finally crafting the iron trapdoor using the smelted ingots.

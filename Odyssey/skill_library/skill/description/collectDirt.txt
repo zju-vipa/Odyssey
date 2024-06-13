@@ -1,0 +1,1 @@
+This function equips a shovel, searches for 10 dirt blocks within a 32-block radius, and if found, mines them.

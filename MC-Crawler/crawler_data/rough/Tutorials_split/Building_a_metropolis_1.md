@@ -1,0 +1,30 @@
+### Materials
+Main article: Tutorials/Adding beauty to constructions
+Minecraft has a variety of blocks and ornaments you may use. Try to find a color that matches the theme.
+
+## Building up
+Consistency and planning are possibly the two most important things in a build. Planning can be anything from a simple bullet list of materials needed to a full-scale blueprint of all the aspects of the metropolis. It is best if a town can keep its theming, block choices, sizes, and areas somewhat similar between buildings. Make sure that the first buildings and roads are close in size and appearance to how you want the rest of the city to be. Part of a natural city flow are zones--different areas which better fulfill certain needs for town members than other areas. If the player allows the city to develop into zones as it is built, the city appears more natural. Building outward and in zones allows different portions of the metropolis to have a different feel to the builds as different building heights, materials, and the amount of space changes. Planning of where to place and how large to make certain zones should ensure that the build fulfills the needs of any actual or imagined residents of the metropolis. 
+
+### Roads and paths
+An important piece of planning and building a metropolis is the roads. Roads and pathways connect all the buildings and zones together and usually act to keep a sense of order to the space. Generally, larger areas should include more orderly roads while smaller spaces should have rougher, more mixed pathways. The sizes of roads should also differ by area to fit the spacing of buildings. For this reason, roads should generally be created as needed and not used to force buildings to follow their path. Materials such as cobblestone, coal blocks, obsidian, gravel, stone, sandstone, nether bricks, concrete, dirt paths, and terracotta are all popular blocks for roads and paths. Roads can also be decorated with plants, road lines, and lights. Generally, paths should be fairly flat so they can be easily used for quick travel. Adding options for travel along different roads such as minecart rails, ice lanes, or even just fences to tie horses to can increase the efficiency of roads. If you make a tunnel, it should be at least three blocks tall so players riding horses can use it. You should also be able to navigate the roads easily.
+
+### Scale
+You should also consider what scale your city is. A smaller-scale city is faster to build and consumes less resources, but a larger-scale city can be more detailed. In a larger-scale city, it is also possible to construct interiors to the buildings, which is not possible in smaller scale. Make sure to consider the width of roads relative to buildings and other structures. 
+
+### Lighting
+One light source for a metropolis is lampposts. A lamppost can be built with a redstone lamp hooked up to an inverted daylight detector so that the lamp turns on when it gets dark. You can also use a torch, as you can put them in houses. Another indoor lighting trick is to put the light source under carpets. The source of light is hidden from sight, but the light still shines through the carpets.
+
+### Residential zone
+Primarily a metropolis needs to have places for its citizens to live. Generally, these areas should be large, yet organized. Smaller roads, shorter buildings, more greenery, and small blocks keep the area more friendly while the opposite create a larger, busier feel. Most residential areas have houses spaced close together. Some areas may work best with tall apartments. A residential zone usually feels more lively if the player includes a couple of small shops in the area. Some shops can be added as part of a living space. When working with multiple players, it may work best to allow players to build their own housing.
+
+The deeper within the city, the more urbanized the housing generally should be with larger buildings. If the metropolis works well with it, smaller, single housing can make up surrounding suburbs and even further out rural zones can allow large swaths of land to be lived in by a spread out population.
+
+### Commercial zone
+These zones are for trade such as through markets, shops, malls, restaurants, or grocery stores. Trade allows for citizens of a city to get all types of items and services without having to specifically work for each type of item or service. Some shops work better mixed in with residential zones. A commercial zone can allow for lots of shops to be clustered together and for large stores to be neatly separated from the housing. If the citizens are players, commercial zones can create extra opportunities for player interactions.
+
+### Public transportation and transit stations
+Since a metropolis should be quite large, efficient transportation is important to keep the city together. Public transportation hubs can create efficient travel. Some cities might work best with ice roads, minecart rails, or piston bolts. Some might work best using the Nether to decrease the travel time and distance. Command blocks can be programmed to teleport players when triggered. Infrastructure fitting to the theme of the metropolis should also be used to give more life to the city.
+
+### Industrial zone
+Mass production greatly decreases the space needed for many people to live, but it isn't the prettiest sight. Nobody likes to have a house with cluttered views of smog-belching factories, so make sure your industrial zone is not next to any nicer houses, and preferably none that are owned by those who don't work in the industrial zone. Plan a green area in the 100 blocks, or maybe a river. Industrial zones keep giant farms or mass production plants away from where residents live. If the farms produce items, this also may reduce lag by keeping these large, item-creating structures unloaded when unneeded. These areas are generally best kept further from any type of residential or commercial zone since their function is often practicality over appearance.
+

@@ -1,0 +1,1 @@
+This function crafts a lightning rod by first smelting all raw copper, then ensuring it has at least 3 copper ingots, and finally crafting a crafting table and using it to craft the lightning rod.

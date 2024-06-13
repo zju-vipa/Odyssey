@@ -1,0 +1,1 @@
+This function automates the process of crafting an iron shovel by first smelting raw iron, then collecting necessary items if they're not in the inventory, crafting a crafting table if needed, placing it near the bot, and finally using it to craft the iron shovel.

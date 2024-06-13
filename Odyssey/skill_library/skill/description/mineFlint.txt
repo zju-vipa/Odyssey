@@ -1,0 +1,1 @@
+This function equips the best available shovel, explores to find gravel, and mines it until the flint count in the inventory increases by one.

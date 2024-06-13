@@ -1,0 +1,1 @@
+This function ensures the necessary items are available to cook a porkchop by checking for a furnace, coals, and pork in the inventory, and if not, crafts a furnace, kills a pig for the pork, and mines coal ores as needed, before proceeding to cook the porkchop.

@@ -1,0 +1,1 @@
+This function equips a pickaxe, searches for and finds 10 cobblestone blocks within a 32-block radius, and then mines them.

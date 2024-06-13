@@ -1,0 +1,314 @@
+#### Naturally created
+Naturally created means a combination of events that cause a new block to be placed by natural causes, not the player. Some of these blocks may also be created as part of world generation.
+
+- Air
+- Small Amethyst Bud
+- Medium Amethyst Bud
+- Large Amethyst Bud
+- Amethyst Cluster
+- Grass Block
+- Dirt
+- Mycelium
+- Water
+- Red Mushroom
+- Brown Mushroom
+- Kelp
+- Kelp Plant
+- Cave Vines
+- Cave Vines Plant
+- Pointed Dripstone
+- Cobblestone
+- Stone
+- Obsidian
+- Fire
+- Snow
+- Ice
+- Cactus
+- Sugar Cane
+- Vines
+
+#### Structures
+These blocks are created only with the "Generate Structures" option enabled.
+
+- Polished Granite
+- Polished Diorite
+- Polished Andesite
+- Netherrack
+- Soul Sand
+- Soul Fire
+- Oak Wood
+- Spruce Wood
+- Acacia Wood
+- Stripped Oak Log
+- Stripped Spruce Log
+- Stripped Jungle Log‌[BE  only][needs testing]
+- Stripped Acacia Log
+- Stripped Dark Oak Log‌[BE  only][needs testing]
+- Stripped Oak Wood
+- Stripped Spruce Wood
+- Oak Planks
+- Spruce Planks
+- Birch Planks
+- Jungle Planks
+- Acacia Planks
+- Dark Oak Planks
+- Acacia Sapling
+- Dark Oak Sapling
+- Chiseled Sandstone
+- Cut Sandstone
+- Smooth Stone
+- Smooth Sandstone
+- White Wool
+- Red Wool
+- Orange Wool
+- Light Blue Wool
+- Yellow Wool
+- Lime Wool
+- Gray Wool
+- Light Gray Wool
+- Cyan Wool
+- Blue Wool
+- Brown Wool
+- Green Wool
+- Black Wool
+- White Carpet
+- Orange Carpet
+- Magenta Carpet
+- Gray Carpet
+- Light Blue Carpet
+- Yellow Carpet
+- Lime Carpet
+- Pink Carpet
+- Light Gray Carpet
+- Cyan Carpet
+- Purple Carpet
+- Blue Carpet
+- Brown Carpet
+- Green Carpet
+- Red Carpet
+- Black Carpet
+- Bricks
+- Torch
+- Lantern
+- Soul Lantern
+- Candle
+- White Candle
+- Brown Candle
+- Green Candle
+- Purple Candle
+- Red Candle
+- Block of Coal
+- Block of Lapis Lazuli
+- Block of Gold
+- Block of Diamond
+- Crying Obsidian
+- Trapped Chest
+- Furnace
+- Crafting Table
+- Farmland
+- Ladder
+- Bookshelf
+- Cobweb
+- Melon Stem
+- Carved Pumpkin
+- Jack o'Lantern
+- Pumpkin Stem
+- Rail
+- Lever
+- Stone Button
+- Jungle Button
+- Stone Pressure Plate
+- Oak Pressure Plate
+- Spruce Pressure Plate
+- Acacia Pressure Plate
+- Oak Fence
+- Spruce Fence
+- Jungle Fence
+- Acacia Fence
+- Dark Oak Fence
+- Oak Fence Gate
+- Spruce Fence Gate
+- Jungle Fence Gate
+- Acacia Fence Gate
+- Dark Oak Fence Gate
+- Oak Trapdoor
+- Spruce Trapdoor
+- Jungle Trapdoor
+- Acacia Trapdoor‌[BE  only][needs testing]
+- Dark Oak Trapdoor
+- Iron Trapdoor
+- Brick Wall
+- Cobblestone Wall
+- Diorite Wall
+- Granite Wall
+- Sandstone Wall
+- Cobbled Deepslate Wall
+- Polished Deepslate Wall
+- Deepslate Brick Wall
+- Deepslate Tile Wall
+- Iron Bars
+- Glass
+- Glass Pane
+- Brown Stained Glass Pane
+- White Stained Glass Pane
+- Orange Stained Glass Pane
+- Yellow Stained Glass Pane
+- Stone Bricks
+- Cracked Stone Bricks
+- Mossy Stone Bricks
+- Chiseled Stone Bricks
+- Infested Stone Bricks
+- Infested Mossy Stone Bricks
+- Infested Chiseled Stone Bricks
+- Infested Cobblestone
+- Cauldron
+- Brewing Stand
+- End Portal Frame
+- End Portal
+- Potted Dandelion
+- Potted Poppy
+- Potted Blue Orchid
+- Potted Allium
+- Potted Azure Bluet
+- Potted Red Tulip
+- Potted White Tulip
+- Potted Oxeye Daisy
+- Potted Dead Bush
+- Potted Spruce Sapling
+- Potted Birch Sapling
+- Potted Red Mushroom
+- Potted Cactus
+- Anvil
+- Damaged Anvil
+- Hay Bale
+- Light Blue Terracotta
+- Lime Terracotta
+- Gray Terracotta
+- Cyan Terracotta
+- Blue Terracotta
+- Green Terracotta
+- Black Terracotta
+- Prismarine
+- Prismarine Bricks
+- Dark Prismarine
+- Sea Lantern
+- Wet Sponge
+- Dirt Path
+- Ominous Wall Banner
+- Gray Wall Banner
+- Light Gray Wall Banner
+- Brown Wall Banner
+- Black Wall Banner
+- White Glazed Terracotta
+- Orange Glazed Terracotta
+- Light Blue Glazed Terracotta
+- Yellow Glazed Terracotta
+- Lime Glazed Terracotta
+- Gray Glazed Terracotta
+- Light Gray Glazed Terracotta
+- Cyan Glazed Terracotta
+- Purple Glazed Terracotta
+- Blue Glazed Terracotta
+- Brown Glazed Terracotta
+- Red Glazed Terracotta
+- Black Glazed Terracotta
+- Iron Door
+- Oak Door
+- Spruce Door
+- Jungle Door
+- Acacia Door
+- Dark Oak Door
+- Oak Wall Sign
+- Spruce Wall Sign
+- Oak Stairs
+- Birch Stairs
+- Spruce Stairs
+- Jungle Stairs
+- Acacia Stairs
+- Dark Oak Stairs
+- Diorite Stairs
+- Granite Stairs
+- Sandstone Stairs
+- Smooth Sandstone Stairs
+- Cobblestone Stairs
+- Mossy Cobblestone Stairs
+- Stone Brick Stairs
+- Mossy Stone Brick Stairs
+- Cobbled Deepslate Stairs
+- Polished Deepslate Stairs
+- Deepslate Brick Stairs
+- Deepslate Tile Stairs
+- Brick Stairs
+- Mud Brick Stairs
+- Oak Slab
+- Spruce Slab
+- Jungle Slab
+- Acacia Slab
+- Dark Oak Slab
+- Stone Slab
+- Smooth Sandstone Slab
+- Cobblestone Slab
+- Mossy Cobblestone Slab
+- Smooth Stone Slab
+- Stone Brick Slab
+- Mossy Stone Brick Slab
+- Cobbled Deepslate Slab
+- Polished Deepslate Slab
+- Deepslate Brick Slab
+- Deepslate Tile Slab
+- Brick Slab
+- Mud Brick Slab
+- Tripwire Hook
+- Tripwire
+- Redstone Dust
+- Redstone Repeater
+- Redstone Comparator
+- Redstone Torch
+- Block of Redstone
+- Sticky Piston
+- Dispenser
+- TNT
+- Target
+- Note Block
+- Redstone Lamp
+- Wheat
+- Carrots
+- Potatoes
+- Beetroots
+- White Bed
+- Orange Bed
+- Yellow Bed
+- Cyan Bed
+- Purple Bed
+- Blue Bed
+- Green Bed
+- Red Bed
+- Bell
+- Loom
+- Campfire
+- Barrel
+- Lectern
+- Blast Furnace
+- Smoker
+- Cartography Table
+- Composter
+- Stonecutter
+- Grindstone
+- Smithing Table
+- Fletching Table
+- Skeleton Skull
+- Cobbled Deepslate
+- Reinforced Deepslate
+- Chiseled Deepslate
+- Deepslate Bricks
+- Cracked Deepslate Bricks
+- Deepslate Tiles
+- Cracked Deepslate Tiles
+- Polished Deepslate
+- Polished Basalt
+- Mud Bricks
+- Cyan Concrete
+- Red Concrete
+- Packed Mud
+- Suspicious Gravel
+

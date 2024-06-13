@@ -1,0 +1,1 @@
+This function searches for the best available pickaxe in the inventory, equips it if found, and if not, crafts a wooden pickaxe and equips it instead.

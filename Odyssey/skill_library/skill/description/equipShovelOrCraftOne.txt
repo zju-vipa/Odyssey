@@ -1,0 +1,1 @@
+This function searches for the best available shovel in the inventory, equips it, and if none are found, crafts a wooden shovel and equips it.

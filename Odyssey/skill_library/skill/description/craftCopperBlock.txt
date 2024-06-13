@@ -1,0 +1,1 @@
+This function automates the process of crafting a copper block by first smelting raw copper, then mining and smelting more copper ore if necessary, crafting a crafting table if not already available, placing the crafting table, and finally crafting the copper block.

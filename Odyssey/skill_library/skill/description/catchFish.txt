@@ -1,0 +1,1 @@
+This function catches fish by first checking if the bot has a fishing rod, crafting one if necessary, then finding a nearby water block, moving to an adjacent block, looking at the water block, equipping the fishing rod, and finally fishing.

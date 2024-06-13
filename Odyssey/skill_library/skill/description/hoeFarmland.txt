@@ -1,0 +1,1 @@
+This function equips a hoe, finds a nearby water source, locates dirt or grass blocks near the water, and then converts them into farmland by activating the hoe on those blocks if there is air above and water nearby.

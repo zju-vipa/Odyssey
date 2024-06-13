@@ -1,0 +1,1 @@
+Equips a sword, finds and kills the nearest chicken within a 32-block radius, and then collects the dropped items by moving to the chicken's previous position.

@@ -1,0 +1,1 @@
+This function checks if the bot has any wooden logs in its inventory, and if not, it mines one; then it crafts four wooden planks from the available log and updates the inventory accordingly.

@@ -1,0 +1,199 @@
+# Tutorials/Things not to do
+The Minecraft community has developed some suggested standards of playing to help new Minecraft players become comfortable with the game. Millions of users have at some point been too inefficient or died unnecessarily. Therefore, a collected list of things you should not do or forget has been compiled below in order to make the game experience as enjoyable as possible. However, making mistakes is also an important step to learning in Minecraft. Don't feel bad if you follow these suggestions and still make a mistake. In a way, this tutorial acts as a collection of frequent Minecraft mistakes many other players have made. 
+
+Regardless of the advice given here, you should feel free to ignore any advice and play the game in your own way.
+
+## Contents
+- 1 Possible death
+	- 1.1 By the player
+		- 1.1.1 Hunger and food
+		- 1.1.2 Horse armor
+		- 1.1.3 Getting lost
+		- 1.1.4 Forgetting essentials
+		- 1.1.5 Using spawn-setting items in the wrong dimensions
+		- 1.1.6 Bed obstruction
+		- 1.1.7 Carrying dangerous or non-essential items in the hotbar
+		- 1.1.8 Not bringing a water bucket
+		- 1.1.9 Falling
+		- 1.1.10 Arrows
+		- 1.1.11 Fire
+		- 1.1.12 Riptide-enchanted tridents
+	- 1.2 When digging or mining
+		- 1.2.1 Mining vertically (straight down or up)
+		- 1.2.2 Desert Temples
+		- 1.2.3 Careless underwater digging
+		- 1.2.4 TNT
+		- 1.2.5 Not bringing blocks for mining
+		- 1.2.6 Lava beneath ores
+		- 1.2.7 The Void
+		- 1.2.8 Building nether portals too low
+		- 1.2.9 Gravity-affected blocks
+		- 1.2.10 Getting lost underground
+		- 1.2.11 Mineshafts
+	- 1.3 Mobs
+		- 1.3.1 Looking at endermen
+		- 1.3.2 Hugging creepers
+		- 1.3.3 Hard difficulty for beginners
+		- 1.3.4 First-night exploration
+		- 1.3.5 Forgetting melee weapons when caving
+		- 1.3.6 Short walls
+		- 1.3.7 Gaps in shelters
+		- 1.3.8 Creepers and sugar canes
+		- 1.3.9 Iron golems
+		- 1.3.10 Bad wither spawning places
+		- 1.3.11 Wooden doors on Hard difficulty
+		- 1.3.12 Knockback and skeletons
+		- 1.3.13 Being unprepared for boss fights
+		- 1.3.14 Silverfish
+		- 1.3.15 Snow golems and beds
+		- 1.3.16 Not bringing the right equipment for ocean monuments
+		- 1.3.17 Woodland mansions
+		- 1.3.18 Witch-fighting while unprepared
+		- 1.3.19 Attacking villagers
+		- 1.3.20 Spending the night near villages without sleeping
+		- 1.3.21 Attacking wolves
+		- 1.3.22 Polar bears with cubs
+		- 1.3.23 Not throwing potions far enough
+		- 1.3.24 Creepers in water
+		- 1.3.25 Not carrying carved pumpkins to the ender dragon fight
+		- 1.3.26 Not keeping an eye on the ground
+		- 1.3.27 Standing next to blocks while mining
+		- 1.3.28 Hardcore mode for beginners
+		- 1.3.29 Staying outside during thunderstorms
+		- 1.3.30 Missing too much sleep
+	- 1.4 Concerning the Nether
+		- 1.4.1 Messing up in the Nether
+		- 1.4.2 What not to do in the Nether
+		- 1.4.3 Careless mining of netherrack
+		- 1.4.4 Not bringing fire resistance in the Nether
+		- 1.4.5 Riding mobs in the Nether (except Striders)
+		- 1.4.6 Forgetting to bring flint and steel in the Nether
+		- 1.4.7 Not checking your warped fungus on a stick often
+		- 1.4.8 Breaking into a bastion without precautions
+	- 1.5 Being unprepared while traveling through the End
+- 2 Wasted resources
+	- 2.1 Involving tools and items
+		- 2.1.1 Using stone if iron is available
+		- 2.1.2 Mining cake
+		- 2.1.3 Logs for fuel
+		- 2.1.4 Crafting rabbit stew
+		- 2.1.5 Drinking base potions
+		- 2.1.6 Brewing mundane or thick potions
+		- 2.1.7 Saving space in inventory and chests
+		- 2.1.8 Accidentally crafting a lot of items
+		- 2.1.9 Mining with the wrong tool
+		- 2.1.10 Wasting valuable equipment on low-value jobs
+		- 2.1.11 Tools as melee weapons
+		- 2.1.12 Using gold for armor and weapons
+		- 2.1.13 Using tools on leaves, grass, vines, and flowers
+		- 2.1.14 Using axes for beds
+		- 2.1.15 Using pickaxes with rare enchantments
+		- 2.1.16 Disposing of low-durability items
+		- 2.1.17 Disposing of less valuable items
+		- 2.1.18 Wasting experience
+		- 2.1.19 Overloading enchantments
+		- 2.1.20 Throwing away tools
+		- 2.1.21 Collecting excess items
+		- 2.1.22 Cluttered inventories
+		- 2.1.23 Disposing of tropical fish items
+		- 2.1.24 Using hay bales, melon blocks, dried kelp blocks, or cakes as compost
+		- 2.1.25 Making your base out of the wrong material
+		- 2.1.26 Using fire charges
+		- 2.1.27 Smelting ores rather than mining them
+		- 2.1.28 Brewing weakness potions inefficiently
+		- 2.1.29 Wasting healing potions on harming potions
+		- 2.1.30 Using coal blocks when unnecessary
+		- 2.1.31 Making Planks when you need Charcoal
+		- 2.1.32 Mining budding amethyst blocks
+		- 2.1.33 Using Fire Protection as your main resistance from fire
+	- 2.2 Involving blocks and entities
+		- 2.2.1 Not killing passive mobs with flint and steel when safe and available
+		- 2.2.2 Using swords in animal farms
+		- 2.2.3 Fighting magma cubes near zombified/regular piglins
+		- 2.2.4 Killing sheep for wool when the player has enough iron for shears
+		- 2.2.5 Shearing mooshrooms
+		- 2.2.6 Breaking spawners or budding amethyst
+		- 2.2.7 Using torches to break anvils
+		- 2.2.8 Breaking bookshelves repeatedly without Silk touch
+		- 2.2.9 Destroying ender chests without Silk Touch
+		- 2.2.10 Destroying glass without Silk Touch
+		- 2.2.11 Shooting paintings, boats, minecarts, item frames, or armor stands
+		- 2.2.12 Exposing armor stands to creepers
+		- 2.2.13 Curing zombie villagers near zombies
+		- 2.2.14 Smelting cobblestone excessively
+		- 2.2.15 Carelessness with the dragon egg
+		- 2.2.16 Not using end stone to build on the main end island
+		- 2.2.17 Using Fire Aspect on an enderman when searching for ender pearls
+		- 2.2.18 Throwing away emeralds
+		- 2.2.19 Using diamonds or netherite as beacon fuel
+		- 2.2.20 Using golden apples on horses
+		- 2.2.21 Trading emeralds for obtainable things
+		- 2.2.22 Selling large quantities of rare or non-renewable resources to villagers
+		- 2.2.23 Not converting villagers to reduce prices
+		- 2.2.24 Wasting arrows
+		- 2.2.25 Coal blocks
+		- 2.2.26 Not using hay bales to heal horses when available
+		- 2.2.27 Getting blue dye from lapis lazuli
+- 3 Superflat worlds
+	- 3.1 Using a water superflat world in Java, Legacy Console editions
+	- 3.2 Using a lava superflat world in Java, Legacy Console editions
+- 4 Other
+	- 4.1 Setting a spawnpoint in the End
+	- 4.2 Placing your bed under an end portal
+	- 4.3 Building weak or flammable structures
+	- 4.4 Building with obsidian
+	- 4.5 Non-reusable TNT traps
+	- 4.6 Fire in wood houses
+	- 4.7 Destroying the world spawn point
+	- 4.8 Living in the wrong biomes
+		- 4.8.1 Extra nighttime dangers of certain biomes
+	- 4.9 Carelessness with wolves
+	- 4.10 Not having equipment for trips from the base
+		- 4.10.1 General cases
+		- 4.10.2 Stronghold (only if trying to defeat the Ender Dragon)
+		- 4.10.3 Mining
+		- 4.10.4 Mineshafts
+	- 4.11 Being careless with horses
+	- 4.12 Settling in villages carelessly
+	- 4.13 Doing raids in your base
+	- 4.14 Breaking Bedrock
+	- 4.15 Taking risks
+	- 4.16 Carelessness around redstone contraptions
+	- 4.17 Careless use of redstone components
+	- 4.18 Using cursed items
+	- 4.19 Feeding cookies to parrots
+- 5 Multiplayer
+	- 5.1 Possible death
+		- 5.1.1 Equipment for PvP
+		- 5.1.2 Bow attacks
+		- 5.1.3 Attacking players wearing Thorns enchanted armor
+		- 5.1.4 Trusting strangers
+		- 5.1.5 Setting off redstone contraptions carelessly
+		- 5.1.6 Breaking tripwires
+		- 5.1.7 PvP in water
+		- 5.1.8 Joining PvP servers earlier
+	- 5.2 Wasted resources
+		- 5.2.1 Having the gamerule KeepInventory on Hardcore multiplayer
+	- 5.3 Other
+		- 5.3.1 Moving beds
+		- 5.3.2 Not keeping bases away from griefers
+		- 5.3.3 Not hiding valuables well enough
+		- 5.3.4 Making large chains of hoppers for transporting of items without placing a dropper on top of most of them
+		- 5.3.5 Breaking chests when moving homes
+		- 5.3.6 Doing extreme challenges in hardcore
+	- 5.4 Possible ban or real-world consequence
+		- 5.4.1 Using X-ray mods, hacks, or cheats
+		- 5.4.2 Breaching server consoles
+- 6 Technical
+	- 6.1 Playing with high settings on weak devices
+	- 6.2 Playing worlds created in a newer version
+	- 6.3 Death loops
+	- 6.4 Possible death
+		- 6.4.1 Traveling near the world edge
+	- 6.5 Possible crash
+		- 6.5.1 Updating certain superflat worlds
+		- 6.5.2 Teleporting excessively
+		- 6.5.3 Triggering large amounts of TNT
+		- 6.5.4 Using extremely high looting or fortune levels
+		- 6.5.5 Dropping large numbers of items
+

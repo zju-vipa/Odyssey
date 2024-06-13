@@ -1,0 +1,77 @@
+# Compound
+Compounds are a type of item from Minecraft Education used in chemistry, which are created from combinations of various elements.
+
+## Contents
+- 1 Obtaining
+- 2 List of compounds
+	- 2.1 Chlorides
+	- 2.2 Natural compounds
+	- 2.3 Garbage
+- 3 Usage
+	- 3.1 Crafting ingredient
+		- 3.1.1 Chloride coloring
+	- 3.2 Lab table ingredient
+- 4 Sounds
+- 5 Data values
+	- 5.1 ID
+	- 5.2 Item data
+- 6 History
+- 7 Issues
+- 8 Unused compound textures
+- 9 Gallery
+	- 9.1 Screenshots
+- 10 See also
+
+## Obtaining
+Compounds cannot be obtained in the Creative inventory or /give command. They are only obtained from creating them in the compound creator. This is done by inserting a certain number of elements corresponding to the compound's chemical formula.
+
+## List of compounds
+| Icon | Compound name       | Compound recipe | Description                                                                                                                                                                      | Uses                            |
+|------|---------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+|      | Aluminium Oxide     | 23              | Is only brown when dug up from the Earth and contaminated; actually white when pure. Can be electrolyzed to make aluminum metal. Also the main chemical in rubies and sapphires. | Used to crafthardened glass.    |
+|      | Ammonia             | 3               |                                                                                                                                                                                  | Used to createsuper fertilizer. |
+|      | Barium Sulfate      | 4               |                                                                                                                                                                                  |                                 |
+|      | Benzene             | 66              |                                                                                                                                                                                  |                                 |
+|      | Boron Trioxide      | 23              |                                                                                                                                                                                  | Used to crafthardened glass.    |
+|      | Calcium Bromide     | 2               |                                                                                                                                                                                  |                                 |
+|      | Crude Oil           | 920             | C9H20is the chemical formula for nonane.                                                                                                                                         |                                 |
+|      | Glue(Cyanoacrylate) | 552             | C5H5NO2is the chemical formula for methyl cyanoacrylate, one of the cyanoacrylate glues ("superglue"); its condensed formula is CH2=C(CN)COOCH3.                                 |                                 |
+|      | Hydrogen Peroxide   | 22              |                                                                                                                                                                                  | Used to craftglow stick.        |
+|      | Iron Sulfide        |                 |                                                                                                                                                                                  |                                 |
+|      | Latex               | 58              | C5H8is the chemical formula for isoprene, which polymers are the main components of natural rubber; its condensed formula is CH2=C(CH3)−CH=CH2.                                  | Used to craftballoons.          |
+|      | Lithium Hydride     |                 |                                                                                                                                                                                  |                                 |
+|      | Luminol             | 8732            | Luminol is a chemical that glows blue when oxidized. It can detect blood.                                                                                                        | Used to craftglow stick.        |
+|      | Lye                 |                 |                                                                                                                                                                                  |                                 |
+|      | Magnesium Nitrate   | 26              | Condensed formula: Mg(NO3)2                                                                                                                                                      |                                 |
+|      | Magnesium Oxide     |                 |                                                                                                                                                                                  |                                 |
+|      | Polyethylene        | 1020            | Polyethlene (PE), (CH2)n, isthemost commonly produced plastic.                                                                                                                   | Used to craftglow stick.        |
+|      | Potassium Iodide    |                 | Used for making iodized salt and other things.                                                                                                                                   |                                 |
+|      | Soap                | 18352           | C18H35NaO2is the chemical formula of sodium stearate, the most common soap.                                                                                                      |                                 |
+|      | Sodium Acetate      | 232             | Used to make hand warmers because it heats up when it "freezes".                                                                                                                 | Used to createIce Bomb.         |
+|      | Sodium Fluoride     |                 | Commonly used in toothpaste to prevent cavity, among other uses.                                                                                                                 |                                 |
+|      | Sodium Hydride      |                 |                                                                                                                                                                                  |                                 |
+|      | Sodium Hypochlorite |                 | Main ingredient of real-life bleach.                                                                                                                                             | Used to createBleach.           |
+|      | Sodium Oxide        | 2               |                                                                                                                                                                                  |                                 |
+|      | Sulfate             | 4               | Cannot actually exist on its own, as it should have a2-charge.                                                                                                                   |                                 |
+|      | Hypochlorite        |                 |                                                                                                                                                                                  |                                 |
+
+### Chlorides
+| Icon | Compound           | Recipe | Uses                                         |
+|------|--------------------|--------|----------------------------------------------|
+|      | Salt               |        | Used to createheat block.                    |
+|      | Calcium Chloride   | 2      | Used to craftorange sparkler.                |
+|      | Cerium Chloride    | 3      | Used to craftblue torchandblue sparkler.     |
+|      | Mercuric Chloride  | 2      | Used to craftred torchandred sparkler.       |
+|      | Potassium Chloride |        | Used to craftpurple torchandpurple sparkler. |
+|      | Tungsten Chloride  | 6      | Used to craftgreen torchandgreen sparkler.   |
+
+### Natural compounds
+Natural compounds are compounds which can be obtained naturally in Minecraft.
+
+| Icon | Compound             | Chemical formula | Natural source             | Method                                                                   | Notes                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|------|----------------------|------------------|----------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      | Charcoal             | 74               | Logorwood                  | Smelting                                                                 | The chemical formula C7H4O is sometimes used to describe the approximate composition of charcoal.                                                                                                                                                                                                                                                                                                                              |
+|      | Glow ink sac,ink sac | 4                | Glow squid,squid           | Killing glow squids and squids                                           | FeSO4is the chemical formula of iron(II) sulfate or ferrous sulfate, normally found complexed with water as a salt with the formula FeSO4·xH2O, and has been used in the manufacture of iron gall ink and other inks for centuries. In contrast, squid ink (and other cephalopod inks) is composed mainly of melanin and mucus, with an assortment of other compounds in a variety of concentrations dependent on the species. |
+|      | Sugar                | 6126             | Sugar canesorhoney bottles | Harvesting andcrafting                                                   | C6H12O6is the chemical formula of glucose and fructose, as well as a number of other simple sugars (common table sugar is instead sucrose, a complex sugar made of glucose and fructose with the chemical formula C12H22O11).                                                                                                                                                                                                  |
+|      | Water                | 2                | Water                      | Picking up in abucketorglass bottlefrom acauldronor a water source block | One of the easiest to obtain.                                                                                                                                                                                                                                                                                                                                                                                                  |
+

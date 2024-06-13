@@ -1,0 +1,1 @@
+This function equips an iron pickaxe, then moves in a specific direction until it finds a diamond ore or deepslate diamond ore within a certain distance, and finally mines the block.

@@ -1,0 +1,1 @@
+This function searches for the best available hoe in the inventory, prioritizing diamond, iron, stone, and wooden hoes, and equips it; if no hoe is found, it crafts a wooden hoe and equips it.

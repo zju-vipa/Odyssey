@@ -1,0 +1,1 @@
+This function crafts a dropper by collecting redstone and cobblestones, then crafting the item, and finally checking the inventory count.

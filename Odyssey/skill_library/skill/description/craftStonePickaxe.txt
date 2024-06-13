@@ -1,0 +1,1 @@
+This function crafts a stone pickaxe. It collects necessary materials(cobblestones and sticks), crafts a crafting table if needed, places it, and then uses it to craft a stone pickaxe, ensuring the bot has the required items in its inventory before crafting.

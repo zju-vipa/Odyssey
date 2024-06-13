@@ -1,0 +1,1 @@
+This function crafts a piston by gathering and crafting necessary items, such as redstone, iron ingots, and wooden planks, and then placing a crafting table and crafting the piston using it.

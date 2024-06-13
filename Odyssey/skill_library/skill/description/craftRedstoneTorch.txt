@@ -1,0 +1,1 @@
+This function crafts a redstone torch by checking if the bot has sufficient redstone and sticks, and if not, it mines redstone ore and crafts sticks before crafting the torch.

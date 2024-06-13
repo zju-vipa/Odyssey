@@ -1,0 +1,1 @@
+This function crafts a campfire by checking for required items, crafting or mining them if necessary, and then placing a crafting table and crafting the campfire using it.

@@ -1,0 +1,164 @@
+# Chunk format
+Chunks store the terrain and entities within a 16×384×16 area. They also store precomputed lighting, heightmap data for Minecraft's performance, and other meta information.
+
+## Contents
+- 1 NBT structure
+- 2 Block format
+- 3 Block entity format
+	- 3.1 Pattern color
+	- 3.2 Pattern
+- 4 Tile tick format
+- 5 ToBeTicked format
+- 6 History
+- 7 References
+
+## NBT structure
+See also: Region file format and Anvil file format
+
+Chunks are stored as tags in regional Minecraft Anvil files, which are named in the form r.x.z.mca. They are stored in NBT format, with the following structure (updated for 1.18):
+
+- The root tag.
+	- DataVersion: Version of the chunk NBT structure.
+	- xPos: X position of the chunk (in absolute chunks from worldx,zorigin,notrelative to the region).
+	- zPos: Z position of the chunk (in absolute chunks from worldx,zorigin,notrelative to the region).
+	- yPos: Lowest Y section position in the chunk (e.g.-4in 1.18).
+	- Status: Defines the world generation status of this chunk. It is always one of the following:minecraft:empty,minecraft:structure_starts,minecraft:structure_references,minecraft:biomes,minecraft:noise,minecraft:surface,minecraft:carvers,minecraft:features,minecraft:light,minecraft:spawn, orminecraft:full. All status exceptminecraft:fullare used for chunks calledproto-chunks, in other words, for chunks with incomplete generation.
+	- LastUpdate: Tick when the chunk was last saved.
+	- sections: List ofCompounds, each tag is a section (also known as sub-chunk). All sections in the world's height are present in this list, even those who are empty (filled with air).
+		- An individual section.
+			- Y: The Y position of this section.
+			- block_states
+				- palette: Set of different block states used in this particular section.
+					- A block
+						- Name: Blockresource location
+						- Properties: List ofblock stateproperties, withnamebeing the name of the block state property
+							- Name: The block state's name and its value.
+				- data: A packed array of 4096 indices pointing to the palette, stored in an array of 64-bit integers (Longs).
+					- If only one block state is present in the palette, this field is not required and the block fills the whole section.
+					- All indices are the same length. This length is set to the minimum amount of bits required to represent the largest index in the palette, and then set to a minimum size of 4 bits. Since 1.16, the indices are not packed across multiple elements of the array, meaning that if there is no more space in a given 64-bit integer for the whole next index, it starts instead at the first (lowest) bit of the next 64-bit integer. Different sections of a chunk can have different lengths for the indices.
+			- biomes
+				- palette: Set of different biomes used in this particular section.
+					- Name: Biomeresource location
+				- data: A packed array of 64 indices pointing to the palette, stored in an array of 64-bit integers (Longs).
+					- If only one biome is present in the palette, this field is not required and the biome fills the whole section.
+					- All indices are the same length: the minimum amount of bits required to represent the largest index in the palette. These indices do not have a minimum size. Different chunks can have different lengths for the indices.
+			- BlockLight: 2048Bytesstores the amount of block-emitted light in each block. Makes load times faster compared to recomputing at load time. Omitted if no light reaches this section of the chunk. Light level is stored as 4 bits per block, 2 blocks sharing a byte: starting at 0, even blocks take the first nibble, and odd blocks the second one.
+			- SkyLight: 2048Bytesstores the maximum sky light that reaches each block, regardless of current time. If the sky light data for a section is omitted you should look at the light data of the section directly above it. Take the 16x16 layer at the bottom of that section and repeat that light data 16 times to recompute the data for the omitted section. If there is no section above the current one, you are at the top section of the chunk. The light data for this top section should be set as completely bright (0xFFfor each block). The format of how these levels is stored is the same as for BlockLight.
+	- block_entities: EachCompoundin this list defines a block entity in the chunk.
+		- SeeBlock Entity Formatbelow.
+		- If this list is empty, it becomes a list ofEndtags.
+	- CarvingMasks: Only forproto-chunks(not confirmed for 1.18 format).
+		- AIR: A series of bits indicating whether a cave has been dug at a specific position, stored in a byte array.
+		- LIQUID: A series of bits indicating whether an underwater cave has been dug at a specific position, stored in a byte array.
+	- Heightmaps: Several differentheightmapscorresponding to 256 values compacted at 9 bits per value (lowest being 0, highest being 384, both values inclusive). The 9-bit values are stored in an array of 37Longs, each containing 7 values (A Long= 64 bits, 7×9 = 63; the last bit is unused). In versions prior to 1.16 the heightmaps were stored in 36Longvalues, where the bits were arranged in an uninterrupted "stream" across all values, resulting in all 2304 bits being used. The 9-bit values are unsigned, and indicate the amount of blocks above the bottom of the world. This means that converting a world to 1.18 adds 64 to every value.
+		- MOTION_BLOCKING
+		- MOTION_BLOCKING_NO_LEAVES
+		- OCEAN_FLOOR
+		- OCEAN_FLOOR_WG
+		- WORLD_SURFACE
+		- WORLD_SURFACE_WG
+	- Lights: A List of 16 lists that store positions of light sources per chunk section as shorts, only forproto-chunks(not confirmed for 1.18 format).
+	- Entities: A list of entities in theproto-chunks, used when generating. As of 1.17, this list is not present for fully generated chunks and entities are moved to a separated region files once the chunk is generated, seeEntity formatfor more details(not confirmed for 1.18 format).
+		- : An entity.
+	- fluid_ticks: A list ofCompounds
+		- EachCompoundin this list is an "active" liquid in this chunk waiting to be updated. SeeTile Tick Formatbelow.
+	- block_ticks: A list ofCompounds
+		- EachCompoundin this list is an "active" block in this chunk waiting to be updated. These are used to save the state of redstone machines or falling sand, and other activity. SeeTile Tick Formatbelow.
+	- InhabitedTime: The cumulative number of ticks players have been in this chunk. Note that this value increases faster when more players are in the chunk. Used forRegional Difficulty.
+	- blending_data: This appears to be biome blending data, although more testing is needed to confirm.[more information needed]
+		- min_section:[more information needed]
+		- max_section:[more information needed]
+	- PostProcessing: A List of 24Liststhat store the positions of blocks that need to receive an update when aproto-chunkturns into a full chunk, packed inShorts. Each list corresponds to specific section in the height of the chunk.
+		- SeeToBeTicked formatbelow for a description of the coordinate packing format. A common use case for this to is make liquids flow after generating a source block, such as springs in caves.
+	- structures: Structure data in this chunk.
+		- References: Coordinates of chunks that containStarts.
+			- Structure Name: Each 64-bit number of this array represents a chunk coordinate (i.e. block coordinate / 16), with its X packed into the low (least significant) 32 bits and Z packed into the high (most significant) 32 bits.
+		- starts: Structures that are yet to be generated, stored by general type. Some parts of the structures may have already been generated. Completely generated structures areremovedby setting theiridto "INVALID" and removing all other tags.
+			- Structure Name: Only the structures that can spawn in this dimension are stored, for example, EndCity is stored only in the end chunks.
+				- BB: Bounding box of the entire structure (remaining Children). Value is 6 ints: the minimum X, Y, and Z coordinates followed by the maximum X, Y, and Z coordinates. Absent if id isINVALID.
+				- biome: The biome id this structure is in. Absent if id isINVALID.
+				- Children: List of structure pieces making up this structure, that were not generated yet. Absent if id isINVALID.
+					- Structure piece data.[more information needed]
+						- BB: Bounding box of the structure piece. (Does not include the part of a village roof that can overhang the road.) Value is 6 ints: the minimum X, Y, and Z coordinates followed by the maximum X, Y, and Z coordinates.
+						- BiomeType: The ocean temperature this ocean ruins is in. Valid values are WARM and COLD.
+						- C: (Village "ViSmH") Hut roof type.[verify]
+						- CA: (Village "ViF" and "ViDF") Crop in the farm plot.[verify]
+							- Name: Blockresource location
+							- Properties: List ofblock stateproperties, with [name] being the name of the block state property
+								- Name: The block state name and its value.
+						- CB: (Village "ViF" and "ViDF")
+							- separate object with the same format asCA
+						- CC: (Village "ViDF")
+							- separate object with the same format asCA
+						- CD: (Village "ViDF")
+							- separate object with the same format asCA
+						- Chest: 1 or 0 (true/false) - (Fortress "NeSCLT" and "NeSCRT") Whether this fortress piece should contain a chest but hasn't had one generated yet. (Stronghold "SHCC") Whether this chest in this stronghold piece was placed. (Village "ViS") Whether the blacksmith chest has been generated.
+						- D: (Mineshaft "MSCrossing") Indicates the "incoming" direction for the crossing.
+						- Depth: (Temples and huts) Depth of the structure (X/Z).
+						- Entrances: (Mineshaft "MSRoom") List of exits from the room.
+							- : Bounding box of the exit.
+						- EntryDoor: (Stronghold) The type of door at the entry to this piece.
+						- GD: Appears to be some sort of measure of how far this piece is from the start.
+						- hasPlacedChest0: 1 or 0 (true/false) - (Desert temple) Whether 1st chest was placed.
+						- hasPlacedChest1: 1 or 0 (true/false) - (Desert temple) Whether 2nd chest was placed.
+						- hasPlacedChest2: 1 or 0 (true/false) - (Desert temple) Whether 3rd chest was placed.
+						- hasPlacedChest3: 1 or 0 (true/false) - (Desert temple) Whether 4th chest was placed.
+						- Height: (Temples and huts) Height of the structure (Y).
+						- HPos: (Temples, huts and villages) Y level the structure was moved to in order to place it on the surface, or -1 if it hasn't been moved yet.[verify]
+						- hps: 1 or 0 (true/false) - (Mineshaft "MSCorridor") Whether the corridor has a cave spider monster spawner.
+						- hr: 1 or 0 (true/false) - (Mineshaft "MSCorridor") Whether the corridor has rails.
+						- id: Identifier for the structure piece. Typically a heavily abbreviated code rather than something human-readable.[more information needed]
+						- integrity: The integrity of this structure (only used by ocean ruins).
+						- isLarge: 1 or 0 (true/false) - If this ocean ruin is big.
+						- junctions: (Village) List of junction points.[more information needed][verify]
+							- : The junctions coordinates:
+								- source_x: X.
+								- source_ground_y: Y.
+								- source_z: Z.
+								- delta_y: Change Y.[more information needed]
+								- dest_proj: One ofterrain_matchingorrigid.
+						- Left: 1 or 0 (true/false) - (Stronghold "SHS") Whether the corridor has an opening on the left.
+						- leftHigh: 1 or 0 (true/false) - (Stronghold "SH5C") Whether the 5-way crossing has an exit on the upper level on the side with the upward staircase.
+						- leftLow: 1 or 0 (true/false) - (Stronghold "SH5C") Whether the 5-way crossing has an exit on the lower level on the side with the upward staircase.
+						- Length: (Village "ViSR") Length of the road piece.[verify]
+						- Mob: 1 or 0 (true/false) - (Fortress "NeMT") Whether this fortress piece should contain a blaze monster spawner but hasn't had one generated yet. (Stronghold "SHPR") Whether the silverfish monster spawner has been placed in this piece.
+						- Num: (Mineshaft "MSCorridor") Corridor length.
+						- O: Likely orientation of the structure piece.
+						- placedHiddenChest: 1 or 0 (true/false) - (Jungle temple) Whether the hidden chest was placed.
+						- placedMainChest: 1 or 0 (true/false) - (Jungle temple) Whether the main chest was placed.
+						- placedTrap1: 1 or 0 (true/false) - (Jungle temple) Whether the hallway arrow trap dispenser was placed.
+						- placedTrap2: 1 or 0 (true/false) - (Jungle temple) Whether the chest arrow trap dispenser was placed.
+						- PosX: The X coordinate origin of this village part.[verify]
+						- PosY: The Y coordinate origin of this village part.[verify]
+						- PosZ: The Z coordinate origin of this village part.[verify]
+						- Right: 1 or 0 (true/false) - (Stronghold "SHS") Whether the corridor has an opening on the right.
+						- rightHigh: 1 or 0 (true/false) - (Stronghold "SH5C") Whether the 5-way crossing has an exit on the upper level on the side with the downward staircase.
+						- rightLow: 1 or 0 (true/false) - (Stronghold "SH5C") Whether the 5-way crossing has an exit on the lower level on the side with the downward staircase.
+						- Rot: Rotation of ocean ruins and shipwrecks. Valid values are COUNTERCLOCKWISE_90, NONE, CLOCKWISE_90, and CLOCKWISE_180.
+						- sc: 1 or 0 (true/false) - (Mineshaft "MSCorridor") Whether the corridor has cobwebs.
+						- Seed: (Fortress "NeBEF") Random seed for the broken-bridge fortress piece.
+						- Source: 1 or 0 (true/false) - (Stronghold "SHSD") Whether the spiral staircase is the source of the Stronghold or was randomly generated.
+						- Steps: (Stronghold "SHFC") Length of the corridor
+						- T: (Village "ViSmH") Table: 0 is no table, 1 and 2 place it on either side of the hut.[verify]
+						- Tall: 1 or 0 (true/false) - (Stronghold "SHLi") Whether the library has an upper level.
+						- Template: The template of the ocean ruin or shipwreck that was used.
+						- Terrace: 1 or 0 (true/false) - (Village "ViSH") Whether the house has a ladder to the roof and fencing.[verify]
+						- tf: 1 or 0 (true/false) - (Mineshaft "MSCrossing") Whether the crossing is two floors tall.
+						- TPX: The X coordinate origin of this ocean ruin or shipwreck.
+						- TPY: The Y coordinate origin of this ocean ruin or shipwreck.
+						- TPZ: The Z coordinate origin of this ocean ruin or shipwreck.
+						- Type: (Village) Village type: 0=plains, 1=desert, 2=savanna, 3=taiga.[verify]
+						- Type: (Stronghold "SHRC") Indicates whether the room contains a pillar with torches, a fountain, an upper level with a chest, or is just empty room.
+						- VCount: (Village) Count of villagers spawned along with this piece.[verify]
+						- Width: (Temples and huts) Width of the structure (X/Z).
+						- Witch: 1 or 0 (true/false) - (Witch hut) Whether the initial witch has been spawned for the hut.
+						- Zombie: 1 or 0 (true/false) - (Village) Whether this village generated as a zombie village.[verify]
+				- ChunkX: Chunk X coordinate of the start of the structure. Absent if id isINVALID.
+				- ChunkZ: Chunk Z coordinate of the start of the structure. Absent if id isINVALID.
+				- id: If there's no structure of this kind in this chunk, this value is "INVALID", else it's the structure name.
+				- Processed: (Monument only) List of chunks that have had their piece of the structure created. Absent if id isINVALID.
+					- : A chunk.
+						- X: The chunk's X position (chunk coordinates, not block coordinates).
+						- Z: The chunk's Z position.
+				- Valid: 1 or 0 (true/false) - (Village only) Whether the village generated at least 3 non-roads. Absent if id isINVALID.
+

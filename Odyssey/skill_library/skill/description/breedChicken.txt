@@ -1,0 +1,1 @@
+This function checks if the bot has more than 2 wheat seeds in its inventory, equips one of them, and then feeds two wheat seeds to a chicken for breeding purposes.

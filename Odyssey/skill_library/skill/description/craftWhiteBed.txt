@@ -1,0 +1,1 @@
+This function ensures the bot has sufficient planks and wool, crafts them if necessary, obtains a crafting table, places it nearby, and then uses it to craft a bed.

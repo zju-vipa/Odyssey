@@ -1,0 +1,23 @@
+- 1 Obtaining
+	- 1.1 Mining
+	- 1.2 Chest loot
+	- 1.3 Suspicious sand loot
+	- 1.4 Crafting
+	- 1.5 Smelting
+- 2 Usage
+	- 2.1 Crafting ingredient
+	- 2.2 Trading
+	- 2.3 Repairing
+	- 2.4 Beacons
+	- 2.5 Smithing ingredient
+- 3 Data values
+	- 3.1 ID
+- 4 Achievements
+- 5 Advancements
+- 6 History
+- 7 Issues
+- 8 Trivia
+- 9 Gallery
+	- 9.1 Screenshots
+	- 9.2 In other media
+- 10 External links

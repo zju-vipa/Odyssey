@@ -1,0 +1,48 @@
+## Differences and inaccuracies from the original
+- General
+	- Since this is a remake and not a port, the code, apart from the terrain generation code which is the only ported code in the game, is completely different from the original and as such there may be many minor gameplay inaccuracies.
+	- Grass blocksseem to turn intodirtwhen in shade.
+	- Airexists as a block.
+	- The remake version has an auto-save feature.
+		- Because of this, reloading or exiting then reopening the website on the same browser will load the same world and seed, along with player-made modifications, provided that the browser cookies aren't cleared.
+	- Physics are very different from the original.
+	- New level format.
+	- Block IDs in this remake do not line up with the original.
+- Human mobs
+	- They have a strange appearance compared to the original version's humans, likely unintentionally as the result of an update.
+	- They have a different, less random and frantic AI.
+	- They can cross the world border, revealing that unlike the original, the bedrock and water beyond the border are actually tangible and are actual blocks rather than a rendered flat plane.
+		- They will fall through the world after going too far.
+	- They can be spawned in multiplayer, although they will only appear on the client side.
+- GUI
+	- The blue gradient, seen in the inventory, pause menu and other menus in the original, is replaced with simply a transparent gray color, reminiscent of modern Minecraft.
+	- The red gradient, seen on the crash/kicked from server screens in the original, is replaced with the same dirt background as seen on the generating level screen in both the original and the remake.
+	- Thefontis different, and is also rendered anti-aliased on most browsers. This is because it is in a vector format (.woff).
+- Graphics
+	- Lighting is very different compared to the original, appearing more flat.
+		- Oddly, blocks appear to have a slight shine when looking down at them.
+	- The remake used thenoa Engine.
+	- Anti-aliasing, making blocks look smoother.
+	- Block textures are stored separately rather than on a terrain.png file.
+		- Many filenames are different from the actual name.
+	- Inventory/hotbar block previews are pre-rendered textures unlike the original.
+		- Because of this, they appear pixelated at high resolutions.
+	- Saplings do not show particles when broken.
+- Sound
+	- Sounds are stored in.mp3format rather than.oggformat.
+	- Music can be enabled in settings.
+		- Are the Volume Alpha soundtrack versions.[verify]
+	- Many sound effects are missing.
+		- There are no walking sound effects.
+		- Breaking wool and glass uses the normal grass and stone sound effects respectively. The original used higher pitched versions of the grass and stone sound effects for those blocks.
+	- Breaking leaves plays a new sound that was not heard before in the original.
+- Multiplayer
+	- There is a new menu when you start up the game, letting you choose a username, and gives you an invitation link to invite people to a server.
+		- The invitation link also appears on the pause menu.
+	- Other players take the same, glitched appearance as the human mobs.
+		- The name tag above players is also more reminiscent of modern Minecraft rather than 0.0.23a.
+	- The command set is highly limited compared to the original.
+		- Consists of/list,/kick,/ban,/tp,/setspawn, and/help.
+		- You can also use commands and chat in singleplayer, unlike the original version.
+
+

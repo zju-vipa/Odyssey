@@ -1,0 +1,1 @@
+This function ensures the bot has sufficient sticks and planks in its inventory, crafts them if needed, and then crafts a crafting table if it's not already available, placing it in a suitable position before using it to craft a wooden axe.

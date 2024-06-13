@@ -1,0 +1,449 @@
+# Cocoa Beans
+Cocoa beans are items obtained from cocoa pods and are used to plant them, as well as to craft brown dye and cookies.
+
+## Contents
+- 1 Obtaining
+	- 1.1 Breaking
+	- 1.2 Chest loot
+	- 1.3 Fishing
+	- 1.4 Trading
+- 2 Usage
+	- 2.1 Farming
+	- 2.2 Composting
+	- 2.3 Crafting ingredient
+- 3 Sounds
+- 4 Data values
+	- 4.1 ID
+	- 4.2 Block states
+- 5 History
+	- 5.1 Cocoa "item"
+		- 5.1.1 Appearances
+		- 5.1.2 Names
+- 6 Issues
+- 7 Trivia
+- 8 Gallery
+	- 8.1 Screenshots
+- 9 Literature
+	- 9.1 References
+	- 9.2 External links
+
+## Obtaining
+In Java Edition, cocoa beans are only obtained through the natural generation of cocoa pods, while in Bedrock Edition, they can also be found in bonus chests, from fishing inside the jungle, bamboo jungle and sparse jungle biomes and during a trading with a wandering trader.
+
+Cocoa beans come from cocoa pods, which are found on the trunks of normal-sized naturally-generated jungle trees in jungle, bamboo jungle and sparse jungle biomes.
+
+The block itself can be obtained by inventory editing or add-ons in Bedrock Edition.
+
+
+### Breaking
+Cocoa pods can be mined with any item, but axes are the quickest. Fully grown cocoa pods drop 3 cocoa beans. Using a tool enchanted with Fortune does not increase the amount of cocoa beans dropped.
+
+| Block     | Cocoa                 |
+|-----------|-----------------------|
+| Hardness  | 0.2                   |
+| Tool      |                       |
+|           | Breakingtime (sec)[A] |
+| Default   | 0.3                   |
+| Wooden    | 0.15                  |
+| Stone     | 0.1                   |
+| Iron      | 0.05                  |
+| Diamond   | 0.05                  |
+| Netherite | 0.05                  |
+| Golden    | 0.05                  |
+| Sword     | 0.2                   |
+
+
+↑ Times are for unenchanted tools as used by players with no status effects, measured in seconds. For more information, see Breaking Speed.
+
+
+### Chest loot
+From one to two cocoa beans can be found in 40% of bonus chests in Bedrock Edition.
+
+| Item        | Structure   | Container | Quantity | Chance          |
+|-------------|-------------|-----------|----------|-----------------|
+|             |             |           |          | Bedrock Edition |
+| Cocoa Beans | Bonus Chest | Chest     | 1–2      | 40%             |
+
+### Fishing
+Cocoa beans can be obtained from fishing in a jungle in Bedrock Edition.
+
+### Trading
+Wandering traders may sell 3 cocoa beans for an emerald during a trading in Bedrock Edition.
+
+## Usage
+### Farming
+A somewhat efficient cocoa pod farm, minimizing space and wood use.
+Main article: Tutorials/Cocoa bean farming
+Placing cocoa beans on the side of a jungle log plants a new cocoa pod. The log does not need to be attached to a tree. A cocoa pod can be placed on jungle logs, jungle wood, stripped jungle logs and stripped jungle wood.
+
+Cocoa has three stages of growth. During its first stage, the pod is small and green. In the second stage, the plant is bigger and colored tan. In its last stage, the pod is even larger and orange. The cocoa block has a 20% chance to grow a stage when receiving a random tick, giving it an average time of 5 minutes and 41 seconds per stage. When destroyed in the first two stages, the pod yields only one cocoa bean. When destroyed in the third stage, it gives 3 cocoa beans. Bone meal can be used to force the cocoa pod forward by one growth stage. Cocoa pods burst and drop their beans when struck by flowing water, pushed by a piston or if their log or wood are removed by any means.
+
+### Composting
+Placing cocoa beans into a composter has a 65% chance of raising the compost level by 1. In Bedrock Edition, cocoa beans are accepted as a direct substitute of brown dye in many recipes.
+
+### Crafting ingredient
+| Name                     | Ingredients                                                                          | Crafting recipe | Description                                                                                                                                                                                                                       |
+|--------------------------|--------------------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Brown Balloon            | Latex+Cocoa Beans+Helium+Lead                                                        |                 | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Bed                | AnyBed+Cocoa Beans                                                                   |                 | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Carpet             | White Carpet+Cocoa Beans                                                             |                 | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Concrete Powder    | Cocoa Beans+Sand+Gravel                                                              | 8               | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Dye                | Cocoa Beans                                                                          |                 |                                                                                                                                                                                                                                   |
+| Brown Firework Star      | Gunpowder+Cocoa Beans+HeadorGold NuggetorFeatherorFire Charge+Glowstone Dust+Diamond |                 | ‌[Bedrock Edition and Minecraft Education  only]Up to eight dyes can be added.One head, gold nugget, feather, or fire charge can be added.Both the diamond and the glowstone dust can be added with any of the other ingredients. |
+| Brown Firework Star      | Brown Firework Star+Cocoa Beans                                                      |                 | ‌[Bedrock Edition and Minecraft Education  only]Adds a "fade to color" effect to the firework star, overwriting any existing fades.Up to eight dyes can be added.                                                                 |
+| Brown Glow Stick         | Polyethylene+Hydrogen Peroxide+Cocoa Beans+Luminol                                   |                 | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Shulker Box        | AnyShulker Box+Cocoa Beans                                                           |                 | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Stained Glass      | Glass+Cocoa Beans                                                                    | 8               | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Stained Glass Pane | Glass Pane+Cocoa Beans                                                               | 8               | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Terracotta         | Terracotta+Cocoa Beans                                                               | 8               | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Brown Wool               | AnyWool+Cocoa Beans                                                                  |                 | ‌[Bedrock Edition and Minecraft Education  only]                                                                                                                                                                                  |
+| Cookie                   | Wheat+Cocoa Beans                                                                    | 8               |                                                                                                                                                                                                                                   |
+
+In Bedrock Edition and Minecraft Education, cocoa beans can be:
+
+- Applied tosheepto dye their wool, which can then beshearedfor 1–3 blocks ofbrown wool.
+- Applied to tamedwolvesto dye their collars.
+- Applied to tamedcatsto dye their collars.
+- Used to dye or stainwool,leather armor,beds,glass,terracottaandshulker boxes.
+- Combined withgunpowderto make afirework star.
+- Combined with a firework star to create a fade-to-color effect.
+- Used to add patterns tobanners.
+- Used to dyeshulkersinBedrock EditionandMinecraft Education.
+- Used to dyewatercontained incauldronsinBedrock EditionandMinecraft Education.
+- Combined withsandandgravelto craftconcrete powder.
+- Combined withcompoundsto craftballoonsorglow sticksinBedrock EditionandMinecraft Education.
+- Used to change the color of text onsignsorhanging signs.
+
+In Bedrock Edition, cocoa beans can be also used in banner patterns:
+
+| Name               | Ingredients                                                                                                | Crafting recipe |
+|--------------------|------------------------------------------------------------------------------------------------------------|-----------------|
+| BrownBannerpattern | Cocoa Beans+Banner                                                                                         |                 |
+| BrownBannerimage   | Cocoa Beans+Banner+VinesorBricksorCreeper HeadorWither Skeleton SkullorOxeye DaisyorEnchanted Golden Apple |                 |
+
+
+
+
+Name
+Ingredients
+Loom recipe
+Description
+
+
+Brown Banner pattern
+
+White Banner + Cocoa Beans
+
+
+
+Field masoned banner and bordure indented banner don't require banner patterns.‌[Java Edition  only]
+Cocoa Beans can be used as a dye.‌[Bedrock Edition  only]Note: The loom is using the Java Edition interface.
+
+
+
+Brown Banner image
+
+White Banner + Cocoa Beans + Banner Pattern
+
+
+
+Exceptions:
+Field masoned and bordure indented banner patterns.‌[Bedrock Edition  only]
+Cocoa Beans can be used as a dye.‌[Bedrock Edition  only]Note: The loom is using the Java Edition interface.
+
+
+
+## Data values
+### ID
+Java Edition:
+
+| Name        | Identifier  | Form  | Translation key            |
+|-------------|-------------|-------|----------------------------|
+| Cocoa       | cocoa       | Block | block.minecraft.cocoa      |
+| Cocoa Beans | cocoa_beans | Item  | item.minecraft.cocoa_beans |
+
+Bedrock Edition:
+
+| Name        | Identifier  | Alias ID | Numeric ID | Form                         | Item ID[i 1]   | Translation key     |
+|-------------|-------------|----------|------------|------------------------------|----------------|---------------------|
+| Cocoa       | cocoa       | None     | 127        | Block & Ungiveable Item[i 2] | Identical[i 3] | tile.cocoa.name     |
+| Cocoa Beans | cocoa_beans | dye / 3  | 412        | Item                         | —              | item.dye.brown.name |
+
+
+↑ ID of block's direct item form, which is used in savegame files and addons.
+
+↑ Unavailable with /give command
+
+↑ The block's direct item form has the same id as the block.
+
+
+### Block states
+See also: Block states
+
+Java Edition:
+
+| Name   | Default value | Allowed values     | Description                                                                                         |
+|--------|---------------|--------------------|-----------------------------------------------------------------------------------------------------|
+| age    | 0             | 012                | The stage of the pod's growth, 2 is fully grown.                                                    |
+| facing | north         | eastnorthsouthwest | The direction from the cocoa bean to the log.The direction the player faces when placing the cocoa. |
+
+Bedrock Edition:
+
+| Name      | Metadata Bits | Default value | Allowed values      | Values forMetadata Bits | Description                                                                                                                                    |
+|-----------|---------------|---------------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| age       | 0x40x8        | 0             | 012                 | 012                     | The stage of the pod's growth, 2 is fully grown.                                                                                               |
+|           |               |               | 3456789101112131415 | Unsupported             | Unused                                                                                                                                         |
+| direction | 0x10x2        | 0             | 0123                | 0123                    | The direction from the cocoa bean to the log.0: Attached to the south 1: Attached to the east 2: Attached to the north 3: Attached to the west |
+
+
+
+## Literature
+### References
+
+↑ MC-150278
+
+↑ MCPE-175451
+
+↑ https://twitter.com/notch/status/53161729990987776
+
+↑ MCPE-7887
+
+↑ MCPE-13579
+
+↑ https://youtu.be/j1xK2SWpddw?t=3m45s
+
+↑ https://youtu.be/j1xK2SWpddw?t=4m
+
+↑ https://youtu.be/2UUX5gJdf2A?t=9m24s
+
+↑ https://youtu.be/j1xK2SWpddw?t=3m07s
+
+↑ MC-109055 — Fixed
+
+↑ MCPE-152862
+
+
+### External links
+- Taking Inventory: Cocoa Beans– Minecraft.net on December 5, 2019
+
+| Tools, weapons, and armor |                                                                                                                                                                       |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tools                     | Axe Brush Elytra Fishing Rod Carrot on a Stick Warped Fungus on a Stick Flint and Steel Hoe Pickaxe Shears ShovelBE & EE only   Glow Stick                            |
+| BE&EEonly                 | Glow Stick                                                                                                                                                            |
+| Weapons                   | Arrow Tipped Axe Bow Crossbow Egg Fire Charge Shield Snowball Sword TridentJava Edition only   Spectral Arrow   BE & EE only   Ice Bomb   Upcoming   Mace Wind Charge |
+| Java Editiononly          | Spectral Arrow                                                                                                                                                        |
+| BE&EEonly                 | Ice Bomb                                                                                                                                                              |
+| Upcoming                  | Mace Wind Charge                                                                                                                                                      |
+| Armor                     | Boots Chestplate Helmet Turtle Shell Horse Armor LeggingsUpcoming   Wolf Armor                                                                                        |
+| Upcoming                  | Wolf Armor                                                                                                                                                            |
+
+| BE & EE only | Glow Stick |
+|--------------|------------|
+
+| Java Edition only | Spectral Arrow   |
+|-------------------|------------------|
+| BE&EEonly         | Ice Bomb         |
+| Upcoming          | Mace Wind Charge |
+
+| Upcoming | Wolf Armor |
+|----------|------------|
+
+| Utilities        |                                                                                                                                                                                                                                                                                                                                                                                             |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vehicles         | Boat with Chest Minecart with Chest with Hopper with TNTJava Edition only   Minecart with Furnace                                                                                                                                                                                                                                                                                           |
+| Java Editiononly | Minecart with Furnace                                                                                                                                                                                                                                                                                                                                                                       |
+| Aesthetic        | Item Frame Glow Painting                                                                                                                                                                                                                                                                                                                                                                    |
+| Music Discs      | 13 Cat Blocks Chirp Far Mall Mellohi Stal Strad Ward 11 Wait Otherside 5 Pigstep Relic                                                                                                                                                                                                                                                                                                      |
+| Informational    | Book and Quill Written Clock Compass Recovery Map Empty Explorer Name Tag Spyglass                                                                                                                                                                                                                                                                                                          |
+| Utility          | Armor Stand Bone Meal Bottle o' Enchanting Bowl Bucket Water Lava Milk Powder Snow Axolotl Cod Pufferfish Salmon Tadpole Tropical Fish Enchanted Books End Crystal Eye of Ender Firework Rocket Glass Bottle Water Potion Lingering Splash Goat Horn Lead Saddle Totem of UndyingBE & EE only   Balloon    Medicine Sparkler Super Fertilizer   Upcoming   Ominous Bottle Trial Key Ominous |
+| BE&EEonly        | Balloon    Medicine Sparkler Super Fertilizer                                                                                                                                                                                                                                                                                                                                               |
+| Upcoming         | Ominous Bottle Trial Key Ominous                                                                                                                                                                                                                                                                                                                                                            |
+
+| Java Edition only | Minecart with Furnace |
+|-------------------|-----------------------|
+
+| BE & EE only | Balloon    Medicine Sparkler Super Fertilizer |
+|--------------|-----------------------------------------------|
+| Upcoming     | Ominous Bottle Trial Key Ominous              |
+
+| Food         |                                                                                                                  |
+|--------------|------------------------------------------------------------------------------------------------------------------|
+| Natural      | Apple Beetroot Carrot Chorus Fruit Glow Berries Melon Slice Sweet Berries Potato Baked Poisonous Spider Eye      |
+| Rawmeat      | Raw Beef Raw Chicken Raw Mutton Raw Porkchop Raw Rabbit Raw Cod Raw Salmon Tropical Fish Pufferfish Rotten Flesh |
+| Cookedmeat   | Steak Cooked Chicken Cooked Mutton Cooked Porkchop Cooked Rabbit Cooked Cod Cooked Salmon                        |
+| Crafted      | Bread Cookie Dried Kelp Honey Bottle Mushroom Stew Beetroot Rabbit Suspicious Pumpkin Pie                        |
+| Supernatural | Golden Apple Enchanted Golden Carrot                                                                             |
+
+| Ingredients        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Seeds              | Beetroot Seeds Cocoa Beans Melon Seeds Pitcher Pod Pumpkin Seeds Torchflower Seeds Wheat Seeds                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Raw materials      | Amethyst Shard Blaze Rod Bone Clay Ball Coal Diamond Disc Fragment 5 Dragon's Breath Echo Shard Emerald Ender Pearl Feather Flint Ghast Tear Glowstone Dust Gunpowder Heart of the Sea Honeycomb Ink Sac Glow Lapis Lazuli Leather Magma Cream Nautilus Shell Nether Quartz Nether Star Nether Wart Phantom Membrane Prismarine Shard Prismarine Crystals Rabbit Hide Rabbit's Foot Raw Copper Raw Gold Raw Iron Redstone Dust Shulker Shell Slimeball Stick String Turtle Scute WheatUpcoming   Armadillo Scute Breeze Rod |
+| Upcoming           | Armadillo Scute Breeze Rod                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Processed          | Blaze Powder Book Brick Nether Charcoal Copper Ingot Fermented Spider Eye Firework Star Glistering Melon Slice Gold Ingot Nugget Iron Ingot Nugget Netherite Ingot Netherite Scrap Paper Popped Chorus Fruit SugarBE & EE only   Bleach    Compounds                                                                                                                                                                                                                                                                        |
+| BE&EEonly          | Bleach    Compounds                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Dyes               | Black Dye Blue Dye Brown Dye Cyan Dye Gray Dye Green Dye Light Blue Dye Light Gray Dye Lime Dye Magenta Dye Orange Dye Pink Dye Purple Dye Red Dye White Dye Yellow Dye                                                                                                                                                                                                                                                                                                                                                     |
+| Banner Patterns    | Flower Charge Creeper Charge Skull Charge Thing Globe SnoutBE & EE only   Field Masoned Bordure Indented   Upcoming   Flow Guster                                                                                                                                                                                                                                                                                                                                                                                           |
+| BE&EEonly          | Field Masoned Bordure Indented                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Upcoming           | Flow Guster                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Pottery Sherds     | Angler Archer Arms Up Blade Brewer Burn Danger Explorer Friend Heart Heartbreak Howl Miner Mourner Plenty Prize Sheaf Shelter Skull SnortUpcoming   Flow Guster Scrape                                                                                                                                                                                                                                                                                                                                                      |
+| Upcoming           | Flow Guster Scrape                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Smithing Templates | Armor Trim Coast Dune Eye Host Raiser Rib Sentry Shaper Silence Snout Spire Tide Vex Ward Wayfinder Wild Netherite UpgradeUpcoming   Flow Bolt                                                                                                                                                                                                                                                                                                                                                                              |
+| Upcoming           | Flow Bolt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+| Upcoming | Armadillo Scute Breeze Rod |
+|----------|----------------------------|
+
+| BE & EE only | Bleach    Compounds |
+|--------------|---------------------|
+
+| BE & EE only | Field Masoned Bordure Indented |
+|--------------|--------------------------------|
+| Upcoming     | Flow Guster                    |
+
+| Upcoming | Flow Guster Scrape |
+|----------|--------------------|
+
+| Upcoming | Flow Bolt |
+|----------|-----------|
+
+| Creative or commands only |                                                                                                                                            |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Creativeonly              | Spawn EggsJava Edition only   Debug Stick Minecart with Command Block Unused Paintings   Minecraft Education only   Camera Photo Portfolio |
+| Java Editiononly          | Debug Stick Minecart with Command Block Unused Paintings                                                                                   |
+| Minecraft Educationonly   | Camera Photo Portfolio                                                                                                                     |
+| Commandsonly              | Boss Spawn Eggs Ender Dragon WitherJava Edition only   Bundle Knowledge Book                                                               |
+| Java Editiononly          | Bundle Knowledge Book                                                                                                                      |
+
+| Java Edition only       | Debug Stick Minecart with Command Block Unused Paintings |
+|-------------------------|----------------------------------------------------------|
+| Minecraft Educationonly | Camera Photo Portfolio                                   |
+
+| Java Edition only | Bundle Knowledge Book |
+|-------------------|-----------------------|
+
+| Unused              |                                        |
+|---------------------|----------------------------------------|
+| All editions        | Mundane Potion Thick Potion            |
+| Java Editiononly    | Potion of Luck Uncraftable Potion      |
+| Bedrock Editiononly | Camera Potion of Decay  Unused Potions |
+
+| Unimplemented       |                                                          |
+|---------------------|----------------------------------------------------------|
+| All editions        | Quiver Ruby                                              |
+| Java Editiononly    | Crystallized Honey Minecart with Dispenser Studded Armor |
+| Bedrock Editiononly | Minecart with Furnace Hoglin Meat                        |
+
+| Joke features    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| April Fools 2015 | Obsidian Boat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| April Fools 2016 | Smarter Watch Reality Vision Ankle Monitor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| April Fools 2019 | 3D Blue Key Red Key Yellow Key                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| April Fools 2020 | Footprint A Very Fine Item                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| April Fools 2023 | Air Banner Pattern (New Thing) Bit Bottle of Entity Splash Bottle of Void La Baguette Le Tricolore minecraft:dupe_hack Moon Cow Spawn Egg Longer String Potion of Big Splash Lingering Arrow Potion of Small Splash Lingering Arrow Tag                                                                                                                                                                                                                                                                                                                                              |
+| April Fools 2024 | Amber Gem Batato Spawn Egg Golden Poisonous Potato Enchanted Dent Hash Browns Hot potato Mega Spud Spawn Egg Plaguewhale Slab Spawn Egg Poisonous Polytra Poisonous Pota-Toes Poisonous Potato Chestplate Poisonous Potato Chips Poisonous Potato Fries Poisonous Potato Plant Poisonous Potato Slices Poisonous Potato Sticks Poisonous Potato Zombie Spawn Egg Poisonous Potato Hammer Potato Eye Potato of Knowledge Potato Oil Poisonous Potato Peeler Potato Peels Corrupted Potatiesh, Greatstaff of the Peasant Toxic Beam Toxic Resin Toxifin Slab Spawn Egg Venomous Potato |
+
+| Removed             |                                                |
+|---------------------|------------------------------------------------|
+| Java Editiononly    | Cauldron Potions Horse Saddle Reverted Potions |
+| Bedrock Editiononly | Copper Horn                                    |
+| Legacy Consoleonly  | debug fourj item                               |
+| MinecraftEduonly    | Block Inspector                                |
+
+| Natural       |                                                                                                                                                                                                                                                           |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Soil          | Clay Crimson Nylium Dirt Coarse Rooted Grass Block Gravel Mud Mycelium Podzol Sand Red Soul Sand Soul Soil Warped Nylium                                                                                                                                  |
+| Stone         | Andesite Basalt Bedrock Blackstone Calcite Cobblestone Mossy Deepslate Diorite Pointed Dripstone Block End Stone Glowstone Granite Infested Block Magma Block Netherrack Obsidian Sandstone Red Stone Terracotta Stained Tuff                             |
+| Ore/Mineral   | Amethyst Bud Cluster Ancient Debris Budding Amethyst Coal Ore Deepslate Copper Ore Deepslate Diamond Ore Deepslate Emerald Ore Deepslate Gold Ore Deepslate Nether Iron Ore Deepslate Lapis Lazuli Ore Deepslate Nether Quartz Ore Redstone Ore Deepslate |
+| Fluid/Related | Bubble Column Ice Blue Packed Lava Snow Powder Block Water                                                                                                                                                                                                |
+| Non-physical  | Air Cave‌[JE  only] Void‌[JE  only] Fire Soul                                                                                                                                                                                                             |
+
+| Biota         |                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wood/Hypha    | Logs Stripped Wood Stripped Stems Stripped Hyphae Stripped                                                                                                                                                                                                                                                                                                                                            |
+| Flower        | Allium Azure Bluet Blue Orchid Cornflower Dandelion Lilac Lily of the Valley Oxeye Daisy Peony Pitcher Plant Crop Poppy Rose Bush Sunflower Torchflower Crop Tulips Wither Rose                                                                                                                                                                                                                       |
+| Plant         | Azalea Flowering Bamboo Shoot Block Stripped Beetroots Big Dripleaf Small Cactus Carrots Cave Vines Chorus Plant Flower Cocoa Dead Bush Fern Large Hanging Roots Leaves Lily Pad Mangrove Propagule Mangrove Roots Muddy Melon Stem Moss Block Carpet Pink Petals Potatoes Pumpkin Carved Stem Saplings Seagrass Tall Short Grass Tall Spore Blossom Sugar Cane Sweet Berry Bush Vines Wheat Hay Bale |
+| Fungus        | Fungi Glow Lichen Mushrooms Blocks Stem Nether Sprouts Nether Wart Nether Wart Block Warped Crimson Roots Warped Roots Shroomlight Twisting Vines Weeping Vines                                                                                                                                                                                                                                       |
+| Algae         | Kelp Dried Block                                                                                                                                                                                                                                                                                                                                                                                      |
+| Fauna         | Coral Dead Coral Blocks Dead Coral Fans Dead Sea Pickle                                                                                                                                                                                                                                                                                                                                               |
+| Fauna/Related | Bee Nest Bone Block Cobweb Dragon Egg Frogspawn Sniffer Egg Turtle Egg                                                                                                                                                                                                                                                                                                                                |
+| Sculk         | Sculk Sculk Catalyst Sculk Sensor Calibrated Sculk Shrieker Sculk Vein                                                                                                                                                                                                                                                                                                                                |
+
+| Building      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Lighting      | Candle Dyed End Rod Froglight Jack o'Lantern Lantern Soul Sea Lantern Torch Soul                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Ornamental    | Bamboo Mosaic Bookshelf Carpets Chain Crying Obsidian Fences Wooden Nether Brick Iron Bars Gilded Blackstone Glass Pane Tinted Stained Glass Pane Glazed Terracotta Honeycomb Block Slabs Cut Copper Wooden Stairs Cut Copper Wooden Walls Wool                                                                                                                                                                                                                                                                                                                                                                |
+| Mineral Block | Block of Amethyst Block of Coal Block of Copper Cut Raw Block of Diamond Block of Emerald Block of Gold Raw Block of Iron Raw Block of Lapis Lazuli Block of Netherite Block of Quartz Bricks Chiseled Pillar Smooth Block of RedstoneUpcoming   Chiseled Copper Copper Grate                                                                                                                                                                                                                                                                                                                                  |
+| Upcoming      | Chiseled Copper Copper Grate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Structural    | Bricks Cobbled Deepslate Concrete Powder Cut Sandstone Chiseled Smooth Cut Red Sandstone Chiseled Smooth Deepslate Bricks Cracked Deepslate Tiles Cracked Dirt Path End Stone Bricks Nether Bricks Chiseled Cracked Red Packed Mud Mud Bricks Planks Polished Andesite Polished Basalt Smooth Basalt Polished Blackstone Chiseled Polished Blackstone Bricks Cracked Polished Diorite Polished Granite Polished Deepslate Chiseled Prismarine Bricks Dark Purpur Block Pillar Reinforced Deepslate Smooth Stone Stone Bricks Chiseled Cracked MossyUpcoming   Chiseled Tuff Polished Tuff Tuff Bricks Chiseled |
+| Upcoming      | Chiseled Tuff Polished Tuff Tuff Bricks Chiseled                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| BE&eduonly    | Colored Torches Elements Hardened Glass Pane Hardened Stained Glass Pane                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+| Upcoming | Chiseled Copper Copper Grate |
+|----------|------------------------------|
+
+| Upcoming | Chiseled Tuff Polished Tuff Tuff Bricks Chiseled |
+|----------|--------------------------------------------------|
+
+| Utility                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Interactable            | Anvil Chipped Damaged Barrel Beacon Brewing Stand Cartography Table Chest Ender Crafting Table Enchanting Table Furnace Blast Smoker Grindstone Lectern Loom Shulker Box Dyed Sign Hanging Smithing Table Stonecutter                                                                                                                                                                                                                                                                                        |
+| Utilizable              | Banners Ominous Beehive Beds Bell Cake with Candle Campfire Soul Cauldron Lava Powder Snow Water Chiseled Bookshelf Composter Conduit Decorated Pot End Gateway End Portal End Portal Frame Farmland Fletching Table Flower Pot Frosted Ice Heads Skeleton Wither Skeleton Zombie Creeper Piglin Dragon Jukebox Ladder Lodestone Monster Spawner Nether Portal Respawn Anchor Scaffolding Sponge Wet Suspicious Gravel Suspicious Sand TNTUpcoming   Heavy Core Trial Spawner Ominous Vault Ominous          |
+| Upcoming                | Heavy Core Trial Spawner Ominous Vault Ominous                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Redstone/Mechanical     | Buttons Wooden Stone Polished Blackstone Daylight Detector Dispenser Dropper Doors Iron Wooden Honey Block Hopper Lever Lightning Rod Note Block Observer Piston Sticky Head Moving Pressure Plates Wooden Stone Polished Blackstone Heavy Weighted Light Weighted Rail Activator Detector Powered Redstone Lamp Redstone Wire Comparator Repeater Torch Slime Block Target Trapped Chest Trapdoors Iron Wooden Fence Gates Tripwire Hook TripwireUpcoming   Copper Bulb Copper Door Copper Trapdoor Crafter |
+| Upcoming                | Copper Bulb Copper Door Copper Trapdoor Crafter                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Minecraft Educationonly | Chalkboard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| BE&eduonly              | Allow Border Compound Creator Deny Element Constructor Heat Block Item Frame Glow Lab Table Material Reducer Underwater TNT Underwater Torch                                                                                                                                                                                                                                                                                                                                                                 |
+
+| Upcoming | Heavy Core Trial Spawner Ominous Vault Ominous |
+|----------|------------------------------------------------|
+
+| Upcoming | Copper Bulb Copper Door Copper Trapdoor Crafter |
+|----------|-------------------------------------------------|
+
+| Creative or commands only |                                                                                                                            |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| All editions              | Barrier Command Block Chain Repeating Jigsaw Block  Light Petrified Oak Slab Player Head Structure Block Void Unstable TNT |
+| BE&eduonly                | Structure Air                                                                                                              |
+| China Editiononly         | mod_ore                                                                                                                    |
+
+| Unimplemented |                                                                                                                                             |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| All editions  | Branches Copper Button Colored Wood Planks Coral Slab Dirt Slab Empty Barrel Fish Barrel Furniture Paeonia  Sculk Jaw Spike Block Wax Block |
+
+| Unused              |                                                                                                                                                                                                                                                 |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bedrock Editiononly | Camera   Chalkboard                                                                                                                                                                                                                             |
+| BE&eduonly          | Broken Anvil Chiseled Purpur tile.client_request_placeholder_block.name Glowing Obsidian info_update info_update2 Invisible Bedrock   Nether Reactor Core tile.purpur_block.smooth.name reserved6 Smooth Stone Bricks Stonecutter (old) Unknown |
+
+| Joke features    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| April Fools 2013 | Block of Coal Etho Slab Tinted Glass Torch (Burnt-out)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| April Fools 2016 | USB Charger Block                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| April Fools 2020 | An Ant Box of Infinite Books Cursor Funky Portal Leftover Swaggiest stairs ever                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| April Fools 2022 | How did we get here?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| April Fools 2023 | Cheese Copper Sink Copper Spleaves Golden Chest Other Portal Packed Air Pickaxe Block Place Block                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| April Fools 2024 | Baked Potato Bricks Expired Charred Big Brain Block of Amber Block of Potato Peels Corrupted Compressed Poisonous Potato Block Double Triple Quadruple Floatater Floatato Frying Table Gravtater Pedestal Peelgrass Block Corrupted Poison Farmland Poison Path Poisonous Mashed Potato Poisonous Potato Block Poisonous Potato Cutter Poisonous Potato Head Block Poisonous Potato Headpiece Poisonous Potato Ore Deepslate Potato Battery Potato Bud Potato flower Potato Fruit Potato Leaves Potato Pedicule Potato Portal Potato Refinery Potato Sprouts Potato Stem Planks Slab Stairs Door Trapdoor Button Pressure Plate Sign Hanging Sign Fence Fence Gate Potone Copper Ore Diamond Ore Gold Ore Iron Ore Lapis Lazuli Ore Redstone Ore Resin Ore Powerful Potato Strong Roots Taterstone Terre de Pomme Vicious Potato Weak Roots |
+
+| Removed                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| All editions               | Grassless Dirt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Java Editiononly           | Cloth Dead Coral Block Gear Lava Spawner Locked chest Rose Potted Shrub Water Spawner                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Bedrock Editiononly        | Blue Rose grass_carried leaves_carriedUpcoming   Fern Fern                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Upcoming                   | Fern Fern                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| MinecraftEduonly           | Big Sign Border block Build allow block Build disallow block Foundation block Home Block Information block Information Sign Number Block Spawn Block Teleport Block                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Legacy Console Editiononly | Ring Block                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                            | Extreme metadata variants   All editions   Directionless Hopper Seamless Stone Slab Six-sided Hay Bale   Six-sided Piston   Java Edition only   Faceless Furnace Faceless Jack o'Lantern Green Shrub Potted Inaccessible "Boring" Blocks Invisible stairs Misaligned torch Redstone Nether portal post Overripe Melon Stem Attached Overripe Pumpkin Stem Attached Overgrown Cocoa Overeaten Cake Overgrown Wheat Potted non-flower block Snowy Dirt Coarse  Strange buttons   Bedrock Edition only   Bell Stand Diorite Bell Granite Bell Polished Six-sided Bone Block Six-sided Purpur Pillar Six-sided Quartz Pillar Smokeless Campfire |
+|                            | Extreme metadata variants                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| All editions               | Directionless Hopper Seamless Stone Slab Six-sided Hay Bale   Six-sided Piston                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Java Editiononly           | Faceless Furnace Faceless Jack o'Lantern Green Shrub Potted Inaccessible "Boring" Blocks Invisible stairs Misaligned torch Redstone Nether portal post Overripe Melon Stem Attached Overripe Pumpkin Stem Attached Overgrown Cocoa Overeaten Cake Overgrown Wheat Potted non-flower block Snowy Dirt Coarse  Strange buttons                                                                                                                                                                                                                                                                                                                |
+| Bedrock Editiononly        | Bell Stand Diorite Bell Granite Bell Polished Six-sided Bone Block Six-sided Purpur Pillar Six-sided Quartz Pillar Smokeless Campfire                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+| Upcoming | Fern Fern |
+|----------|-----------|
+
+| Extreme metadata variants |                                                                                                                                                                                                                                                                                                                              |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| All editions              | Directionless Hopper Seamless Stone Slab Six-sided Hay Bale   Six-sided Piston                                                                                                                                                                                                                                               |
+| Java Editiononly          | Faceless Furnace Faceless Jack o'Lantern Green Shrub Potted Inaccessible "Boring" Blocks Invisible stairs Misaligned torch Redstone Nether portal post Overripe Melon Stem Attached Overripe Pumpkin Stem Attached Overgrown Cocoa Overeaten Cake Overgrown Wheat Potted non-flower block Snowy Dirt Coarse  Strange buttons |
+| Bedrock Editiononly       | Bell Stand Diorite Bell Granite Bell Polished Six-sided Bone Block Six-sided Purpur Pillar Six-sided Quartz Pillar Smokeless Campfire                                                                                                                                                                                        |
+

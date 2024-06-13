@@ -1,0 +1,1 @@
+This function equips an iron pickaxe, searches for a nearby redstone ore block, and then mines it if found.

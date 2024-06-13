@@ -1,0 +1,1 @@
+This function searches for and mines a wood log block in the player's vicinity, iterating up to a certain distance and checking for blocks with names matching a list of wood log types, then mines the first one found.

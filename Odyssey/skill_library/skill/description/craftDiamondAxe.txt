@@ -1,0 +1,1 @@
+This function collects diamonds and sticks, crafts a crafting table if necessary, places it near the bot, and then uses it to craft a diamond axe.

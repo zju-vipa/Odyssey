@@ -1,0 +1,1 @@
+This function searches for a bucket in the inventory, crafts one if not found, then searches for a nearby water block, explores to find one if not found, navigates to the water block, equips the bucket, looks at the water block, and activates the bucket to collect water.

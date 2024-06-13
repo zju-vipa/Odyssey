@@ -1,0 +1,1 @@
+This function equips the bot with a diamond or iron pickaxe if available, crafts an iron pickaxe if not, then explores in a specific direction to find an emerald ore block within a certain distance, and finally mines the block.

@@ -1,0 +1,1 @@
+This function collects and smelts iron ores if there are not enough iron ingots, crafts a crafting table if it's not in the inventory, places the crafting table near the bot, and then uses it to craft a pair of shears.

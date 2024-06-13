@@ -1,0 +1,1 @@
+This function crafts sandstone slabs by checking if there are enough sandstones in the inventory, collecting more if necessary, then crafting and placing a crafting table and finally crafting the sandstone slabs using the table.

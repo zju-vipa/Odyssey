@@ -1,0 +1,1 @@
+This function automates the process of crafting an iron axe by first smelting raw iron, then collecting required items if necessary, crafting a crafting table if not already available, placing the table, and finally crafting the iron axe using the table.

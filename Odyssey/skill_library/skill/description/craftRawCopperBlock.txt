@@ -1,0 +1,1 @@
+This function crafts a raw copper block by first ensuring the bot has enough raw copper in its inventory, then crafting a crafting table if necessary, placing the table near the bot, and finally crafting the raw copper block using the table.

@@ -1,0 +1,1 @@
+This function searches for iron armor items in the inventory and equips them in their corresponding slots if found.

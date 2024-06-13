@@ -1,0 +1,1 @@
+This function equips an axe, searches for and finds cocoa pods within a 32-block radius, digs them up, and then navigates to each pod's location to collect the beans.

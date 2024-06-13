@@ -1,0 +1,1 @@
+This function crafts a light weighted pressure plate by first smelting all raw gold, then mining and smelting additional gold ores if necessary, and finally crafting the pressure plate using the sufficient gold ingots.

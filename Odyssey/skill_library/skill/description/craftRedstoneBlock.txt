@@ -1,0 +1,1 @@
+This function crafts a redstone block by first ensuring the bot has enough redstone in its inventory, then crafting a crafting table if necessary, placing the crafting table near the bot, and finally crafting the redstone block using the crafting table.

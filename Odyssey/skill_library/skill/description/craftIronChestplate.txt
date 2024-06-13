@@ -1,0 +1,1 @@
+This function automates the process of crafting an iron chestplate by first smelting raw iron into iron ingots, then crafting a crafting table if necessary, placing it near the bot, and finally using it to craft the iron chestplate.

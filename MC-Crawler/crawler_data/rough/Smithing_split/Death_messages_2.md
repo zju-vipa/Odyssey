@@ -1,0 +1,105 @@
+## Bedrock Edition
+- <player> was slain by Arrow
+	- Appears when the player is killed by an arrow shot from a dispenser or summoned with/summon.
+- <player> was shot by <player/mob>
+	- Appears when the player is killed by an arrow shot by a player or mob.
+- <player> was pricked to death
+	- Appears when the player is killed because they were touching a cactus.
+- <player> drowned
+	- Appears when the player runs out of air underwater and is killed from drowning damage.
+- <player> experienced kinetic energy
+	- Appears when the player is killed by hitting a wall while flying with elytra on.
+- <player> blew up
+	- Appears when the player is killed by anend crystal, abedexploding inthe Netherorthe End, or by a chargedrespawn anchorexploding in theOverworldorthe End.
+- <player> was blown up by Block of TNT
+	- Appears when the player is killed by TNT activated byredstonemechanisms, fire, or dispensed out from adispenser.
+- <player> was blown up by <player/mob>
+	- Appears when the player is killed by an entity that exploded, or by TNT activated by a player or mob.
+- <player> was poked to death by a sweet berry bush
+	- Appears when the player is killed because they were in a sweet berry bush.
+- <player> hit the ground too hard
+	- Appears when the player is killed by a less than 5 block fall,ender pearldamage, or falling while riding anentitythat died due to fall damage.
+- <player> fell from a high place
+	- Appears when the player is killed by a greater than 5 block fall.
+- <player> was squashed by a falling anvil
+	- Appears when the player is killed by an anvil falling on their head.
+- <player> was squashed by a falling block
+	- Appears when the player is killed by a falling block (other than an anvil) modified to inflict damage.
+- <player> went up in flames
+	- Appears when the player is killed because they were in a fire source block.
+- <player> burned to death
+	- Appears when the player is killed because they were on fire, but not in a fire source block.
+- <player> went off with a bang
+	- Appears when the player is killed by the explosion of a firework rocket.
+- <player> tried to swim in lava
+	- Appears when the player is killed because they were in lava.
+- <player> was struck by lightning
+	- Appears when the player is killed by a lightning bolt.
+- <player> discovered floor was lava
+	- Appears when the player is killed because they were standing on a magma block.
+- <player> was killed by magic
+	- Appears when the player is killed by a potion of Harming shot from a dispenser, by Instant Damage given with/effector by an evoker fang summoned with/summon.
+- <player> was killed by <player/mob> using magic
+	- Appears when the player is killed by a potion or arrow of Harming shot by a player or mob, or by an evoker fang summoned by an evoker.
+- <player> was slain by <player/mob>
+	- Appears when the player is hurt by a player or mob and killed.
+	- This death message is actually two different death messages:<player> was slain by <mob>and<player> was slain by <player>.
+- <player> was slain by <player> using <item>
+	- Appears when the player is hurt by a player holding a renamed item and killed.
+- <player> was slain by Small Fireball
+	- Appears when the player is killed by a fireball shot from a dispenser.
+- <player> starved to death
+	- Appears when the player plays onHarddifficulty and is killed by hunger damage because their hunger bar was at 0.
+- <player> suffocated in a wall
+	- Appears when the player is killed because they were inside of a non-transparent block.
+- <player> was killed trying to hurt <player/mob>
+	- Appears when the player is killed because they hurt a guardian, elder guardian, or a player or mob wearing armor enchanted withThorns.
+- <player> was impaled to death by <player/mob>
+	- Appears when the player is killed by a trident shot by a player or mob, or from a dispenser or summoned with/summon.
+- <player> fell out of the world
+	- Appears when the player is killed by being more than 64 blocks below the bottom of the world.
+- <player> withered away
+	- Appears when the player is killed by the witherstatus effect.
+- <player> died
+	- Appears when the player is killed by/kill.
+- <player> was fireballed by <player/mob>
+	- Appears when the player is killed by a fireball shot by a player or mob.
+- <player> was sniped by <player/mob>
+	- Appears when the player is killed by a shulker bullet shot by ashulker
+- <player> was spitballed by <player/mob>
+	- Appears when the player is killed by a llama spit shot by allama.
+- <player> froze to death
+	- Appears when the player is killed because they were in powder snow for too long.
+- <player> was skewered by a falling stalactite
+	- Appears when the player is killed by falling stalactite.
+- <player> was impaled on a stalagmite
+	- Appears when the player falls on a stalagmite and dies.
+- <player> was obliterated by a sonically-charged shriek whilst trying to escape <player/mob>
+	- Appears when the player is killed by a warden using its sonic boom.
+
+** Unused death messages **
+NOTE: These death messages appear only in the en_US.lang file.
+
+- <player> was shot by <player/mob> using <item>
+- <player> walked into a cactus whilst trying to escape <player/mob>
+- <player> drowned whilst trying to escape <player/mob>
+- <player> was fireballed by <player/mob> using <item>
+- <player> was killed by <player/mob> using <item>
+- <player> walked into fire whilst fighting <player/mob>
+- <player> tried to swim in lava to escape <player/mob>
+- <player> walked on danger zone due to <player/mob>
+- <player> was burnt to a crisp whilst fighting <player/mob>
+- <player> was pummeled by <player/mob>
+- <player> was pummeled by <player/mob> using <item>
+- <player> was obliterated by a sonically-charged shriek
+- <player> fell off a ladder
+- <player> fell off some vines
+- <player> fell out of the water
+- <player> was doomed to fall
+- <player> was doomed to fall by <player/mob>
+- <player> was doomed to fall by <player/mob> using <item>
+- <player> fell too far and was finished by <player/mob>
+- <player> fell too far and was finished by <player/mob> using <item>
+- <player> was poked to death by a sweet berry bush whilst trying to escape <player/mob>
+
+

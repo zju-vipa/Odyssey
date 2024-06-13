@@ -1,0 +1,1 @@
+This function equips a sword, finds the nearest cow within a 32-block radius, kills it, and then collects the dropped items by navigating to the cow's former position.

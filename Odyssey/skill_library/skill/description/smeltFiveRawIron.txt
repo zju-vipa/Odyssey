@@ -1,0 +1,1 @@
+This function ensures the bot has a furnace and coal in its inventory, crafts a furnace if needed, places it nearby, mines coal if necessary, and then uses the coal to smelt five raw iron ores.

@@ -1,0 +1,1 @@
+This function searches for a water bucket in the inventory, equips it, looks at the current position, and activates the item to place water at that location.

@@ -1,0 +1,1 @@
+This function crafts a jukebox by ensuring the bot has enough planks, diamonds, and a crafting table, then placing the crafting table and crafting the jukebox using it.

@@ -1,0 +1,1 @@
+This function searches for 5 cactus blocks within a 32-block radius, mines them, and then navigates to each block's location to collect the dropped items.

@@ -1,0 +1,33 @@
+## Fuel
+Even if you get a furnace, the supply of fuel for the furnace is extremely limited. You only have dead bushes, whether collected whole or broken into sticks, and these are non-renewable in a desert biome. Once you have broken or collected all the dead bushes in an area, you get no more fuel.  And it takes a lot of sticks to power a furnace even for a short time. So you should conserve all your sticks for the most critical operations, bearing in mind you also need sticks to craft tools and weapons if you ever manage to obtain cobblestone or iron (sometimes gained from mob drops). While it may be tempting to trade sticks to a fletcher villager for emeralds, consider carefully whether this is your best course of action.
+
+Using precious fuel for cooked food is a luxury you almost certainly can't afford. Because of the shortage of fuel (if you lack a pickaxe to mine coal or a campfire to cook food) arguably one of the most important iron items to craft is a bucket. That has the highest claim on any iron you find (with the exception of an iron pickaxe). With a bucket, you can switch to using lava as fuel. Lava is highly abundant in the desert biome, far more so than wood. With a Lava Bucket, cooked food and smelting become viable.
+
+If you’re lucky enough to stumble across a pillager outpost, proceed with caution, mining in from underneath or fighting your way inside. From the outpost you can acquire wood blocks from the side of the structure. If crafted with sticks from bushes and precious coal, a campfire can be used indefinitely to cook meat and potatoes.
+
+A small amount of wood for fuel can be obtained by breaking the furniture inside village houses. It's not advisable to burn doors, but the functions of fences (which the furniture drops when it breaks, along with oak pressure plates or jungle button) can be replaced by other much more plentiful blocks (sand walls for example, or sandstone walls with sandstone slabs for "windows"). The pressure plates might be worth hanging on to in case you want to automate some doors or traps. The highest priority on fuel is definitely to smelt iron ore. Be careful to exactly calculate the burning time of each precious wooden item, and feed the next type of item into the furnace as soon as the fuel slot is empty.
+
+A strong recommendation would be to not use any wood for fuel until you have smelted enough iron for a bucket. Once you have a bucket, obtain lava and use that for fuel, conserving any wood and sticks.
+
+In a scenario with no villages or other structures, your only initial fuel consists of dead bushes and their sticks, making it even more important to conserve fuel until you have a bucket for lava.
+
+## Weapons and tools
+Your starting weapon in the desert is your fist, or if you prefer, a stick or a chunk of cactus. These all do the same amount of damage and are a slow way to kill any mob. In this way you can kill single mobs, mobs that are stuck behind a defensive obstacle you have created, or maybe a wounded one that breaks through. Almost any mob at full strength can easily kill you, and multiple mobs in the open are likely to kill you because you have weak weapons and no armor.
+
+No wooden weapons can be crafted without planks, apart from a bow (sticks from dead bushes and string from spider kills), but even a bow requires a crafting table, which requires planks. A village usually provides a crafting table, but not planks. With a crafting table, however, you can bypass wooden tools and weapons and go directly to stone tools and weapons, if you can get cobblestone by other means, such as a creeper (without a wooden pick which is the normal way). Alternatively, you can craft an iron pickaxe if you obtain 3 iron ingots from zombie drops. Statistically, this would require killing about 120 zombies.
+
+Your best chances to get weapons are from a village chest or from mob drops. Your first real weapon, if have not found a village with a crafting table, is likely to be a bow dropped by a skeleton, a crossbow from a pillager, or less likely an iron shovel or iron sword from a zombie or husk.
+
+Once you find a village with a crafting table, you can quickly craft a bow. You can collect arrows from skeletons, but there is almost no chance of crafting arrows, due to the lack of chickens for feathers. Buying them from village fletchers is possible but expensive. This means the bow must be used sparingly, for tight situations, emergencies, or high-value targets.
+
+In a village with weaponsmith or toolsmith, there is the possibility of weapons in the blacksmith's chest; as even an iron shovel is a huge improvement as a weapon. In addition, you have the option to trade with villagers for weapons. For example, you can trade paper for emeralds and then emeralds for weapons or armor or tools, next section. Trading with villagers is an excellent way to escape the limitations of the desert biome.
+
+It's a similar story with tools. It is difficult to make any 'technological' progress without some kind of pickaxe, or any 'agricultural' progress without some kind of hoe.
+
+## Light
+The desert is slightly forgiving in that it has higher ambient light levels at night. Nonetheless, monsters still spawn. Obtaining light sources in the desert is challenging. The basic light source is a torch, but these require coal or charcoal. Charcoal requires wood blocks, which are totally absent from the desert. Coal ore does exist, but mining it requires a pickaxe, which requires wood planks, which are again absent from the desert. The best long-term sustainable light source is probably lava, but if you do not have the capability to make a bucket, the only way to use lava is to move your base to a lava source and perhaps slightly extend the effect of the lava by digging shallow trenches for it to spread from the source. If you have a bucket you can make "lava lamps" from stone-lined holes.
+
+Even in villages, there are only a small supply of torches and sea pickles, and no means of creating extra ones. You must redistribute the small number of light sources optimally to prevent monster spawning and construct your defensive perimeter to be no bigger than the area you can protect from spawning (in a village because you have a crafting table, you can also craft sandstone slabs to inhibit spawning).
+
+If you do somehow obtain a pickaxe, light becomes much less of a problem because you can mine coal, and make torches from coal and sticks (from dead bushes) even with your basic 2×2 crafting grid. With a pickaxe and a 3×3 crafting table you are home free, because you can mine cobblestone, make stone tools, make a furnace, and then (if you can find fuel, see above), progress to iron tools and beyond.
+

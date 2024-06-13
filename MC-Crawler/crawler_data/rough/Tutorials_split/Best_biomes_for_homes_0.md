@@ -1,0 +1,197 @@
+# Tutorials/Best biomes for homes
+One of the most important things to consider when building a shelter is where to put it. Depending on how much of a challenge you want day-to-day survival to be, you might prefer one biome over another. In this tutorial, you'll learn about the pros and cons of each biome so that you can make a more knowledgeable decision about where you would want to situate your new home. The biomes are listed from easiest to hardest to settle in for a typical, new player, based on the desirable/undesirable characteristics mentioned below. 
+
+
+This guide evaluates each biome based on its own merits, i.e., its ability to provide necessary resources, preferably without needing to travel elsewhere. For biomes from the Nether or End dimensions, this includes assuming the player does not travel to the Overworld for supplies, if possible.
+## Contents
+- 1 Desirability
+	- 1.1 Desirable
+	- 1.2 Undesirable
+- 2 Overworld
+- 3 Surface biomes
+	- 3.1 Plains
+		- 3.1.1 Pros
+		- 3.1.2 Cons
+		- 3.1.3 Useful resources
+		- 3.1.4 Tips
+		- 3.1.5 Multiplayer
+	- 3.2 Desert
+		- 3.2.1 Pros
+		- 3.2.2 Cons
+		- 3.2.3 Useful resources
+		- 3.2.4 Tips
+	- 3.3 Meadows
+		- 3.3.1 Pros
+		- 3.3.2 Cons
+		- 3.3.3 Useful resources
+	- 3.4 Windswept hills
+		- 3.4.1 Pros
+		- 3.4.2 Cons
+		- 3.4.3 Useful resources
+		- 3.4.4 Tips
+	- 3.5 Forest
+		- 3.5.1 Pros
+		- 3.5.2 Cons
+		- 3.5.3 Useful resources
+		- 3.5.4 Tips
+		- 3.5.5 Multiplayer
+	- 3.6 Taiga
+		- 3.6.1 Pros
+		- 3.6.2 Cons
+		- 3.6.3 Useful resources
+		- 3.6.4 Tips
+		- 3.6.5 Multiplayer
+	- 3.7 Swamp
+		- 3.7.1 Pros
+		- 3.7.2 Cons
+		- 3.7.3 Useful resources
+		- 3.7.4 Tips
+		- 3.7.5 Multiplayer
+	- 3.8 Ocean / deep ocean
+		- 3.8.1 Pros
+		- 3.8.2 Cons
+		- 3.8.3 Useful resources
+		- 3.8.4 Tips
+	- 3.9 Frozen ocean/deep frozen ocean
+		- 3.9.1 Pros
+		- 3.9.2 Cons
+		- 3.9.3 Useful resources
+	- 3.10 Snowy plains
+		- 3.10.1 Pros
+		- 3.10.2 Cons
+		- 3.10.3 Useful resources
+		- 3.10.4 Tips
+	- 3.11 Mountains
+		- 3.11.1 Pros
+		- 3.11.2 Cons
+		- 3.11.3 Useful resources
+	- 3.12 Ice spikes
+		- 3.12.1 Pros
+		- 3.12.2 Cons
+		- 3.12.3 Useful resources
+	- 3.13 Mushroom fields
+		- 3.13.1 Pros
+		- 3.13.2 Cons
+		- 3.13.3 Useful resources
+		- 3.13.4 Tips
+	- 3.14 Beach
+		- 3.14.1 Pros
+		- 3.14.2 Cons
+		- 3.14.3 Useful resources
+	- 3.15 Jungle
+		- 3.15.1 Pros
+		- 3.15.2 Cons
+		- 3.15.3 Useful resources
+		- 3.15.4 Tips
+		- 3.15.5 Multiplayer
+	- 3.16 Bamboo jungle
+		- 3.16.1 Pros
+		- 3.16.2 Cons
+		- 3.16.3 Useful resources
+		- 3.16.4 Multiplayer
+	- 3.17 Stony shore
+		- 3.17.1 Pros
+		- 3.17.2 Cons
+		- 3.17.3 Useful resources
+		- 3.17.4 Tips
+	- 3.18 Dark forest
+		- 3.18.1 Pros
+		- 3.18.2 Cons
+		- 3.18.3 Useful resources
+		- 3.18.4 Tips
+	- 3.19 Snowy taiga
+		- 3.19.1 Pros
+		- 3.19.2 Cons
+		- 3.19.3 Useful resources
+		- 3.19.4 Tips
+		- 3.19.5 Multiplayer
+	- 3.20 Old growth pine taiga
+		- 3.20.1 Pros
+		- 3.20.2 Cons
+		- 3.20.3 Useful resources
+		- 3.20.4 Tips
+		- 3.20.5 Multiplayer
+	- 3.21 Savanna
+		- 3.21.1 Pros
+		- 3.21.2 Cons
+		- 3.21.3 Useful resources
+		- 3.21.4 Tips
+		- 3.21.5 Multiplayer
+	- 3.22 Badlands
+		- 3.22.1 Pros
+		- 3.22.2 Cons
+		- 3.22.3 Useful resources
+		- 3.22.4 Tips
+- 4 Underground biomes
+	- 4.1 Useful resources
+	- 4.2 Lush caves
+		- 4.2.1 Pros
+		- 4.2.2 Cons
+		- 4.2.3 Useful resources
+	- 4.3 Dripstone caves
+		- 4.3.1 Pros
+		- 4.3.2 Cons
+		- 4.3.3 Useful resources
+	- 4.4 Deep dark
+		- 4.4.1 Pros
+		- 4.4.2 Cons
+		- 4.4.3 Useful resources
+- 5 Nether
+	- 5.1 Useful resources
+	- 5.2 General hazards
+	- 5.3 Nether wastes
+		- 5.3.1 Pros
+		- 5.3.2 Cons
+		- 5.3.3 Useful resources
+	- 5.4 Warped forest
+		- 5.4.1 Pros
+		- 5.4.2 Cons
+		- 5.4.3 Useful resources
+	- 5.5 Crimson forest
+		- 5.5.1 Pros
+		- 5.5.2 Cons
+		- 5.5.3 Useful resources
+	- 5.6 Soul sand valley
+		- 5.6.1 Pros
+		- 5.6.2 Cons
+		- 5.6.3 Useful resources
+	- 5.7 Basalt deltas
+		- 5.7.1 Pros
+		- 5.7.2 Cons
+		- 5.7.3 Useful resources
+- 6 The End
+	- 6.1 Central island
+		- 6.1.1 Pros
+		- 6.1.2 Cons
+		- 6.1.3 Useful resources
+	- 6.2 Outer islands
+		- 6.2.1 Pros
+		- 6.2.2 Cons
+		- 6.2.3 Useful resources
+- 7 Other
+	- 7.1 Sky
+		- 7.1.1 Pros
+		- 7.1.2 Cons
+	- 7.2 Underground
+		- 7.2.1 Pros
+		- 7.2.2 Cons
+		- 7.2.3 Useful resources
+- 8 Gallery
+	- 8.1 Overworld
+	- 8.2 Nether
+	- 8.3 The End
+	- 8.4 Other
+- 9 Video
+
+## Desirability
+All biomes have certain characteristics about themselves, which can either enhance or dampen the building experience. Keep in mind that this isn't ideal for some types of builds and that ratings might be slightly subjective. However, it is up to you at the end to decide what biome you would want to dwell in. 
+
+### Desirable
+- Has a consistent food source— Biomes are judged based on the availability of food sources, whenever it is from animals orcrops.
+- Flat— Determined by how easy it is to build on, how convenient it is to roam around, and how easy it is to fight and/or evademonstersdue to the even terrain.
+- Has trees— Provides an easy and renewable source ofwood.
+- Has unique block generation— Some blocks generate in specific biomes, or they generate in great abundance to make those biomes noteworthy.  For example,desertsare a great place to gathersandfor craftingglass.Nether plankscan be found only in warped or crimson forests.
+- Has particular generated structures—Villagerscan betradedwith, and can provide farms for the player to use. Although villages can be extremely beneficial to the player, they also attractillagersandzombies, both of which attack the village inraidsandzombie sieges. This, in turn, can endanger the player, but also the villagers, which may even get wiped out in these attacks. Other generated structures can be looted for their resources and even converted into homes, although each structure comes with its own dangers.
+- Has particular mob spawns— Certain biomes have enhanced spawn rates for mobs, or they can be the only locations where unique ones spawn.
+- Scenic— Some biomes are particularly spectacular, whether it is due to personal preference or unique environmental generation that creates memorable areas.
+

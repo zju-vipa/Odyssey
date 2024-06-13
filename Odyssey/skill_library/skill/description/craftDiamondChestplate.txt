@@ -1,0 +1,1 @@
+This function collects diamonds if there are not enough in the inventory, crafts a crafting table if not available, places the crafting table near the bot, and then crafts a diamond chestplate using the crafting table.

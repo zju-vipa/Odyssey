@@ -1,0 +1,1 @@
+This function crafts a note block by crafting wooden planks and redstone ore as needed, then places a crafting table near the bot and uses it to craft the note block.

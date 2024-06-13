@@ -1,0 +1,1 @@
+This function crafts sandstone stairs by checking if there are enough sandstones in the inventory, collecting more if necessary, crafting a crafting table if not already available, placing the table near the bot, and then crafting the sandstone stairs using the table.

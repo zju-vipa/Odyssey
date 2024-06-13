@@ -1,0 +1,1 @@
+This function searches for the best available axe in the inventory, prioritizing diamond, iron, stone, and wooden axes, equips the found axe, and if none are available, crafts a wooden axe and equips it.

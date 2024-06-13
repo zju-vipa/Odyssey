@@ -1,0 +1,190 @@
+# Mob/ED
+
+
+All parameters from Entity View at: Chunk format/Entity [edit]
+
+
+- 
+	- AbsorptionAmount: number of extra health added by Absorption effect.
+	- active_effects: The list of potion effects on this mob. May not exist.
+		- A potion effect
+			- ambient: 1 or 0 (true/false) - iftrue, this effect is provided by a Beacon and therefore should be less intrusive on screen.
+			- amplifier: The potion effect level. 0 is level 1.
+			- duration: The number ofgame ticksbefore the effect wears off. -1 when infinite.
+			- hidden_effect: Lower amplifier effect of the same type, this replaces the above effect when it expires. (The duration of the effect still decreases in here too)
+			- id: Theeffect name.
+			- show_icon: 1 or 0 (true/false) - iftrue, effect icon is shown; iffalse, no icon is shown.
+			- show_particles: 1 or 0 (true/false) - iftrue, particles are shown (affected byambient); iffalse, no particles are shown.
+	- ArmorDropChances: List of float values representing the chance for a worn armor item to drop.
+		- : Probability for the corresponding armor slot item.
+	- ArmorItems: The list of items the mob is wearing as armor, in the following order: feet, legs, chest, head.
+		- : An item in one of the armor slots.
+			- 
+			- Tags common to all items
+	- Attributes:A list ofAttributesfor this mob. These are used for many purposes in internal calculations, and can be considered a mob's "statistics". Valid Attributes for a given mob are listed in themain article.
+		- An individual Attribute.
+			- Name: The name of this Attribute.
+			- Base: The base value of this Attribute.
+			- Modifiers:A list ofModifiersacting on this Attribute. Modifiers alter the Base value in internal calculations, without changing the original copy. Note that a Modifier never modifies Base to be higher than its maximum or lower than its minimum for a given Attribute.
+				- An individual Modifier.
+					- Amount: The amount by which this Modifier modifies the Base value in calculations.
+					- Name: The Modifier's name.
+					- UUID: This modifier'sUniversally Unique IDentifier, stored as four ints. Used to identify the modifier so that the correct modifier can be added or removed.
+					- Operation:0,1,2. Defines the operation this Modifier executes on the Attribute's Base value.
+						- 0: IncrementXbyAmount.
+						- 1: IncrementYbyX*Amount.
+						- 2: SetY = Y * (1 + Amount)(equivalent to IncrementYbyY * Amount).
+				- The specified modifiers are applied to the attribute, probably whenever the attribute is modified.[more information needed]To compute the effective value of the attribute, the game:
+					- The value Y is the final effective value of the attribute.[more information needed]
+	- body_armor_drop_chance: Chance to drop the item in the body armor slot.‌[upcoming: JE 1.20.5]
+	- body_armor_item: The item in the body armor slot.‌[upcoming: JE 1.20.5]
+		- 
+		- Tags common to all items
+	- Brain: Everything this entity has to keep in mind.
+		- memories: Used for complex behaviors.[more information needed]
+			- The only mobs that have this tag are:
+				- allay
+				- axolotl
+				- frog
+				- goat
+				- piglin
+				- villager
+				- warden
+			- Piglinmemories:
+				- minecraft:admiring_disabled: Piglins with this tag do not barter by right-clicking and are not distracted by gold items on the ground; set when converting, when attacked or when admiring an item.
+					- value: 1 or 0 (true/false) - iftrue, admiring is disabled.
+					- ttl: The number ofgame ticksbefore this memory is removed.
+				- minecraft:admiring_item: If the piglin is admiring an item.
+					- value: 1 or 0 (true/false) - iftrue, admiring an item.
+					- ttl: The number of game ticks before this memory is removed, the piglin throws back another item when this reaches 0, if it held a gold ingot.
+				- minecraft:angry_at: The target of this piglin or this piglin brute.
+					- value:Universally Unique IDentifierof the entity that the piglin targets, stored as four ints.
+					- ttl: The number of game ticks before this memory is removed.
+				- minecraft:hunted_recently: If the piglin just hunted, and as such, won't for a while. Set after hunting or spawning in a bastion remnant.
+					- value: 1 or 0 (true/false) - {if {cd|true}}, the piglin just hunted and cannot hunt.
+					- ttl: The number of game ticks before this memory is removed.
+				- minecraft:universal_anger: If the piglin is being universally angered. Only used when universal anger gamerule is enabled.
+					- value: 1 or 0 (true/false) - {if {cd|true}}, universally angered.
+					- ttl: The number of game ticks before this memory is removed.
+			- Wardenmemories:
+				- minecraft:is_emerging: Exists if the warden is emerging.
+					- value: An empty compound tag.
+				- minecraft:dig_cooldown: The warden doesn't dig down if this memory exists.
+					- value: An empty compound tag.
+					- ttl: The number ofgame ticksbefore this memory is removed, initially set to 1200 game ticks (60 seconds).
+				- minecraft:is_sniffing: Exists if the warden is sniffing.
+					- value: An empty compound tag.
+				- minecraft:recent_projectile: Exists if the warden was stimulated by a projectile recently.
+					- value: An empty compound tag.
+					- ttl: The number of game ticks before this memory is removed, initially set to 100 game ticks (5 seconds).
+				- minecraft:roar_sound_cooldown: The warden doesn't roar if this memory exists.
+					- value: An empty compound tag.
+					- ttl: The number of game ticks before this memory is removed, initially set to 60 game ticks (3 seconds).
+				- minecraft:roar_sound_delay: The warden doesn't roar if this memory exists.
+					- value: An empty compound tag.
+					- ttl: The number of game ticks before this memory is removed, initially set to 25 game ticks (1.25 seconds).
+				- minecraft:touch_cooldown: The warden doesn't increase anger at an entity by touching it if this memory exists.
+					- value: An empty compound tag.
+					- ttl: The number of game ticks before this memory is removed, initially set to 20 game ticks (1 second).
+				- minecraft:vibration_cooldown: The warden doesn't listen for vibrations if this memory exists.
+					- value: An empty compound tag.
+				- ttl: The number of game ticks before this memory is removed, initially set to 40 game ticks (2 seconds).
+			- Camelmemories:
+				- minecraft:gaze_cooldown_ticks: Optional. If the camel is in a cool down for randomly looking around.
+					- value: The number ofgame ticksbefore the camel can randomly look around again and this tag is removed.
+			- Iron Golemmemories:
+				- minecraft:golem_detected_recently: If the villager has detected an iron golem recently.
+					- value: 1 or 0 (true/false) - {if {cd|true}}, the villager just saw an iron golem.
+					- ttl: The number of game ticks before this memory is removed.
+			- Axolotlmemories:
+				- minecraft:has_hunting_cooldown: If the axolotl is in a hunting cooldown[needs testing].
+					- value: 1 or 0 (true/false) - {if {cd|true}}, the axolotl just hunted.
+					- ttl: The number of game ticks before this memory is removed.
+				- minecraft:play_dead_ticks: Optional. If the axolotl is pretending to be dead.
+					- value: The number of game ticks before the axolotl stops to play dead and this tag is removed.
+			- Villagermemories:
+				- minecraft:home: Where this villager's bed is or where the piglin brute's patrol point is.
+					- value: The value of this memory.
+						- dimension: The dimension ID of the bed or of the patrol point.
+						- pos: The X, Y, and Z values of the bed or the patrol point
+				- minecraft:job_site: Where this villager's job site block is.
+					- value: The value of this memory.
+						- dimension: The dimension ID of the job site block.
+						- pos: The X, Y, and Z values of the job site block.
+				- minecraft:last_slept: Thegame tickthat the villager last slept in a bed.
+					- value: The value of this memory.
+				- minecraft:last_woken: The game tick that the villager last woke up from a bed.
+					- value: The value of this memory.
+				- minecraft:last_worked_at_poi: The game tick that the villager last worked at their job site.
+					- value: The value of this memory.
+				- minecraft:meeting_point: Where this villager's meeting point is.
+					- value: The value of this memory.
+						- dimension: The dimension ID of the meeting point.
+						- pos: The X, Y, and Z values of the meeting point.
+				- minecraft:potential_job_site: Where this villager's potential job site block is.
+					- value: The value of this memory.
+						- dimension: The dimension ID of the potential job site block.
+						- pos: The X, Y, and Z values of the potential job site block.
+			- Frogmemories:
+				- minecraft:is_in_water: Only exists if the frog is in water.
+					- value: An empty compound tag.
+				- minecraft:is_pregnant: Only exists if the frog is pregnant.
+					- value: An empty compound tag.
+			- Allaymemories:
+				- minecraft:item_pickup_cooldown_ticks: The number ofgame ticksbefore the allay goes to pick up item again.
+					- value: The value of this memory, initially set to 100 game ticks (5 seconds), decreasing by 1 every tick.
+				- minecraft:liked_noteblock: The note block that the allay likes.
+					- value: The value of this memory.
+						- dimension: The ID of the dimension where the note block is.
+						- pos: The X, Y, and Z coordinates of the note block.
+				- minecraft:liked_noteblock_cooldown_ticks: The number of ticks before the allay stops putting items at the liked note block.
+					- value: The value of this memory, initially set to 600 game ticks (30 seconds), decreasing by 1 every tick.
+				- minecraft:liked_player: The player that the allay likes.
+					- value: The player'sUUID, stored as four ints.
+			- Goatmemories:
+				- minecraft:long_jump_cooling_down: Optional. If the goat is in a cool down after a long jump.
+					- value: The number of game ticks before the goat can long jump again and this tag is removed.
+				- minecraft:ram_cooldown_ticks: Optional. If the goat is in a cool down after ram.
+					- value: The number of game ticks before the goat can ram again and this tag is removed.
+			- Sniffer
+				- minecraft:sniffer_explored_positions: The last 20 positions in which the sniffer has dug, cannot dig in these positions.
+					- value: The coordinates of a block at which the sniffer has dug. Can have up to 20 blocks stored.
+			- Memories shared by multiple mobs:
+				- minecraft:is_tempted: If the axolotl, camel, or goat is tempted by the player.
+					- value: 1 or 0 (true/false) - {if {cd|true}}, the mob is tempted.
+				- minecraft:sniff_cooldown: The warden and sniffer don't sniff if this memory exists.
+					- value: An empty compound tag.
+					- ttl: The number ofgame ticksbefore this memory is removed, initially set to 100 game ticks (5 seconds).
+				- minecraft:temptation_cooldown_ticks: Optional. If the axolotl, camel, or goat is in a cool down after being tempted.
+					- value: The number of game ticks before the mob can be tempted again and this tag is removed.
+	- CanPickUpLoot: 1 or 0 (true/false) - {if {cd|true}}, the mob can pick up loot (wear armor it picks up, use weapons it picks up).
+	- 
+	- Tags common to all mobs with drops from loot tables
+	- DeathTime: Number of ticks the mob has been dead for. Controls death animations. 0 when alive.
+	- FallFlying: Setting to 1 for non-player entities causes the entity to glide as long as they are wearing elytra in the chest slot. Can be used to detect when the player is gliding without using scoreboard statistics.
+	- Health: number of health the entity has.
+	- HurtByTimestamp: The last time the mob was damaged, measured in the number of ticks since the mob's creation. Updates to a new value whenever the mob is damaged, then updates again 101 ticks later for reasons unknown. Can be changed withcommands, but the specified value does not affect natural updates in any way, and is overwritten if the mob receives damage.
+	- HurtTime: Number of ticks the mob turns red for after being hit. 0 when not recently hit.
+	- HandDropChances: List of float values representing the chance for a handheld item to drop.
+		- : Chance to drop the item being carried in the main hand.
+		- : Chance to drop the item being carried in the off hand.
+	- HandItems: The list of items the mob is holding, in the following order: Main hand, Off hand.
+		- : The item being held in the mob's main hand.
+			- 
+			- Tags common to all items
+		- : The item being held in the mob's off hand.
+			- 
+			- Tags common to all items
+	- Leash: Either contains a UUID int array, if this leash connects to another entity,oran X, Y, Z int trio if this leash connects to a fencepost. Does not exist if the entity is not leashed.
+		- UUID: TheUniversally Unique IDentifierof the entity this leash connects to, stored as four ints.
+		- X: The X coordinate of the fence this leash connects to.
+		- Y: The Y coordinate of the fence this leash connects to.
+		- Z: The Z coordinate of the fence this leash connects to.
+	- LeftHanded: 1 or 0 (true/false) - {if {cd|true}}, the mob renders the main hand as being left.
+	- NoAI: 1 or 0 (true/false) - Setting totruedisables the mob's AI. The mob does not and cannot move, to the extent of not falling when normally able.
+	- PersistenceRequired: 1 or 0 (true/false) - {if {cd|true}}, the mob must not despawn naturally.
+	- SleepingX: The X coordinate of where the entity is sleeping, absent if not sleeping.
+	- SleepingY: The Y coordinate of where the entity is sleeping, absent if not sleeping.
+	- SleepingZ: The Z coordinate of where the entity is sleeping, absent if not sleeping.
+	- Team: This tag is actually not part of the NBT data of a mob, but instead used when spawning it, so it cannot be tested for. It makes the mob instantly join thescoreboardteam with that name.
+

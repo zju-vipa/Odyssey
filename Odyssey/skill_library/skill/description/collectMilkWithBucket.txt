@@ -1,0 +1,1 @@
+This function ensures the bot has a bucket, equips it, finds the nearest cow within 32 blocks, moves to the cow, looks at it, and then uses the bucket on the cow to collect milk.

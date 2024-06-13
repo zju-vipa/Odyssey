@@ -1,0 +1,1 @@
+This function automates the process of crafting a golden shovel by first smelting raw gold, then collecting and preparing necessary items like gold ingots and sticks, crafting a crafting table if needed, placing it near the bot, and finally using it to craft the golden shovel.

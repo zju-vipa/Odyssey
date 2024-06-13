@@ -1,0 +1,1 @@
+This function equips the highest tier armor available in the player's inventory, checking for diamond, iron, golden, chainmail, and leather armor, and then equipping it to the corresponding armor slot.

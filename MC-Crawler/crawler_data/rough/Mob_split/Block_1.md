@@ -1,0 +1,200 @@
+### Technical blocks
+See also: Direct item forms of blocks
+
+Technical blocks serve various purposes during events within the game, or use a separate name spaced ID in order to avoid unnecessary combinations of block states. In Java Edition technical blocks do not exist as items, while in Bedrock Edition they may be obtained using inventory editors or add-ons.
+
+- Acacia Wall Hanging Sign
+- Acacia Wall Sign
+- Air
+- Attached Melon Stem
+- Attached Pumpkin Stem
+- Bamboo Wall Hanging Sign
+- Bamboo Wall Sign
+- Big Dripleaf Stem
+- Birch Wall Hanging Sign
+- Birch Wall Sign
+- Black Wall Banner
+- Blue Wall Banner
+- Brain Coral Wall Fan
+- Brown Wall Banner
+- Bubble Coral Wall Fan
+- Bubble Column
+- Cake with Black Candle
+- Cake with Blue Candle
+- Cake with Brown Candle
+- Cake with Candle
+- Cake with Cyan Candle
+- Cake with Gray Candle
+- Cake with Green Candle
+- Cake with Light Blue Candle
+- Cake with Light Gray Candle
+- Cake with Lime Candle
+- Cake with Magenta Candle
+- Cake with Orange Candle
+- Cake with Pink Candle
+- Cake with Purple Candle
+- Cake with Red Candle
+- Cake with White Candle
+- Cake with Yellow Candle
+- Cave Air‌[JE  only]
+- Cave Vines Plant
+- Cherry Wall Hanging Sign
+- Cherry Wall Sign
+- Chiseled Purpur‌[BE  only]
+- Creeper Wall Head
+- Crimson Wall Hanging Sign
+- Crimson Wall Sign
+- Cyan Wall Banner
+- Dark Oak Wall Hanging Sign
+- Dark Oak Wall Sign
+- Dead Brain Coral Wall Fan
+- Dead Bubble Coral Wall Fan
+- Dead Fire Coral Wall Fan
+- Dead Horn Coral Wall Fan
+- Dead Tube Coral Wall Fan
+- Dragon Wall Head
+- End Gateway
+- End Portal
+- Fire Coral Wall Fan
+- Frosted Ice
+- Glowing Obsidian‌[BE  only]
+- Gray Wall Banner
+- Green Wall Banner
+- Horn Coral Wall Fan
+- info_update‌[BE  only]
+- info_update2‌[BE  only]
+- Invisible Bedrock‌[BE  only]
+- Jungle Wall Hanging Sign
+- Jungle Wall Sign
+- Kelp Plant
+- Lava Cauldron
+- Light Blue Wall Banner
+- Light Gray Wall Banner
+- Lime Wall Banner
+- Magenta Wall Banner
+- Mangrove Wall Hanging Sign
+- Mangrove Wall Sign
+- Moving Piston
+- Nether Portal
+- Nether Reactor Core‌[BE  only]
+- Oak Wall Hanging Sign
+- Oak Wall Sign
+- Orange Wall Banner
+- Piglin Wall Head
+- Pink Wall Banner
+- Piston Head
+- Player Wall Head
+- Potted Acacia Sapling
+- Potted Allium
+- Potted Azalea
+- Potted Azure Bluet
+- Potted Bamboo
+- Potted Birch Sapling
+- Potted Blue Orchid
+- Potted Brown Mushroom
+- Potted Cactus
+- Potted Cherry Sapling
+- Potted Cornflower
+- Potted Crimson Fungus
+- Potted Crimson Roots
+- Potted Dandelion
+- Potted Dark Oak Sapling
+- Potted Dead Bush
+- Potted Fern
+- Potted Flowering Azalea
+- Potted Jungle Sapling
+- Potted Lily of the Valley
+- Potted Mangrove Propagule
+- Potted Oak Sapling
+- Potted Orange Tulip
+- Potted Oxeye Daisy
+- Potted Pink Tulip
+- Potted Poppy
+- Potted Red Mushroom
+- Potted Red Tulip
+- Potted Spruce Sapling
+- Potted Torchflower
+- Potted Warped Fungus
+- Potted Warped Roots
+- Potted White Tulip
+- Potted Wither Rose
+- Powder Snow Cauldron
+- Purple Wall Banner
+- Red Wall Banner
+- Redstone Wall Torch
+- reserved6‌[BE  only]
+- Skeleton Wall Skull
+- Soul Wall Torch
+- Smooth Purpur‌[BE  only]
+- Smooth Stone Bricks‌[BE  only]
+- Spruce Wall Hanging Sign
+- Spruce Wall Sign
+- Stonecutter (old)‌[BE  only]
+- Tube Coral Wall Fan
+- Twisting Vines Plant
+- Void Air‌[Java Edition  only]
+- Wall Torch
+- Warped Wall Hanging Sign
+- Warped Wall Sign
+- Water Cauldron
+- Weeping Vines Plant
+- White Wall Banner
+- Wither Skeleton Wall Skull
+- Yellow Wall Banner
+- Zombie Wall Head
+
+### Education Edition Exclusive
+These blocks can be accessed only in Minecraft Education and in Bedrock Edition when education options are enabled (Elements are not listed here). In Bedrock Edition, boards, posters, and slates can be obtained only through inventory editors.
+
+- Allow
+- Blue Torch
+- Board
+- Border
+- Compound Creator
+- Deny
+- Element Constructor
+- Green Torch
+- Hardened Black Stained Glass
+- Hardened Black Stained Glass Pane
+- Hardened Blue Stained Glass
+- Hardened Blue Stained Glass Pane
+- Hardened Brown Stained Glass
+- Hardened Brown Stained Glass Pane
+- Hardened Cyan Stained Glass
+- Hardened Cyan Stained Glass Pane
+- Hardened Glass
+- Hardened Glass Pane
+- Hardened Gray Stained Glass
+- Hardened Gray Stained Glass Pane
+- Hardened Green Stained Glass
+- Hardened Green Stained Glass Pane
+- Hardened Light Blue Stained Glass
+- Hardened Light Blue Stained Glass Pane
+- Hardened Light Gray Stained Glass
+- Hardened Light Gray Stained Glass Pane
+- Hardened Lime Stained Glass
+- Hardened Lime Stained Glass Pane
+- Hardened Magenta Stained Glass
+- Hardened Magenta Stained Glass Pane
+- Hardened Orange Stained Glass
+- Hardened Orange Stained Glass Pane
+- Hardened Pink Stained Glass
+- Hardened Pink Stained Glass Pane
+- Hardened Purple Stained Glass
+- Hardened Purple Stained Glass Pane
+- Hardened Red Stained Glass
+- Hardened Red Stained Glass Pane
+- Hardened White Stained Glass
+- Hardened White Stained Glass Pane
+- Hardened Yellow Stained Glass
+- Hardened Yellow Stained Glass Pane
+- Heat Block
+- Lab Table
+- Material Reducer
+- Poster
+- Purple Torch
+- Red Torch
+- Slate
+- Underwater TNT
+- Underwater Torch
+

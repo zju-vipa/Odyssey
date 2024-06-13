@@ -1,0 +1,1 @@
+This function ensures the bot has wheat seeds in its inventory, collecting them if necessary, and then plants them.

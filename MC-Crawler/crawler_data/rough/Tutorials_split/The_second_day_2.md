@@ -1,0 +1,34 @@
+## Resources and mining
+The foundation of everything is mining (though farming is pretty important too). By now, you should have mined at least enough stone to make your basic stone tools, and you hopefully have some wood left over. You need more of both materials: Wood for various utility items, stone for more durable construction. Over the next few days, you'll be mining a variety of ores as well, but for now, concentrate on the basic materials:
+
+### Basic Materials
+** Dirt **
+As you explore your world, you are likely to pick up some dirt blocks. These are not good for building structures, but they are quick to place and remove, so you can use them for temporary staircases, pillars, and such. More importantly, you can use them to modify the landscape, making it easier to get around near your home. If you've had a creeper explode nearby, you can also use your collected dirt to fill in the hole (immediately after the explosion, there may be dirt and perhaps stone items left in the crater. Pick those up, but don't expect to get enough to fill in the crater). Note that mining grass blocks (that is, full blocks with a green top, not "tall grass" plants) drop dirt — don't worry about the difference for now. If you place the dirt next to grass blocks, the grass eventually spreads to the dirt, cleaning up the "scars" of your work.
+
+** Sand and gravel **
+Sand and gravel have special uses: Sand is used for making glass, which is useful for windows and even transparent walls. However, note that glass is fragile — a creeper blast destroys any glass in the blast range. Glass also cannot be recovered once placed (without the appropriate enchanted tools); if mined or blown up, it does not drop anything. Gravel is used to produce flint, which is a key material needed to craft arrows. As a bonus, these can be crafted together with dye to form concrete powder, so any cactus or flowers you've picked up may come in handy. 
+
+Both sand and gravel, unlike most blocks, are affected by gravity: If either block is placed without something directly beneath it, or if whatever's beneath it goes away for any reason, it falls to the ground below. If it falls on you such that your head is buried, you take suffocation damage until you get free or mine your way out. They can also suffocate mobs, which can be useful for traps.
+
+You may see shelves of "floating" sand or gravel, which the game generated without support (that is, a player couldn't have placed them like that). Be careful around these, as they are natural traps: Mining them or placing any block next to them sets off a chain reaction that can bring down the whole shelf. Sand shelves appear in deserts, while gravel shelves (or ceilings) can appear underground. When seen from underneath, sand and gravel shelves drop "falling dust" particles. Always be careful not to mine or place any blocks touching them.
+
+Beneath sand, you often find sandstone. You can build with this and craft it into various forms, but remember that it is much more fragile than "real" stone.
+
+** Wood and logs **
+You can build with wood, and converting the logs to planks quadruples the number of blocks you have to work with. However, wood has two liabilities: First, it is flammable, and lava or lightning can start a fire that can destroy much of your house. Secondly, it has low blast resistance, so if a creeper explodes near a wooden house, it can demolish a good deal of work and perhaps damage the inside of the house as well. 
+
+Wood is plentiful in forests. If trees are scarce around you, you may want to plant some replacement trees: You may have noticed when you chopped down trees, that as the leaves decay, some of them drop saplings, which you hopefully picked up. You can plant them on any dirt or grass block where there's room for the tree to grow. Once you plant them, don't hang around waiting, just go do other things and come back later when the trees have grown (it can take up to a day or more). Once you have spare torches, you can put one of those a couple or few blocks away from your saplings, as this helps them continue growing overnight. 
+
+** Stone **
+As you've seen, mining gray ("plain") stone, drops a mottled block called cobblestone. This differs from stone only in appearance and what you can craft with it. Stone is so plentiful, that you may find yourself making chests just to store your accumulated cobblestone. However, don't throw it away, as stone is a key building material. Stone is not flammable, and has high blast resistance: If a creeper explodes right next to your stone wall, it may break a few blocks, but not much more than that. For your early houses, you should be making most of the walls out of stone.
+
+Once you have coal/charcoal to spare, you might want to use your furnace to smelt some cobblestone back into gray stone. With this, you can fill holes in underground caves without leaving unsightly patches of cobblestone. You can also make various decorative blocks such as stone bricks, which lets you build more attractive houses and other structures. Any variation of stone bricks are just as strong as gray stone or cobblestone.
+
+You may also find pockets of other "rocks": granite, andesite, and diorite. These are fine building blocks and are as strong as gray stone, but are less flexible: They can also be crafted into various more decorative blocks, but can't always substitute for gray stone in recipes.
+
+** Coal ore **
+This is a major resource, with two main uses: it is used to make torches, (your major source of light), and to smelt or cook items in your furnace. Smelting items not only let you cook your meat for better nutrition, but is also necessary for making use of iron (see below). A stack (64 lumps) of coal is a fairly large amount for the beginning, but over time you need a lot of it. Fortunately, it is common: It is found everywhere underground, and even some on the surface. Coal is the only ore you can mine with a wooden pickaxe. Coal is not strictly necessary since you can make charcoal from wood, but it is common, and you have plenty of other things to do with wood. Also, five types of villagers offer emeralds in trade for coal, but they don't accept charcoal.
+
+** Iron ore **
+Iron is probably the most important and versatile resource you can find underground, and it seems there is never enough of it. You can use it to craft good quality tools, armor, and a variety of other things. For your second day (or whenever you venture underground), your initial goal is to get at least 33 pieces of iron ore (see below for what to craft with that), and more iron is always needed and useful. Once you have some of the ore, use a furnace to smelt it into iron ingots, that you can then craft into other items. Remember that to mine the ore, a stone pickaxe is required.
+

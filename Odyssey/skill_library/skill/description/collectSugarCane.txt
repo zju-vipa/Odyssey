@@ -1,0 +1,1 @@
+This function searches for sugar cane plants within a 32-block radius, then digs and navigates to each plant to collect it.

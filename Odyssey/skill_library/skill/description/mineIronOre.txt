@@ -1,0 +1,1 @@
+Equips an iron pickaxe if available, otherwise equips a stone pickaxe if available or crafts one if not, then explores to find an iron ore block within a 32-block radius and mines it.

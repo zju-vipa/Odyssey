@@ -1,0 +1,1 @@
+This function crafts a lever by checking the inventory for cobblestone, sticks, and a crafting table, collecting the required items if necessary, crafting the table if it's missing, placing the table near the bot, and then crafting the lever using the table.

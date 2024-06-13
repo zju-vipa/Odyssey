@@ -1,0 +1,1 @@
+This function automates the process of crafting an iron hoe by first smelting raw iron, then collecting necessary items like sticks and iron ingots if they are not available, crafting a crafting table if needed, placing it near the bot, and finally crafting the iron hoe using the table.

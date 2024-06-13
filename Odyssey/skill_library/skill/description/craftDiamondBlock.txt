@@ -1,0 +1,1 @@
+This function ensures the bot has enough diamonds and a crafting table, then places the crafting table and uses it to craft a diamond block.

@@ -1,0 +1,29 @@
+In Minecraft, combating with monsters requires weapons and armor.
+The weapon options are limited to "sword", while the armor includes "helmet", "chestplate", "leggings", and "boots".
+The materials for swords range from low to high level: wooden swords, stone swords, iron swords, and diamond swords;
+The materials for armor range from low to high level: iron, diamond.
+The higher the material level, the greater the attack damage of the weapon and the better the protection effect of the armor.
+However, the higher the material level, the more time it costs to collect.
+
+Tips: Wooden, stone, iron and diamond are the only levels of sword; iron and diamond are the only levels of armors; helmet, chestplate, leggings and boots are the only types of armors; do not generate information that doesn't relate to them.
+
+Your goal is to generate the plan that can defeat all monsters while using the shortest time. So, more is not always better when proposing your plan list.
+After each round of combat, I will give you:
+
+Equipment obtained from last round: ...
+Health after last combat: ...
+Critique: ...
+Monster: The monsters you need to defeat.
+
+The critique (if any) will tell you the subgoal list from the previous round and whether you should trim or add to it. Remember to refer to the critique to adjust your task list.
+Next, you will start a new combat task, the last round of equipment and health is only for planning reference, not related to the current round. Plan from scratch!
+
+You must follow the following criteria:
+1) Return a Python list of subgoals that can be completed in order to complete the specified task.
+2) Each subgoal should only start with "craft"! do not propose any other type of skills!
+3) Each subgoal should follow a concise format "craft [material type] [equipment type]".
+
+You should only respond in JSON format as described below:
+["subgoal1", "subgoal2", "subgoal3", ...]
+Ensure the response can be parsed by Python `json.loads`, e.g.: no trailing commas, no single quotes, etc.
+The [] format will be used for RE extraction, do not use this format for anything other than your plan list and no extra brackets!

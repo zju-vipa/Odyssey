@@ -1,0 +1,284 @@
+# Character
+The term  character refers to mobs, skins, heroes, and other entities that have an official character name or title, including the official mascots characters. The following list of titles are in order of release.
+
+## Contents
+- 1 Game characters
+	- 1.1 Minecraft
+		- 1.1.1 Live Events
+		- 1.1.2 April Fools'
+		- 1.1.3 Removed
+		- 1.1.4 Social media
+		- 1.1.5 Maps
+			- 1.1.5.1 Marketplace
+			- 1.1.5.2 Educational
+		- 1.1.6 Skins
+			- 1.1.6.1 Skin Packs
+			- 1.1.6.2 Texture Packs
+			- 1.1.6.3 Legacy Console Edition
+	- 1.2 Minecraft: Story Mode
+	- 1.3 Minecraft Dungeons
+	- 1.4 Minecraft Earth
+	- 1.5 Minecraft Legends
+- 2 Book characters
+	- 2.1 Minecraft: Mobestiary
+	- 2.2 Minecraft Books by Max Brooks
+	- 2.3 Minecraft: The Crash
+	- 2.4 Minecraft: The Lost Journals
+	- 2.5 Minecraft (graphic novels)
+		- 2.5.1 Minecraft (Dark Horse Comics)
+		- 2.5.2 Minecraft: Wither Without You
+		- 2.5.3 Minecraft: Stories from the Overworld
+	- 2.6 = Minecraft: Open World=
+	- 2.7 Minecraft: Woodsword Chronicles and Minecraft: Stonesword Saga
+	- 2.8 Minecraft: The End
+	- 2.9 Minecraft: The Voyage
+	- 2.10 Minecraft (Step into Reading series)
+	- 2.11 Minecraft (Dark Horse Comics)
+	- 2.12 Minecraft: Journey to the World's End
+	- 2.13 Minecraft: The Shipwreck
+	- 2.14 Minecraft: The Dragon
+	- 2.15 Minecraft: Mob Squad Books by Delilah S. Dawson
+	- 2.16 Catch the Creeper and Other Mobs
+	- 2.17 Minecraft: The Haven Trials
+	- 2.18 Minecraft: Zombies! books by Delilah S. Dawson
+	- 2.19 Minecraft: Castle Redstone
+	- 2.20 Minecraft: Mobspotter's Encyclopedia: The Ultimate Guide to the Mobs of Minecraft
+	- 2.21 Minecraft: The Outsider
+	- 2.22 Minecraft: Journey to the Ancient City
+- 3 Miscellaneous characters
+	- 3.1 LEGO Minecraft
+	- 3.2 Minecraft Mini-Series
+	- 3.3 Builders & Biomes
+	- 3.4 Craft Your Own Adventure: Wild Tales
+- 4 Gallery
+- 5 See also
+- 6 References
+
+## Game characters
+### Minecraft
+- Alex
+- Ari
+- Dragon Slayer
+- Efe
+- §End Poem speaker (dark aqua text)
+- §End Poem speaker (dark green text)
+- Ender Dragon(Boss)
+- Hal
+- Hex
+- Jeb_
+- Johnny
+- Kai
+- The Killer Bunny
+- Makena
+- Noor
+- Steve
+- Sunny
+- Toast
+- Zuri
+
+#### Live Events
+- Bank Heist NPC
+- EntitySprite bella.png: Sprite image for bella in Minecraft linking to BellaBella
+- Bisectore
+- Charlie
+- Director
+- End Perorator
+- EntitySprite everett.png: Sprite image for everett in Minecraft linking to EverettEverett
+- Fishing Frenzy NPC
+- EntitySprite gideon.png: Sprite image for gideon in Minecraft linking to GideonGideon
+- EntitySprite jasper.png: Sprite image for jasper in Minecraft linking to JasperJasper
+- EntitySprite kinsley.png: Sprite image for kinsley in Minecraft linking to KinsleyKinsley
+- Legends Host Hannah
+- Legends Host Jeb
+- EntitySprite lila.png: Sprite image for lila in Minecraft linking to LilaLila
+- EntitySprite orson.png: Sprite image for orson in Minecraft linking to OrsonOrson
+- EntitySprite rosalind.png: Sprite image for rosalind in Minecraft linking to RosalindRosalind
+- Swamp Stomp NPC
+- Target Practice NPC
+- Tiny Agnes
+- Tiny Butcher
+- Tiny Illager
+- Tiny Jens
+- Tiny Lydia
+- Tiny Vu
+- File:TinyLibrarianFace.pngTiny Librarian
+- Treasuremite
+- Wilt Marcescent
+- EntitySprite winston.png: Sprite image for winston in Minecraft linking to WinstonWinston
+
+#### 
+- alva
+- billyballong
+- Bob(Villager)
+- Bob's dog(Tamed Wolf)
+- Bob's Other Dog(Tamed Wolf)
+- ... their cousin Jim[sic] (Tamed Wolf)
+- Herobrine
+- hidetaka
+- maria
+- Mars
+- miyazaki
+- neo
+- Poisonous Potato Plant
+- Ray Tracing
+- Villager overlords
+- The Developer
+
+#### Removed
+- Beast Boy
+- Black Steve
+- Rana
+- Steve (mob)
+- Stevie(Minecraft Pocket Edition Lite)
+
+#### Social media
+- Alex[1]
+- Ari[2]
+- Baron Sweetcheeks[3][4]
+- Classic Player
+- Cousin Bob[5]
+- Cowardly British Man[6]
+- Department of Minecraft Puns[7]
+- Derrick[8]
+- Dinnerbone[9][10]
+- Editor[8]
+- Editor's Mom[8]
+- Efe[2]
+- Elf[11]
+- Fellow Citizen
+- Jean[12][13]
+- Equine Gods[14]
+- Hansel[15]
+- Herobrine
+- Jeff[16]
+- File:JonathanMinecraftFace.pngJonathan Minecraft[17][18]
+- Jonathan Quibbles[19]
+- Kai[2]
+- Kevin[20]
+- Landlord[8]
+- Lee[21]
+- Lee’s Ancestor[21]
+- Legendary Screaming Goat[21]
+- Makena[2]
+- Minecraft Antiquated Robot Inadequate Loves Lying Audaciously
+- Mary McCorstin[22]
+- Matthew Denton[19]
+- Mojang Employees
+- Mojang’s Foremost Archeologists[23]
+- Mojang’s Geology Team[24]
+- Mojang’s Lawyers[25]
+- Mojang’s Mountaineering Team[26]
+- Mojang’s Physical Geography Department[27]
+- Mojang's Top Cartographers[28]
+- Mojang’s Top Scientists[8][29]
+- Narrator (YouTube)
+- Noor[30][31][32][2]
+- Pig Tales sock puppets[33]
+- Professor Oinkington[3]
+- Randy Peters[34]
+- Sculky[35]
+- Sid Plimps[19]
+- Simmons[36]
+- Sir Axe-a-Lot[37]
+- Squid Overlords[38][39]
+- Steve[40][41][42]
+- Steve's friend[43]
+- Steve’s Sidekick Camel[44][45]
+- Sunny[30][31][2]
+- Time Traveler
+- Tiny Agnes
+- Tiny Jens
+- Tiny Vu
+- Wandering Trader
+- William[46][47]
+- Villager No. 5
+- Villager No. 9
+- Waddles Jr.[3]
+- Wool Steve[15]
+- Zuri[2][48]
+
+#### Maps
+##### Marketplace
+- Adventurer (Camp Enderwood)
+- Amber (NerfWorld)
+- Avid Adventurer (Camp Enderwood)
+- Aisling (Timeless Trails)
+- Baby(Catastrophic Pandemonium)
+- Bartender (SpongeBob SquarePants)
+- Bellicose(Catastrophic Pandemonium)
+- Ben (MinecraftXPuma: Sprint Dash)
+- Billager (The Traveling Trader)
+- Camp Director (Camp Enderwood)
+- Cherry (NerfWorld)
+- Charolette (MinecraftXPuma: Sprint Dash)
+- Chicken(Catastrophic Pandemonium)
+- Citron (NerfWorld)
+- Cooper (MinecraftXPuma: Sprint Dash)
+- Crafter (Camp Enderwood)
+- Creepy (Pac-Man)
+- Cowpoke (Camp Enderwood)
+- Dallas (MinecraftXPuma: Sprint Dash)
+- Demillager (The Traveling Trader)
+- Dillinger (The Traveling Trader)
+- Dolly Llama (The Traveling Trader)
+- Emily (MinecraftXPuma: Sprint Dash)
+- Evelyn (MinecraftXPuma: Sprint Dash)
+- Exploring Entrepreneur (The Traveling Trader)
+- Felix (MinecraftXPuma: Sprint Dash)
+- Fred (The Traveling Trader)
+- Gabby (MinecraftXPuma: Sprint Dash)
+- Glamper (Camp Enderwood)
+- Goober (SpongeBob SquarePants)
+- Goofy (SpongeBob SquarePants)
+- Grace (MinecraftXPuma: Sprint Dash)
+- Hannah (MinecraftXPuma: Sprint Dash)
+- Harry (MinecraftXPuma: Sprint Dash)
+- Henry (MinecraftXPuma: Sprint Dash)
+- Isabel (MinecraftXPuma: Sprint Dash)
+- Isabella Stone (Timeless Trails)
+- Izaac (MinecraftXPuma: Sprint Dash)
+- Jett (NerfWorld)
+- Jillager (The Traveling Trader)
+- Jordan (MinecraftXPuma: Sprint Dash)
+- Kevin (MinecraftXPuma: Sprint Dash)
+- Kyle (MinecraftXPuma: Sprint Dash)
+- Librarian Isabel (Timeless Trails)
+- Lillager (The Traveling Trader)
+- Lizzy (MinecraftXPuma: Sprint Dash)
+- Loaf(Catastrophic Pandemonium)
+- Luna (MinecraftXPuma: Sprint Dash)
+- Mahagony(Catastrophic Pandemonium)
+- Mayor (Way of the Bee/Nether)
+- McGyllager (The Traveling Trader)
+- Mia (MinecraftXPuma: Sprint Dash)
+- Miles (MinecraftXPuma: Sprint Dash)
+- Moth Creature (Camp Enderwood)
+- Old Man (Camp Enderwood)
+- Party Supreme (Camp Enderwood)
+- Phillager (The Traveling Trader)
+- Professor Stone (Timeless Trails)
+- Rascal(Catastrophic Pandemonium)
+- Rockstar (Camp Enderwood)
+- Rougarou (Camp Enderwood)
+- Ryan (MinecraftXPuma: Sprint Dash)
+- Samager (The Traveling Trader)
+- Scientist (Way of the Bee/Nether)
+- Sevillager (The Traveling Trader)
+- Ska Kid (Camp Enderwood)
+- Skip (Camp Enderwood)
+- Sniffles(Catastrophic Pandemonium)
+- Starchild (Camp Enderwood)
+- Sunny (Camp Enderwood)
+- Swamp Monster (Camp Enderwood)
+- Top Athlete (Camp Enderwood)
+- Traveling Trader (The Traveling Trader)
+- Vasco Da Llama (The Traveling Trader)
+- Victoria (MinecraftXPuma: Sprint Dash)
+- Vilager Spirit (The Traveling Trader)
+- Wanderer (The Traveling Trader)
+- Willager (The Traveling Trader)
+- Yeti (Camp Enderwood)
+- Zoey (MinecraftXPuma: Sprint Dash)
+- Zookeepers (Catastrophic Pandemonium)
+- Zyllager (The Traveling Trader)
+

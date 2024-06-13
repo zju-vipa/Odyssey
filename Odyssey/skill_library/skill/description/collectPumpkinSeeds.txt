@@ -1,0 +1,1 @@
+This function searches for a pumpkin in the inventory and if found, crafts pumpkin seeds.

@@ -1,0 +1,1 @@
+This function smelts sand into glass by crafting a furnace, collecting sand and coal if necessary, placing the furnace, and then smelting the sand using the available coal as fuel.

@@ -1,0 +1,1 @@
+Equips an iron pickaxe if available, otherwise crafts and equips a stone pickaxe, then explores the surroundings to find a copper ore block, and finally mines the found block.

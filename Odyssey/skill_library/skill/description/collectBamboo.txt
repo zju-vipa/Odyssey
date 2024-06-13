@@ -1,0 +1,1 @@
+This function equips a sword, searches for and finds 10 bamboo plants within a 32-block radius, breaks them, and then navigates to each plant's location to collect the dropped bamboo items.

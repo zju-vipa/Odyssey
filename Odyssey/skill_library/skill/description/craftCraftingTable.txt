@@ -1,0 +1,1 @@
+This function crafts a crafting table by first checking if there are enough planks in the inventory, and if not, it mines a wooden log and crafts wooden planks before crafting the table.

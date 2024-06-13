@@ -1,0 +1,217 @@
+# Dispenser
+A dispenser is a low-capacity storage block that can fire projectiles, use certain items or tools or place certain blocks, fluids or entities when given a redstone signal. Items that do not have unique dispenser functions are instead ejected into the world.
+
+## Contents
+- 1 Obtaining
+	- 1.1 Breaking
+	- 1.2 Natural generation
+	- 1.3 Crafting
+- 2 Usage
+	- 2.1 Container
+	- 2.2 Redstone component
+- 3 Sounds
+	- 3.1 Generic
+	- 3.2 Unique
+- 4 Data values
+	- 4.1 ID
+	- 4.2 Block states
+	- 4.3 Block data
+- 5 Achievements
+- 6 Video
+- 7 History
+	- 7.1 Data history
+- 8 Issues
+- 9 Trivia
+- 10 Gallery
+	- 10.1 Renders
+		- 10.1.1 Java Edition
+		- 10.1.2 Bedrock Edition
+	- 10.2 Screenshots
+- 11 See also
+- 12 References
+- 13 External links
+
+## Obtaining
+### Breaking
+Dispensers can be mined using a pickaxe, in which case it drops itself and its contents. If mined without a pickaxe, the dispenser drops only its contents.
+
+| Block     | Dispenser             |
+|-----------|-----------------------|
+| Hardness  | 3.5                   |
+| Tool      |                       |
+|           | Breakingtime (sec)[A] |
+| Default   | 17.5                  |
+| Wooden    | 2.65                  |
+| Stone     | 1.35                  |
+| Iron      | 0.9                   |
+| Diamond   | 0.7                   |
+| Netherite | 0.6                   |
+| Golden    | 0.45                  |
+
+
+↑ Times are for unenchanted tools as used by players with no status effects, measured in seconds. For more information, see Breaking Speed.
+
+
+### Natural generation
+Two dispensers are naturally generated in every jungle temple.
+
+### Crafting
+| Ingredients                   | Crafting recipe | Description                                                                                   |
+|-------------------------------|-----------------|-----------------------------------------------------------------------------------------------|
+| Cobblestone+Bow+Redstone Dust |                 | The bow can be of anydurability.Enchantmentson the bow do not affect the resulting dispenser. |
+
+## Usage
+A dispenser can be used as a container and as a redstone component that dispenses items when activated, with results varying based on the item dispensed. For example, the trap in a jungle pyramid incorporates arrows inside a dispenser, which shoots the arrows when activated. 
+
+To place a dispenser, use it while pointing at a surface adjacent to the space it should occupy. A dispenser can be placed so that its output faces in any direction, including up or down. When placed, a dispenser faces the location of the player placing it.
+
+A dispenser cannot be moved by pistons.‌[Java Edition  only]
+
+### Container
+The GUI of the dispenser.
+A dispenser has 9 slots of inventory space.
+
+To open the dispenser GUI, use the Use Item control. To move items between the dispenser inventory and the player inventory or hotbar while the dispenser GUI is open, drag or shift-click the items. To exit the dispenser GUI, use the Esc control.
+
+By default, the GUI of a dispenser is labeled "Dispenser". A dispenser's GUI label can be changed by naming the dispenser in an anvil before placing it, or by using the data command‌[Java Edition  only]. For example, to label a dispenser at (0,64,0) "My Dispenser", use data merge block 0 64 0 {CustomName:'"My Dispenser"'}.
+
+A dispenser can be "locked" by setting the dispenser's Lock tag. If a dispenser's Lock tag is not blank, the dispenser cannot be accessed except by players holding an item with the same name as the Lock tag's text. A dispenser's Lock tag can be set or unset with the data command. For example, to lock a dispenser at (0,64,0) so that only players holding an item named "My Key" can access the dispenser, use data merge block 0 64 0 {Lock:"My Key"}.
+
+### Redstone component
+See also: Redstone circuit
+
+A dispenser can be used to dispense its contents randomly.
+
+Activation
+A dispenser is a redstone mechanism and can be activated by:
+
+- an adjacent activepower component: for example, aredstone torch(except that a redstone torch does not activate a dispenser it is attached to), ablock of redstone, adaylight sensor, etc.
+- an adjacent powered opaque block (for example, a block with an active redstone torch under it)
+- a poweredredstone repeaterorredstone comparatorfacing the dispenser
+- poweredredstone dustconfigured to point at the dispenser, or on top of it, or a directionless "cross" next to it; a dispenser isnotactivated by adjacent powered redstone dust that is configured to point in another direction.
+
+Some of these methods can activate a dispenser (in the sense of triggering an action) without powering the dispenser (in the sense of whether the dispenser can power adjacent redstone dust, etc.).
+
+In addition to the methods above, a dispenser can also be activated by quasi-connectivity.‌[Java Edition  only] A dispenser becomes activated if one of the methods above would activate a mechanism component in the block above the dispenser, even if there is no mechanism component there (even if the block above the dispenser is air or a transparent block), but only when the dispenser receives a block update (including a redstone update within two blocks of the dispenser). A dispenser does not activate if it has been less than 1 redstone tick (2 game ticks, or 0.1 seconds barring lag) since its last activation ended.
+
+Behavior
+When activated, a dispenser waits for 2 redstone ticks (4 game ticks, or 0.2 seconds barring lag) and then ejects one item. The dispenser does not continue to eject items while activated; ejection occurs only on the initial activation (the rising edge of an input signal). To eject multiple items, repeatedly activate the dispenser with a clock circuit. If the clock runs at faster than 5 Hz (more than 5 redstone pulses a second), the dispenser fires once and then locks in the "on" position.
+
+If multiple slots are occupied by items, a random occupied slot is chosen for ejection. The slot is chosen when an item is ejected, not when the dispenser is initially activated; thus it is possible to move items into or out of a dispenser between its activation and item dispensing.
+
+The effects of being activated vary with the type of ejected item. Most items are thrown in the direction the dispenser is facing as if a player had used the Drop Item control. (Unlike a dropper, a dispenser can't feed another container.) Other items behave differently when dispensed, as described in the table below. In general, a dispenser cannot place blocks into the world; the exceptions are shulker boxes, powder snow,‌[Java Edition  only] and certain cases where the placed block would do something unusual. There are also a couple of special cases where an empty bottle or bucket can collect liquids from the world. When dispensing an item that has durability would cause the item to be used, such as with flint and steel and shears, the item's durability decreases.
+
+| Dispenser behavior                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Item                                                                                                                                                | Effect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ArmorElytra                                                                                                                                         | Equips on aplayer,armor stand,skeleton,wither skeleton,stray,bogged‌[upcoming: JE 1.21 & BE 1.21.0],zombie,husk,pillager,drowned,vindicator,villager,piglinorzombified piglinwithin the block the dispenser is facing with empty appropriate armor slot (any armor, made from any material).                                                                                                                                                                                                                                                                                                                                                                   |
+| Armor stand                                                                                                                                         | Placed as an entity in the block the dispenser is facing.‌[Java Edition  only][1]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ArrowSpectral arrowTipped arrow                                                                                                                     | Fired in the direction the dispenser is facing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| BoatBoat with chest                                                                                                                                 | Placed as an entity (i.e., a right-clickable vehicle) in the block the dispenser is facing, if the dispenser is facing the water or an empty block above water — otherwise dropped.[2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Bone meal                                                                                                                                           | Uses bone meal (asfertilizer) on the block the dispenser is facing, if possible. If the block faced does not react to bone meal, no bone meal is used.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Bottle o' enchantingEggSnowballSplash potionLingering potion                                                                                        | Thrown in the direction the dispenser is facing as if the player had right-clicked the item in their inventory. Splash potions and lingering potions are fired farther.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Bucket                                                                                                                                              | Collects lava or water source block the dispenser is facing, adding the newly filled bucket to an empty slot in the dispenser's inventory. If there isn't room in the dispenser for the newly-filled bucket (i.e. the empty bucket was part of a stack and all other slots in the dispenser are also full), drops the filled bucket. If no source block is in front of the dispenser, drops an empty bucket.[2]                                                                                                                                                                                                                                                |
+| Fire charge                                                                                                                                         | Launches fireball (as if produced by ablaze) in the direction the dispenser is facing. When a dispensed fireball hits a mob (including a player) or a block, the mob or block is set on fire. When a dispensed fireball hits aboatorminecart, the vehicle is destroyed and drops itself as an item.                                                                                                                                                                                                                                                                                                                                                            |
+| Firework rocket                                                                                                                                     | Launches in the direction the dispenser is facing. It can be used to inflict damage if it was crafted with stars.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Flint and steel                                                                                                                                     | If the dispenser is facing an air block and having an available block below this air block, places fire in the air block. If the dispenser is facingTNT, it ignites the TNT, if facing to aobsidianframe, it ignites the nether portal. If the dispenser is facing an extinguishedcampfire, the campfire is ignited. Otherwise, does nothing.                                                                                                                                                                                                                                                                                                                  |
+| Lava bucketWater bucketBucket of codBucket of salmonBucket of tropical fishBucket of pufferfishBucket of axolotlPowder snow bucketBucket of tadpole | Places lava or water in the block the dispenser is facing (replacing the lava or water bucket in the dispenser with an empty bucket) if the block the dispenser is facing is one that the player could use lava or water buckets on (e.g.,air,flowers,grass, etc. — doesn't work with acauldron[3]) — otherwise the bucket is dropped.[2]Water dispensed inthe Netherdisappears instantly, leaving only the empty bucket in the dispenser. If the bucket contains an axolotl or fish, the mob is spawned along with the block of water. A dispenser can place or removepowder snowin the block in front of where the dispenser is facing.‌[Java Edition  only] |
+| MinecartMinecart with chestMinecart with command blockMinecart with furnaceMinecart with hopperMinecart with TNT                                    | Placed as an entity (i.e., a right-clickable vehicle) in the block the dispenser is facing, if the dispenser is facing a type of rails — otherwise dropped.[2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| HeadsCarved pumpkin                                                                                                                                 | If placement completes the construction of aniron golem,snow golem, orwither, the entity is created as if constructed by a player. Wither skeleton skulls can be placed on any T-shaped formation of at least 4 soul sand blocks as well. Equips on aplayer,moborarmor standwith an empty helmet slot, within the block the dispenser is facing. Otherwise, does nothing.                                                                                                                                                                                                                                                                                      |
+| Shulker box                                                                                                                                         | Placed as a block.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Spawn egg                                                                                                                                           | Summons a mob in front of the dispenser.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| TNT                                                                                                                                                 | Places and ignites TNT in the block the dispenser is facing, with a small velocity in a random direction.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Trident                                                                                                                                             | Thrown in the direction the dispenser is facing.‌[Bedrock Edition  only]‌[upcoming: JE Combat Tests]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Shears                                                                                                                                              | Shear anybogged‌[upcoming: JE 1.21 & BE 1.21.0],sheep,snow golem, ormooshroomthat is in the block in front of it.Harvestshoneycombsfrom a fullbeehiveorbee nest.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Glass bottle                                                                                                                                        | Fills bottle with water if the dispenser is facing a water source block.Fills the bottle withhoneyif the dispenser is facing a full beehive or bee nest. If cannot be used, the item is dropped.[2][4]                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Horse armor                                                                                                                                         | Place horse armor on any tamed horse that is in the block in front of it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Saddle                                                                                                                                              | Place a saddle on any pig, tamed horse, donkey, mule, strider, or camel that is in the block in front of it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Carpet                                                                                                                                              | Place a carpet on any tamed llama that is in the block in front of it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Chest                                                                                                                                               | Place a chest on any tamed llama, donkey, or mule that is in the block in front of it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Glowstone                                                                                                                                           | Charges any empty or partially filledrespawn anchor. If facing a full respawn anchor, it does nothing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Honeycomb                                                                                                                                           | Wax anycopperblock that is in the block in front of it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Water bottle                                                                                                                                        | Turnsdirt,coarse dirt, androoted dirtintomud.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Others                                                                                                                                              | Dropped: Ejected toward the block the dispenser is facing as if a player had used thedrop itemcontrol.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+
+When a dispenser dispenses an item, it emits a clicking sound (unless the item is a projectile or a spawn egg) and a smoke particle. If it is empty when activated, it emits a slightly higher-pitched click. The noise of a dispenser can be heard up to 16 blocks away.
+
+A dispenser is a full solid opaque block, so powering it directly can cause adjacent mechanism components (including other dispensers) to activate as well.
+
+## Data values
+### ID
+Java Edition:
+
+| Name      | Identifier | Form         | Translation key           |
+|-----------|------------|--------------|---------------------------|
+| Dispenser | dispenser  | Block & Item | block.minecraft.dispenser |
+
+| Name         | Identifier |
+|--------------|------------|
+| Block entity | dispenser  |
+
+Bedrock Edition:
+
+| Name      | Identifier | Numeric ID | Form                       | Item ID[i 1]   | Translation key     |
+|-----------|------------|------------|----------------------------|----------------|---------------------|
+| Dispenser | dispenser  | 23         | Block & Giveable Item[i 2] | Identical[i 3] | tile.dispenser.name |
+
+
+↑ ID of block's direct item form, which is used in savegame files and addons.
+
+↑ Available with /give command.
+
+↑ The block's direct item form has the same id as the block.
+
+
+| Name         | Savegame ID |
+|--------------|-------------|
+| Block entity | Dispenser   |
+
+### Block states
+See also: Block states
+
+Java Edition:
+
+| Name      | Default value | Allowed values           | Description                                                                                                                   |
+|-----------|---------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| facing    | north         | downeastnorthsouthupwest | The direction in which contents are shot or dropped.The opposite from the direction the player faces while placing the block. |
+| triggered | false         | falsetrue                | True if this block is activated.                                                                                              |
+
+Bedrock Edition:
+
+| Name             | Metadata Bits | Default value | Allowed values | Values forMetadata Bits | Description                                                                                                                                   |
+|------------------|---------------|---------------|----------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| facing_direction | 0x10x20x4     | 0             | 01234567       | 01234567                | The direction in which contents are shot or dropped.0: facing down 1: facing up 2: facing north 3: facing south 4: facing west 5: facing east |
+| triggered_bit    | 0x8           | false         | falsetrue      | 01                      | True if this block is activated.                                                                                                              |
+
+
+
+### Block data
+A dispenser has a block entity associated with it that holds additional data about the block.
+
+Java Edition:
+
+See also: Block entity format
+
+
+ Block entity data
+Tags common to all block entities
+Tags common to all objects that can be renamed
+ Items: List of items in this container.
+: An item, including the slot tag. Dispenser slots are numbered 0-8 with 0 in the top left corner.
+Tags common to all items
+Tags common to all containers that can be locked
+Tags common to all objects that use loot tables to produce items
+
+Bedrock Edition:
+
+See Bedrock Edition level format/Block entity format.
+## See also
+Some other blocks can also be used to move items:
+
+- Dropperscan throw items or push them into adjacent containers.
+- Hopperscan push items into adjacent containers.
+- Iceandpacked icehave reduced friction to the item entity movement.
+- Slime blockscan impart velocity to item entities when pushed by a piston.
+- Watercan push item entities.
+- Quasi-connectivityapplies to dispensers.
+

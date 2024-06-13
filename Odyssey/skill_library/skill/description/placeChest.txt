@@ -1,0 +1,1 @@
+This function places a chest in a suitable position, first checking if the bot has a chest in its inventory and crafting one if necessary, then finding a suitable position to place the chest and placing it there.

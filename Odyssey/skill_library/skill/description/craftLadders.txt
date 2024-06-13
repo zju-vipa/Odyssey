@@ -1,0 +1,1 @@
+This function crafts ladders by first ensuring the bot has sufficient sticks, then checking if it has a crafting table, crafting one if necessary, placing it near the bot, and finally crafting the ladders using the table.

@@ -1,0 +1,1 @@
+This function collects sandstone blocks by equipping a pickaxe or crafting one, exploring for stone blocks, and then mining 10 of them.

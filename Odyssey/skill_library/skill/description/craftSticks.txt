@@ -1,0 +1,1 @@
+This function crafts sticks by first checking if there are enough planks in the inventory, and if not, it mines a log or crafts more planks, then crafts the sticks.
