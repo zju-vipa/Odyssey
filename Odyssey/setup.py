@@ -35,7 +35,7 @@ setup(
     author=f"MineDojo Team",
     url="https://github.com/zju-vipa/Odyssey",
     description="research project",
-    long_description=_read_file("README.md"),
+    # long_description=_read_file("README.md"),
     long_description_content_type="text/markdown",
     keywords=[
         "Open-Ended Learning",

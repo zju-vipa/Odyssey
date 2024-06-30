@@ -49,8 +49,8 @@ class Odyssey:
         skill_manager_temperature: float = 0,
         skill_manager_retrieval_top_k: int = 10,
         openai_api_request_timeout: int = 240,
-        ckpt_dir: str = "ckpt",
-        skill_library_dir: str = None,
+        ckpt_dir: str = "Odyssey/ckpt",
+        skill_library_dir: str = "Odyssey/skill_library",
         resume: bool = False,
         reload = False,
         embedding_dir = "",
@@ -134,7 +134,7 @@ class Odyssey:
 
         # init agents
         self.action_agent = ActionAgent(
-            temperature=action_agent_temperature,
+            # temperature=action_agent_temperature,
             request_timout=openai_api_request_timeout,
             ckpt_dir=ckpt_dir,
             resume=resume,
@@ -157,7 +157,7 @@ class Odyssey:
         )
         self.critic_agent = CriticAgent(
             model_name=critic_agent_model_name,
-            temperature=critic_agent_temperature,
+            # temperature=critic_agent_temperature,
             request_timout=openai_api_request_timeout,
             mode=critic_agent_mode,
         )
@@ -166,7 +166,7 @@ class Odyssey:
             model_name=comment_agent_model_name
         )
         self.skill_manager = SkillManager(
-            temperature=skill_manager_temperature,
+            # temperature=skill_manager_temperature,
             retrieval_top_k=skill_manager_retrieval_top_k,
             request_timout=openai_api_request_timeout,
             ckpt_dir=skill_library_dir if skill_library_dir else ckpt_dir,

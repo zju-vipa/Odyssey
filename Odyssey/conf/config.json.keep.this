@@ -2,5 +2,8 @@
     "api_key": "sk-xxx",
     "server_host": "ip",
     "server_port": "port",
-    "NODE_SERVER_PORT": 3000
+    "NODE_SERVER_PORT": 3000,
+    "SENTENT_EMBEDDING_DIR": "path/to/your/model",
+    "MC_SERVER_HOST": "localhost",
+    "MC_SERVER_PORT": "25565"
 }
