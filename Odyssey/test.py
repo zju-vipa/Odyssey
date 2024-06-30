@@ -14,10 +14,8 @@ def test_subgoal():
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='subgoal',
         resume=False,
         server_port=node_port,
@@ -31,10 +29,8 @@ def test_subgoal():
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='subgoal',
         resume=False,
         server_port=node_port,
@@ -57,10 +53,8 @@ def test_combat():
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='combat',
         resume=False,
         server_port=node_port,
@@ -74,10 +68,8 @@ def test_combat():
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='combat',
         resume=False,
         server_port=node_port,
@@ -119,10 +111,8 @@ def test_farming():
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='farming',
         resume=False,
         server_port=node_port,
@@ -136,10 +126,8 @@ def test_farming():
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='farming',
         resume=False,
         server_port=node_port,
@@ -183,23 +171,20 @@ def test_skill(skill_name):
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         resume=False,
         server_port=node_port,
     )
-    odyssey_skill.run_raw_skill(f"D:\DESKTOP/odyssey/skill_library/skill/compositional/{skill_name}", reset=True)
+    odyssey_skill.run_raw_skill(f"D:\DESKTOP/Odyssey/odyssey/skill_library/skill/compositional/{skill_name}", reset=True)
 
 def test_explore():
     odyssey_l3_8b = Odyssey(
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='explore',
         resume=False,
         server_port=node_port,
@@ -214,10 +199,8 @@ def test_explore():
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='explore',
         resume=False,
         server_port=node_port,
@@ -232,4 +215,4 @@ def test_explore():
     odyssey_l3_70b.learn()
 
 if __name__ == '__main__':
-    test_skill("craftFurnace.js")
+    test_skill("mineDiamond.js")
