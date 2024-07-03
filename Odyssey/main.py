@@ -18,14 +18,13 @@ def test_subgoal():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='subgoal',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_8B_V3,
         comment_agent_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_model_name = ModelType.LLAMA3_8B_V3,
         action_agent_model_name = ModelType.LLAMA3_8B_V3,
     )
     odyssey_l3_70b = Odyssey(
@@ -35,14 +34,13 @@ def test_subgoal():
         skill_library_dir="./skill_library",
         reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='subgoal',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_70B_V1,
         comment_agent_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_model_name = ModelType.LLAMA3_70B_V1,
         action_agent_model_name = ModelType.LLAMA3_70B_V1,
     )
     # 5 classic MC tasks
@@ -62,14 +60,13 @@ def test_combat():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='combat',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_8B_V3,
         comment_agent_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_model_name = ModelType.LLAMA3_8B_V3,
         action_agent_model_name = ModelType.LLAMA3_8B_V3,
     )
     odyssey_l3_8b = Odyssey(
@@ -79,14 +76,13 @@ def test_combat():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='combat',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_8B,
         comment_agent_model_name = ModelType.LLAMA3_8B,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_8B,
-        curriculum_agent_model_name = ModelType.LLAMA3_8B,
+        planner_agent_qa_model_name = ModelType.LLAMA3_8B,
+        planner_agent_model_name = ModelType.LLAMA3_8B,
         action_agent_model_name = ModelType.LLAMA3_8B,
     )
     odyssey_l3_70b = Odyssey(
@@ -96,14 +92,13 @@ def test_combat():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='combat',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_70B_V1,
         comment_agent_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_model_name = ModelType.LLAMA3_70B_V1,
         action_agent_model_name = ModelType.LLAMA3_70B_V1,
     )
     
@@ -229,14 +224,13 @@ def explore():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='explore',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_8B,
         comment_agent_model_name = ModelType.LLAMA3_8B,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_8B,
-        curriculum_agent_model_name = ModelType.LLAMA3_8B,
+        planner_agent_qa_model_name = ModelType.LLAMA3_8B,
+        planner_agent_model_name = ModelType.LLAMA3_8B,
         action_agent_model_name = ModelType.LLAMA3_8B,
         # because I wrongly added username bot1_13b in minecraft, so use this name
         # rather then bot1_8b
@@ -249,14 +243,13 @@ def explore():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='explore',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_8B_V3,
         comment_agent_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_model_name = ModelType.LLAMA3_8B_V3,
         action_agent_model_name = ModelType.LLAMA3_8B_V3,
         username='bot1_13b_v3'
     )
@@ -267,14 +260,13 @@ def explore():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='explore',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_70B_V1,
         comment_agent_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_model_name = ModelType.LLAMA3_70B_V1,
         action_agent_model_name = ModelType.LLAMA3_70B_V1,
         username='bot1_70b_v1'
     )
@@ -290,14 +282,13 @@ def test_farming():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='farming',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_8B_V3,
         comment_agent_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
-        curriculum_agent_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
+        planner_agent_model_name = ModelType.LLAMA3_8B_V3,
         action_agent_model_name = ModelType.LLAMA3_8B_V3,
     )
     odyssey_l3_70b = Odyssey(
@@ -307,14 +298,13 @@ def test_farming():
         skill_library_dir="./skill_library",
         reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
-        # embedding_dir="/home/MCagent/paraphrase-multilingual-MiniLM-L12-v2", # linux model path
         environment='farming',
         resume=False,
         server_port=node_port,
         critic_agent_model_name = ModelType.LLAMA3_70B_V1,
         comment_agent_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
-        curriculum_agent_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
+        planner_agent_model_name = ModelType.LLAMA3_70B_V1,
         action_agent_model_name = ModelType.LLAMA3_70B_V1,
     )
     farming_benchmark = [
@@ -346,5 +336,17 @@ def test_farming():
                 logger.critical(e)
                 traceback.print_exc()
 
+def test_skill(skill_name):
+    odyssey_skill = Odyssey(
+        mc_port=mc_port,
+        mc_host=mc_host,
+        env_wait_ticks=env_wait_ticks,
+        reload=True, # set to True if the skill_json updated
+        embedding_dir=embedding_dir, # your model path
+        resume=False,
+        server_port=node_port,
+    )
+    odyssey_skill.run_raw_skill(f"./skill_library/skill/compositional/{skill_name}", reset=True)
+
 if __name__ == '__main__':
-    test_combat()
+    test_skill("mineDiamond.js")

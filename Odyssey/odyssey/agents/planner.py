@@ -26,7 +26,7 @@ env_prompt = {
 }
 
 
-class PlanerAgent:
+class PlannerAgent:
     def __init__(
         self,
         model_name=ModelType.LLAMA2_70B,

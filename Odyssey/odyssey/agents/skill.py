@@ -146,7 +146,7 @@ class SkillManager:
 
     def load_skill_primitives(self, primitive_names=None):
         current_dir = os.getcwd()
-        print(f"current dir: {current_dir}")
+        # print(f"current dir: {current_dir}")
         package_path = f"{current_dir}/skill_library/skill"
         if primitive_names is None:
             primitive_names = [
