@@ -176,7 +176,7 @@ def test_skill(skill_name):
         resume=False,
         server_port=node_port,
     )
-    odyssey_skill.run_raw_skill(f"D:\DESKTOP/Odyssey/odyssey/skill_library/skill/compositional/{skill_name}", reset=True)
+    odyssey_skill.run_raw_skill(f"D:\DESKTOP/Odyssey/Odyssey/skill_library/skill/compositional/{skill_name}", reset=True)
 
 def test_explore():
     odyssey_l3_8b = Odyssey(
