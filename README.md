@@ -14,9 +14,31 @@ Official codebase for paper "Odyssey: Empowering Agents with Open-World Skills".
 <img src="./Odyssey/images/framework.png" width="100%">
 </div>
 
+## Overview 
 
-## Release
+**Abstract:** Recent studies have delved into constructing generalist agents for open-world embodied environments like Minecraft. Despite the encouraging results, existing efforts mainly focus on solving basic programmatic tasks, e.g., material collection and tool-crafting following the Minecraft tech-tree, treating the ObtainDiamond task as the ultimate goal. This limitation stems from the narrowly defined set of actions available to agents, requiring them to learn effective long-horizon strategies from scratch. Consequently, discovering diverse gameplay opportunities in the open world becomes challenging. In this work, we introduce Odyssey, a new framework that empowers Large Language Model~(LLM)-based agents with open-world skills to explore the vast Minecraft world. Odyssey comprises three key parts: (1) An interactive agent with an open-world skill library that consists of 40 primitive skills and 183 compositional skills. (2) A fine-tuned LLaMA-3 model trained on a large question-answering dataset with 390k+ instruction entries derived from the Minecraft Wiki. (3) A new open-world benchmark includes thousands of long-term planning tasks, tens of dynamic-immediate planning tasks, and one autonomous exploration task. Extensive experiments demonstrate that the proposed Odyssey framework can effectively evaluate the planning and exploration capabilities of agents. All datasets, model weights, and code are publicly available to motivate future research on more advanced autonomous agent solutions.
+
+
+## News
 - [Jun 13, 2024] 🔥 The [GitHub repository]([https://github.com/zijianchen98/GAIA](https://github.com/zju-vipa/Odyssey)) for **ODYSSEY** has been open-sourced!
+
+
+## Contents
+
+- [Directory Description](#Directory-Description)
+- [Odyssey Installation](#Odyssey-Installation)
+  - [Python Install](#Python-Install)
+  - [Node.js Install](#Node.js-Install)
+  - [Minecraft Server](#Minecraft-Server)
+  - [Embedding Model](#Embedding-Model)
+- [Config](#Config)
+- [Odyssey Tasks](#Odyssey-Tasks)
+  - [Subgoal](#Subgoal)
+  - [Long-term Planning Task](#Long-term-Planning-Task)
+  - [Dynamic-Immediate Planning Task](#Dynamic-Immediate-Planning-Task)
+  - [Autonomous Exploration Task](#Autonomous-Exploration-Task)
+- [Related Works](#License)
+
 
 
 ## Directory Description
