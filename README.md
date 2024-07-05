@@ -37,7 +37,7 @@ Official codebase for paper "Odyssey: Empowering Agents with Open-World Skills".
   - [Long-term Planning Task](#Long-term-Planning-Task)
   - [Dynamic-Immediate Planning Task](#Dynamic-Immediate-Planning-Task)
   - [Autonomous Exploration Task](#Autonomous-Exploration-Task)
-- [Related Works](#License)
+- [Related Works](#Related-Works)
 
 
 
