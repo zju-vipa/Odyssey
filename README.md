@@ -1,7 +1,7 @@
 # Odyssey: Empowering Agents with Open-World Skills
 
 <div align="center">
-	<a href="https://github.com/zju-vipa/Odyssey/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green"/></a>
+	<a href="https://github.com/zju-vipa/Odyssey/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple"/></a>
 	<a href="https://github.com/zju-vipa/Odyssey"><img src="https://img.shields.io/badge/Dataset-Released-orange"/></a>
 	<a href="https://github.com/zju-vipa/Odyssey"><img src="https://img.shields.io/badge/Awesome-ODYSSEY-blue"/></a>
 	<a href="https://github.com/zju-vipa/Odyssey"><img src="https://visitor-badge.laobi.icu/badge?page_id=zju-vipa.Odyssey"/></a>
