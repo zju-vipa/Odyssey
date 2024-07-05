@@ -1,4 +1,4 @@
-# ODYSSEY: Empowering Agents with Open-World Skills
+# Odyssey: Empowering Agents with Open-World Skills
 
 <div align="center">
 	<a href="https://github.com/zju-vipa/Odyssey/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green"/></a>
@@ -8,7 +8,11 @@
 	<a href="https://github.com/zju-vipa/Odyssey"><img src="https://img.shields.io/github/stars/zju-vipa/Odyssey"/></a>
 </div>
 
-![](./Odyssey/images/framework.png)
+Official codebase for paper "Odyssey: Empowering Agents with Open-World Skills". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
+
+<div align="center">
+<img src="https://github.com/zju-vipa/Odyssey/Odyssey/images/framework.png" width="100%">
+</div>
 
 
 ## Release
