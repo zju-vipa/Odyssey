@@ -11,7 +11,7 @@
 Official codebase for paper "Odyssey: Empowering Agents with Open-World Skills". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
 
 <div align="center">
-<img src="https://github.com/zju-vipa/Odyssey/Odyssey/images/framework.png" width="100%">
+<img src="./Odyssey/images/framework.png" width="100%">
 </div>
 
 
