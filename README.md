@@ -8,7 +8,7 @@
 	<a href="https://github.com/zju-vipa/Odyssey"><img src="https://img.shields.io/github/stars/zju-vipa/Odyssey"/></a>
 </div>
 
-Official codebase for paper "Odyssey: Empowering Agents with Open-World Skills". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
+Official codebase for the paper "Odyssey: Empowering Agents with Open-World Skills". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
 
 <div align="center">
 <img src="./Odyssey/images/framework.png" width="100%">
@@ -264,7 +264,7 @@ def explore():
 
 ## Contact
 
-This project is developed by [VIPA Lab](https://www.vipazoo.cn/) from Zhejiang University. Please feel free to contact me via email (<liushunyu@zju.edu.cn>) if you are interested in my research :)
+This project is developed by [VIPA Lab](https://www.vipazoo.cn/) from Zhejiang University. Please feel free to contact me via email (<liushunyu@zju.edu.cn>) if you are interested in our research :)
 
 <div align="center">
 <img src="./Odyssey/images/vipa-logo.jpg" width="30%">
