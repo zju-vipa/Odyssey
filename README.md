@@ -264,5 +264,9 @@ def explore():
 
 ## Contact
 
-Please feel free to contact me via email (<liushunyu@zju.edu.cn>) if you are interested in my research :)
+This project is developed by [VIPA Lab](https://www.vipazoo.cn/) from Zhejiang University. Please feel free to contact me via email (<liushunyu@zju.edu.cn>) if you are interested in my research :)
+
+<div align="center">
+<img src="./Odyssey/images/vipa-logo.jpg" width="30%">
+</div>
 
