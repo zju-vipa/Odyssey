@@ -86,7 +86,7 @@ npx tsc
 
 ### Minecraft Server
 
-You can deploy a Minecraft server using docker. See [here](installation/run_using_docker.md).
+You can deploy a Minecraft server using docker. See [here](./Odyssey/installation/run_using_docker.md).
 
 ### Embedding Model
 
