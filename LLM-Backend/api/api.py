@@ -1,21 +1,22 @@
-
-from typing import Union
-
 from fastapi import FastAPI, Request
-from pydantic import BaseModel
 from entity.llama import LlamaRequest, LlamaResponse
 import asyncio
+
 semaphore = asyncio.Semaphore(18)
 concurrent_requests = 0
+
+
 def create_app(models)->FastAPI:
     app = FastAPI()
 
     @app.get("/ping")
     def ping():
         return {"data": "pong!"}
+    
     @app.get("/status")
     def status():
         return {"concurrent_requests": concurrent_requests}
+    
     @app.middleware("http")
     async def record_concurrent_requests(request: Request, call_next):
         global concurrent_requests
@@ -70,4 +71,5 @@ def create_app(models)->FastAPI:
     # def llama(llama_request: LlamaRequest):
     #     response = models['llama2_13b_v4'](user_prompt=llama_request.user_prompt, system_prompt=llama_request.system_prompt)
     #     return {"status": 0, "data": response}
+    
     return app

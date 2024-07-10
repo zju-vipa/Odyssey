@@ -1,12 +1,12 @@
-
-
-
 from api.api import create_app
 from model.llama import Llama2, Llama3
 import uvicorn
 import os
 from conf import config_manager
-os.environ["CUDA_VISIBLE_DEVICES"] = config_manager.get('CUDA_VISIBLE_DEVICES') #指定cuda可见显卡编号
+
+os.environ["CUDA_VISIBLE_DEVICES"] = config_manager.get('CUDA_VISIBLE_DEVICES')
+
+
 if __name__ == "__main__":
     models_path = config_manager.get('models')
     models = {}

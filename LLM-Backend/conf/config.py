@@ -1,7 +1,10 @@
 import json
 from pathlib import Path
 from typing import Union
+
 CONFIG_PATH = Path(__file__).parent / 'config.json'
+
+
 class Config():
     def __init__(self) -> None:
         with open(CONFIG_PATH) as f:

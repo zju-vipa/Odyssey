@@ -39,7 +39,7 @@ python main.py
 
 You can check the api docs at `server_ip:port/docs`
 
-![image-20240514105108432](./images/image-20240514105108432.png)
+![api](./images/api.png)
 
 Here is an example to request the api using python.
 

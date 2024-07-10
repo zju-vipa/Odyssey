@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import sys
 import time
@@ -8,6 +7,8 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 from utils.request import get_html_content
 from utils.markdown import to_md_table, to_header, to_list, LIST_TYPE
 import random
+
+
 class CONTENT_TYPE:
     TITLE = 'title'
     TEXT = 'text'
