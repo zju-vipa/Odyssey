@@ -1,20 +1,15 @@
-# Import environment
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # You can modify the content here to suit your situation
 from datasets import Dataset
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForCausalLM, DataCollatorForSeq2Seq, TrainingArguments, Trainer, GenerationConfig
-import transformers
 import torch
 from peft import LoraConfig, TaskType, get_peft_model
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
-    BitsAndBytesConfig,
-    HfArgumentParser,
+    DataCollatorForSeq2Seq,
     TrainingArguments,
-    pipeline,
-    logging,
+    Trainer,
     EarlyStoppingCallback,
 )
 

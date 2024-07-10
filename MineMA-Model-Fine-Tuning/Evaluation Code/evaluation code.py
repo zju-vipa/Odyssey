@@ -1,27 +1,31 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"   #You can modify the content here to suit your situation
-import pandas as pd
-from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 import warnings
+import pandas as pd
 from tqdm import tqdm
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
 warnings.filterwarnings("ignore")
-model_id = ""  #You can modify the content here to suit your situation
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"   #You can modify the content here to suit your situation
+
+model_id = ""  # You can modify the content here to suit your situation
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     torch_dtype=torch.bfloat16,
     device_map="auto",
 )
-csv_file = ""  #You can modify the content here to suit your situation, the dataset path has been specified here
+
+csv_file = ""  # You can modify the content here to suit your situation, the dataset path has been specified here
 df = pd.read_csv(csv_file)
 questions = df['Q'].tolist()
 answers = df['A'].tolist()
 
-#You can modify the content below to suit your situation
+# You can modify the content below to suit your situation
 sys_mes = "You are a Large Language Model, and your task is to answer questions posed by users about Minecraft. Utilize your knowledge and understanding of the game to provide detailed, accurate, and helpful responses. Use your capabilities to assist users in solving problems, understanding game mechanics, and enhancing their Minecraft experience."
 correct_count = 0
 results = []
+
 
 def get_first_letter(answer):
     return answer.strip()[0].upper()
@@ -64,10 +68,10 @@ for run in range(1, 6):
 
         terminators = [
             tokenizer.eos_token_id,
-            tokenizer.convert_tokens_to_ids("<|eot_id|>")  #if using LLama-2, then use 'tokenizer.convert_tokens_to_ids("</s>")' 
+            tokenizer.convert_tokens_to_ids("<|eot_id|>")  # if using LLama-2, then use 'tokenizer.convert_tokens_to_ids("</s>")' 
         ]
 
-        #You can modify the content below to suit your situation
+        # You can modify the content below to suit your situation
         outputs = model.generate(
             input_ids,
             max_new_tokens=256,
@@ -107,12 +111,12 @@ for run in range(1, 6):
 
     print(f"Run {run} accuracy: {accuracy * 100:.2f}%")
     
-    #You can modify the content below to suit your situation, the result save path is specified here
+    # You can modify the content below to suit your situation, the result save path is specified here
     with open("", "a") as f:
         f.write(f"Run {run} accuracy: {accuracy * 100:.2f}%\n")
 
 average_accuracy = total_accuracy / 5
-#You can modify the content below to suit your situation, the result save path is specified here
+# You can modify the content below to suit your situation, the result save path is specified here
 with open("", "a") as f:
     f.write(f"Average accuracy: {average_accuracy * 100:.2f}%\n")
 

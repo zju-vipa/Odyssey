@@ -1,9 +1,8 @@
 import os
-import random
 from openai import OpenAI
 import pandas as pd
 
-#You can modify the content below to suit your situation
+# You can modify the content below to suit your situation
 client = OpenAI(
     api_key='',
     base_url=''
@@ -12,7 +11,7 @@ client = OpenAI(
 def normal_answer(user_content):
   try:
     response0 = client.chat.completions.create(
-      model="",  #You can modify the content here to suit your situation
+      model="",  # You can modify the content here to suit your situation
       messages=[
           {
               "role": "system",
@@ -29,10 +28,11 @@ def normal_answer(user_content):
   except Exception as e:
     print(f"Error processing file due to: {e}")
     return None
+  
 def short_answer(user_content):
   try:
     response1 = client.chat.completions.create(
-      model="",  #You can modify the content below to suit your situation
+      model="",  # You can modify the content below to suit your situation
       messages=[
           {
               "role": "system",
@@ -49,10 +49,11 @@ def short_answer(user_content):
   except Exception as e:
     print(f"Error processing file due to: {e}")
     return None
+  
 def long_answer(user_content):
   try:
     response2 = client.chat.completions.create(
-      model="",  #You can modify the content below to suit your situation
+      model="",  # You can modify the content below to suit your situation
       messages=[
           {
               "role": "system",
@@ -69,10 +70,11 @@ def long_answer(user_content):
   except Exception as e:
     print(f"Error processing file due to: {e}")
     return None
+  
 def bool_answer(user_content):
   try:
     response3 = client.chat.completions.create(
-      model="",  #You can modify the content below to suit your situation
+      model="",  # You can modify the content below to suit your situation
       messages=[
           {
               "role": "system",
@@ -89,6 +91,7 @@ def bool_answer(user_content):
   except Exception as e:
     print(f"Error processing file due to: {e}")
     return None
+  
 def normal_read_md_files(folder_path, start_from=0):
     if not os.path.exists(folder_path):
         print("The given path does not exist")
@@ -108,7 +111,7 @@ def normal_read_md_files(folder_path, start_from=0):
 
         file_path = os.path.join(folder_path, filename)
 
-        print(f"Reading: {file_path}")  #You can omit the "print" in this section and the following sections
+        print(f"Reading: {file_path}")  # You can omit the "print" in this section and the following sections
         with open(file_path, 'r') as file:
             data = file.read()
         re0 = normal_answer(data)
@@ -120,7 +123,7 @@ def normal_read_md_files(folder_path, start_from=0):
         length0 = len(split_example0)
         retry=0
         flag=1
-        while (length0 < 20 and retry < 3) or flag == 0:   #You can modify the content here to suit your situation
+        while (length0 < 20 and retry < 3) or flag == 0:   # You can modify the content here to suit your situation
           flag=1
           re0 = normal_answer(data)
           if re0 is None:
@@ -184,7 +187,7 @@ def three_read_md_files(folder_path, start_from=0):
         length1 = len(split_example1)
         retry=0
         flag=1
-        while (length1 < 20 and retry < 3) or flag == 0:   #You can modify the content here to suit your situation
+        while (length1 < 20 and retry < 3) or flag == 0:   # You can modify the content here to suit your situation
           flag=1
           re1 = short_answer(data)
           if re1 is None:
@@ -210,7 +213,7 @@ def three_read_md_files(folder_path, start_from=0):
         length2 = len(split_example2)
         retry=0
         flag=1
-        while (length2 < 20 and retry < 3) or flag == 0:   #You can modify the content here to suit your situation
+        while (length2 < 20 and retry < 3) or flag == 0:   # You can modify the content here to suit your situation
           flag=1
           re2 = long_answer(data)
           if re2 is None:
@@ -236,7 +239,7 @@ def three_read_md_files(folder_path, start_from=0):
         length3 = len(split_example3)
         retry=0
         flag=1
-        while (length3 < 16 and retry < 3) or flag == 0:   #You can modify the content here to suit your situation
+        while (length3 < 16 and retry < 3) or flag == 0:   # You can modify the content here to suit your situation
           flag=1
           re3 = bool_answer(data)
           if re3 is None:
@@ -267,7 +270,7 @@ def three_read_md_files(folder_path, start_from=0):
         count += 1
         print(f"Read {count} files. Current file number: {file_number}, path: {file_path}")
 
-folder_path = ''  #You can modify the content here to suit your situation
+folder_path = ''  # You can modify the content here to suit your situation
 start_from = 1
 normal_read_md_files(folder_path, 1)
 three_read_md_files(folder_path, 1)
