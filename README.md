@@ -87,7 +87,7 @@ npx tsc
 
 ### Minecraft Server
 
-You can deploy a Minecraft server using docker. See [here](./Odyssey/installation/run_using_docker.md).
+You can deploy a Minecraft server using docker. See [here](./Odyssey/docs/run_using_docker.md).
 
 ### Embedding Model
 
@@ -270,4 +270,3 @@ This project is developed by [VIPA Lab](https://www.vipazoo.cn/) from Zhejiang U
 <div align="center">
 <img src="./Odyssey/images/vipa-logo.jpg" width="30%">
 </div>
-
