@@ -66,6 +66,7 @@ We use Python ≥ 3.9 and Node.js ≥ 16.13.0. We have tested on Ubuntu 20.04, W
 ### Python Install
 
 ```bash
+cd Odyssey
 pip install -e .
 pip install -r requirements.txt
 ```
@@ -74,13 +75,13 @@ pip install -r requirements.txt
 
 ```bash
 npm install -g yarn
-cd odyssey/env/mineflayer
+cd Odyssey/odyssey/env/mineflayer
 yarn install
-cd odyssey/env/mineflayer/mineflayer-collectblock
+cd Odyssey/odyssey/env/mineflayer/mineflayer-collectblock
 npx tsc
-cd odyssey/env/mineflayer
+cd Odyssey/odyssey/env/mineflayer
 yarn install
-cd odyssey/env/mineflayer/node_modules/mineflayer-collectblock
+cd Odyssey/odyssey/env/mineflayer/node_modules/mineflayer-collectblock
 npx tsc
 ```
 
