@@ -109,6 +109,9 @@ You need to create `config.json` according to the format of `conf/config.json.ke
 - `server_host`: LLaMa backend server ip.
 - `server_port`: LLaMa backend server port.
 - `NODE_SERVER_PORT`: Node service port.
+- `SENTENT_EMBEDDING_DIR`: Path to your embedding model.
+- `MC_SERVER_HOST`: Minecraft server ip.
+- `MC_SERVER_PORT`: Minecraft server port.
 
 ## Odyssey Tasks
 
