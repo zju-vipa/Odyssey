@@ -103,7 +103,8 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
+odyssey/utils/draw_graphs.py
+odyssey/utils/process_results.py
 # mypy
 .mypy_cache/
 
