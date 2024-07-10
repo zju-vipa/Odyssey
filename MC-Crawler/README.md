@@ -2,7 +2,7 @@
 
 ## Installation
 
-We use python 3.11. We have tested on macOS and Ubuntu 20.04. You can follow the instructions below to run it.
+We use python 3.10. We have tested on macOS and Ubuntu 20.04. You can follow the instructions below to run it.
 
 ### Install Requirements
 

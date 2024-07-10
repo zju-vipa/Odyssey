@@ -1,8 +1,6 @@
 from pathlib import Path
 import sys
 import time
-# sys.path.append(Path('./crawler.py').resolve().parent.parent)    
-sys.path.append('..')
 from bs4 import BeautifulSoup, NavigableString, Tag
 from utils.request import get_html_content
 from utils.markdown import to_md_table, to_header, to_list, LIST_TYPE
@@ -55,6 +53,7 @@ class MC_BaiscCrawler:
                 print(f'crawl {url} failed!')
             print(f'processed {self.success_num+self.failed_num+self.skip_num} / {self.total}.')
             print()
+            # wait for a random time to avoid too frequent requests and ip bans.
             # sleep_time = random.uniform(1, 5)
             # print(f'sleep {sleep_time} seconds...')
             # time.sleep(sleep_time)
@@ -77,7 +76,6 @@ class MC_BaiscCrawler:
         all_content = []
         soup = BeautifulSoup(html_content, 'html.parser')
         h1 = soup.find('h1', recursive=True)
-        # breakpoint()
         all_content.append(
             {
                 'type': CONTENT_TYPE.TITLE,
@@ -131,7 +129,6 @@ class MC_BaiscCrawler:
                 )
 
         first_h2 = mw_parser_output.find('h2', recursive=False)
-        # print(first_h2)
         next_sib = first_h2
         skip_section = False
         if first_h2:
@@ -149,13 +146,9 @@ class MC_BaiscCrawler:
                     h_title = next_sib.find_all('span', recursive=False)[0].get_text()
                     if level == 2:
                         if self.filter_section(h_title):
-                            # next_sib = next_sib.find_next_sibling()
                             skip_section = True
-                            # print(f'start skiping: {h_title}')
-                            # continue
                         else:
                             skip_section = False
-                            # print(f'stop skiping: {h_title}')
                     if not skip_section:
                         all_content.append(
                             {
