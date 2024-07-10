@@ -1,0 +1,8 @@
+{
+    "CUDA_VISIBLE_DEVICES": "0,1,2,3",
+    "models":{
+        "llama3_xxxx": "/path/to/your/llama3_xxxx.weights",
+        "minema_xxxx": "/path/to/your/minema_xxxx.weights"
+    },
+    "port": 9999
+}
