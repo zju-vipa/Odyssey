@@ -26,6 +26,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+odyssey/utils/draw_graphs.py
+odyssey/utils/process_results.py
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
