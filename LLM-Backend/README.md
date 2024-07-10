@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ### Modify Config
 
-In `conf/config.json`:
+In `conf/config.json.keep.this`:
 
 - `CUDA_VISIBLE_DEVICES`: If you have multiple GPUs, you can set the GPU number you want to use here.
 
@@ -28,6 +28,8 @@ In `conf/config.json`:
   ```
 
 - `port`: It's the port where the backend will run on your computer.
+
+After modifying the configuration, rename the file name to `config.json`.
 
 ### Run The Backend
 
