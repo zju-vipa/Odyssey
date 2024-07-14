@@ -1,5 +1,5 @@
-from pydantic import BaseModel, ConfigDict, Field
-from typing import List, Tuple, Optional
+from pydantic import BaseModel
+from typing import Optional
 
 
 class LlamaResponse(BaseModel):

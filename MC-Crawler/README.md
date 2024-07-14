@@ -2,7 +2,7 @@
 
 ## Installation
 
-We use python 3.11. We have tested on macOS and Ubuntu 20.04. You can follow the instructions below to run it.
+We use python 3.10. We have tested on macOS and Ubuntu 20.04. You can follow the instructions below to run it.
 
 ### Install Requirements
 
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
 - `urls`: There are 22 categories. You can select which categories to crawl by appending urls of categories to `urls`.
 
-  ![image-20240524上午93305274](./images/image-20240524上午93305274.png)
+  ![web](./images/web.png)
 
 - `url_crawl()`: Fisrt crawl all pages urls of your selected categories and save them to `urls_dir`
 

@@ -57,7 +57,6 @@ class URLCrawler:
 
         return urls
 
-    
     def extract_mob_urls(self, html_content: str):
         urls = []
         soup = BeautifulSoup(html_content, 'html.parser')

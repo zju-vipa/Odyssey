@@ -3,6 +3,7 @@ from crawler.url_crawler import URLCrawler
 from pathlib import Path
 from utils.markdown import split_file
 
+
 def url_crawl(base_url:str, urls: list[str], output_dir: Path, rough:bool = True):
     url_crawler = URLCrawler(
         base_url=base_url,
