@@ -349,4 +349,7 @@ def test_skill(skill_name):
     odyssey_skill.run_raw_skill(f"./skill_library/skill/compositional/{skill_name}", reset=True)
 
 if __name__ == '__main__':
-    test_skill("mineDiamond.js")
+    test_subgoal()
+    test_combat()
+    test_farming()
+    explore()
