@@ -10,7 +10,7 @@ The code used to create this dataset is available in the "Training Dataset Gener
 
 ## Model Fine-Tuning
 
-The MineMA-8B series models from our Minecraft domain knowledge expert series models MineMA, which were fine-tuned in our research, have been publicly released on Huggingface. You can access our models at [https://huggingface.co/Aiwensile2/MineMA-8B](https://huggingface.co/Aiwensile2/MineMA-8B).
+The MineMA-8B series of models and MineMA-70B series of models from our Minecraft domain knowledge expert series models MineMA, which were fine-tuned in our research, have been publicly released on Huggingface. You can access our models at [https://huggingface.co/Aiwensile2/MineMA-8B](https://huggingface.co/Aiwensile2/MineMA-8B).
 
 The code used to fine-tune these models can be found in the "LoRA Fine-Tuning Codes" folder. Specifically, the "LLaMA2 Fine-tune code.py" and "LLaMA3 Fine-tune code.py" files correspond to the fine-tuning of the LLaMA-2 and LLaMA-3 series models, respectively.
 
