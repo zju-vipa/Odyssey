@@ -22,6 +22,13 @@ Official codebase for the paper "Odyssey: Empowering Agents with Open-World Skil
 ## News
 - **`[Jun 13, 2024]`** 🔥 The [GitHub repository]([https://github.com/zijianchen98/GAIA](https://github.com/zju-vipa/Odyssey)) for **ODYSSEY** has been open-sourced!
 
+## Demo
+
+This video, sped up by 1.3x to comply with GitHub's file size limits, showcases the entire process of an agent player mining diamonds from scratch.
+
+<video width="320" height="240" controls>
+  <source src="https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond.mp4" type="video/mp4">
+</video>
 
 ## Contents
 
