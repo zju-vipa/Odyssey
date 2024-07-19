@@ -102,24 +102,24 @@ def test_combat():
         action_agent_model_name = ModelType.LLAMA3_70B_V1,
     )
     
-    multi_rounds_tasks = ["1 enderman", "3 zombie"]
+    multi_rounds_tasks = ["1 zombie", "1 skeleton", "1 spider"]
     l8_v3_combat_benchmark = [
                         # Single-mob tasks
-                        "1 spider", 
+                        "1 skeleton",  "1 spider", "1 zombified_piglin", "1 zombie",
                         # Multi-mob tasks
-                        "1 zombie, 1 skeleton", "1 zombie, 1 spider", "1 zombie, 1 skeleton, 1 spider"
+                        "1 zombie, 1 skeleton", "1 zombie, 1 spider", "1 zombie, 1 skeleton, 1 spider", "3 zombie"
                         ]
     l8_combat_benchmark = [
                         # Single-mob tasks
                          "1 skeleton",  "1 spider", "1 zombified_piglin", "1 zombie",
                         # Multi-mob tasks
-                        "1 zombie, 1 skeleton", "1 zombie, 1 spider", "1 zombie, 1 skeleton, 1 spider"
+                        "1 zombie, 1 skeleton", "1 zombie, 1 spider", "1 zombie, 1 skeleton, 1 spider", "3 zombie"
                         ]
     l70_v1_combat_benchmark = [
                         # Single-mob tasks
                          "1 skeleton",  "1 spider", "1 zombified_piglin", "1 zombie",
                         # Multi-mob tasks
-                        "1 zombie, 1 skeleton", "1 zombie, 1 spider", "1 zombie, 1 skeleton, 1 spider"
+                        "1 zombie, 1 skeleton", "1 zombie, 1 spider", "1 zombie, 1 skeleton, 1 spider", "3 zombie"
                         ]
     MAX_RETRY  = 3
     while True:
@@ -309,32 +309,32 @@ def test_farming():
     )
     farming_benchmark = [
                     # Single-goal tasks
+                    "collect 1 seed (wheat or melon or pumpkin)",
+                    "hoe farmland",
                     "collect 1 wool by shearing 1 sheep",
                     "collect 1 bucket of milk",
-                    "cook 1 meat (beef or mutton or pork or chicken)",
-                    # Multi-goal tasks
-                    "collect and plant 1 seed (wheat or melon or pumpkin)"
+                    "cook 1 meat (beef or mutton or pork or chicken)"
                     ]
     while True:
-        # for task in farming_benchmark:
-        i = 0
-        while i < len(farming_benchmark):
-            try:
-                odyssey_l3_70b.learn(goals=farming_benchmark[i], reset_env=False)
-                i += 1
-            except Exception as e:
-                logger.critical(farming_benchmark[i]+' failed. retry...')
-                logger.critical(e)
-                traceback.print_exc() 
-        i = 0
-        while i < len(farming_benchmark):
-            try:
-                odyssey_l3_8b.learn(goals=farming_benchmark[i], reset_env=False)
-                i += 1
-            except Exception as e:
-                logger.critical(farming_benchmark[i]+' failed. retry...')
-                logger.critical(e)
-                traceback.print_exc()
+        for task in farming_benchmark:
+            i = 0
+            while i < len(farming_benchmark):
+                try:
+                    odyssey_l3_70b.learn(goals=farming_benchmark[i], reset_env=False)
+                    i += 1
+                except Exception as e:
+                    logger.critical(farming_benchmark[i]+' failed. retry...')
+                    logger.critical(e)
+                    traceback.print_exc() 
+            i = 0
+            while i < len(farming_benchmark):
+                try:
+                    odyssey_l3_8b.learn(goals=farming_benchmark[i], reset_env=False)
+                    i += 1
+                except Exception as e:
+                    logger.critical(farming_benchmark[i]+' failed. retry...')
+                    logger.critical(e)
+                    traceback.print_exc()
 
 def test_skill(skill_name):
     odyssey_skill = Odyssey(
@@ -347,9 +347,8 @@ def test_skill(skill_name):
         server_port=node_port,
     )
     odyssey_skill.run_raw_skill(f"./skill_library/skill/compositional/{skill_name}", reset=True)
+    while True:
+        odyssey_skill.run_raw_skill(f"./skill_library/skill/compositional/{skill_name}", reset=False)
 
 if __name__ == '__main__':
-    test_subgoal()
-    test_combat()
-    test_farming()
     explore()

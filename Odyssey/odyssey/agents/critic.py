@@ -280,14 +280,15 @@ class CriticAgent:
                 HumanMessage(content=content)
             ]
             return self.ai_check_goal_success(messages=messages)
+        # program mode is used for checking farming benchmark tasks success
         elif mode == "program":
             print("observations = " + str(observations))
             inventory = self.get_inventory(events=events)
             wool_in_inventory = 'white_wool' in inventory or 'black_wool' in inventory or 'gray_wool' in inventory or 'light_gray_wool' in inventory
             milk_in_inventory = 'milk_bucket' in inventory
             meat_in_inventory = 'cooked_porkchop' in inventory or 'cooked_mutton' in inventory or 'cooked_beef' in inventory or 'cooked_chicken' in inventory
+            seed_in_inventory = 'wheat_seeds' in inventory or 'melon_seeds' in inventory or 'pumpkin_seeds' in inventory
             farmland_nearby = 'farmland' in observations["nearby_blocks"]
-            seed_nearby = 'wheat' in observations["nearby_blocks"] or 'melon_stem' in observations["nearby_blocks"] or 'pumpkin_stem' in observations["nearby_blocks"]
             if goals == 'hoe a farmland':
                 return farmland_nearby
             if goals == "collect 1 wool by shearing 1 sheep":
@@ -296,10 +297,6 @@ class CriticAgent:
                 return milk_in_inventory
             if goals == "cook 1 meat (beef or mutton or pork or chicken)":
                 return meat_in_inventory
-            if goals == "collect and plant 1 seed (wheat or melon or pumpkin)":
-                return seed_nearby
-            if goals == 'collect 1 wool by shearing 1 sheep or collect 1 bucket of milk':
-                return wool_in_inventory or milk_in_inventory
-            if goals == 'collect 1 wool by shearing 1 sheep and collect 1 bucket of milk':
-                return wool_in_inventory and milk_in_inventory
+            if goals == "collect 1 seed (wheat or melon or pumpkin)":
+                return seed_in_inventory
 
