@@ -316,25 +316,25 @@ def test_farming():
                     "cook 1 meat (beef or mutton or pork or chicken)"
                     ]
     while True:
-        for task in farming_benchmark:
-            i = 0
-            while i < len(farming_benchmark):
-                try:
-                    odyssey_l3_70b.learn(goals=farming_benchmark[i], reset_env=False)
-                    i += 1
-                except Exception as e:
-                    logger.critical(farming_benchmark[i]+' failed. retry...')
-                    logger.critical(e)
-                    traceback.print_exc() 
-            i = 0
-            while i < len(farming_benchmark):
-                try:
-                    odyssey_l3_8b.learn(goals=farming_benchmark[i], reset_env=False)
-                    i += 1
-                except Exception as e:
-                    logger.critical(farming_benchmark[i]+' failed. retry...')
-                    logger.critical(e)
-                    traceback.print_exc()
+        # for task in farming_benchmark:
+        i = 0
+        while i < len(farming_benchmark):
+            try:
+                odyssey_l3_70b.learn(goals=farming_benchmark[i], reset_env=False)
+                i += 1
+            except Exception as e:
+                logger.critical(farming_benchmark[i]+' failed. retry...')
+                logger.critical(e)
+                traceback.print_exc() 
+        i = 0
+        while i < len(farming_benchmark):
+            try:
+                odyssey_l3_8b.learn(goals=farming_benchmark[i], reset_env=False)
+                i += 1
+            except Exception as e:
+                logger.critical(farming_benchmark[i]+' failed. retry...')
+                logger.critical(e)
+                traceback.print_exc()
 
 def test_skill(skill_name):
     odyssey_skill = Odyssey(
