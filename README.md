@@ -26,9 +26,8 @@ Official codebase for the paper "Odyssey: Empowering Agents with Open-World Skil
 
 This video, sped up by 1.3x to comply with GitHub's file size limits, showcases the entire process of an agent player mining diamonds from scratch.
 
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond.mp4" type="video/mp4">
-</video>
+[![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond.mp4)
+
 
 ## Contents
 
@@ -64,7 +63,7 @@ This video, sped up by 1.3x to comply with GitHub's file size limits, showcases 
 
 4. **Odyssey**
 
-     Code for Minecaft agents based on a large language model and skill base.
+     Code for Minecaft agents based on a large language model and skill library.
 
 ## Odyssey Installation
 
