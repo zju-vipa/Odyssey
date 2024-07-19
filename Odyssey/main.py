@@ -16,7 +16,7 @@ def test_subgoal():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='subgoal',
         resume=False,
@@ -58,7 +58,7 @@ def test_combat():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='combat',
         resume=False,
@@ -74,7 +74,7 @@ def test_combat():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='combat',
         resume=False,
@@ -90,7 +90,7 @@ def test_combat():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='combat',
         resume=False,
@@ -222,7 +222,7 @@ def explore():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='explore',
         resume=False,
@@ -232,16 +232,14 @@ def explore():
         planner_agent_qa_model_name = ModelType.LLAMA3_8B,
         planner_agent_model_name = ModelType.LLAMA3_8B,
         action_agent_model_name = ModelType.LLAMA3_8B,
-        # because I wrongly added username bot1_13b in minecraft, so use this name
-        # rather then bot1_8b
-        username='bot1_13b'
+        username='bot'
     )
     odyssey_l3_8b_v3 = Odyssey(
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='explore',
         resume=False,
@@ -251,14 +249,14 @@ def explore():
         planner_agent_qa_model_name = ModelType.LLAMA3_8B_V3,
         planner_agent_model_name = ModelType.LLAMA3_8B_V3,
         action_agent_model_name = ModelType.LLAMA3_8B_V3,
-        username='bot1_13b_v3'
+        username='bot'
     )
     odyssey_l3_70b = Odyssey(
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='explore',
         resume=False,
@@ -268,7 +266,7 @@ def explore():
         planner_agent_qa_model_name = ModelType.LLAMA3_70B_V1,
         planner_agent_model_name = ModelType.LLAMA3_70B_V1,
         action_agent_model_name = ModelType.LLAMA3_70B_V1,
-        username='bot1_70b_v1'
+        username='bot'
     )
     odyssey_l3_8b_v3.learn()
     odyssey_l3_8b.learn()
@@ -280,7 +278,7 @@ def test_farming():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='farming',
         resume=False,
@@ -296,7 +294,7 @@ def test_farming():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='farming',
         resume=False,
@@ -341,7 +339,7 @@ def test_skill(skill_name):
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        reload=True, # set to True if the skill_json updated
+        reload=False, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         resume=False,
         server_port=node_port,
