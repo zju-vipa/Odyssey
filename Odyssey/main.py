@@ -16,7 +16,7 @@ def test_subgoal():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='subgoal',
         resume=False,
@@ -32,7 +32,7 @@ def test_subgoal():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='subgoal',
         resume=False,
@@ -58,7 +58,7 @@ def test_combat():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='combat',
         resume=False,
@@ -74,7 +74,7 @@ def test_combat():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='combat',
         resume=False,
@@ -90,7 +90,7 @@ def test_combat():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='combat',
         resume=False,
@@ -122,6 +122,7 @@ def test_combat():
                         "1 zombie, 1 skeleton", "1 zombie, 1 spider", "1 zombie, 1 skeleton, 1 spider", "3 zombie"
                         ]
     MAX_RETRY  = 3
+    retry = MAX_RETRY
     while True:
         # for task in combat_benchmark:
         retry = MAX_RETRY
@@ -222,7 +223,7 @@ def explore():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='explore',
         resume=False,
@@ -239,7 +240,7 @@ def explore():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='explore',
         resume=False,
@@ -256,7 +257,7 @@ def explore():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='explore',
         resume=False,
@@ -278,7 +279,7 @@ def test_farming():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='farming',
         resume=False,
@@ -294,7 +295,7 @@ def test_farming():
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
         skill_library_dir="./skill_library",
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         environment='farming',
         resume=False,
@@ -306,7 +307,6 @@ def test_farming():
         action_agent_model_name = ModelType.LLAMA3_70B_V1,
     )
     farming_benchmark = [
-                    # Single-goal tasks
                     "collect 1 seed (wheat or melon or pumpkin)",
                     "hoe farmland",
                     "collect 1 wool by shearing 1 sheep",
@@ -339,7 +339,7 @@ def test_skill(skill_name):
         mc_port=mc_port,
         mc_host=mc_host,
         env_wait_ticks=env_wait_ticks,
-        reload=False, # set to True if the skill_json updated
+        reload=True, # set to True if the skill_json updated
         embedding_dir=embedding_dir, # your model path
         resume=False,
         server_port=node_port,
