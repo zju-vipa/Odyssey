@@ -30,10 +30,6 @@ Mining Diamonds from Scratch:
 
 [![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond.mp4)
 
-Combat Zombie with Crafted Equipment:
-
-https://github.com/user-attachments/assets/06337f95-1f84-428b-8881-77163c30eea6
-
 ## Contents
 
 - [Directory Description](#Directory-Description)
