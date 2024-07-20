@@ -24,10 +24,15 @@ Official codebase for the paper "Odyssey: Empowering Agents with Open-World Skil
 
 ## Demo
 
-This video, sped up by 1.3x to comply with GitHub's file size limits, showcases the entire process of an agent player mining diamonds from scratch.
+All demonstration videos were captured using the spectator mode within Minecraft. To comply with GitHub's file size restrictions, some videos have been accelerated.
+
+Mining Diamonds from Scratch:
 
 [![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond.mp4)
 
+Combat Zombie with Crafted Equipment:
+
+https://github.com/user-attachments/assets/06337f95-1f84-428b-8881-77163c30eea6
 
 ## Contents
 
