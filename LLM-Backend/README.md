@@ -64,3 +64,7 @@ print(resp.json())
 
 ```
 
+## FAQ
+
+1. If your model doesn't look like it's deployed on a GPU, **install the torch 2.2.0 gpu version**!
+

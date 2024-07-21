@@ -16,7 +16,7 @@ Official codebase for the paper "Odyssey: Empowering Agents with Open-World Skil
 
 ## Overview 
 
-**Abstract:** Recent studies have delved into constructing generalist agents for open-world embodied environments like Minecraft. Despite the encouraging results, existing efforts mainly focus on solving basic programmatic tasks, e.g., material collection and tool-crafting following the Minecraft tech-tree, treating the ObtainDiamond task as the ultimate goal. This limitation stems from the narrowly defined set of actions available to agents, requiring them to learn effective long-horizon strategies from scratch. Consequently, discovering diverse gameplay opportunities in the open world becomes challenging. In this work, we introduce Odyssey, a new framework that empowers Large Language Model (LLM)-based agents with open-world skills to explore the vast Minecraft world. Odyssey comprises three key parts: (1) An interactive agent with an open-world skill library that consists of 40 primitive skills and 183 compositional skills. (2) A fine-tuned LLaMA-3 model trained on a large question-answering dataset with 390k+ instruction entries derived from the Minecraft Wiki. (3) A new open-world benchmark includes thousands of long-term planning tasks, tens of dynamic-immediate planning tasks, and one autonomous exploration task. Extensive experiments demonstrate that the proposed Odyssey framework can effectively evaluate the planning and exploration capabilities of agents. All datasets, model weights, and code are publicly available to motivate future research on more advanced autonomous agent solutions.
+**Abstract:** Recent studies have delved into constructing generalist agents for open-world embodied environments like Minecraft. Despite the encouraging results, existing efforts mainly focus on solving basic programmatic tasks, e.g., material collection and tool-crafting following the Minecraft tech-tree, treating the ObtainDiamond task as the ultimate goal. This limitation stems from the narrowly defined set of actions available to agents, requiring them to learn effective long-horizon strategies from scratch. Consequently, discovering diverse gameplay opportunities in the open world becomes challenging. In this work, we introduce Odyssey, a new framework that empowers Large Language Model (LLM)-based agents with open-world skills to explore the vast Minecraft world. Odyssey comprises three key parts: **(1) An interactive agent with an open-world skill library that consists of 40 primitive skills and 183 compositional skills. (2) A fine-tuned LLaMA-3 model trained on a large question-answering dataset with 390k+ instruction entries derived from the Minecraft Wiki. (3) A new open-world benchmark includes thousands of long-term planning tasks, tens of dynamic-immediate planning tasks, and one autonomous exploration task.** Extensive experiments demonstrate that the proposed Odyssey framework can effectively evaluate the planning and exploration capabilities of agents. All datasets, model weights, and code are publicly available to motivate future research on more advanced autonomous agent solutions.
 
 
 ## News
@@ -24,10 +24,11 @@ Official codebase for the paper "Odyssey: Empowering Agents with Open-World Skil
 
 ## Demo
 
-This video, sped up by 1.3x to comply with GitHub's file size limits, showcases the entire process of an agent player mining diamonds from scratch.
+All demonstration videos were captured using the spectator mode within Minecraft. To comply with GitHub's file size restrictions, some videos have been accelerated.
+
+Mining Diamonds from Scratch:
 
 [![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/mineDiamond.mp4)
-
 
 ## Contents
 
@@ -252,24 +253,27 @@ def explore():
 
 ## Related Works
 
-1. **MineRL: A Large-Scale Dataset of Minecraft Demonstrations.** *William H. Guss, Brandon Houghton, Nicholay Topin, Phillip Wang, Cayden Codel, Manuela Veloso, Ruslan Salakhutdinov.* IJCAI, 2019. [[paper]](https://arxiv.org/abs/1907.13440)  
-2. **Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos.** *Bowen Baker, Ilge Akkaya, Peter Zhokhov, Joost Huizinga, Jie Tang, Adrien Ecoffet, Brandon Houghton, Raul Sampedro, Jeff Clune.* arXiv, 2022. [[paper]](https://arxiv.org/abs/2206.11795)
-3. **MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge.** *Linxi Fan, Guanzhi Wang, Yunfan Jiang, Ajay Mandlekar, Yuncong Yang, Haoyi Zhu, Andrew Tang, De-An Huang, Yuke Zhu, Anima Anandkumar.* NeurIPS, 2022. [[paper]](https://arxiv.org/abs/2206.08853)
-4. **Open-World Multi-Task Control Through Goal-Aware Representation Learning and Adaptive Horizon Prediction.** *Shaofei Cai, Zihao Wang, Xiaojian Ma, Anji Liu, Yitao Liang.* CVPR, 2023. [[paper]](https://arxiv.org/abs/2301.10034)
-5. **Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents.** *Zihao Wang, Shaofei Cai, Guanzhou Chen, Anji Liu, Xiaojian Ma, Yitao Liang.* NeurIPS, 2023. [[paper]](https://arxiv.org/abs/2302.01560)
-6. **A Survey on Game Playing Agents and Large Models: Methods, Applications, and Challenges.** *Xinrun Xu, Yuxin Wang, Chaoyi Xu, Ziluo Ding, Jiechuan Jiang, Zhiming Ding, Börje F. Karlsson.* arXiv, 2024. [[paper]](https://arxiv.org/abs/2403.10249)
-7. **Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks.** *Haoqi Yuan, Chi Zhang, Hongcheng Wang, Feiyang Xie, Penglin Cai, Hao Dong, Zongqing Lu.* NeurIPS Workshop, 2023. [[paper]](https://arxiv.org/abs/2303.16563)
-8. **Voyager: An Open-Ended Embodied Agent with Large Language Models.** *Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar.* arXiv, 2023. [[paper]](https://arxiv.org/abs/2305.16291)
-9. **Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory.** *Xizhou Zhu, Yuntao Chen, Hao Tian, Chenxin Tao, Weijie Su, Chenyu Yang, Gao Huang, Bin Li, Lewei Lu, Xiaogang Wang, Yu Qiao, Zhaoxiang Zhang, Jifeng Dai.* arXiv, 2023. [[paper]](https://arxiv.org/abs/2305.17144)
-10. **STEVE-1: A Generative Model for Text-to-Behavior in Minecraft.** *Shalev Lifshitz, Keiran Paster, Harris Chan, Jimmy Ba, Sheila McIlraith.* NeurIPS, 2023. [[paper]](https://arxiv.org/abs/2306.00937)
-11. **GROOT: Learning to Follow Instructions by Watching Gameplay Videos.** *Shaofei Cai, Bowei Zhang, Zihao Wang, Xiaojian Ma, Anji Liu, Yitao Liang.* arXiv, 2023. [[paper]](https://arxiv.org/abs/2310.08235)
-12. **MCU: A Task-centric Framework for Open-ended Agent Evaluation in Minecraft.** *Haowei Lin, Zihao Wang, Jianzhu Ma, Yitao Liang.* arXiv, 2023. [[paper]](https://arxiv.org/abs/2310.08367)
-13. **LLaMA Rider: Spurring Large Language Models to Explore the Open World.** *Yicheng Feng, Yuxuan Wang, Jiazheng Liu, Sipeng Zheng, Zongqing Lu.* arXiv 2023. [[paper]](https://arxiv.org/abs/2310.08922)
-14. **JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models.** *Zihao Wang, Shaofei Cai, Anji Liu, Yonggang Jin, Jinbing Hou, Bowei Zhang, Haowei Lin, Zhaofeng He, Zilong Zheng, Yaodong Yang, Xiaojian Ma, Yitao Liang.*  arXiv, 2023. [[paper]](https://arxiv.org/abs/2311.05997)
-15. **See and Think: Embodied Agent in Virtual Environment.** *Zhonghan Zhao, Wenhao Chai, Xuan Wang, Li Boyi, Shengyu Hao, Shidong Cao, Tian Ye, Jenq-Neng Hwang, Gaoang Wang.* arXiv, 2023. [[paper]](https://arxiv.org/abs/2311.15209)
-16. **Creative Agents: Empowering Agents with Imagination for Creative Tasks.** *Chi Zhang, Penglin Cai, Yuhui Fu, Haoqi Yuan, Zongqing Lu.* arXiv 2023. [[paper]](https://arxiv.org/abs/2312.02519)
-17. **MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception.** *Yiran Qin, Enshen Zhou, Qichang Liu, Zhenfei Yin, Lu Sheng, Ruimao Zhang, Yu Qiao, Jing Shao.* arXiv, 2024. [[paper]](https://arxiv.org/abs/2312.07472)
-18. **Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft.** *Hao Li, Xue Yang, Zhaokai Wang, Xizhou Zhu, Jie Zhou, Yu Qiao, Xiaogang Wang, Hongsheng Li, Lewei Lu, Jifeng Dai.* arXiv, 2024. [[paper]](https://arxiv.org/abs/2312.09238)
+| **ID** |                          **Paper**                           |                         **Authors**                          |         Venue          |
+| :----: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------------------: |
+|   1    | [MineRL: A Large-Scale Dataset of Minecraft Demonstrations](https://arxiv.org/abs/1907.13440) | William H. Guss, Brandon Houghton, Nicholay Topin, Phillip Wang, Cayden Codel, Manuela Veloso, Ruslan Salakhutdinov |       IJCAI 2019       |
+|   2    | [Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos](https://arxiv.org/abs/2206.11795) | Bowen Baker, Ilge Akkaya, Peter Zhokhov, Joost Huizinga, Jie Tang, Adrien Ecoffet, Brandon Houghton, Raul Sampedro, Jeff Clune |       arXiv 2022       |
+|   3    | [MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge](https://arxiv.org/abs/2206.08853) | Linxi Fan, Guanzhi Wang, Yunfan Jiang, Ajay Mandlekar, Yuncong Yang, Haoyi Zhu, Andrew Tang, De-An Huang, Yuke Zhu, Anima Anandkumar |      NeurIPS 2022      |
+|   4    | [Open-World Multi-Task Control Through Goal-Aware Representation Learning and Adaptive Horizon Prediction](https://arxiv.org/abs/2301.10034) | Shaofei Cai, Zihao Wang, Xiaojian Ma, Anji Liu, Yitao Liang  |       CVPR 2023        |
+|   5    | [Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents](https://arxiv.org/abs/2302.01560) | Zihao Wang, Shaofei Cai, Guanzhou Chen, Anji Liu, Xiaojian Ma, Yitao Liang |      NeurIPS 2023      |
+|   6    | [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](https://arxiv.org/abs/2303.16563) | Haoqi Yuan, Chi Zhang, Hongcheng Wang, Feiyang Xie, Penglin Cai, Hao Dong, Zongqing Lu | NeurIPS Workshop  2023 |
+|   7    | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar |       arXiv 2023       |
+|   8    | [Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory](https://arxiv.org/abs/2305.17144) | Xizhou Zhu, Yuntao Chen, Hao Tian, Chenxin Tao, Weijie Su, Chenyu Yang, Gao Huang, Bin Li, Lewei Lu, Xiaogang Wang, Yu Qiao, Zhaoxiang Zhang, Jifeng Dai |       arXiv 2023       |
+|   9    | [STEVE-1: A Generative Model for Text-to-Behavior in Minecraft](https://arxiv.org/abs/2306.00937) | Shalev Lifshitz, Keiran Paster, Harris Chan, Jimmy Ba, Sheila McIlraith |      NeurIPS 2023      |
+|   10   | [GROOT: Learning to Follow Instructions by Watching Gameplay Videos](https://arxiv.org/abs/2310.08235) | Shaofei Cai, Bowei Zhang, Zihao Wang, Xiaojian Ma, Anji Liu, Yitao Liang |       arXiv 2023       |
+|   11   | [MCU: A Task-centric Framework for Open-ended Agent Evaluation in Minecraft](https://arxiv.org/abs/2310.08367) |       Haowei Lin, Zihao Wang, Jianzhu Ma, Yitao Liang        |       arXiv 2023       |
+|   12   | [LLaMA Rider: Spurring Large Language Models to Explore the Open World](https://arxiv.org/abs/2310.08922) | Yicheng Feng, Yuxuan Wang, Jiazheng Liu, Sipeng Zheng, Zongqing Lu |       arXiv 2023       |
+|   13   | [JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models](https://arxiv.org/abs/2311.05997) | Zihao Wang, Shaofei Cai, Anji Liu, Yonggang Jin, Jinbing Hou, Bowei Zhang, Haowei Lin, Zhaofeng He, Zilong Zheng, Yaodong Yang, Xiaojian Ma, Yitao Liang |       arXiv 2023       |
+|   14   | [See and Think: Embodied Agent in Virtual Environment](https://arxiv.org/abs/2311.15209) | Zhonghan Zhao, Wenhao Chai, Xuan Wang, Li Boyi, Shengyu Hao, Shidong Cao, Tian Ye, Jenq-Neng Hwang, Gaoang Wang |       arXiv 2023       |
+|   15   | [Creative Agents: Empowering Agents with Imagination for Creative Tasks](https://arxiv.org/abs/2312.02519) |  Chi Zhang, Penglin Cai, Yuhui Fu, Haoqi Yuan, Zongqing Lu   |       arXiv 2023       |
+|   16   | [MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception](https://arxiv.org/abs/2312.07472) | Yiran Qin, Enshen Zhou, Qichang Liu, Zhenfei Yin, Lu Sheng, Ruimao Zhang, Yu Qiao, Jing Shao |       arXiv 2024       |
+|   17   | [Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft](https://arxiv.org/abs/2312.09238) | Hao Li, Xue Yang, Zhaokai Wang, Xizhou Zhu, Jie Zhou, Yu Qiao, Xiaogang Wang, Hongsheng Li, Lewei Lu, Jifeng Dai |       arXiv 2024       |
+
+
 
 
 ## Contact
