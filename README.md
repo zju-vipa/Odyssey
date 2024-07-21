@@ -32,7 +32,7 @@ Mining Diamonds from Scratch:
 
 Craft Sword and Combat Zombie:
 
-[![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/combatDemo_preview.png)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/combatDemo.mp4)
+[![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/combatDemo_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/combatDemo.mp4)
 
 ## Contents
 
