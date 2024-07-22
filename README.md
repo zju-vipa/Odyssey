@@ -44,6 +44,14 @@ Craft Sword and Combat Zombie:
 
 [![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/combatDemo_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/combatDemo.mp4)
 
+Shear a Sheep and Milk a Cow:
+
+[![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/farmDemo_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/farmDemo.mp4)
+
+Autonomous Exploration: (Only First Few Rounds)
+
+[![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/exploreDemo_preview.jpg)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Odyssey/images/exploreDemo.mp4)
+
 ## Contents
 
 - [Directory Description](#Directory-Description)
