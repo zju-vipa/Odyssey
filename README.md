@@ -1,3 +1,7 @@
+
+<div align="center">
+<img src="./Odyssey/images/logo.jpg" width="38%">
+</div>
 <h1 align="center">Odyssey: Empowering Agents with Open-World Skills</h1>
 
 <div align="center">
