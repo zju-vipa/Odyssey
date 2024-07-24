@@ -297,6 +297,18 @@ def explore():
 |   17   | [Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft](https://arxiv.org/abs/2312.09238) | Hao Li, Xue Yang, Zhaokai Wang, Xizhou Zhu, Jie Zhou, Yu Qiao, Xiaogang Wang, Hongsheng Li, Lewei Lu, Jifeng Dai |       arXiv 2024       |
 
 
+## Citation
+
+If you find this work useful for your research, please cite our paper:
+
+```
+@article{Odyssey2024,
+  title={Odyssey: Empowering Agents with Open-World Skills},
+  author={Shunyu Liu and Yaoru Li and Kongcheng Zhang and Zhenyu Cui and Wenkai Fang and Yuxuan Zheng and Tongya Zheng and Mingli Song},
+  journal={arXiv preprint arXiv:2407.15325},
+  year={2024},
+}
+```
 
 
 ## Contact
