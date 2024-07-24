@@ -13,7 +13,7 @@
 	<a href="https://github.com/zju-vipa/Odyssey"><img src="https://img.shields.io/github/stars/zju-vipa/Odyssey"/></a>
 </div>
 
-Official codebase for the paper "[Odyssey: Empowering Agents with Open-World Skills](https://github.com/zju-vipa/Odyssey/blob/master/paper.pdf)". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
+Official codebase for the paper "[Odyssey: Empowering Agents with Open-World Skills](https://arxiv.org/abs/2407.15325)". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
 
 <div align="center">
 <img src="./Odyssey/images/framework.png" width="100%">
