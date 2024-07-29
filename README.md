@@ -84,7 +84,7 @@ Autonomous Exploration: (Only First Few Rounds)
 
 3. **MineMA-Model-Fine-Tuning**
 
-     Code to fine-tune the LLaMa model and genearte training and test datasets.
+     Code to fine-tune the LLaMa model and generate training and test datasets.
 
 4. **Odyssey**
 
