@@ -124,7 +124,7 @@ You can deploy a Minecraft server using docker. See [here](./Odyssey/docs/run_us
 
 1. Need to install [git-lfs](https://git-lfs.com) first.
 
-2. Download mebedding model repository
+2. Download embedding model repository
 
    ```bash
    git lfs install
