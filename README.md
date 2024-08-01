@@ -80,7 +80,7 @@ Autonomous Exploration: (Only First Few Rounds)
 
 2. **MC-Crawler**
 
-   Crawling Minecraft game information from Minecraft Wiki, and store data in markdown format.
+   Crawling Minecraft game information from Minecraft Wiki and storing data in markdown format.
 
 3. **MineMA-Model-Fine-Tuning**
 
@@ -88,7 +88,7 @@ Autonomous Exploration: (Only First Few Rounds)
 
 4. **Odyssey**
 
-     Code for Minecaft agents based on a large language model and skill library.
+     Code for Minecraft agents based on a large language model and skill library.
 
 ## Odyssey Installation
 
@@ -124,7 +124,7 @@ You can deploy a Minecraft server using docker. See [here](./Odyssey/docs/run_us
 
 1. Need to install [git-lfs](https://git-lfs.com) first.
 
-2. Download embedding model repository
+2. Download the embedding model repository
 
    ```bash
    git lfs install
