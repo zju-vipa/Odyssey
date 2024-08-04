@@ -34,7 +34,7 @@ Access our models at [https://huggingface.co/Aiwensile2/MineMA-8B]
 
 ### 2. Environment Setup
 
-Environment requirements needed to use the model are written in "requirements.txt", which in the "Model Use" folder.
+Environment requirements needed to use the model are written in "requirements.txt", which in the "Model Usage" folder.
 
 Run the following command to install all dependencies:
 ```sh
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ### 3. Example Code
 
-Example code for reference usage guidelines can be found at "Model Use" folder, named "Model usage method.ipynb".
+Example code for reference usage guidelines can be found at "Model Usage" folder, named "Model usage method.ipynb".
 
 ### 4. Prompts
 
