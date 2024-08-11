@@ -31,6 +31,10 @@ In `conf/config.json.keep.this`:
 
 After modifying the configuration, rename the file name to `config.json`.
 
+### Api model
+
+You can set `dashscope.api_key` in `model/api_model.py` to integrate external model api into this backend.
+
 ### Run The Backend
 
 ```bash
