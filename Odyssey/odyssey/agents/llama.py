@@ -21,6 +21,9 @@ class ModelType:
     LLAMA3_8B_V3 = 'llama3_8b_v3'
     LLAMA3_8B = 'llama3_8b'
     LLAMA3_70B_V1 = 'llama3_70b_v1'
+    QWEN2_72B = 'qwen2-72b'
+    QWEN2_7B = 'qwen2-7b'
+    BAICHUAN2_7B = 'baichuan2-7b'
 
 def call_with_messages(msgs, model_name:ModelType=ModelType.LLAMA3_8B_V3):
     url = f'http://{config.get("server_host")}:{config.get("server_port")}/{model_name}'
