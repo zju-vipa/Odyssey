@@ -12,11 +12,10 @@ async function collectSugarCane(bot) {
       bot.chat("Could not find sugar cane plants.");
       return;
     }
-    await mineBlock(bot, "sugar_cane", 1);
-    /*for (const sugarCanePlant of sugarCanePlants) {
+    for (const sugarCanePlant of sugarCanePlants) {
       const block = bot.blockAt(sugarCanePlant);
       await bot.dig(block);
       await bot.pathfinder.goto(new GoalBlock(sugarCanePlant.x, sugarCanePlant.y, sugarCanePlant.z));
-    }*/
+    }
     bot.chat("sugar cane collected.");
 }

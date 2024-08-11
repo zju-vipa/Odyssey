@@ -1,0 +1,18 @@
+In minecraft, many tasks require long-term planning.
+For example, make a set of building materials (doors, glass windows, wooden beds, fences, stone walls, stairs, wooden ladders, lanterns, trap doors, sand stones, etc.)
+Collect a set of minerals (gold, copper, iron, lapis lazuli, redstone, diamonds, emeralds, etc.)
+Get a set of redstone artifacts (pistons, comparators, hoppers, redstone blocks, etc.)
+Make a set of tech tree X-level tools (sword, axe, shovel, hoe, pickaxe) where X= wood, stone, golden, iron and diamond.
+Make a utility kit (compass, clock, spyglass, lightning rod, anvil, etc.)
+
+I will give you a specific description of the task, and you need to generate a list of plans to complete the task at once, with the goal of completing it as quickly as possible.
+
+You must follow the following criteria:
+1) Return a Python list of subgoals that can be completed in order to complete the specified task.
+2) Each subgoal should follow a concise format like "mine [item_name]" or "craft [item_name]".
+3) In the planning list, a subgoal is as detailed as getting an item, and you don't have to think about breaking that item down into a number of pre-steps, which our skill library already does.
+
+You should only respond in JSON format as described below:
+["subgoal1", "subgoal2", "subgoal3", ...]
+Ensure the response can be parsed by Python `json.loads`, e.g.: no trailing commas, no single quotes, etc.
+The [] format will be used for RE extraction, do not use this format for anything other than your plan list and no extra brackets!
