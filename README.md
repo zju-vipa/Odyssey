@@ -13,7 +13,7 @@
 	<a href="https://github.com/zju-vipa/Odyssey"><img src="https://img.shields.io/github/stars/zju-vipa/Odyssey"/></a>
 </div>
 
-Official codebase for the paper "[Odyssey: Empowering Agents with Open-World Skills](https://github.com/zju-vipa/Odyssey/blob/master/paper.pdf)". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
+Official codebase for the paper "[Odyssey: Empowering Agents with Open-World Skills](https://arxiv.org/abs/2407.15325)". This codebase is based on the [MineDojo](https://github.com/MineDojo/MineDojo) and [Voyager](https://github.com/MineDojo/Voyager) framework.
 
 <div align="center">
 <img src="./Odyssey/images/framework.png" width="100%">
@@ -31,7 +31,8 @@ Extensive experiments demonstrate that the proposed Odyssey framework can effect
 
 
 ## News
-- **`[Jun 13, 2024]`** 🔥 The [GitHub repository]([https://github.com/zijianchen98/GAIA](https://github.com/zju-vipa/Odyssey)) for **ODYSSEY** has been open-sourced!
+- **`[Jul 23, 2024]`** 🔥 The [paper](https://arxiv.org/abs/2407.15325) for **ODYSSEY** has been uploaded to arXiv!
+- **`[Jun 13, 2024]`** 🔥 The [GitHub repository](https://github.com/zju-vipa/Odyssey) for **ODYSSEY** has been open-sourced!
 
 ## Demo
 
@@ -79,15 +80,15 @@ Autonomous Exploration: (Only First Few Rounds)
 
 2. **MC-Crawler**
 
-   Crawling Minecraft game information from Minecraft Wiki, and store data in markdown format.
+   Crawling Minecraft game information from Minecraft Wiki and storing data in markdown format.
 
 3. **MineMA-Model-Fine-Tuning**
 
-     Code to fine-tune the LLaMa model and genearte training and test datasets.
+     Code to fine-tune the LLaMa model and generate training and test datasets.
 
 4. **Odyssey**
 
-     Code for Minecaft agents based on a large language model and skill library.
+     Code for Minecraft agents based on a large language model and skill library.
 
 ## Odyssey Installation
 
@@ -123,7 +124,7 @@ You can deploy a Minecraft server using docker. See [here](./Odyssey/docs/run_us
 
 1. Need to install [git-lfs](https://git-lfs.com) first.
 
-2. Download mebedding model repository
+2. Download the embedding model repository
 
    ```bash
    git lfs install
@@ -297,6 +298,18 @@ def explore():
 |   17   | [Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft](https://arxiv.org/abs/2312.09238) | Hao Li, Xue Yang, Zhaokai Wang, Xizhou Zhu, Jie Zhou, Yu Qiao, Xiaogang Wang, Hongsheng Li, Lewei Lu, Jifeng Dai |       arXiv 2024       |
 
 
+## Citation
+
+If you find this work useful for your research, please cite our paper:
+
+```
+@article{Odyssey2024,
+  title={Odyssey: Empowering Agents with Open-World Skills},
+  author={Shunyu Liu and Yaoru Li and Kongcheng Zhang and Zhenyu Cui and Wenkai Fang and Yuxuan Zheng and Tongya Zheng and Mingli Song},
+  journal={arXiv preprint arXiv:2407.15325},
+  year={2024}
+}
+```
 
 
 ## Contact
