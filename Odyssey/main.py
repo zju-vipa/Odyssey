@@ -308,10 +308,14 @@ def test_farming():
     )
     farming_benchmark = [
                     "collect 1 seed (wheat or melon or pumpkin)",
-                    "hoe farmland",
+                    "hoe a farmland",
                     "collect 1 wool by shearing 1 sheep",
                     "collect 1 bucket of milk",
-                    "cook 1 meat (beef or mutton or pork or chicken)"
+                    "cook 1 meat (beef or mutton or pork or chicken)",
+                    "obtain 1 leather",
+                    "make 1 sugar",
+                    "smelt 5 dye",
+                    "collect 1 bucket of water"
                     ]
     while True:
         # for task in farming_benchmark:

@@ -2,7 +2,9 @@ async function collectWaterWithBucket(bot) {
   // check bucket
   let bucket = bot.inventory.findInventoryItem(mcData.itemsByName.bucket.id);
   if (!bucket) {
-      await craftBucket(bot);
+      bot.chat(`No bucket in inventory, craft a bucket first!`);
+      return;
+      // await craftBucket(bot);
   }
   // find water
   const waterBlock = bot.findBlock({

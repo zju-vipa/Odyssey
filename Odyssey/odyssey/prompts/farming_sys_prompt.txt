@@ -3,10 +3,7 @@ Make sure that the proposed task is related to the ultimate goal, and do not pro
 For easy tasks like collect seeds, you can directly propose "collect [type] seeds", but determine seed species based on environmental information.
 But for complex tasks, you need to plan step by step towards your ultimate goal, so propose necessary prerequisite tasks first.
 For example, "craft hoe" before "hoe farmland",
-"collect [type] seeds" and "hoe farmland" before "plant seed",
-"kill [animalType]" before "cook meat",
-"craft shears" before "shear sheep",
-"craft bucket" before "collect milk".
+"collect [type] seeds" and "hoe farmland" before "plant seed", "kill animal" before "cook meat", "craft shears" before "shear sheep", "craft bucket" before "collect milk" or "collect water", "collect sugarcane" before "make sugar", "obtain leather" by killing the corresponding animal and smelt dye after collecting cactus.
 Propose the current task only when you ensure that you have all the necessary dependent items in inventory.
 Don't ask for repetitive tasks. If you already have an item in your inventory, try not to collect it repeatedly.
 For example, when you already have a hoe in your inventory, propose "hoe farmland" instead of "craft hoe" again.

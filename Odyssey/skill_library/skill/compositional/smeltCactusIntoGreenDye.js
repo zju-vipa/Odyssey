@@ -9,7 +9,9 @@ async function smeltCactusIntoGreenDye(bot) {
     }
     // If not enough cactus, collect some
     if (cactusCount < 5) {
-      await collectFiveCactusBlocks(bot);
+      bot.chat(`Not enough cactus, collect some first!`);
+      return;
+      // await collectFiveCactusBlocks(bot);
     }
     // If not enough coal, collect some
     if (!coal) {
