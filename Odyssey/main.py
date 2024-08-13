@@ -314,7 +314,6 @@ def test_farming():
                     "cook 1 meat (beef or mutton or pork or chicken)",
                     "obtain 1 leather",
                     "make 1 sugar",
-                    "smelt 5 dye",
                     "collect 1 bucket of water"
                     ]
     while True:

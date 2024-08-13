@@ -13,7 +13,7 @@ async function mineAmethystCluster(bot) {
     
     await exploreUntil(bot, new Vec3(1, 0, 1), 60, () => {
       const foundAmethystCluster = bot.findBlock({
-        matching: mcData.blocksByName.amethyst_cluster_ore.id,
+        matching: mcData.blocksByName.amethyst_cluster.id,
         maxDistance: 32
       });
       return foundAmethystCluster;

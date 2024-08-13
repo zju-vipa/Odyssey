@@ -291,7 +291,6 @@ class CriticAgent:
             leather_in_inventory = 'leather' in inventory
             sugar_in_inventory = 'sugar' in inventory
             water_bucket_in_inventory = 'water_bucket' in inventory
-            five_dye_in_inventory = 'green_dye' in inventory and inventory["green_dye"] >= 5
             farmland_nearby = 'farmland' in observations["nearby_blocks"]
             if goals == 'hoe a farmland':
                 return farmland_nearby
@@ -305,8 +304,6 @@ class CriticAgent:
                 return seed_in_inventory
             if goals == 'make 1 sugar':
                 return sugar_in_inventory
-            if goals == 'smelt 5 dye':
-                return five_dye_in_inventory
             if goals == 'obtain 1 leather':
                 return leather_in_inventory
             if goals == 'collect 1 bucket of water':
