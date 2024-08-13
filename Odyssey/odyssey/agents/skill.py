@@ -27,6 +27,8 @@ class SkillManager:
         # programs for env execution
         self.control_primitives = load_control_primitives()
         self.skill_primitives = self.load_skill_primitives()
+        self.mc_skill_primitives = self.load_mc_skill_primitives()
+        self.skill_lib = "old"
         self.logger = get_logger("SkillManager")
         if resume:
             self.skills = U.load_json(f"{ckpt_dir}/skill/skills.json")
@@ -60,13 +62,21 @@ class SkillManager:
     @property
     def programs(self):
         programs = ""
-        for skill_name, entry in self.skills.items():
-            programs += f"{entry['code']}\n\n"
-        for primitives in self.control_primitives:
-            programs += f"{primitives}\n\n"
-        for skill_primitive in self.skill_primitives:
-            programs += f"{skill_primitive}\n\n"
+        if (self.skill_lib == "old"):
+            for skill_name, entry in self.skills.items():
+                programs += f"{entry['code']}\n\n"
+            for primitives in self.control_primitives:
+                programs += f"{primitives}\n\n"
+            for skill_primitive in self.skill_primitives:
+                programs += f"{skill_primitive}\n\n"
+        elif (self.skill_lib == "new"):
+            for mc_skill_primitive in self.mc_skill_primitives:
+                programs += f"{mc_skill_primitive}\n\n"
         return programs
+    
+    @programs.setter
+    def programs(self, value):
+        self.skill_lib = value
 
     def add_new_skill(self, info):
         if info["task"].startswith("Deposit useless items into the chest at"):
@@ -156,6 +166,22 @@ class SkillManager:
             ]
         primitives = [
             U.load_text(f"{package_path}/primitive/{primitive_name}.js")
+            for primitive_name in primitive_names
+        ]
+        return primitives
+    
+    def load_mc_skill_primitives(self, primitive_names=None):
+        current_dir = os.getcwd()
+        # print(f"current dir: {current_dir}")
+        package_path = f"{current_dir}/../MC-Comprehensive-Skill-Library/skill"
+        if primitive_names is None:
+            primitive_names = [
+                primitives[:-3]
+                for primitives in os.listdir(f"{package_path}")
+                if primitives.endswith(".js")
+            ]
+        primitives = [
+            U.load_text(f"{package_path}/{primitive_name}.js")
             for primitive_name in primitive_names
         ]
         return primitives

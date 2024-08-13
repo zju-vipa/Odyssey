@@ -347,9 +347,23 @@ def test_skill(skill_name):
         resume=False,
         server_port=node_port,
     )
-    odyssey_skill.run_raw_skill(f"./skill_library/skill/compositional/{skill_name}", reset=True)
+    odyssey_skill.run_raw_skill(f"./skill_library/skill/compositional/{skill_name}", skill_lib="old", reset=True)
     while True:
         odyssey_skill.run_raw_skill(f"./skill_library/skill/compositional/{skill_name}", reset=False)
 
+def test_mc_skill(skill_name, para_list):
+    odyssey_mc_skill = Odyssey(
+        mc_port=mc_port,
+        mc_host=mc_host,
+        env_wait_ticks=env_wait_ticks,
+        resume=False,
+        server_port=node_port,
+        username='bot'
+    )
+    odyssey_mc_skill.run_raw_skill(f"../MC-Comprehensive-Skill-Library/skill/{skill_name}", para_list, skill_lib="new", reset=True)
+    while True:
+        odyssey_mc_skill.run_raw_skill(f"../MC-Comprehensive-Skill-Library/skill/{skill_name}", para_list, skill_lib="new", reset=False)
+
 if __name__ == '__main__':
+    test_mc_skill("obtainItem.js", [1, "diamond"])
     explore()

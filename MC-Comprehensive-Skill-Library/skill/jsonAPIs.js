@@ -3,12 +3,12 @@ const path = require('path');
 
 const cur_dir = path.dirname(path.resolve(__filename));
 // cur_dir here is actually mineflayer dir
-const preToolPath = path.join(cur_dir, '../../../MCskill/json/pre_tool.json');
-const preItemPath = path.join(cur_dir, '../../../MCskill/json/pre_item.json');
-const preSmeltPath = path.join(cur_dir, '../../../MCskill/json/pre_smelt.json');
-const preCollectPath = path.join(cur_dir, '../../../MCskill/json/pre_collect.json')
-const funcPath = path.join(cur_dir, '../../../MCskill/json/func.json');
-const mapNamePath = path.join(cur_dir, '../../../MCskill/json/map_name.json');
+const preToolPath = path.join(cur_dir, '../../../../MC-Comprehensive-Skill-Library/json/pre_tool.json');
+const preItemPath = path.join(cur_dir, '../../../../MC-Comprehensive-Skill-Library/json/pre_item.json');
+const preSmeltPath = path.join(cur_dir, '../../../../MC-Comprehensive-Skill-Library/json/pre_smelt.json');
+const preCollectPath = path.join(cur_dir, '../../../../MC-Comprehensive-Skill-Library/json/pre_collect.json')
+const funcPath = path.join(cur_dir, '../../../../MC-Comprehensive-Skill-Library/json/func.json');
+const mapNamePath = path.join(cur_dir, '../../../../MC-Comprehensive-Skill-Library/json/map_name.json');
 
 async function preTool(item) {
   const data = await fs.readFile(preToolPath, 'utf-8');

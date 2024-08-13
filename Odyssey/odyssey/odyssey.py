@@ -590,7 +590,7 @@ class Odyssey:
             if (self.step_time[-1] >= 24000):
                 break
 
-    def run_raw_skill(self, skill_path, parameters = [], reset = False):
+    def run_raw_skill(self, skill_path, parameters = [], skill_lib = "old", reset = False):
         # reset here only used for skill test
         if (reset):
             self.env.reset(
@@ -663,6 +663,7 @@ class Odyssey:
         result = ''
         if isinstance(parsed_result, dict):
             code = parsed_result["program_code"] + "\n" + parsed_result["exec_code"]
+            self.skill_manager.programs = skill_lib # use old or new skill library
             events = self.env.step(
                 code,
                 programs=self.skill_manager.programs,
