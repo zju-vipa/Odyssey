@@ -9,6 +9,14 @@ obtainItem(bot, count, type)
 // 'count' is the number of items, 'type' is the type of item.
 // For example, to obtain a diamond: obtainItem(bot, 1, "diamond");
 ```
+## Get Started
+We provide a new interface for testing this skill library in the Odyssey directory.
+
+```python
+test_mc_skill(skill_name, para_list)
+# For example, to obtain a diamond:
+test_mc_skill("obtainItem.js", [1, "diamond"])
+```
 
 ## Interface
 
