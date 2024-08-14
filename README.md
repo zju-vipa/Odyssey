@@ -31,6 +31,8 @@ Extensive experiments demonstrate that the proposed Odyssey framework can effect
 
 
 ## News
+
+- **`[Aug 14, 2024]`** 🔥 The [Comprehensive Skill Library](https://github.com/zju-vipa/Odyssey/tree/master/MC-Comprehensive-Skill-Library) for Minecraft has been open-sourced!
 - **`[Jul 23, 2024]`** 🔥 The [paper](https://arxiv.org/abs/2407.15325) for **ODYSSEY** has been uploaded to arXiv!
 - **`[Jun 13, 2024]`** 🔥 The [GitHub repository](https://github.com/zju-vipa/Odyssey) for **ODYSSEY** has been open-sourced!
 
