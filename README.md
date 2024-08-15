@@ -313,6 +313,13 @@ If you find this work useful for your research, please cite our paper:
 }
 ```
 
+# License
+
+| Component        | License                                                                                                                             |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| [Codebase](https://github.com/zju-vipa/Odyssey)     | [MIT License](https://github.com/zju-vipa/Odyssey/blob/master/LICENSE)                                                                                                  |
+| [Minecraft Q&A Dataset](https://huggingface.co/datasets/Aiwensile2/Minecraft_QA-pairs_Instruction_Dataset)    | [Creative Commons Attribution Non Commercial Share Alike 3.0 Unported (CC BY-NC-SA 3.0)](https://creativecommons.org/licenses/by-nc-sa/3.0/) |
+
 
 ## Contact
 
@@ -321,3 +328,4 @@ This project is developed by [VIPA Lab](https://www.vipazoo.cn/) from Zhejiang U
 <div align="center">
 <img src="./Odyssey/images/vipa-logo.jpg" width="30%">
 </div>
+
