@@ -192,11 +192,66 @@ data = {
 }
 
 def ttest_from_stats(mean1, std1, mean2, std2, nobs1, nobs2):
+    if nobs1 <= 1 and nobs2 <= 1:
+        return np.nan
     t_stat, p_val = ttest_ind_from_stats(mean1=mean1, std1=std1, nobs1=nobs1,
                                          mean2=mean2, std2=std2, nobs2=nobs2)
     return p_val
 
-def analyze_comparison(data, metrics, best_model, task_name):
+
+def analyze_comparison(data, metrics, task_name):
+    for metric in metrics:
+        best_model = None
+        second_best_model = None
+        best_mean = None
+        second_best_mean = None
+        
+        if (metric == "Time (min)") or (metric == "# LLM Iters"):
+            best_mean = np.inf
+            second_best_mean = np.inf
+            for model, values in data.items():
+                mean = values[metric]["mean"]
+                if mean < best_mean:
+                    second_best_mean = best_mean
+                    second_best_model = best_model
+                    best_mean = mean
+                    best_model = model
+                elif mean < second_best_mean:
+                    second_best_mean = mean
+                    second_best_model = model
+        else:
+            best_mean = -np.inf
+            second_best_mean = -np.inf
+            for model, values in data.items():
+                mean = values[metric]["mean"]
+                if mean > best_mean:
+                    second_best_mean = best_mean
+                    second_best_model = best_model
+                    best_mean = mean
+                    best_model = model
+                elif mean > second_best_mean:
+                    second_best_mean = mean
+                    second_best_model = model
+
+        if best_model and second_best_model:
+            mean1, std1, nobs1 = data[best_model][metric]["mean"], data[best_model][metric]["std"], data[best_model][metric]["nobs"]
+            mean2, std2, nobs2 = data[second_best_model][metric]["mean"], data[second_best_model][metric]["std"], data[second_best_model][metric]["nobs"]
+            
+            if not np.isnan(mean1) and not np.isnan(mean2):
+
+
+                p_val = ttest_from_stats(mean1, std1, mean2, std2, nobs1, nobs2)
+                if np.isnan(p_val):
+                    print(f"{task_name} {metric} (comparing {best_model} with {second_best_model}): insufficient data")
+                elif p_val < 0.05:
+                    print(f"{task_name} {metric} (comparing {best_model} with {second_best_model}): p_val={p_val:.5f} implies statistical significance")
+                else:
+                    print(f"{task_name} {metric} (comparing {best_model} with {second_best_model}): p_val={p_val:.5f}")
+        else:
+            print(f"{task_name} {metric}: Insufficient data")
+
+
+def analyze_comparison_with_ours(data, metrics, best_model, task_name):
     for metric in metrics:
         is_best = True
         best_mean = data[best_model][metric]["mean"]
@@ -255,21 +310,19 @@ def analyze_table_r1(data_r1):
 def analyze_table_r2(data_r2):
     metrics = ["# Distinct Items Obtained", "Distance Traveled", "# Items Crafted", "# R&A Unlocked"]
     best_model = "Odyssey with MineMA3-8B"
-    analyze_comparison(data_r2, metrics, best_model, "explore")
+    analyze_comparison_with_ours(data_r2, metrics, best_model, "explore")
 
 def analyze_table_r3(data_r3):
     metrics = ["Health", "Time (min)", "# LLM Iters"]
-    best_model = "MineMA-8B"
     
     for task_name, task_data in data_r3.items():
-        analyze_comparison(task_data, metrics, best_model, task_name)
+        analyze_comparison(task_data, metrics, task_name)
 
 def analyze_table_r4(data_r4):
     metrics = ["Time (min)", "# LLM Iters"]
-    best_model = "MineMA-70B"
     
     for task_name, task_data in data_r4.items():
-        analyze_comparison(task_data, metrics, best_model, task_name)
+        analyze_comparison(task_data, metrics, task_name)
 
 def main():
     analyze_table_r1(data["Table S1"])
