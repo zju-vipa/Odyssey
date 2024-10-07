@@ -23,9 +23,9 @@ Official codebase for the paper "[Odyssey: Empowering Minecraft Agents with Open
 
 **Abstract:** Recent studies have delved into constructing generalist agents for open-world environments like Minecraft. Despite the encouraging results, existing efforts mainly focus on solving basic programmatic tasks, e.g., material collection and tool-crafting following the Minecraft tech-tree, treating the ObtainDiamond task as the ultimate goal. This limitation stems from the narrowly defined set of actions available to agents, requiring them to learn effective long-horizon strategies from scratch. Consequently, discovering diverse gameplay opportunities in the open world becomes challenging. In this work, we introduce Odyssey, a new framework that empowers Large Language Model (LLM)-based agents with open-world skills to explore the vast Minecraft world. Odyssey comprises three key parts: 
 
-**(1) An interactive agent with an open-world skill library that consists of 40 primitive skills and 183 compositional skills.**
-**(2) A fine-tuned LLaMA-3 model trained on a large question-answering dataset with 390k+ instruction entries derived from the Minecraft Wiki.**
-**(3) A new agent capability benchmark includes the long-term planning task, the dynamic-immediate planning task, and the autonomous exploration task.**
+- **(1) An interactive agent with an open-world skill library that consists of 40 primitive skills and 183 compositional skills.**
+- **(2) A fine-tuned LLaMA-3 model trained on a large question-answering dataset with 390k+ instruction entries derived from the Minecraft Wiki.**
+- **(3) A new agent capability benchmark includes the long-term planning task, the dynamic-immediate planning task, and the autonomous exploration task.**
 
 Extensive experiments demonstrate that the proposed Odyssey framework can effectively evaluate different capabilities of LLM-based agents. All datasets, model weights, and code are publicly available to motivate future research on more advanced autonomous agent solutions.
 
