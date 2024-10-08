@@ -32,7 +32,9 @@ Extensive experiments demonstrate that the proposed Odyssey framework can effect
 
 ## News
 
-- **`[Aug 14, 2024]`** 🔥 The [Comprehensive Skill Library](https://github.com/zju-vipa/Odyssey/tree/master/MC-Comprehensive-Skill-Library) for Minecraft has been open-sourced!
+- **`[Oct 1, 2024]`** 🔥 We have additionally compared more baselines (with different open-sourced LLMs and agents) and designed more test scenarios (for the long-term planning task and the dynamic-immediate planning task).
+- **`[Sep 1, 2024]`** 🔥 We have additionally open-sourced the [Web Crawler Program](https://github.com/zju-vipa/Odyssey/tree/master/MC-Crawler), which was used to collect data from Minecraft Wikis. Researchers can modify this program to crawl data relevant to their needs.
+- **`[Aug 14, 2024]`** 🔥 We have additionally open-sourced the [Comprehensive Skill Library](https://github.com/zju-vipa/Odyssey/tree/master/MC-Comprehensive-Skill-Library), aiming to provide an automated tool to collect all collectible and craftable items in Minecraft.
 - **`[Jul 23, 2024]`** 🔥 The [paper](https://arxiv.org/abs/2407.15325) for **ODYSSEY** has been uploaded to arXiv!
 - **`[Jun 13, 2024]`** 🔥 The [GitHub repository](https://github.com/zju-vipa/Odyssey) for **ODYSSEY** has been open-sourced!
 
