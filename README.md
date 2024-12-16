@@ -148,6 +148,10 @@ You need to create `config.json` according to the format of `conf/config.json.ke
 - `MC_SERVER_HOST`: Minecraft server ip.
 - `MC_SERVER_PORT`: Minecraft server port.
 
+## Get Started
+
+After completing the above installation and configuration, you can start the agent by simply running `python main.py`. To operate the agent under different task scenarios, manually modify the function you wish to execute. Below are the task scenarios.
+
 ## Odyssey Tasks
 
 ### Subgoal
