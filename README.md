@@ -304,6 +304,14 @@ def explore():
 |   15   | [Creative Agents: Empowering Agents with Imagination for Creative Tasks](https://arxiv.org/abs/2312.02519) |  Chi Zhang, Penglin Cai, Yuhui Fu, Haoqi Yuan, Zongqing Lu   |       arXiv 2023       |
 |   16   | [MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception](https://arxiv.org/abs/2312.07472) | Yiran Qin, Enshen Zhou, Qichang Liu, Zhenfei Yin, Lu Sheng, Ruimao Zhang, Yu Qiao, Jing Shao |       arXiv 2024       |
 |   17   | [Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft](https://arxiv.org/abs/2312.09238) | Hao Li, Xue Yang, Zhaokai Wang, Xizhou Zhu, Jie Zhou, Yu Qiao, Xiaogang Wang, Hongsheng Li, Lewei Lu, Jifeng Dai |       arXiv 2024       |
+|   18   | [MrSteve: Instruction-Following Agents in Minecraft with What-Where-When Memory](https://arxiv.org/abs/2411.06736) | Junyeong Park, Junmo Cho, Sungjin Ahn |       arXiv 2024       |
+|   19   | [Project Sid: Many-agent simulations toward AI civilization](https://arxiv.org/abs/2411.00114) | Altera.AL, Andrew Ahn, Nic Becker, Stephanie Carroll, Nico Christie, Manuel Cortes, Arda Demirci, Melissa Du, Frankie Li, Shuying Luo, Peter Y Wang, Mathew Willows, Feitong Yang, Guangyu Robert Yang |       arXiv 2024       |
+|   20   | [ADAM: An Embodied Causal Agent in Open-World Environments](https://arxiv.org/abs/2410.22194) | Shu Yu, Chaochao Lu |       arXiv 2024       |
+|   21   | [WALL-E: World Alignment by Rule Learning Improves World Model-based LLM Agents](https://arxiv.org/abs/2410.07484) | Siyu Zhou, Tianyi Zhou, Yijun Yang, Guodong Long, Deheng Ye, Jing Jiang, Chengqi Zhang |       arXiv 2024       |
+|   22   | [Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks](https://arxiv.org/abs/2408.03615) | Zaijing Li, Yuquan Xie, Rui Shao, Gongwei Chen, Dongmei Jiang, Liqiang Nie |       NeurIPS 2024       |
+|   23   | [OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents](https://arxiv.org/abs/2407.00114) | Zihao Wang, Shaofei Cai, Zhancun Mu, Haowei Lin, Ceyao Zhang, Xuejie Liu, Qing Li, Anji Liu, Xiaojian Ma, Yitao Liang |       NeurIPS 2024       |
+|   24   | [VillagerAgent: A Graph-Based Multi-Agent Framework for Coordinating Complex Task Dependencies in Minecraft](https://arxiv.org/abs/2406.05720) | Yubo Dong, Xukun Zhu, Zhengzhe Pan, Linchao Zhu, Yi Yang |       ACL 2024       |
+|   25   | [GROOT-2: Weakly Supervised Multi-Modal Instruction Following Agents](https://arxiv.org/abs/2412.10410) | Shaofei Cai, Bowei Zhang, Zihao Wang, Haowei Lin, Xiaojian Ma, Anji Liu, Yitao Liang |       arXiv 2024       |
 
 
 ## Citation
