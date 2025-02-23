@@ -1,0 +1,23 @@
+{
+    "emerald":["emerald_ore", "deepslate_emerald_ore"],
+    "diamond":["diamond_ore", "deepslate_diamond_ore"],
+    "redstone":["redstone_ore", "deepslate_redstone_ore"],
+    "raw_gold":["gold_ore", "deepslate_gold_ore"],
+    "raw_iron":["iron_ore", "deepslate_iron_ore"],
+    "raw_copper":["copper_ore", "deepslate_copper_ore"],
+    "lapis_lazuli":["lapis_lazuli_ore", "deepslate_lapis_lazuli_ore"],
+    "coal":["coal_ore", "deepslate_coal_ore"],
+    "quartz":["nether_quartz_ore"],
+    "cobble": ["stone", "deepslate", "cobblestone", "cobbled_deepslate"],
+    "cobblestone":["stone", "cobblestone"],
+    "cobbled_deepslate":["deepslate", "cobbled_deepslate"],
+    "dirt":["dirt", "grass_block"],
+    "melon_slice":["melon"],
+    "amethyst_shard": ["amethyst_cluster"],
+    "snowball": ["snow_block"],
+    "clay_ball": ["clay"],
+    "log":["oak_log", "birch_log", "spruce_log", "jungle_log", "acacia_log", "dark_oak_log", "mangrove_log", "crimson_stem", "warped_stem"],
+
+    "flint": ["gravel"],
+    "wheat_seeds": ["grass"]
+}

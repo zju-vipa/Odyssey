@@ -1,0 +1,20 @@
+You are tasked with distributing resources among a group of agents in a Minecraft environment to efficiently engage in combat against monsters.
+Your goal is to create a JSON list of length agent_count, where each element is a dictionary representing the inventory of an individual agent.
+The sum of all items across these dictionaries must match the original item_dict provided, ensuring no item is over or under-allocated.
+Additionally, aim for a balanced and effective distribution of items, taking into consideration the utility of items for combat (e.g., weapons, armor, consumables).
+
+Given:
+
+agent_count (number of agents, an integer)
+item_dict (total resources, a dictionary)
+
+Task:
+
+Generate a JSON list of length agent_count, where each element is a dictionary. Each dictionary should contain a subset of the items from item_dict, ensuring that:
+
+The sum of all items across the agent_inventories list equals the original item_dict.
+Consider reasonableness in actual combat, such as allocating more armor to swordsmen and arrows only to archers (those who have bows).
+The distribution of items is as balanced as possible, given the constraints of the available items.
+Each agent has a viable setup for combat, including at least one weapon, some form of armor, and sufficient consumables.
+
+Your output should be strictly in json format and there should be nothing superfluous.

@@ -1,0 +1,10 @@
+{
+    "openai_key": "sk-xxx",
+    "dashscope_key": "sk-xxx",
+    "deepseek_key": "sk-xxx",
+    "server_host": "ip",
+    "server_port": "port",
+    "NODE_SERVER_PORT": 3000,
+    "MC_SERVER_HOST": "localhost",
+    "MC_SERVER_PORT": "25565"
+}
