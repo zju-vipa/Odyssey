@@ -76,13 +76,13 @@ async function initializeCombatScene(bot, team_name, combat_scene, username_list
         } else if (combat_scene == 'Ocean') {
             bot.chat(`/execute in overworld run kill @e[type=minecraft:elder_guardian]`); // Make sure there are no redundant elder_guardian summoned
             bot.chat(`/execute in overworld run kill @e[type=guardian]`); // Make sure there are no redundant guardian summoned
-            const pos = new Vec3(111, 217, -36);
+            const pos = new Vec3(0, 129, 0);
             bot.chat(`/execute in overworld run summon elder_guardian ${pos.x} ${pos.y} ${pos.z} {Tags:["boss"]}`); // Summon the elder guardian
             bot.chat(`/execute in overworld run summon guardian ${pos.x + 10} ${pos.y} ${pos.z}`);
             bot.chat(`/execute in overworld run summon guardian ${pos.x - 10} ${pos.y} ${pos.z}`);
             bot.chat(`/execute in overworld run summon guardian ${pos.x} ${pos.y} ${pos.z + 10}`);
             bot.chat(`/execute in overworld run summon guardian ${pos.x} ${pos.y} ${pos.z - 10}`);
-            bot.chat(`/execute in overworld run tp 111 217 -36`);
+            bot.chat(`/execute in overworld run tp 0 129 0`);
         }
 
         // Function to check boss health
@@ -180,7 +180,7 @@ async function teleportToCombatScene(bot, combat_scene) {
     } else if (combat_scene == 'Ocean') {
         const random_x = Math.floor(Math.random() * 4) - 2;
         const random_z = Math.floor(Math.random() * 4) - 2;
-        bot.chat(`/execute in overworld run tp @s ${random_x} 70 ${random_z}`); // Teleport to the pre-defined scene
+        bot.chat(`/execute in overworld run tp @s ${random_x} 129 ${random_z}`); // Teleport to the pre-defined scene
     }
     return;
 }
