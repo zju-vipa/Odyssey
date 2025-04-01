@@ -1,6 +1,18 @@
-# Installation and Configuration Guide
-
 Official codebase for the paper "[Parallelized Planning-Acting for Efficient LLM-based Multi-Agent Systems](https://arxiv.org/abs/2503.03505)".
+
+## Demo
+
+All demonstration videos were captured using the spectator mode within Minecraft. To comply with GitHub's file size restrictions, some videos have been accelerated.
+
+Agents combating the Ender Dragon:
+
+[![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Multi-Agent/demo/ender_dragon.png)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Multi-Agent/demo/ender_dragon.mp4)
+
+Agents combating the Wither:
+
+[![Watch the video](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Multi-Agent/demo/wither.png)](https://raw.githubusercontent.com/zju-vipa/Odyssey/master/Multi-Agent/demo/wither.mp4)
+
+# Installation and Configuration Guide
 
 ## Prerequisites
 Follow the instructions in the root directory's `README.md` file to complete the [Odyssey installation](../README.md).
