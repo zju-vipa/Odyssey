@@ -1,5 +1,7 @@
 # Installation and Configuration Guide
 
+Official codebase for the paper "[Parallelized Planning-Acting for Efficient LLM-based Multi-Agent Systems](https://arxiv.org/abs/2503.03505)".
+
 ## Prerequisites
 Follow the instructions in the root directory's `README.md` file to complete the [Odyssey installation](../README.md).
 

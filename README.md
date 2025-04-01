@@ -32,6 +32,8 @@ Extensive experiments demonstrate that the proposed Odyssey framework can effect
 
 ## News
 
+- **`[Mar 5, 2025]`** 🔥 We have uploaded our new paper titled ["Parallelized Planning-Acting for Efficient LLM-based Multi-Agent Systems"](https://arxiv.org/abs/2503.03505) to arXiv. 
+- **`[Feb 23, 2025]`** 🔥 We have open-sourced the [Multi-Agent Framework](https://github.com/zju-vipa/Odyssey/tree/master/Multi-Agent) to align with our latest paper. 
 - **`[Oct 1, 2024]`** 🔥 We have additionally compared more baselines (with different open-sourced LLMs and agents) and designed more test scenarios (for the long-term planning task and the dynamic-immediate planning task) in the updated version of the [paper](https://arxiv.org/abs/2407.15325).
 - **`[Sep 1, 2024]`** 🔥 We have additionally open-sourced the [Web Crawler Program](https://github.com/zju-vipa/Odyssey/tree/master/MC-Crawler), which was used to collect data from Minecraft Wikis. Researchers can modify this program to crawl data relevant to their needs.
 - **`[Aug 14, 2024]`** 🔥 We have additionally open-sourced the [Comprehensive Skill Library](https://github.com/zju-vipa/Odyssey/tree/master/MC-Comprehensive-Skill-Library), aiming to provide an automated tool to collect all collectible and craftable items in Minecraft.
