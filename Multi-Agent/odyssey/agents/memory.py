@@ -186,7 +186,7 @@ class MemoryManager:
         
         try:
             # Read and parse the chat log file
-            with open(chat_log_path, 'r') as file:
+            with open(chat_log_path, 'r', encoding='utf-8', errors='ignore') as file:
                 chat_log = json.load(file)
             
             # Check if chat_log is empty

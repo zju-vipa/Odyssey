@@ -82,7 +82,7 @@ class TaskChecker:
         chat_log_path = os.path.join(self.memory_path, 'chat_log.json')
         try:
             # Read the chat_log.json file
-            with open(chat_log_path, 'r', encoding='utf-8') as file:
+            with open(chat_log_path, 'r', encoding='utf-8', errors='ignore') as file:
                 chat_log = json.load(file)
             # Iterate through all logs in chat_log
             for day_log in chat_log.values():  # day_log is a list of messages for a specific timestamp
@@ -230,7 +230,7 @@ class TaskChecker:
 
             # Read the chat log to find the lowest boss health
             if os.path.exists(chat_log_path):
-                with open(chat_log_path, 'r') as file:
+                with open(chat_log_path, 'r', encoding='utf-8', errors='ignore') as file:
                     chat_log_data = json.load(file)
                     lowest_boss_health = self._extract_lowest_boss_health(chat_log_data)
                     result["lowest_boss_health"] = lowest_boss_health

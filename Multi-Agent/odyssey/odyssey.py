@@ -380,7 +380,7 @@ class Odyssey:
         information = (
             f"You are {self.username}. {' ' + self.team_prompt if self.team_prompt else ''}\n"
             f"{progress_info_str}\n"
-            f"Your status information: {self_obs}\n" if mode == 'text' else f"Current screenshot analysis (Not always accurate): {self_obs}\n"
+            f"Your status information: {self_obs}\n"
             f"Latest chat messages: {chat_log}\n"
         )
         return information
