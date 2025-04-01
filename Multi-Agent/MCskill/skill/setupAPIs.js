@@ -237,7 +237,7 @@ async function calculateHealthStats(memoryDir, username_list) {
 
 async function logCombatResults(results) {
     const curDir = path.dirname(path.resolve(__filename));
-    const resultsFile = path.join(curDir, `../../../results/combat_results_v.json`);
+    const resultsFile = path.join(curDir, `../../../results/combat_results.json`);
     try {
         let existingResults = [];
         try {
