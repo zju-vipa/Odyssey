@@ -151,4 +151,5 @@ tmp.js
 *.lock
 
 !odyssey/env/mineflayer/mineflayer-collectblock/src/TemporarySubscriber.ts
+!odyssey/env/mineflayer/lib
 !odyssey/env
