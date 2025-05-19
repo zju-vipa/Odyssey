@@ -4,6 +4,7 @@ async function obtainItem(bot, count = 1, type) {
     // bot.chat(`Recursively executing obtainItem(bot, ${count}, ${type})...`);
     while (!result) {
         let func_name = await getFunc(type);
+        console.log(`[obtainItem] getFunc(${type}) returned ${func_name}`);
         if (func_name) {
             if (func_name == "craft") {
                 result =await craftItem(bot, count, type);
@@ -47,8 +48,12 @@ async function craftItem(bot, count = 1, type, need_crafting_table = true, recur
             let min_need_count = parseInt(need_count_str);
             let need_count = Math.max(Math.ceil(count * min_need_count / output_count), min_need_count);
             let inv_count = await getTotalCount(bot, need_type);
+            await bot.chat(`[craftItem] Need ${need_count} of ${need_type} for ${type}, have ${inv_count}`);
+            console.log(`[craftItem] Need ${need_count} of ${need_type} for ${type}, have ${inv_count}`);
             // if not enough
             if (inv_count < need_count) {
+                await bot.chat(`[craftItem] Not enough ${need_type}, calling obtainItem for ${need_count - inv_count}`);
+                console.log(`[craftItem] Not enough ${need_type}, calling obtainItem for ${need_count - inv_count}`);
                 await obtainItem(bot, need_count - inv_count, need_type);
             }
         }
@@ -254,14 +259,17 @@ async function smeltItem(bot, count = 1, type, fuel = "coal", recursive = true) 
             if (fuel == "coal") {
                 fuel_cnt = count / 8 + 1;
             } // 1 coal can smelt 8 items
+            await bot.chat(`[smeltItem] Not enough fuel (${fuel}), calling obtainItem for ${fuel_cnt}`);
             await obtainItem(bot, fuel_cnt, fuel);
             fuel_item = bot.inventory.findInventoryItem(mcData.itemsByName[fuel].id);
         }
         // check pre_item
         let inv_count = await getTotalCount(bot, smelt_item_str);
-        // bot.chat(`${smelt_item_str} inv_count=${inv_count}`);
+        await bot.chat(`[smeltItem] Need to smelt ${count} ${smelt_item_str} for ${type}, have ${inv_count}`);
+        console.log(`[smeltItem] Need to smelt ${count} ${smelt_item_str} for ${type}, have ${inv_count}`);
         // if not enough
         if (inv_count < count) {
+            await bot.chat(`[smeltItem] Not enough ${smelt_item_str}, calling obtainItem for ${count - inv_count}`);
             await obtainItem(bot, count - inv_count, smelt_item_str);
         }
     }

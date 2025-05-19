@@ -67,15 +67,25 @@ async function collectAll(
                             );
                             // @ts-ignore
                         } else if (err.name === "NoItem") {
-                            const properties =
-                                bot.registry.blocksByName[closest.name];
-                            const leastTool = Object.keys(
-                                properties.harvestTools
-                            )[0];
-                            const item = bot.registry.items[leastTool];
-                            bot.chat(
-                                `I need at least a ${item.name} to mine ${closest.name}!  Skip it!`
-                            );
+                            if (typeof closest.name === "string" && (bot.registry.blocksByName as Record<string, any>)[String(closest.name)]) {
+                                const properties = (bot.registry.blocksByName as Record<string, any>)[String(closest.name)];
+                                const harvestTools = properties.harvestTools ? Object.keys(properties.harvestTools) : [];
+                                const leastTool = harvestTools.length > 0 ? harvestTools[0] : undefined;
+                                const item = leastTool && (bot.registry.items as Record<string, any>)[String(leastTool)] ? (bot.registry.items as Record<string, any>)[String(leastTool)] : undefined;
+                                if (item) {
+                                    bot.chat(
+                                        `I need at least a ${item.name} to mine ${closest.name}!  Skip it!`
+                                    );
+                                } else {
+                                    bot.chat(
+                                        `I need a better tool to mine ${closest.name}, but could not determine which one! Skip it!`
+                                    );
+                                }
+                            } else {
+                                bot.chat(
+                                    `I need a better tool to mine this block, but could not determine which one! Skip it!`
+                                );
+                            }
                             return;
                         } else if (
                             // @ts-ignore
@@ -206,7 +216,7 @@ async function mineBlock(
         }
     });
     try {
-        await bot.dig(block);
+        await bot.dig(block as any);
         // Waiting for items to drop
         await new Promise<void>((resolve) => {
             let remainingTicks = 10;

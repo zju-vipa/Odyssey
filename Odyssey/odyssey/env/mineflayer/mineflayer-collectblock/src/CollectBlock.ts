@@ -67,15 +67,26 @@ async function collectAll(
                             );
                             // @ts-ignore
                         } else if (err.name === "NoItem") {
-                            const properties =
-                                bot.registry.blocksByName[closest.name];
-                            const leastTool = Object.keys(
-                                properties.harvestTools
-                            )[0];
-                            const item = bot.registry.items[leastTool];
-                            bot.chat(
-                                `I need at least a ${item.name} to mine ${closest.name}!  Skip it!`
-                            );
+                            const blockName = closest.name;
+                            if (blockName && bot.registry.blocksByName[blockName]) {
+                                const properties = bot.registry.blocksByName[blockName];
+                                const harvestTools = properties.harvestTools || {};
+                                const leastTool = Object.keys(harvestTools)[0];
+                                if (leastTool && (bot.registry.items as Record<string, any>)[leastTool]) {
+                                    const item = (bot.registry.items as Record<string, any>)[leastTool];
+                                    bot.chat(
+                                        `I need at least a ${item.name} to mine ${blockName}!  Skip it!`
+                                    );
+                                } else {
+                                    bot.chat(
+                                        `I need a suitable tool to mine ${blockName}, but none was found in registry! Skip it!`
+                                    );
+                                }
+                            } else {
+                                bot.chat(
+                                    `Block name or properties not found in registry for ${blockName}! Skip it!`
+                                );
+                            }
                             return;
                         } else if (
                             // @ts-ignore

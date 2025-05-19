@@ -27,7 +27,7 @@ class Odyssey:
         environment: str = None,
         env_wait_ticks: int = 20,
         env_request_timeout: int = 600,
-        model_type: str = ModelType.ALI,
+        model_type: str = ModelType.DEEPSEEK,
         dashscope_model: str = 'qwen-plus',
         vision_dashscope_model: str = 'qwen-vl-plus',
         model_id: int = 1, # one LLM for one agent

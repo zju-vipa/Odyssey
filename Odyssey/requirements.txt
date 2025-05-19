@@ -5,7 +5,6 @@ javascript
 setuptools
 openai
 chardet
-cchardet
 chromadb==0.3.29
 tiktoken
 requests

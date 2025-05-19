@@ -38,7 +38,7 @@ def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mod
         except Exception as e:
             print(f"Error calling OpenAI API: {e}")
     # use deepseek key
-    elif model_type == ModelType.DEEPSEEK:
+    elif model_type == ModelType.ALI:
         deepseek_key = config.get('deepseek_key')
         if json_format:
             client=OpenAI(api_key=deepseek_key, base_url="https://api.deepseek.com/beta")
@@ -65,7 +65,7 @@ def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mod
             except Exception as e:
                 print(f"Error calling deepseek API: {e}")
     # use alibaba key
-    elif model_type == ModelType.ALI:
+    elif model_type == ModelType.GPT:
         client = OpenAI(
             api_key=config.get('dashscope_key'),
             base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
