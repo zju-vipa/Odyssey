@@ -32,6 +32,7 @@ Extensive experiments demonstrate that the proposed Odyssey framework can effect
 
 ## News
 
+- **`[Apr 29, 2025]`** 🔥 We are very happy that **ODYSSEY** has been accepted by IJCAI 2025.
 - **`[Mar 5, 2025]`** 🔥 We have uploaded our new paper titled ["Parallelized Planning-Acting for Efficient LLM-based Multi-Agent Systems"](https://arxiv.org/abs/2503.03505) to arXiv. 
 - **`[Feb 23, 2025]`** 🔥 We have open-sourced the [Multi-Agent Framework](https://github.com/zju-vipa/Odyssey/tree/master/Multi-Agent) to align with our latest paper. 
 - **`[Oct 1, 2024]`** 🔥 We have additionally compared more baselines (with different open-sourced LLMs and agents) and designed more test scenarios (for the long-term planning task and the dynamic-immediate planning task) in the updated version of the [paper](https://arxiv.org/abs/2407.15325).
@@ -321,11 +322,18 @@ def explore():
 If you find this work useful for your research, please cite our paper:
 
 ```
-@article{Odyssey2024,
+@inproceedings{liu2025odyssey,
   title={Odyssey: Empowering Agents with Open-World Skills},
   author={Shunyu Liu and Yaoru Li and Kongcheng Zhang and Zhenyu Cui and Wenkai Fang and Yuxuan Zheng and Tongya Zheng and Mingli Song},
-  journal={arXiv preprint arXiv:2407.15325},
-  year={2024}
+  booktitle={International Joint Conference on Artificial Intelligence},
+  year={2025}
+}
+
+@article{li2025parallelized,
+  title={Parallelized Planning-Acting for Efficient LLM-based Multi-Agent Systems},
+  author={Li, Yaoru and Liu, Shunyu and Zheng, Tongya and Song, Mingli},
+  journal={arXiv preprint arXiv:2503.03505},
+  year={2025}
 }
 ```
 
