@@ -323,7 +323,7 @@ If you find this work useful for your research, please cite our paper:
 
 ```
 @inproceedings{liu2025odyssey,
-  title={Odyssey: Empowering Agents with Open-World Skills},
+  title={Odyssey: Empowering Minecraft Agents with Open-World Skills},
   author={Shunyu Liu and Yaoru Li and Kongcheng Zhang and Zhenyu Cui and Wenkai Fang and Yuxuan Zheng and Tongya Zheng and Mingli Song},
   booktitle={International Joint Conference on Artificial Intelligence},
   year={2025}
