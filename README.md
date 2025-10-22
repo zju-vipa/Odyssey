@@ -16,7 +16,7 @@
 Official codebase for the paper "[Odyssey: Empowering Minecraft Agents with Open-World Skills](https://arxiv.org/abs/2407.15325)". This codebase is based on the [Voyager](https://github.com/MineDojo/Voyager) framework.
 
 <div align="center">
-<img src="./Odyssey/images/framework.png" width="100%">
+<img src="./Odyssey/images/framework-1.png" width="100%">
 </div>
 
 ## Overview 
