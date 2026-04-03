@@ -42,6 +42,7 @@ Modify the `config.json` file using the following template:
     "openai_key": "sk-xxx",
     "dashscope_key": "sk-xxx",
     "deepseek_key": "sk-xxx",
+    "minimax_key": "sk-xxx",
     // If no API is provided, locally deployed LLaMa is also supported
     "server_host": "ip", // Your LLMs server ip
     "server_port": "port", // Your LLMs server port
@@ -51,7 +52,7 @@ Modify the `config.json` file using the following template:
 }
 ```
 
-Various models via APIs from GPT, DeepSeek, Alibaba Cloud (dashscope key) and locally deployed LLaMa are supported. For local testing, enable LAN mode within Minecraft and set the `MC_SERVER_PORT` to the port displayed by the game.
+Various models via APIs from GPT, DeepSeek, Alibaba Cloud (dashscope key), [MiniMax](https://www.minimax.io) (M2.7 / M2.7-highspeed, 204K context) and locally deployed LLaMa are supported. Pass `model_type=ModelType.MINIMAX` to use MiniMax as the LLM backend (set `MINIMAX_API_KEY` or `minimax_key` in your config). For local testing, enable LAN mode within Minecraft and set the `MC_SERVER_PORT` to the port displayed by the game.
 
 ## Running
 

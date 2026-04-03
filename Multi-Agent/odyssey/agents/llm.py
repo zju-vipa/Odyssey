@@ -17,8 +17,9 @@ class ModelType:
     DEEPSEEK = 'deepseek-chat'
     GPT = 'gpt'
     ALI = 'ali'
+    MINIMAX = 'minimax'
 
-def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mode='text', input_url=None, openai_model='gpt-4o', deepseek_model='deepseek-chat', json_format=True, dashscope_model='qwen-plus', dashscope_vision_model='qwen-vl-plus'):
+def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mode='text', input_url=None, openai_model='gpt-4o', deepseek_model='deepseek-chat', json_format=True, dashscope_model='qwen-plus', dashscope_vision_model='qwen-vl-plus', minimax_model='MiniMax-M2.7'):
     if mode == 'text':
         apikey_messages =  [{'role': 'system', 'content': msgs[0].content},
                             {'role': 'user', 'content': msgs[1].content}]
@@ -78,6 +79,23 @@ def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mod
             return AIMessage(content=response.choices[0].message.content)
         except Exception as e:
             print(f"Error calling AliCloud API: {e}")
+    # use minimax key
+    elif model_type == ModelType.MINIMAX:
+        minimax_key = config.get('minimax_key')
+        client = OpenAI(
+            api_key=minimax_key,
+            base_url="https://api.minimax.io/v1"
+        )
+        # MiniMax requires temperature in (0.0, 1.0]
+        try:
+            response = client.chat.completions.create(
+                model=minimax_model,
+                messages=apikey_messages,
+                temperature=0.7,
+            )
+            return AIMessage(content=response.choices[0].message.content)
+        except Exception as e:
+            print(f"Error calling MiniMax API: {e}")
     elif model_type in (ModelType.LLAMA3_8B, ModelType.LLAMA3_70B):
         # If no key is provided, call the LLMs on the server.
         url = f'http://{config.get("server_host")}:{config.get("server_port")}/{model_type}_{model_id}'
