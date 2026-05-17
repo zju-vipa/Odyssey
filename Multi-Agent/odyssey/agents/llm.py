@@ -34,6 +34,8 @@ def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mod
                 model=openai_model,
                 messages=apikey_messages
             )
+            if not response.choices or response.choices[0].message is None:
+                raise ValueError("LLM returned empty or filtered response")
             return AIMessage(content=response.choices[0].message.content)
         except Exception as e:
             print(f"Error calling OpenAI API: {e}")
@@ -51,6 +53,8 @@ def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mod
                     messages=messages,
                     stop=["```"],
                 )
+                if not response.choices or response.choices[0].message is None:
+                    raise ValueError("LLM returned empty or filtered response")
                 return AIMessage(content=response.choices[0].message.content)
             except Exception as e:
                 print(f"Error calling deepseek API: {e}")
@@ -61,6 +65,8 @@ def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mod
                     model=deepseek_model,
                     messages=apikey_messages
                 )
+                if not response.choices or response.choices[0].message is None:
+                    raise ValueError("LLM returned empty or filtered response")
                 return AIMessage(content=response.choices[0].message.content)
             except Exception as e:
                 print(f"Error calling deepseek API: {e}")
@@ -75,6 +81,8 @@ def call_with_messages(msgs, model_type:ModelType=ModelType.ALI, model_id=1, mod
                 model=dashscope_model if mode == 'text' else dashscope_vision_model,
                 messages=apikey_messages
             )
+            if not response.choices or response.choices[0].message is None:
+                raise ValueError("LLM returned empty or filtered response")
             return AIMessage(content=response.choices[0].message.content)
         except Exception as e:
             print(f"Error calling AliCloud API: {e}")

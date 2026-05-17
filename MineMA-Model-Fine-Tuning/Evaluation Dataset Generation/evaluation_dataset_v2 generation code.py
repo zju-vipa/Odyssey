@@ -54,6 +54,8 @@ def normal_answer(c1,c2):
       ],
       stream=False,
     )
+    if not response0.choices or response0.choices[0].message is None:
+        raise ValueError("LLM returned empty or filtered response")
     return response0.choices[0].message.content
   except Exception as e:
     print(f"Error processing file due to: {e}")

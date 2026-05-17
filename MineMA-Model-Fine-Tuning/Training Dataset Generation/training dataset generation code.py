@@ -24,6 +24,8 @@ def normal_answer(user_content):
       ],
       stream=False,
     )
+    if not response0.choices or response0.choices[0].message is None:
+        raise ValueError("LLM returned empty or filtered response")
     return response0.choices[0].message.content
   except Exception as e:
     print(f"Error processing file due to: {e}")
@@ -45,6 +47,8 @@ def short_answer(user_content):
       ],
       stream=False,
     )
+    if not response1.choices or response1.choices[0].message is None:
+        raise ValueError("LLM returned empty or filtered response")
     return response1.choices[0].message.content
   except Exception as e:
     print(f"Error processing file due to: {e}")
@@ -66,6 +70,8 @@ def long_answer(user_content):
       ],
       stream=False,
     )
+    if not response2.choices or response2.choices[0].message is None:
+        raise ValueError("LLM returned empty or filtered response")
     return response2.choices[0].message.content
   except Exception as e:
     print(f"Error processing file due to: {e}")
@@ -87,6 +93,8 @@ def bool_answer(user_content):
       ],
       stream=False,
     )
+    if not response3.choices or response3.choices[0].message is None:
+        raise ValueError("LLM returned empty or filtered response")
     return response3.choices[0].message.content
   except Exception as e:
     print(f"Error processing file due to: {e}")
