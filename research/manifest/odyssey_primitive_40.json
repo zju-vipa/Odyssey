@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-08-27",
+  "code_baseline": "experiment/odyssey-modernized working tree; primitive policy changes pending commit",
+  "purpose": "논문의 primitive 40개가 modernized 코드의 어느 함수·Mineflayer API contract에 대응하는지 고정한다.",
+  "counts": {
+    "total": 40,
+    "voyager_inherited_operational": 18,
+    "odyssey_added_operational": 14,
+    "odyssey_added_spatial": 8
+  },
+  "sources": [
+    "research/paper/odyssey.pdf Appendix C.1 (printed pages 12-13)",
+    "research/paper/VOYAGER.pdf Appendix A.4.1 (printed pages 24-25)",
+    "Odyssey/odyssey/control_primitives",
+    "Odyssey/odyssey/control_primitives_context",
+    "Odyssey/skill_library/skill/primitive"
+  ],
+  "inherited_mapping_note": "Odyssey는 Voyager 상속 18개의 이름을 다시 열거하지 않는다. 이 working map은 Voyager의 custom control 8개와 실제 행동으로 직접 호출되는 bot method 10개를 합친다. Goal* constructor와 bot.isABed는 지원 helper로 추적하지만 18개 수에는 넣지 않는다. 이 해석은 runtime interface fixture 전까지 working provenance다.",
+  "researcher_decisions": {
+    "spatial_position_type": "공개 compositional caller와 같은 Vec3를 modernized contract로 사용",
+    "placement_target": "공개 코드 우선으로 findSuitablePosition의 air 또는 water target을 유지",
+    "pathfinder_goal": "다른 정적·명백 오류를 모두 처리한 뒤 Minecraft fixture에서 판단",
+    "armor_material_order": "공개 코드의 diamond > iron > gold > chainmail > leather 순서를 유지",
+    "drop_ownership": "killMob이 target 선택, 처치, drop 회수와 결과를 소유하고 killAnimal은 sword 장착 뒤 위임",
+    "operator_boundary": "실행 bot은 non-OP이며 world 준비, gamemode, summon과 reset은 서버 호스트 RCON harness만 수행",
+    "exploration_seed": "episode-level deterministic PRNG seed 42"
+  },
+  "status_legend": {
+    "source-mapped": "논문 contract와 공개 source의 함수/API 위치를 정적으로 연결함",
+    "prompt-declared direct API": "Voyager prompt와 Odyssey context에 선언된 외부 Mineflayer API",
+    "contract risk": "함수는 존재하지만 contract를 깨뜨릴 가능성이 source에서 확인됨",
+    "signature drift": "논문과 source의 parameter 형태가 다름",
+    "blocked": "source상 명백한 결함으로 정상 contract를 주장할 수 없음",
+    "offline-verified": "mock bot fixture로 입력 검증, 분기, 실패 처리와 state 판정을 확인함",
+    "online-verified": "Minecraft server와 Mineflayer bridge에서 상태 기반 행동 결과를 확인함",
+    "runtime fixture pending": "Minecraft server를 사용하는 행동 검증은 아직 수행하지 않음"
+  },
+  "primitives": [
+    {
+      "name": "exploreUntil",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "고정 방향으로 탐색하며 callback 조건이 충족되면 중단한다.",
+      "implementation": "Odyssey/odyssey/control_primitives/exploreUntil.js",
+      "primary_interfaces": [
+        "bot.pathfinder.setGoal",
+        "bot.entity.position",
+        "callback"
+      ],
+      "verification": "offline-verified seed 42 PRNG sequence; movement and timeout runtime fixture pending"
+    },
+    {
+      "name": "mineBlock",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "32-block 범위에서 지정 block을 찾아 필요한 수량만큼 채굴·수집한다.",
+      "implementation": "Odyssey/odyssey/control_primitives/mineBlock.js",
+      "primary_interfaces": [
+        "bot.findBlocks",
+        "bot.blockAt",
+        "bot.collectBlock.collect"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "craftItem",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "근처 crafting table에서 지정 recipe를 필요한 횟수만큼 제작한다.",
+      "implementation": "Odyssey/odyssey/control_primitives/craftItem.js",
+      "primary_interfaces": [
+        "bot.findBlock",
+        "bot.pathfinder.goto",
+        "bot.recipesFor",
+        "bot.craft"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "placeItem",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "inventory item을 지정 좌표의 유효한 block face에 설치한다.",
+      "implementation": "Odyssey/odyssey/control_primitives/placeItem.js",
+      "primary_interfaces": [
+        "bot.blockAt",
+        "bot.pathfinder.goto",
+        "bot.equip",
+        "bot.placeBlock"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "smeltItem",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "근처 furnace에서 지정 fuel로 item을 필요한 수량만큼 제련한다.",
+      "implementation": "Odyssey/odyssey/control_primitives/smeltItem.js",
+      "primary_interfaces": [
+        "bot.findBlock",
+        "bot.pathfinder.goto",
+        "bot.openFurnace",
+        "bot.waitForTicks"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "killMob",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "지정 mob을 공격하고 drop 위치로 이동해 아이템을 회수한다.",
+      "implementation": "Odyssey/odyssey/control_primitives/killMob.js",
+      "primary_interfaces": [
+        "bot.nearestEntity",
+        "bot.pvp.attack",
+        "bot.pathfinder.goto"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "getItemFromChest",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "지정 chest에서 요청한 item과 수량을 inventory로 옮긴다.",
+      "implementation": "Odyssey/odyssey/control_primitives/useChest.js",
+      "primary_interfaces": [
+        "bot.blockAt",
+        "bot.openContainer",
+        "chest.withdraw"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "depositItemIntoChest",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "inventory의 요청 item과 수량을 지정 chest로 옮긴다.",
+      "implementation": "Odyssey/odyssey/control_primitives/useChest.js",
+      "primary_interfaces": [
+        "bot.blockAt",
+        "bot.openContainer",
+        "chest.deposit"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "bot.pathfinder.goto",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "지정 goal을 만족하는 위치까지 이동한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer-pathfinder"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.blockAt",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "지정 좌표의 block 상태를 조회한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.equip",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "inventory item을 hand 또는 armor slot에 장착한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.consume",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "hand에 장착한 음식·potion을 소비한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.fish",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "낚싯대를 사용해 물에서 물고기를 낚는다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.sleep",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "접근 가능한 bed에서 일출까지 수면한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.activateBlock",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "block을 우클릭하는 상호작용을 수행한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.lookAt",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "지정 좌표를 바라보도록 시선을 이동한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.activateItem",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "hand item을 우클릭 방식으로 사용한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "bot.useOn",
+      "lineage": "voyager-inherited",
+      "category": "operational",
+      "paper_contract": "hand item을 지정 entity에 사용한다.",
+      "implementation": "Odyssey/odyssey/control_primitives_context/mineflayer.js",
+      "primary_interfaces": [
+        "mineflayer"
+      ],
+      "verification": "prompt-declared direct API; runtime fixture pending"
+    },
+    {
+      "name": "plantSeeds",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "가까운 farmland의 빈 윗면에 지정 seed를 심는다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/plantSeeds.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.findBlocks",
+        "checkBlockAbove",
+        "bot.pathfinder.goto",
+        "bot.placeBlock"
+      ],
+      "verification": "source-mapped; empty-result behavior requires fixture"
+    },
+    {
+      "name": "feedAnimals",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "지정 종의 동물을 찾아 필요한 수만큼 적절한 먹이를 준다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/feedAnimals.js",
+      "primary_interfaces": [
+        "exploreUntil",
+        "bot.nearestEntity",
+        "bot.pathfinder.goto",
+        "bot.lookAt",
+        "bot.useOn"
+      ],
+      "verification": "contract risk: source does not equip the appropriate food"
+    },
+    {
+      "name": "killAnimal",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "가장 좋은 sword를 장착해 지정 동물을 죽이고 drop을 회수한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/killAnimal.js",
+      "primary_interfaces": [
+        "equipSword",
+        "killMob"
+      ],
+      "verification": "offline-verified single delegation to killMob; combat runtime fixture pending"
+    },
+    {
+      "name": "killMonsters",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "armor와 sword를 장착해 지정 monster를 필요한 수만큼 처치한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/killMonsters.js",
+      "primary_interfaces": [
+        "equipSword",
+        "equipArmor",
+        "killMob",
+        "bot.pathfinder.goto",
+        "bot.chat"
+      ],
+      "verification": "OP command removed and host boundary fixed; nullable target and undeclared state remain contract risks"
+    },
+    {
+      "name": "cookFood",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "furnace와 coal을 사용해 지정 food를 필요한 수량만큼 조리한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/cookFood.js",
+      "primary_interfaces": [
+        "findSuitablePosition",
+        "placeItem",
+        "smeltItem"
+      ],
+      "verification": "contract risk: missing-fuel path continues"
+    },
+    {
+      "name": "eatFood",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "허기가 있을 때 지정 food를 장착해 먹는다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/eatFood.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip",
+        "bot.consume"
+      ],
+      "verification": "source-mapped; missing-item path requires fixture"
+    },
+    {
+      "name": "equipArmor",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory에서 등급이 가장 높은 helmet·chestplate·leggings·boots를 장착한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/equipArmor.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip"
+      ],
+      "verification": "offline-verified public material order diamond > iron > gold > chainmail > leather; runtime fixture pending"
+    },
+    {
+      "name": "equipSword",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory에서 등급이 가장 높은 sword를 hand에 장착한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/equipSword.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "equipPickaxe",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory에서 등급이 가장 높은 pickaxe를 hand에 장착한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/equipPickaxe.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "equipAxe",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory에서 등급이 가장 높은 axe를 hand에 장착한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/equipAxe.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "equipHoe",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory에서 등급이 가장 높은 hoe를 hand에 장착한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/equipHoe.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "equipShovel",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory에서 등급이 가장 높은 shovel을 hand에 장착한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/equipShovel.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip"
+      ],
+      "verification": "source-mapped; runtime fixture pending"
+    },
+    {
+      "name": "getLogsCount",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory의 일곱 종류 log 수량 합계를 반환한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/getLogsCount.js",
+      "primary_interfaces": [
+        "bot.inventory.count",
+        "mcData.itemsByName"
+      ],
+      "verification": "source-mapped; static contract matches paper"
+    },
+    {
+      "name": "getPlanksCount",
+      "lineage": "odyssey-added",
+      "category": "operational",
+      "paper_contract": "inventory의 일곱 종류 plank 수량 합계를 반환한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/getPlanksCount.js",
+      "primary_interfaces": [
+        "bot.inventory.count",
+        "mcData.itemsByName"
+      ],
+      "verification": "source-mapped; static contract matches paper"
+    },
+    {
+      "name": "findSuitablePosition",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "device를 놓을 수 있는 가까운 air 좌표와 인접 reference block을 찾는다.",
+      "modernized_contract": "공개 코드 우선으로 가까운 air 또는 water 좌표와 인접 reference block을 찾는다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/findSuitablePosition.js",
+      "primary_interfaces": [
+        "bot.entity.position",
+        "bot.blockAt",
+        "checkNoAdjacentBlock"
+      ],
+      "verification": "offline-verified water target preservation; duplicate offsets require cleanup review"
+    },
+    {
+      "name": "checkAdjacentBlock",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "지정 좌표의 6방향 인접 block 중 type 일치 여부를 반환한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/checkAdjacentBlock.js",
+      "primary_interfaces": [
+        "Vec3",
+        "bot.blockAt"
+      ],
+      "verification": "source-mapped; static contract matches paper"
+    },
+    {
+      "name": "checkBlockAbove",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "지정 위치 바로 위 block의 type 일치 여부를 반환한다.",
+      "modernized_contract": "기존 compositional caller와 같은 Vec3 position을 받는다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/checkBlockAbove.js",
+      "primary_interfaces": [
+        "Vec3",
+        "bot.blockAt"
+      ],
+      "verification": "offline-verified Vec3 contract; paper signature difference documented"
+    },
+    {
+      "name": "checkBlocksAround",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "지정 위치의 수평 4방향 block 중 type 일치 여부를 반환한다.",
+      "modernized_contract": "기존 compositional caller와 같은 Vec3 position을 받는다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/checkBlocksAround.js",
+      "primary_interfaces": [
+        "Vec3",
+        "bot.blockAt"
+      ],
+      "verification": "offline-verified Vec3 contract; paper signature difference documented"
+    },
+    {
+      "name": "checkNearbyBlock",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "지정 반경의 같은 y 평면에서 type 일치 block 존재 여부를 반환한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/checkNearbyBlock.js",
+      "primary_interfaces": [
+        "Vec3",
+        "bot.blockAt"
+      ],
+      "verification": "source-mapped; search geometry requires fixture"
+    },
+    {
+      "name": "checkNoAdjacentBlock",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "6방향 인접 block 중 허용 type 밖의 reference block 존재 여부를 반환한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/checkNoAdjacentBlock.js",
+      "primary_interfaces": [
+        "Vec3",
+        "bot.blockAt"
+      ],
+      "verification": "source-mapped; function name/comment semantics require fixture"
+    },
+    {
+      "name": "goto",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "목표 좌표에서 허용 오차 안에 들 때까지 이동한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/goto.js",
+      "primary_interfaces": [
+        "bot.entity.position",
+        "bot.pathfinder.goto",
+        "GoalNear"
+      ],
+      "verification": "online-verified: corrected GoalNear block-grid contract passed on 2026-08-27 at distance 1.414 with no onError; 6 offline fixtures cover the regression, finite coordinates, final-distance check and timeout"
+    },
+    {
+      "name": "getAnimal",
+      "lineage": "odyssey-added",
+      "category": "spatial",
+      "paper_contract": "적절한 먹이로 지정 동물을 목표 좌표까지 유인한다.",
+      "implementation": "Odyssey/skill_library/skill/primitive/getAnimal.js",
+      "primary_interfaces": [
+        "bot.inventory",
+        "bot.equip",
+        "exploreUntil",
+        "bot.pathfinder.goto"
+      ],
+      "verification": "online-verified: cow lure reached the target without onError on 2026-08-27; 8 offline fixtures cover all four food mappings, missing-input failures and target-arrival check"
+    }
+  ]
+}

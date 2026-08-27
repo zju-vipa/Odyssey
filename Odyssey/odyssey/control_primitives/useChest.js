@@ -8,13 +8,15 @@ async function getItemFromChest(bot, chestPosition, itemsToGet) {
     const chestBlock = bot.blockAt(chestPosition);
     const chest = await bot.openContainer(chestBlock);
     for (const name in itemsToGet) {
-        const itemByName = mcData.itemsByName[name];
-        if (!itemByName) {
+        const itemType = mcData.itemsByName[name];
+        if (!itemType) {
             bot.chat(`No item named ${name}`);
             continue;
         }
 
-        const item = chest.findContainerItem(itemByName.id);
+        const item = chest.containerItems().find(
+            (containerItem) => containerItem.name === name
+        );
         if (!item) {
             bot.chat(`I don't see ${name} in this chest`);
             continue;
@@ -122,12 +124,4 @@ async function closeChest(bot, chestBlock) {
     } catch (err) {
         await bot.closeWindow(chestBlock);
     }
-}
-
-function itemByName(items, name) {
-    for (let i = 0; i < items.length; ++i) {
-        const item = items[i];
-        if (item && item.name === name) return item;
-    }
-    return null;
 }

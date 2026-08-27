@@ -4,7 +4,7 @@ import time
 import odyssey.utils as U
 from odyssey.utils.json_utils import fix_and_parse_json
 from javascript import require
-from langchain.schema import AIMessage, HumanMessage, SystemMessage
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
 from odyssey.prompts import load_prompt
 from odyssey.control_primitives_context import load_control_primitives_context

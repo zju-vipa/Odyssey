@@ -5,8 +5,10 @@ async function getItemFromChest(bot, chestPosition, itemsToGet) {
     const chestBlock = bot.blockAt(chestPosition);
     const chest = await bot.openContainer(chestBlock);
     for (const name in itemsToGet) {
-        const itemByName = mcData.itemsByName[name];
-        const item = chest.findContainerItem(itemByName.id);
+        const itemType = mcData.itemsByName[name];
+        const item = chest.containerItems().find(
+            (containerItem) => containerItem.name === name
+        );
         await chest.withdraw(item.type, null, itemsToGet[name]);
     }
     await closeChest(bot, chestBlock);

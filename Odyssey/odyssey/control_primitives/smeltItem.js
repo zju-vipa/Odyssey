@@ -65,4 +65,5 @@ async function smeltItem(bot, itemName, fuelName, count = 1) {
             );
         }
     }
+    return success_count;
 }

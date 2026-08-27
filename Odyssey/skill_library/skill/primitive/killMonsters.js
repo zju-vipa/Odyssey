@@ -1,32 +1,37 @@
 async function killMonsters(bot, type = null, count = 1) {
-  await bot.chat("/gamemode survival");
-  isAlive = true;
-  // Listen for bot's death
-  bot.on('death', () => {
+  if (typeof type !== "string" || type.length === 0) {
+    throw new Error("type for killMonsters must be a non-empty string");
+  }
+  if (!Number.isInteger(count) || count < 1) {
+    throw new Error("count for killMonsters must be a positive integer");
+  }
+  let isAlive = true;
+  const onDeath = () => {
     bot.chat("I lost the combat.");
     isAlive = false;
-    return false;
-  });
-  await equipSword(bot);
-  await equipArmor(bot);
-  for (i = 0; i < count; i++) {
+  };
+  bot.on("death", onDeath);
+  try {
+    if (!await equipSword(bot)) {
+      return false;
+    }
+    await equipArmor(bot);
+    for (let i = 0; i < count; i++) {
+      if (!isAlive) {
+        return false;
+      }
+      const result = await killMob(bot, type, 300);
+      if (!result) {
+        bot.chat(`Could not find a ${type} to kill.`);
+        return false;
+      }
+    }
     if (!isAlive) {
       return false;
     }
-    // Find the nearest monster
-    const monster = bot.nearestEntity(entity => {
-      return entity.name === type && entity.position.distanceTo(bot.entity.position) < 32;
-    });
-    // Kill the animal using the sword
-    await killMob(bot, type, 300);
-    await bot.chat(`Killed a ${type}.`);
-  
-    // Collect the dropped items
-    await bot.pathfinder.goto(new GoalBlock(monster.position.x, monster.position.y, monster.position.z));
-    await bot.chat("Collected dropped items.");
-    await bot.chat(`Killed a ${type}.`);
+    await bot.chat("I won the combat.");
+    return true;
+  } finally {
+    bot.removeListener("death", onDeath);
   }
-  await bot.chat("I won the combat.");
-  await bot.chat("/gamemode survival");
-  return true;
 }

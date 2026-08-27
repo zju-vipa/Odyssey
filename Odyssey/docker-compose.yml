@@ -1,0 +1,33 @@
+services:
+  mc:
+    # Minecraft 1.19.4/Fabric's Mixin stack is not compatible with Java 25.
+    image: itzg/minecraft-server:java17
+    container_name: odyssey-mc
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "FABRIC"
+      VERSION: "1.19.4"
+      FABRIC_LOADER_VERSION: "0.15.11"
+      ONLINE_MODE: "FALSE"
+      ENFORCE_SECURE_PROFILE: "FALSE"
+      ALLOW_FLIGHT: "TRUE"
+      MAX_MEMORY: "8G"
+      INIT_MEMORY: "4G"
+      VIEW_DISTANCE: "1"
+      SIMULATION_DISTANCE: "4"
+      ENTITY_BROADCAST_RANGE_PERCENTAGE: "50"
+      ENABLE_RCON: "TRUE"
+      RCON_PASSWORD: "${ODYSSEY_RCON_PASSWORD:?Set ODYSSEY_RCON_PASSWORD for host-admin operations}"
+      # The execution bot is deliberately absent from this list. World reset,
+      # gamemode and summon operations run through the host-only RCON harness.
+      OPS_FILE: "/config/mineskynet-ops.json"
+      OVERRIDE_OPS: "TRUE"
+    volumes:
+      - ./runtime/minecraft/data:/data
+      - ./runtime/minecraft/mods:/mods:ro
+      - ./server-profile/modernized/ops.json:/config/mineskynet-ops.json:ro
+    restart: unless-stopped

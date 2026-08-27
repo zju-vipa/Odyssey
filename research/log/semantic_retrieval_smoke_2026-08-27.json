@@ -1,0 +1,175 @@
+{
+  "executed_on": "2026-08-27",
+  "command": "Odyssey/.venv/bin/python Odyssey/scripts/semantic_retrieval_smoke.py",
+  "profile": "odyssey-semantic-retrieval-top5-smoke",
+  "encoder": {
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "device": "cpu",
+    "runtime_fixture": {
+      "shape": [
+        3,
+        384
+      ],
+      "dtype": "float32",
+      "max_repeat_absolute_error": 0.0,
+      "newline_space_max_absolute_error": 0.0,
+      "embedding_norms": [
+        3.8508098125457764,
+        5.05172061920166,
+        5.259252071380615
+      ],
+      "embedding_sha256": "4f5de76040931c0558f63c1e6083f6779c61f1611b81f9d456aa9b7263d32c6b",
+      "passed": true
+    }
+  },
+  "corpus": {
+    "path": "Odyssey/skill_library/skill/skills.json",
+    "skill_count": 183,
+    "indexed_count": 183
+  },
+  "retrieval": {
+    "backend": "Chroma",
+    "distance_metric": "l2",
+    "k": 5,
+    "known_query_recall_at_5": 1.0,
+    "queries": [
+      {
+        "query": "Craft a wooden pickaxe.",
+        "expected_skill": "craftWoodenPickaxe",
+        "expected_rank": 1,
+        "candidates": [
+          {
+            "rank": 1,
+            "skill": "craftWoodenPickaxe",
+            "score": 16.135042190551758
+          },
+          {
+            "rank": 2,
+            "skill": "craftStonePickaxe",
+            "score": 18.53685760498047
+          },
+          {
+            "rank": 3,
+            "skill": "craftWoodenAxe",
+            "score": 18.72112464904785
+          },
+          {
+            "rank": 4,
+            "skill": "craftCraftingTable",
+            "score": 18.973188400268555
+          },
+          {
+            "rank": 5,
+            "skill": "craftStoneAxe",
+            "score": 19.268959045410156
+          }
+        ]
+      },
+      {
+        "query": "Mine diamond ore using an iron pickaxe.",
+        "expected_skill": "mineDiamond",
+        "expected_rank": 1,
+        "candidates": [
+          {
+            "rank": 1,
+            "skill": "mineDiamond",
+            "score": 11.6207275390625
+          },
+          {
+            "rank": 2,
+            "skill": "mineFiveIronOres",
+            "score": 12.16454792022705
+          },
+          {
+            "rank": 3,
+            "skill": "mineGoldOre",
+            "score": 12.640392303466797
+          },
+          {
+            "rank": 4,
+            "skill": "mineIronOre",
+            "score": 12.72097396850586
+          },
+          {
+            "rank": 5,
+            "skill": "mineEmerald",
+            "score": 13.975808143615723
+          }
+        ]
+      },
+      {
+        "query": "Breed two cows using wheat.",
+        "expected_skill": "breedCow",
+        "expected_rank": 1,
+        "candidates": [
+          {
+            "rank": 1,
+            "skill": "breedCow",
+            "score": 25.743154525756836
+          },
+          {
+            "rank": 2,
+            "skill": "breedSheep",
+            "score": 29.172386169433594
+          },
+          {
+            "rank": 3,
+            "skill": "breedChicken",
+            "score": 30.980480194091797
+          },
+          {
+            "rank": 4,
+            "skill": "collectMilkWithBucket",
+            "score": 31.744853973388672
+          },
+          {
+            "rank": 5,
+            "skill": "killOneCow",
+            "score": 32.09824752807617
+          }
+        ]
+      },
+      {
+        "query": "밀을 사용해서 소 두 마리를 번식시킨다.",
+        "expected_skill": "breedCow",
+        "expected_rank": 1,
+        "candidates": [
+          {
+            "rank": 1,
+            "skill": "breedCow",
+            "score": 16.021711349487305
+          },
+          {
+            "rank": 2,
+            "skill": "cookBeef",
+            "score": 17.067350387573242
+          },
+          {
+            "rank": 3,
+            "skill": "killOneCow",
+            "score": 18.375755310058594
+          },
+          {
+            "rank": 4,
+            "skill": "collectMilkWithBucket",
+            "score": 18.980722427368164
+          },
+          {
+            "rank": 5,
+            "skill": "breedSheep",
+            "score": 19.126325607299805
+          }
+        ]
+      }
+    ],
+    "passed": true
+  },
+  "warnings": [
+    "LangChain 0.2.x reports HuggingFaceEmbeddings as deprecated in favor of langchain-huggingface.",
+    "LangChain 0.2.x reports its Chroma wrapper as deprecated in favor of langchain-chroma.",
+    "Chroma telemetry emitted capture() signature warnings; indexing and retrieval still completed.",
+    "Persist/reload equivalence and the separate top-10 profile were not tested by this smoke fixture."
+  ],
+  "passed": true
+}

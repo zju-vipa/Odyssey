@@ -1,7 +1,7 @@
-import pkg_resources
+from pathlib import Path
 import odyssey.utils as U
 
 
 def load_prompt(prompt):
-    package_path = pkg_resources.resource_filename("odyssey", "")
-    return U.load_text(f"{package_path}/prompts/{prompt}.txt")
+    package_path = Path(__file__).parent.parent
+    return U.load_text(str(package_path / "prompts" / f"{prompt}.txt"))

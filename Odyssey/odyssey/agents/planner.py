@@ -7,13 +7,14 @@ import odyssey.utils as U
 from odyssey.prompts import load_prompt
 from odyssey.utils.json_utils import fix_and_parse_list, fix_and_parse_json
 # from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-# from langchain.schema import HumanMessage, SystemMessage
-# from langchain.vectorstores import Chroma
+# from langchain_core.messages import HumanMessage, SystemMessage
 
-from langchain_community.embeddings.huggingface import HuggingFaceEmbeddings
-from langchain.schema import HumanMessage, SystemMessage
-from langchain_community.vectorstores import Chroma
+from langchain_core.messages import HumanMessage, SystemMessage
 
+from odyssey.retrieval_embedding import (
+    build_retrieval_embeddings,
+    build_retrieval_vector_store,
+)
 from odyssey.utils.logger import get_logger
 
 # llama
@@ -59,9 +60,10 @@ class PlannerAgent:
             self.failed_tasks = []
             self.qa_cache = {}
         # vectordb for qa cache
-        self.qa_cache_questions_vectordb = Chroma(
+        embeddings = build_retrieval_embeddings(embedding_model)
+        self.qa_cache_questions_vectordb = build_retrieval_vector_store(
             collection_name="qa_cache_questions_vectordb",
-            embedding_function=HuggingFaceEmbeddings(model_name=embedding_model),
+            embedding_function=embeddings,
             persist_directory=f"{ckpt_dir}/curriculum/vectordb",
         )
         assert self.qa_cache_questions_vectordb._collection.count() == len(

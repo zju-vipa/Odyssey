@@ -67,12 +67,14 @@ async function collectAll(
                             );
                             // @ts-ignore
                         } else if (err.name === "NoItem") {
+                            if (closest.name === undefined) return;
                             const properties =
                                 bot.registry.blocksByName[closest.name];
+                            if (properties.harvestTools === undefined) return;
                             const leastTool = Object.keys(
                                 properties.harvestTools
                             )[0];
-                            const item = bot.registry.items[leastTool];
+                            const item = bot.registry.items[Number(leastTool)];
                             bot.chat(
                                 `I need at least a ${item.name} to mine ${closest.name}!  Skip it!`
                             );
@@ -197,27 +199,28 @@ async function mineBlock(
     }
 
     const tempEvents = new TemporarySubscriber(bot);
+    let resolveItemDrop: () => void = () => {};
+    const itemDropDetected = new Promise<void>((resolve) => {
+        resolveItemDrop = resolve;
+    });
     tempEvents.subscribeTo("itemDrop", (entity: Entity) => {
         if (
+            // Block drops receive a small random spawn offset. The original
+            // 0.5-block radius can miss a valid drop and leave it on the
+            // ground even though mining succeeded.
             entity.position.distanceTo(block.position.offset(0.5, 0.5, 0.5)) <=
-            0.5
+            1.5
         ) {
             options.targets.appendTarget(entity);
+            resolveItemDrop();
         }
     });
     try {
         await bot.dig(block);
-        // Waiting for items to drop
-        await new Promise<void>((resolve) => {
-            let remainingTicks = 10;
-            tempEvents.subscribeTo("physicTick", () => {
-                remainingTicks--;
-                if (remainingTicks <= 0) {
-                    tempEvents.cleanup();
-                    resolve();
-                }
-            });
-        });
+        // The block break acknowledgement can arrive before the spawned item
+        // entity. Wait for that event, with a bounded fallback for blocks that
+        // legitimately produce no collectable drop.
+        await Promise.race([itemDropDetected, bot.waitForTicks(40)]);
     } finally {
         tempEvents.cleanup();
     }

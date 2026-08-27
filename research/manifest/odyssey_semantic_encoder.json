@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-08-27",
+  "paper_contract": "자연어 subgoal과 skill description을 같은 encoder로 384차원 vector로 바꿔 의미가 가까운 기존 skill을 검색한다.",
+  "status": "encoder runtime-verified; top-5 default and top-10 alternate retrieval profiles passed fresh-index and persist/reload fixtures",
+  "selection": {
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "selection_basis": "Odyssey public conf/config.json setting",
+    "paper_checkpoint": false,
+    "modernized_baseline": true,
+    "note": "논문이 정확한 checkpoint를 명시한 것이 아니라 공개 코드가 선택한 checkpoint다."
+  },
+  "checkpoint": {
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "revision_evidence": "Odyssey/models/paraphrase-multilingual-MiniLM-L12-v2/.cache/huggingface/download/model.safetensors.metadata",
+    "local_path": "Odyssey/models/paraphrase-multilingual-MiniLM-L12-v2",
+    "artifact_policy": "SentenceTransformer PyTorch safetensors runtime에 필요한 canonical subset만 고정하며 ONNX, OpenVINO, TensorFlow와 대체 pytorch_model.bin은 제외한다.",
+    "artifacts": [
+      {
+        "path": "1_Pooling/config.json",
+        "size": 190,
+        "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+      },
+      {
+        "path": "config.json",
+        "size": 645,
+        "sha256": "6300193cb75e01cf80c96decef7187dfb33094d97cc1490b7ead6ff134476e4e"
+      },
+      {
+        "path": "config_sentence_transformers.json",
+        "size": 122,
+        "sha256": "b8c64b5cece00d8424b4896ea75b512b6008576088497609dfeb6bd63e6d36b8"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 470641600,
+        "sha256": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b"
+      },
+      {
+        "path": "modules.json",
+        "size": 229,
+        "sha256": "8f4b264b80206c830bebbdcae377e137925650a433b689343a63bdc9b3145460"
+      },
+      {
+        "path": "sentence_bert_config.json",
+        "size": 53,
+        "sha256": "70f4448f31320443fe3557cacea5abf2dcc4915dda8c80646bec9f3bb0aa5a1f"
+      },
+      {
+        "path": "sentencepiece.bpe.model",
+        "size": 5069051,
+        "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 239,
+        "sha256": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 9081518,
+        "sha256": "2c3387be76557bd40970cec13153b3bbf80407865484b209e655e5e4729076b8"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 526,
+        "sha256": "5036ea374ffedd706e3bef33e2e0d6953cb868ef8a490e76e32ba0faa37a6b9b"
+      },
+      {
+        "path": "unigram.json",
+        "size": 14763234,
+        "sha256": "71b44701d7efd054205115acfa6ef126c5d2f84bd3affe0c59e48163674d19a6"
+      }
+    ]
+  },
+  "transformation": {
+    "output_dimension": 384,
+    "max_sequence_length": 128,
+    "case_folding": false,
+    "pooling": "attention-mask-aware mean token pooling",
+    "normalization": false,
+    "precision": "float32",
+    "batch_size": 32,
+    "query_document_encoder_shared": true,
+    "adapter_preprocessing": "각 입력의 newline을 ASCII space로 치환하며 별도 trim, case folding 또는 prefix를 적용하지 않는다."
+  },
+  "retrieval_policy": {
+    "default_profile": "top5",
+    "profiles": {
+      "top5": 5,
+      "top10": 10
+    },
+    "distance_metric": "l2",
+    "persist_reload": "passed: fresh build and separate-process reload returned identical candidate order and scores"
+  },
+  "observed_environment": {
+    "status": "encoder and top-5/top-10 persist/reload retrieval verified; deprecation and telemetry warnings recorded",
+    "python_environment": "Odyssey/.venv",
+    "packages": {
+      "sentence-transformers": "5.6.0",
+      "transformers": "5.14.1",
+      "torch": "2.13.0",
+      "langchain": "0.2.17",
+      "langchain-community": "0.2.19",
+      "chromadb": "0.3.29",
+      "huggingface-hub": "1.24.0",
+      "tokenizers": "0.22.2"
+    },
+    "checkpoint_authored_with": {
+      "sentence-transformers": "2.0.0",
+      "transformers": "4.7.0",
+      "torch": "1.9.0+cu102"
+    }
+  },
+  "retrieval_wrapper_profiles": {
+    "default": "modern-partner",
+    "legacy-community": {
+      "status": "verified baseline preserved by odyssey-modernized-retrieval-legacy-wrapper tag",
+      "packages": {
+        "langchain-core": "0.2.43",
+        "langchain-community": "0.2.19",
+        "chromadb": "0.3.29",
+        "sentence-transformers": "5.6.0",
+        "transformers": "5.14.1",
+        "torch": "2.13.0",
+        "huggingface-hub": "1.24.0",
+        "tokenizers": "0.22.2",
+        "posthog": "7.27.0",
+        "numpy": "1.26.4"
+      }
+    },
+    "modern-partner": {
+      "status": "approved modernized default; clean-install and component fixtures passed",
+      "lock": "Odyssey/requirements-retrieval-modern.lock.txt",
+      "packages": {
+        "langchain-core": "1.6.0",
+        "langchain-huggingface": "1.2.2",
+        "langchain-chroma": "1.1.0",
+        "chromadb": "1.3.5",
+        "sentence-transformers": "5.6.0",
+        "transformers": "5.14.1",
+        "torch": "2.13.0+cpu",
+        "huggingface-hub": "1.24.0",
+        "tokenizers": "0.22.2",
+        "posthog": "5.4.0",
+        "numpy": "1.26.4"
+      },
+      "telemetry": "disabled with Settings(anonymized_telemetry=False)",
+      "deprecated_wrapper_warnings": 0,
+      "legacy_candidate_order_equal": true,
+      "legacy_maximum_score_delta": 0.00000762939453125,
+      "legacy_score_observation": "maximum absolute delta recorded as an implementation-level numeric difference; candidate order and recall unchanged",
+      "merge_gate_passed": true
+    }
+  },
+  "runtime_fixture": {
+    "command": "Odyssey/.venv/bin/python Odyssey/scripts/semantic_encoder_fixture.py --run-model --device cpu",
+    "canonical_device": "cpu",
+    "status": "passed on CPU on 2026-08-27",
+    "fixed_inputs": [
+      "목표 좌표로 이동한다.",
+      "소를 밀로 유인한다.",
+      "Craft a wooden pickaxe."
+    ],
+    "acceptance": {
+      "shape": [
+        3,
+        384
+      ],
+      "finite": true,
+      "repeat_max_absolute_error": 0.000001,
+      "newline_space_equivalence": true
+    },
+    "embedding_sha256": "4f5de76040931c0558f63c1e6083f6779c61f1611b81f9d456aa9b7263d32c6b",
+    "observed_norms": [
+      3.8508098125457764,
+      5.05172061920166,
+      5.259252071380615
+    ],
+    "observed_shape": [
+      3,
+      384
+    ],
+    "max_repeat_absolute_error": 0.0,
+    "newline_space_max_absolute_error": 0.0
+  },
+  "retrieval_smoke": {
+    "command": "Odyssey/.venv/bin/python Odyssey/scripts/semantic_retrieval_smoke.py",
+    "evidence": "research/log/semantic_retrieval_smoke_2026-08-27.json",
+    "status": "passed on CPU on 2026-08-27",
+    "corpus_count": 183,
+    "indexed_count": 183,
+    "k": 5,
+    "metric": "l2",
+    "known_queries": 4,
+    "known_query_recall_at_5": 1.0,
+    "expected_skill_rank_1_count": 4,
+    "remaining": [
+      "deprecated LangChain embedding and Chroma wrapper migration",
+      "Chroma telemetry warning resolution"
+    ]
+  },
+  "retrieval_fixture": {
+    "command": "Odyssey/.venv/bin/python Odyssey/scripts/semantic_retrieval_fixture.py",
+    "evidence": "research/log/semantic_retrieval_profiles_2026-08-27.json",
+    "status": "passed on CPU on 2026-08-27",
+    "corpus_count": 183,
+    "metric": "l2",
+    "profiles": {
+      "top5": {
+        "default": true,
+        "k": 5,
+        "known_query_recall_at_k": 1.0
+      },
+      "top10": {
+        "default": false,
+        "k": 10,
+        "known_query_recall_at_k": 1.0
+      }
+    },
+    "fresh_build_and_separate_process_reload": true,
+    "candidate_order_equal_for_all_queries_and_profiles": true,
+    "maximum_score_delta": 0.0,
+    "remaining": [
+      "deprecated LangChain embedding and Chroma wrapper migration",
+      "Chroma telemetry warning resolution",
+      "clean-environment lock and install reproduction"
+    ]
+  }
+}

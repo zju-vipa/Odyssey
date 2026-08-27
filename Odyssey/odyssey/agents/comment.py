@@ -1,7 +1,7 @@
 import re
 from odyssey.prompts import load_prompt
 from odyssey.utils.json_utils import fix_and_parse_json
-from langchain.schema import HumanMessage, SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from odyssey.agents.llama import call_with_messages, ModelType
 from odyssey.utils.logger import get_logger
 from typing import Union
@@ -125,4 +125,3 @@ class CommentAgent:
             return health, critique, result, events[-1][1]["status"]["equipment"]
         else:
             raise ValueError(f"Invalid comment agent mode: {self.mode}")
-        

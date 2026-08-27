@@ -292,3 +292,4 @@ dist
 .pnp.*
 
 package-lock.json
+!mineflayer/package-lock.json

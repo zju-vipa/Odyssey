@@ -58,11 +58,20 @@ function inject(bot) {
         await bot._activateBlock(block);
     };
 
-    bot._chat = bot.chat;
+    const rawChat = bot.chat.bind(bot);
     bot.chat = (message) => {
+        if (
+            !bot.allowAdminCommands &&
+            typeof message === "string" &&
+            message.trimStart().startsWith("/")
+        ) {
+            throw new Error(
+                "Server commands are restricted to the host-admin RCON harness"
+            );
+        }
         // action_count.chat++;
         bot.emit("chatEvent", "bot", message);
-        bot._chat(message);
+        rawChat(message);
     };
 
     bot.inventoryUsed = () => {

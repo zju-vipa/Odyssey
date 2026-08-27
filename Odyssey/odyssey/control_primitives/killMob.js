@@ -33,7 +33,7 @@ async function killMob(bot, mobName, timeout = 300) {
                 `killMob failed too many times, make sure you explore before calling killMob`
             );
         }
-        return;
+        return null;
     }
 
     let droppedItem;
@@ -48,4 +48,5 @@ async function killMob(bot, mobName, timeout = 300) {
         await bot.collectBlock.collect(droppedItem, { ignoreNoPath: true });
     }
     bot.save(`${mobName}_killed`);
+    return { entity, droppedItem };
 }

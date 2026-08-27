@@ -1,0 +1,117 @@
+{
+  "profile": "odyssey-semantic-retrieval-persist-reload",
+  "executed_on": "2026-08-27",
+  "command": "Odyssey/.venv/bin/python Odyssey/scripts/semantic_retrieval_fixture.py",
+  "encoder_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "corpus": "Odyssey/skill_library/skill/skills.json",
+  "corpus_count": 183,
+  "distance_metric": "l2",
+  "canonical_device": "cpu",
+  "score_tolerance": 0.000001,
+  "profile_contract": {
+    "default_profile": "top5",
+    "profiles": {
+      "top5": 5,
+      "top10": 10
+    },
+    "top10_is_separate": true
+  },
+  "fresh_index_results": [
+    {
+      "query": "Craft a wooden pickaxe.",
+      "expected_skill": "craftWoodenPickaxe",
+      "expected_rank": 1,
+      "top10_candidates": [
+        {"rank": 1, "skill": "craftWoodenPickaxe", "score": 16.135042190551758},
+        {"rank": 2, "skill": "craftStonePickaxe", "score": 18.53685760498047},
+        {"rank": 3, "skill": "craftWoodenAxe", "score": 18.72112464904785},
+        {"rank": 4, "skill": "craftCraftingTable", "score": 18.973188400268555},
+        {"rank": 5, "skill": "craftStoneAxe", "score": 19.268959045410156},
+        {"rank": 6, "skill": "equipPickaxeOrCraftOne", "score": 19.490812301635742},
+        {"rank": 7, "skill": "craftIronPickaxe", "score": 19.4975643157959},
+        {"rank": 8, "skill": "craftWoodenSword", "score": 19.82317543029785},
+        {"rank": 9, "skill": "craftWoodenShovel", "score": 19.925594329833984},
+        {"rank": 10, "skill": "craftSticks", "score": 20.242616653442383}
+      ]
+    },
+    {
+      "query": "Mine diamond ore using an iron pickaxe.",
+      "expected_skill": "mineDiamond",
+      "expected_rank": 1,
+      "top10_candidates": [
+        {"rank": 1, "skill": "mineDiamond", "score": 11.6207275390625},
+        {"rank": 2, "skill": "mineFiveIronOres", "score": 12.16454792022705},
+        {"rank": 3, "skill": "mineGoldOre", "score": 12.640392303466797},
+        {"rank": 4, "skill": "mineIronOre", "score": 12.72097396850586},
+        {"rank": 5, "skill": "mineEmerald", "score": 13.975808143615723},
+        {"rank": 6, "skill": "mineAmethystCluster", "score": 14.124841690063477},
+        {"rank": 7, "skill": "mineCopperOre", "score": 14.245285034179688},
+        {"rank": 8, "skill": "mineRedstoneOre", "score": 14.563196182250977},
+        {"rank": 9, "skill": "mineCoalOre", "score": 17.41254234313965},
+        {"rank": 10, "skill": "mineLapisLazuliOre", "score": 17.728147506713867}
+      ]
+    },
+    {
+      "query": "Breed two cows using wheat.",
+      "expected_skill": "breedCow",
+      "expected_rank": 1,
+      "top10_candidates": [
+        {"rank": 1, "skill": "breedCow", "score": 25.743154525756836},
+        {"rank": 2, "skill": "breedSheep", "score": 29.172386169433594},
+        {"rank": 3, "skill": "breedChicken", "score": 30.980480194091797},
+        {"rank": 4, "skill": "collectMilkWithBucket", "score": 31.744853973388672},
+        {"rank": 5, "skill": "killOneCow", "score": 32.09824752807617},
+        {"rank": 6, "skill": "cookBeef", "score": 32.530967712402344},
+        {"rank": 7, "skill": "breedPig", "score": 33.69317626953125},
+        {"rank": 8, "skill": "collectWheat", "score": 33.73945236206055},
+        {"rank": 9, "skill": "plantWheatSeeds", "score": 34.60404968261719},
+        {"rank": 10, "skill": "collectWheatSeeds", "score": 35.07669448852539}
+      ]
+    },
+    {
+      "query": "밀을 사용해서 소 두 마리를 번식시킨다.",
+      "expected_skill": "breedCow",
+      "expected_rank": 1,
+      "top10_candidates": [
+        {"rank": 1, "skill": "breedCow", "score": 16.021711349487305},
+        {"rank": 2, "skill": "cookBeef", "score": 17.067350387573242},
+        {"rank": 3, "skill": "killOneCow", "score": 18.375755310058594},
+        {"rank": 4, "skill": "collectMilkWithBucket", "score": 18.980722427368164},
+        {"rank": 5, "skill": "breedSheep", "score": 19.126325607299805},
+        {"rank": 6, "skill": "breedPig", "score": 20.026269912719727},
+        {"rank": 7, "skill": "breedChicken", "score": 20.224353790283203},
+        {"rank": 8, "skill": "cookPorkchop", "score": 20.433135986328125},
+        {"rank": 9, "skill": "cookMutton", "score": 22.090364456176758},
+        {"rank": 10, "skill": "killOnePig", "score": 22.507137298583984}
+      ]
+    }
+  ],
+  "profile_results": {
+    "fresh_index": {
+      "index_count": 183,
+      "top5_recall_at_5": 1.0,
+      "top10_recall_at_10": 1.0,
+      "top5_is_top10_prefix_for_all_queries": true
+    },
+    "reloaded_index": {
+      "index_count": 183,
+      "top5_recall_at_5": 1.0,
+      "top10_recall_at_10": 1.0,
+      "top5_is_top10_prefix_for_all_queries": true
+    },
+    "fresh_vs_reload": {
+      "queries_compared": 4,
+      "profiles_compared": ["top5", "top10"],
+      "candidate_order_equal_for_all": true,
+      "maximum_score_delta": 0.0,
+      "scores_equal_within_tolerance_for_all": true
+    }
+  },
+  "interpretation": "top-5 후보는 각 top-10 목록의 1~5위와 같으며, 별도 프로세스에서 저장 index를 다시 연 뒤에도 모든 후보 순서와 score가 유지됐다. 이 known-query fixture는 retrieval contract의 재현성 증거이며 전체 corpus의 일반 정확도나 Actor 선택 성능을 뜻하지 않는다.",
+  "warnings": [
+    "LangChain HuggingFaceEmbeddings wrapper is deprecated in favor of langchain-huggingface.",
+    "LangChain Chroma wrapper is deprecated in favor of langchain-chroma.",
+    "Chroma telemetry capture signature warnings were emitted but did not stop persistence or retrieval."
+  ],
+  "passed": true
+}

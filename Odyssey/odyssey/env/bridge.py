@@ -26,6 +26,7 @@ class VoyagerEnv(gym.Env):
         server_port=3000,
         request_timeout=600000,
         log_path="./logs",
+        legacy_pause_adapter=False,
     ):
         if not mc_port and not azure_login:
             raise ValueError("Either mc_port or azure_login must be specified")
@@ -50,6 +51,7 @@ class VoyagerEnv(gym.Env):
         self.reset_options = None
         self.connected = False
         self.server_paused = False
+        self.legacy_pause_adapter = legacy_pause_adapter
 
     def get_mineflayer_process(self, server_port):
         U.f_mkdir(self.log_path, "mineflayer")
@@ -195,19 +197,31 @@ class VoyagerEnv(gym.Env):
         if options is None:
             options = {}
 
-        if options.get("inventory", {}) and options.get("mode", "hard") != "hard":
-            raise RuntimeError("inventory can only be set when options is hard")
+        reset_mode = options.get("mode", "soft")
+        requests_host_admin = (
+            reset_mode == "hard"
+            or bool(options.get("inventory", {}))
+            or bool(options.get("equipment", []))
+            or bool(options.get("spread", False))
+            or options.get("position") is not None
+        )
+        if requests_host_admin:
+            raise RuntimeError(
+                "World preparation is restricted to the server-host RCON "
+                "harness; prepare the player, then call reset with mode=soft"
+            )
 
         self.reset_options = {
             "host": self.mc_host,
             "port": self.mc_port,
-            "reset": options.get("mode", "hard"),
-            "inventory": options.get("inventory", {}),
-            "equipment": options.get("equipment", []),
-            "spread": options.get("spread", False),
+            "reset": reset_mode,
+            "inventory": {},
+            "equipment": [],
+            "spread": False,
             "waitTicks": options.get("wait_ticks", 5),
-            "position": options.get("position", None),
-            "username": options.get('username', 'bot')
+            "position": None,
+            "username": options.get('username', 'bot'),
+            "seed": 42 if seed is None else seed,
         }
         with Timer('reset unpause mc server'):
             self.unpause()
@@ -240,6 +254,8 @@ class VoyagerEnv(gym.Env):
 
     @retry(retry_count=3)
     def pause(self):
+        if not self.legacy_pause_adapter:
+            return False
         if self.mineflayer.is_running and not self.server_paused:
             res = requests.post(f"{self.server}/pause")
             if res.status_code == 200:
@@ -251,6 +267,8 @@ class VoyagerEnv(gym.Env):
 
     @retry(retry_count=3)
     def unpause(self):
+        if not self.legacy_pause_adapter:
+            return False
         if self.mineflayer.is_running and self.server_paused:
             res = requests.post(f"{self.server}/pause")
             if res.status_code == 200:

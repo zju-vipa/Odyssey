@@ -111,6 +111,9 @@ odyssey/utils/process_results.py
 # Mac
 .DS_Store
 
+# Local Minecraft server state and downloaded mod jars
+runtime/
+
 # MuJoCo License key
 mjkey.txt
 

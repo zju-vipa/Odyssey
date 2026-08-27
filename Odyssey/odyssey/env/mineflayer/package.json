@@ -1,38 +1,52 @@
 {
-    "name": "voyager",
-    "version": "1.0.0",
-    "description": "",
+    "name": "mineskynet-mineflayer-bridge",
+    "version": "0.1.0",
+    "description": "Minimal Mineflayer execution bridge for the MineSkynet E0 profile",
+    "private": true,
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build:collectblock": "tsc --project mineflayer-collectblock/tsconfig.json",
+        "check": "npm run build:collectblock && node --check index.js && npm ls --depth=0",
+        "start": "npm run build:collectblock && node index.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "engines": {
+        "node": "20.13.1",
+        "npm": "10.5.2"
+    },
     "dependencies": {
-        "body-parser": "^1.20.2",
-        "express": "^4.18.2",
-        "magic-string": "^0.30.0",
-        "minecraft-data": "^3.31.0",
-        "minecrafthawkeye": "=1.3.6",
-        "mineflayer": "^4.8.1",
-        "mineflayer-collectblock": "file:mineflayer-collectblock",
-        "mineflayer-pathfinder": "^2.4.2",
-        "mineflayer-pvp": "^1.3.2",
-        "mineflayer-tool": "^1.2.0",
-        "mocha": "^10.2.0",
-        "prismarine-biome": "^1.3.0",
-        "prismarine-block": "=1.17.1",
-        "prismarine-entity": "^2.2.0",
-        "prismarine-item": "^1.12.1",
-        "prismarine-nbt": "^2.2.1",
-        "prismarine-recipe": "^1.3.1",
-        "prismarine-viewer": "^1.24.0",
-        "typescript": "^4.9.5",
-        "vec3": "^0.1.8",
-        "graceful-fs": "^4.2.11"
+        "express": "4.18.2",
+        "minecraft-data": "3.83.0",
+        "minecrafthawkeye": "1.3.8",
+        "mineflayer": "4.25.0",
+        "mineflayer-pathfinder": "2.4.2",
+        "mineflayer-pvp": "1.3.2",
+        "mineflayer-tool": "1.2.0",
+        "vec3": "0.1.8"
     },
     "devDependencies": {
-        "prettier": "2.8.5"
+        "@types/node": "18.19.130",
+        "prismarine-entity": "2.4.0",
+        "prismarine-item": "1.15.0",
+        "typescript": "4.9.5"
+    },
+    "overrides": {
+        "minecraft-data": "3.83.0",
+        "minecraft-protocol": "1.53.0",
+        "prismarine-biome": "1.3.0",
+        "prismarine-block": "1.20.0",
+        "prismarine-chat": "1.10.1",
+        "prismarine-chunk": "1.38.0",
+        "prismarine-entity": "2.4.0",
+        "prismarine-item": "1.15.0",
+        "prismarine-nbt": "2.7.0",
+        "prismarine-physics": "1.9.0",
+        "prismarine-recipe": "1.3.1",
+        "prismarine-registry": "1.11.0",
+        "prismarine-windows": "2.9.0",
+        "prismarine-world": "3.6.3",
+        "protodef": "1.18.0"
     }
 }

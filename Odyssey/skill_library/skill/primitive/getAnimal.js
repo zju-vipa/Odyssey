@@ -1,44 +1,70 @@
 async function getAnimal(bot, type = null, x, y, z) {
-    // let type = "sheep"   type of animals
-    // (x,y,z)   dest pos
-    let wheatSeedsCount = bot.inventory.count(mcData.itemsByName.wheat_seeds.id);
-    let wheatCount = bot.inventory.count(mcData.itemsByName.wheat.id);
-    let carrotsCount = bot.inventory.count(mcData.itemsByName.carrot.id);
-    let wheatSeed = bot.inventory.findInventoryItem(mcData.itemsByName.wheat_seeds.id);
-    let wheat = bot.inventory.findInventoryItem(mcData.itemsByName.wheat.id);
-    let carrot = bot.inventory.findInventoryItem(mcData.itemsByName.carrot.id);
-    if (type = "sheep" || "cow") {
-        if (wheatCount <= 1) {
-            bot.chat("Not enough wheat.");
-            return;
-        }
-        await bot.equip(wheat, "hand");
-    } else if (type = "chichken") {
-        if (wheatSeedsCount <= 1) {
-            bot.chat("Not enough wheat seeds.");
-            return;
-        }
-        await bot.equip(wheatSeed, "hand");
-    } else if (type = "pig") {
-        if (carrotsCount <= 1) {
-            bot.chat("Not enough carrots.");
-            return;
-        }
-        await bot.equip(carrot, "hand");
-    } else {
-        bot.chat("undefined type.");
-        return;
+    if (typeof type !== "string") {
+        throw new Error("[getAnimal] type must be a string");
     }
-    
-    let animal = await exploreUntil(bot, new Vec3(1, 0, 1), 60, () => {
-        let entity = bot.nearestEntity(entity => {
-            return entity.name === type && entity.position.distanceTo(bot.entity.position) < 32;
+    if (![x, y, z].every(Number.isFinite)) {
+        throw new Error("[getAnimal] x, y and z must be finite numbers");
+    }
+
+    const foodByAnimal = {
+        sheep: "wheat",
+        cow: "wheat",
+        chicken: "wheat_seeds",
+        pig: "carrot",
+    };
+    const foodName = foodByAnimal[type];
+    if (!foodName) {
+        throw new Error(
+            `[getAnimal] unsupported animal type: ${type}; expected sheep, cow, chicken or pig`
+        );
+    }
+
+    const foodData = mcData.itemsByName[foodName];
+    const food = foodData
+        ? bot.inventory.findInventoryItem(foodData.id)
+        : null;
+    if (!food) {
+        throw new Error(`[getAnimal] ${foodName} is required to lure ${type}`);
+    }
+    await bot.equip(food, "hand");
+
+    const animal = await exploreUntil(bot, new Vec3(1, 0, 1), 60, () => {
+        return bot.nearestEntity((entity) => {
+            return (
+                entity.name === type &&
+                entity.position.distanceTo(bot.entity.position) < 32
+            );
         });
-        return entity;
     });
     if (!animal) {
-        bot.chat(`Could not find a ${type}.`);
-        return;
+        throw new Error(`[getAnimal] could not find a ${type} within 32 blocks`);
     }
-    await bot.pathfinder.goto(new GoalBlock(x, y, z));
+
+    await bot.pathfinder.goto(
+        new GoalNear(
+            animal.position.x,
+            animal.position.y,
+            animal.position.z,
+            2
+        )
+    );
+    await bot.lookAt(animal.position);
+    await goto(bot, x, y, z);
+
+    const target = new Vec3(x, y, z);
+    const targetRadius = 4;
+    const followWaitTicks = 100;
+    for (let waited = 0; waited <= followWaitTicks; waited += 10) {
+        if (animal.position.distanceTo(target) <= targetRadius) {
+            bot.chat(`Lured ${type} to (${x}, ${y}, ${z}).`);
+            return animal;
+        }
+        if (waited < followWaitTicks) {
+            await bot.waitForTicks(10);
+        }
+    }
+
+    throw new Error(
+        `[getAnimal] ${type} did not reach within ${targetRadius} blocks of (${x}, ${y}, ${z})`
+    );
 }

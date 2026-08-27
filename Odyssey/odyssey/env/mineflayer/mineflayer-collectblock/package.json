@@ -27,10 +27,10 @@
     "url": "https://github.com/TheDudeFromCI/mineflayer-collectblock/issues"
   },
   "homepage": "https://github.com/TheDudeFromCI/mineflayer-collectblock#readme",
-  "dependencies": {
-    "mineflayer": "^4.0.0",
-    "mineflayer-pathfinder": "^2.1.1",
-    "mineflayer-tool": "^1.1.0"
+  "peerDependencies": {
+    "mineflayer": "4.25.0",
+    "mineflayer-pathfinder": "2.4.2",
+    "mineflayer-tool": "1.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.6.4",

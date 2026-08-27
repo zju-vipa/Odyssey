@@ -1,4 +1,16 @@
 // Explore downward for 60 seconds: exploreUntil(bot, new Vec3(0, -1, 0), 60);
+function nextExplorationRandom(bot) {
+    const seed = Number.isInteger(bot.explorationSeed)
+        ? bot.explorationSeed >>> 0
+        : 42;
+    if (!Number.isInteger(bot.explorationRngState)) {
+        bot.explorationRngState = seed;
+    }
+    bot.explorationRngState =
+        (Math.imul(1664525, bot.explorationRngState) + 1013904223) >>> 0;
+    return bot.explorationRngState / 0x100000000;
+}
+
 async function exploreUntil(
     bot,
     direction,
@@ -50,13 +62,13 @@ async function exploreUntil(
         const explore = () => {
             const x =
                 bot.entity.position.x +
-                Math.floor(Math.random() * 20 + 10) * dx;
+                Math.floor(nextExplorationRandom(bot) * 20 + 10) * dx;
             const y =
                 bot.entity.position.y +
-                Math.floor(Math.random() * 20 + 10) * dy;
+                Math.floor(nextExplorationRandom(bot) * 20 + 10) * dy;
             const z =
                 bot.entity.position.z +
-                Math.floor(Math.random() * 20 + 10) * dz;
+                Math.floor(nextExplorationRandom(bot) * 20 + 10) * dz;
             let goal = new GoalNear(x, y, z);
             if (dy === 0) {
                 goal = new GoalNearXZ(x, z);

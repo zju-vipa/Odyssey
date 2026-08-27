@@ -1,0 +1,94 @@
+{
+  "profile": "odyssey-retrieval-wrapper-migration-final",
+  "executed_on": "2026-08-27",
+  "branch": "experiment/retrieval-wrapper-migration",
+  "legacy_baseline": {
+    "tag": "odyssey-modernized-retrieval-legacy-wrapper",
+    "commit": "9d626f61e7eae2884191b6c066213fd812378a42",
+    "packages": {
+      "langchain-core": "0.2.43",
+      "langchain-community": "0.2.19",
+      "chromadb": "0.3.29",
+      "posthog": "7.27.0"
+    }
+  },
+  "modern_profile": {
+    "python": "3.10.20",
+    "packages": {
+      "langchain-core": "1.6.0",
+      "langchain-huggingface": "1.2.2",
+      "langchain-chroma": "1.1.0",
+      "chromadb": "1.3.5",
+      "posthog": "5.4.0",
+      "sentence-transformers": "5.6.0",
+      "transformers": "5.14.1",
+      "torch": "2.13.0+cpu",
+      "huggingface-hub": "1.24.0",
+      "tokenizers": "0.22.2",
+      "numpy": "1.26.4"
+    },
+    "legacy_packages_absent": [
+      "langchain",
+      "langchain-community"
+    ],
+    "final_lock": "Odyssey/requirements-retrieval-modern.lock.txt",
+    "final_lock_sha256": "3fd810577c7f2bb40116bca05fa2b4f2a0bc481c7c0f713b046fbc94a463dbb2"
+  },
+  "clean_install_verification": {
+    "environments_created": 2,
+    "final_lock_reinstalled_in_second_empty_environment": true,
+    "pip_check_passed": true,
+    "deprecated_wrapper_warnings": [],
+    "telemetry_warnings": [],
+    "telemetry_disabled": true
+  },
+  "encoder_contract": {
+    "passed": true,
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "shape": [3, 384],
+    "embedding_sha256": "4f5de76040931c0558f63c1e6083f6779c61f1611b81f9d456aa9b7263d32c6b",
+    "legacy_embedding_sha256_equal": true,
+    "maximum_repeat_error": 0.0,
+    "newline_space_error": 0.0
+  },
+  "modern_retrieval_contract": {
+    "passed_without_legacy_score_gate": true,
+    "corpus_count": 183,
+    "distance_metric": "l2",
+    "top5_recall_at_5": 1.0,
+    "top10_recall_at_10": 1.0,
+    "fresh_reload_candidate_order_equal_for_all": true,
+    "fresh_reload_maximum_score_delta": 0.0
+  },
+  "legacy_modern_comparison": {
+    "candidate_order_equal_for_all_queries_and_profiles": true,
+    "score_tolerance": 0.000001,
+    "maximum_score_delta": 0.00000762939453125,
+    "scores_equal_within_tolerance_for_all": false,
+    "queries": [
+      {
+        "query": "Craft a wooden pickaxe.",
+        "maximum_score_delta": 0.0000019073486328125
+      },
+      {
+        "query": "Mine diamond ore using an iron pickaxe.",
+        "maximum_score_delta": 0.00000286102294921875
+      },
+      {
+        "query": "Breed two cows using wheat.",
+        "maximum_score_delta": 0.00000762939453125
+      },
+      {
+        "query": "밀을 사용해서 소 두 마리를 번식시킨다.",
+        "maximum_score_delta": 0.000003814697265625
+      }
+    ],
+    "interpretation": "Encoder byte checksum과 모든 candidate 순서는 같지만 Chroma 0.3.29와 1.3.5의 L2 계산 결과에는 float32 단위의 작은 수치 차이가 있다. 이 차이는 stochastic하지 않지만 후보 순서와 recall에 영향을 주지 않으므로 dependency 내부 수치 구현 차이로 기록하며, wrapper 간 score tolerance는 병합 gate로 사용하지 않는다."
+  },
+  "status": {
+    "component_fixtures_passed": true,
+    "clean_install_final_lock_verified": true,
+    "merge_gate_passed": true,
+    "researcher_decision": "L2 score 차이는 stochastic하지 않지만 candidate order와 recall에 영향을 주지 않는 dependency 내부 수치 구현 차이로 기록하고 modern profile을 승인"
+  }
+}
